@@ -1,17 +1,13 @@
 # ece298a
 
-Your workspace on iiks1. Everything you make lives under this folder and nowhere else on the box.
+Coursework for ECE 298A (Integrated Circuit Design and Tapeout) at the University of Waterloo: small chip designs for Tiny Tapeout on the GF180 process, each verified with cocotb.
 
-## Project channels
+## Projects
 
-- `#ece298a` is this workspace. Say `new project <name>` there and you get `#ece298a--<name>`, its updates lane
-  and a project under here. That line counts only from you or the owner — a SESSION saying it is ignored, so a
-  session either asks you for it or runs `cc slack project <name>` itself, which asks the box for the same
-  channel — three an hour, that way.
-- A project can also announce ITSELF. Put one glob a line in `.cc/projects` — a lessons workspace writes
-  `*/COURSE.md` — and every directory a line like that matches gets its channel within a quarter of an hour,
-  with nobody typing anything. Same three an hour, same rules on the name: it is your folder's name, so a name
-  the box cannot use is refused with the reason rather than turned into some other channel.
-- `#ece298a-updates` carries the automated flow — progress, budget notices, audits.
+Each design lives in its own repository:
 
-The owner is in every channel the box makes for you. See `docs/design-member-workspaces.md`.
+- [ece298a-counter](https://github.com/ihsan-sa/ece298a-counter): an 8-bit programmable counter (the course's first task).
+- [ece298a-r2r-dac](https://github.com/ihsan-sa/ece298a-r2r-dac): an 8-bit R-2R DAC on a Tiny Tapeout analog tile.
+- [ece298a-pll](https://github.com/ihsan-sa/ece298a-pll): the term project, a charge-pump PLL.
+
+Each repository follows the Tiny Tapeout GF180 template. The design is in `src/`, the documentation in `docs/info.md`, and the tests in `test/`.
