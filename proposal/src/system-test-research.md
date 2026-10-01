@@ -7,7 +7,7 @@
 4. Full transistor-level loop in plain `ngspice -b`. Starts with `.ic` vctrl near lock, uses N = 1 (P·N = 8), a 5-10 µs window and KLU. `.option interp` only thins the output and does not speed up the solve. Proves lock holds and the loop settles. Hours. Nov 26.
 5. One overnight cold-start-to-lock run at the typical corner, post-layout (extracted) if possible. For scale, tt_um_tiny_pll's post-layout full-loop run took about 10 h. Nov 26.
 
-## Tools available (inside ~/.cc/toolchains/iic-osic-tools-2026.09, reached through `eda`)
+## Tools available (native, no container: ~/.cc/toolchains/iic-osic-tools-2026.09/foss/tools/bin, mounted read-only here; or chip-flow bin/eda)
 - ngspice-47: XSPICE with d_cosim, OSDI, KLU and libngspice.so
 - Icarus 14.0, Verilator 5.052
 - cocotb 2.1.0, cocotbext-ams 0.1.0

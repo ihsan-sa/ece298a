@@ -1,0 +1,137 @@
+{
+ "type": "context",
+ "alt": "The charge-pump PLL: a digital PFD, prescaler and divider around an analog pump, filter and VCO",
+ "canvas": 576,
+ "nodes": [
+  {
+   "id": "ref",
+   "title": "Reference",
+   "sub": [
+    "clk pin",
+    "5 to 12.5 MHz"
+   ],
+   "role": "io",
+   "col": 0,
+   "row": 0
+  },
+  {
+   "id": "pfd",
+   "title": "PFD",
+   "sub": [
+    "3-state flops",
+    "AND reset"
+   ],
+   "col": 1,
+   "row": 0
+  },
+  {
+   "id": "cp",
+   "title": "Charge pump",
+   "sub": [
+    "UP, DN in",
+    "Icp out"
+   ],
+   "role": "work",
+   "col": 2,
+   "row": 0
+  },
+  {
+   "id": "lf",
+   "title": "Loop filter",
+   "sub": [
+    "R + C1, shunt C2",
+    "Vctrl on ua[0]"
+   ],
+   "role": "work",
+   "col": 3,
+   "row": 0
+  },
+  {
+   "id": "lock",
+   "title": "Lock detect",
+   "sub": [
+    "UP, DN width",
+    "uo_out[2]"
+   ],
+   "role": "gate",
+   "col": 1,
+   "row": 1
+  },
+  {
+   "id": "div",
+   "title": "Divider",
+   "sub": [
+    "÷N, N = 1 to 5",
+    "uo_out[1]"
+   ],
+   "col": 2,
+   "row": 1
+  },
+  {
+   "id": "vco",
+   "title": "VCO",
+   "sub": [
+    "starved ring",
+    "50 to 200 MHz"
+   ],
+   "role": "work",
+   "hot": true,
+   "col": 3,
+   "row": 1
+  },
+  {
+   "id": "pre",
+   "title": "Prescaler",
+   "sub": [
+    "÷8, toggle flops",
+    "uo_out[0] tap"
+   ],
+   "col": 3,
+   "row": 2
+  }
+ ],
+ "edges": [
+  {
+   "from": "ref",
+   "to": "pfd"
+  },
+  {
+   "from": "pfd",
+   "to": "cp"
+  },
+  {
+   "from": "cp",
+   "to": "lf"
+  },
+  {
+   "from": "lf",
+   "to": "vco",
+   "label": "Vctrl",
+   "labelSide": "left"
+  },
+  {
+   "from": "vco",
+   "to": "pre"
+  },
+  {
+   "from": "pre",
+   "to": "div",
+   "route": "hv"
+  },
+  {
+   "from": "div",
+   "to": "pfd",
+   "route": "vhv",
+   "toAt": 0.75,
+   "label": "feedback"
+  },
+  {
+   "from": "pfd",
+   "to": "lock",
+   "route": "v",
+   "fromAt": 0.25,
+   "toAt": 0.25
+  }
+ ],
+ "colGap": 24
+}

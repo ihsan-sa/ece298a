@@ -1,0 +1,371 @@
+% ECE 298A term project proposal: a charge-pump PLL on Tiny Tapeout GF180.
+% Short technical-doc (pdf-material-builder): no title page, the title block
+% opens page one. Preamble copy-adapted from assets/preamble-template.tex, look
+% taken from pdf-digital/ece298a_digital_pll_proposal.tex.
+% Build: <skill>/scripts/build.sh ece298a_classic-pll_proposal.tex
+% Figures: figures/cppll-blocks.json, figures/cppll-alt.json and
+% figures/test-layers.json, rendered by
+% diagram-maker through build.sh.
+
+\documentclass[11pt]{article}
+\usepackage{housestyle}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{tabularx}
+
+% --- Running head and foot -------------------------------------------------
+\hsslug{ECE 298A Charge-pump PLL proposal}
+\fancyfoot[L]{\hsrunlabel{\textcopyright{} 2026 Ihsan Salari. All rights reserved.}}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+\hssection{\leftmark}
+
+% --- Headings --------------------------------------------------------------
+\titleformat{\subsection}{\hssubheadfont\fontsize{13pt}{17pt}\selectfont\color{ink}}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{16pt}{4pt}
+\titleformat{\subsubsection}{\itshape\color{ink}}{}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{12pt}{2pt}
+
+% --- Tables ----------------------------------------------------------------
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+% --- Document shorthands ---------------------------------------------------
+\newcommand{\pin}[1]{\texttt{#1}}              % a pin, file or tool name
+\newcommand{\est}{(\emph{est.})}               % design-estimate marker
+\newcommand{\MHz}{\,MHz}
+\newcommand{\kHz}{\,kHz}
+\newcommand{\us}{\,\textmu s}
+\newcommand{\uA}{\,\textmu A}
+\newcommand{\pF}{\,pF}
+\newcommand{\ns}{\,ns}
+\newcommand{\kohm}{\,k$\Omega$}
+\newcommand{\dg}{\ensuremath{^\circ}}
+\newcommand{\icp}{I_\mathrm{cp}}
+\newcommand{\kvco}{K_\mathrm{vco}}
+\newcommand{\fref}{f_\mathrm{ref}}
+\newcommand{\fvco}{f_\mathrm{vco}}
+\newcommand{\vctrl}{V_\mathrm{ctrl}}
+\newcommand{\tablelabel}[1]{\hslabel{#1}\par\nopagebreak\vspace{8pt}\nopagebreak}
+\AddToHook{env/hsblock/after}{\vspace{8pt}}
+
+\hsnumbersections
+
+\begin{document}
+
+\hstitleblock{ECE 298A Term Project Proposal \textperiodcentered\ 1 October 2026 (revised)}%
+{A Charge-Pump PLL on Tiny Tapeout GF180}%
+{Team: Ihsan Salari, Dhyey Bhatt}
+
+\section*{Abstract}
+
+We propose a classic type-II charge-pump phase-locked loop (PLL) for the Tiny Tapeout GF180 shuttle. A phase-frequency detector (PFD), a $\div 8$ toggle-flop prescaler, a programmable feedback divider and a lock detector are built from standard cells; a charge pump, a passive loop filter and a current-starved ring VCO are analog. The loop multiplies a 5 to 12.5\MHz{} reference by $PN = 8$ to 40 ($P = 8$, $N = 1$ to 5) onto a VCO range of about 50 to 200\MHz{} \est, with a nominal point of 6.25\MHz{} $\times$ 16 = 100\MHz{} and a lock time under 50\us{} \est. Only the prescaler runs above 50\MHz. The loop is tested in five layers, from a linear model and CocoTB with a real-number analog model up to an overnight transistor-level lock; the analog blocks are characterised in ngspice across corners. An alternative implementation moves the pump output to a tri-state pad and the filter and VCO off chip.
+
+\section{Introduction and motivation}\label{sec:intro}
+
+The charge-pump PLL is the standard clock multiplier in integrated circuits, and it is the one circuit in which a digital phase detector, an analog integrator and an oscillator form a single feedback loop. Building one exercises the whole mixed-signal flow: RTL and CocoTB for the digital half, transistor-level design and ngspice for the analog half, and layout checked with DRC and LVS. The loop multiplies the tile reference by a programmable ratio, so the result is directly observable on the tile's digital outputs.
+
+The design targets a two-tile-high analog tile built on \pin{ttgf-analog-template}~[5], with two analog pins (\pin{ua[0]}, \pin{ua[1]}). Section~\ref{sec:arch} describes the design in its analog-tile form, and Section~\ref{sec:alt} gives an alternative implementation on the standard digital tile.
+
+\clearpage
+\section{Target specifications}\label{sec:targets}
+\hslead{These are hand estimates; replacing them with ngspice results is the Nov~5 deliverable. Only the prescaler runs above 50\MHz{} (Section~\ref{sec:prescaler}).}
+
+\begin{hsblock}
+\tablelabel{Table 1 / the targets and where each one comes from}
+\begin{tabularx}{\linewidth}{@{}L{62pt}L{128pt}Y@{}}
+\hstoprule
+\hshead{Parameter} & \hshead{Target} & \hshead{Basis} \\
+\hstoprule
+Reference & \pin{clk}, 5 to 12.5\MHz; nominal 6.25\MHz{} $\times$ 16 = 100\MHz & well inside the 50\MHz{} tile clock limit \\ \hline
+Prescaler & fixed $\div 8$ ($P = 8$), three toggle flops & smallest power of two taking the fast-corner 333\MHz{} to 50\MHz{} or below \\ \hline
+$N$ & 1 to 5 (3 bits); $PN = 8$ to 40 & lock needs $50 \le 8 N \fref \le 200$\,MHz: $N = 5$ at 5\MHz, $N = 1$ from 6.25\MHz; output steps of $8\fref$ \\ \hline
+VCO range & 50 to 200\MHz; 333\MHz{} fast corner \est & starved ring, about 100\,MHz/V \est; inverter delay $1.66\times$ shorter at ff than tt (Liberty) \\ \hline
+Loop bandwidth & $f_n \approx 400$\kHz{} at $PN = 16$; crossover $\approx 535$\kHz{} ($\fref/11.7$) \est, 480\kHz{} in the first ngspice run & crossover below $\fref/10$ except $N = 1$ under 9.5\MHz{} ($\fref/6.6$ at 6.25\MHz) and $N = 2$ at 5\MHz{} ($\fref/9.3$); Gardner limit~[1] holds, $1.7\times$ margin at worst \\ \hline
+Loop filter & $\icp \approx 20$\uA, $C_1 \approx 20$\pF, $R \approx 26$\kohm, $C_2 \approx C_1/10$ \est & \eqref{eq:wn} and \eqref{eq:zeta} at $PN = 16$; phase margin $\approx 51\dg$ \est, $49.5\dg$ in the first ngspice run \\ \hline
+Lock time & under 50\us{} \est & settling $4/(\zeta\omega_n) \approx 2.5$\us{} at $PN = 16$, 6\us{} at $PN = 40$, plus acquisition \\ \hline
+Jitter & simulated per corner; scope bound on silicon & absolute jitter is not measurable through the pads \\ \hline
+Observed output & VCO $\div$ 8 or $\div$ 16 on \pin{uo\_out[0]}: 3.1 to 25\MHz{} (42\MHz{} fast) & pads limit an output to tens of MHz \\
+\hstoprule
+\end{tabularx}
+\end{hsblock}
+
+\hsprovenance{Hand estimates of 24 September 2026, revised 1 October 2026 for $R \approx 26$\kohm; the first typical-corner ngspice run gives a $49.5\dg$ margin and a 480\kHz{} crossover at $PN = 16$, and ngspice corner results replace the rest at the Nov 5 evaluation. Section 2.1 uses the Liberty tables of gf180mcu\_fd\_sc\_mcu7t5v0 (dffq\_1, inv\_1) at tt\_025C\_3v30 and ff\_n40C\_3v60.}
+\clearpage
+
+\subsection{Prescaler and frequency plan}\label{sec:prescaler}
+\emph{Design constraint.} The maximum clock frequency for synthesized logic on the chip is estimated at 50\MHz, so only the ripple prescaler runs faster. The divider, the PFD, the lock detector and the $\div 16$ observation flop all run at 50\MHz{} or below, at most 41.6\MHz{} at the fast corner.
+
+\emph{Ratio.} The smallest power of two that keeps the prescaler output at or below 50\MHz{} at the fast corner is 8: $333/2 = 166$\MHz, $333/4 = 83$\MHz{} and $333/8 = 41.6$\MHz. A $\div 4$ would be enough at the typical 200\MHz{} maximum (exactly 50\MHz) but not at the fast corner, so the design uses $\div 8$.
+
+\emph{Toggle-flop speed.} Each stage is a \pin{gf180mcu\_fd\_sc\_mcu7t5v0\_\_dffq\_1} with an \pin{inv\_1} from Q back to D. From the Liberty tables (clock slew 0.15\ns, about 13\,fF on Q), the toggle loop is clk-to-Q plus inverter plus setup (Table~2). The first stage sees at most 333\MHz{} at the fast corner, a 3.0\ns{} period and 1.5\ns{} half-period: $3.2\times$ the 0.94\ns{} loop and $3.2\times$ the 0.47\ns{} minimum pulse width. Typical-corner cells at 333\MHz{} keep $1.8\times$. The three stage outputs are at most 166, 83 and 41.6\MHz.
+
+\begin{hsblock}
+\tablelabel{Table 2 / the prescaler's toggle loop from the Liberty tables}
+\begin{tabularx}{\linewidth}{@{}L{84pt}L{50pt}L{50pt}L{44pt}L{90pt}Y@{}}
+\hstoprule
+\hshead{Corner} & \hshead{clk-to-Q} & \hshead{Inverter} & \hshead{Setup} & \hshead{Loop} & \hshead{Liberty min period} \\
+\hstoprule
+tt\_025C\_3v30 & 1.18\ns & 0.13\ns & 0.39\ns & 1.70\ns{} (590\MHz) & 1.71\ns \\ \hline
+ff\_n40C\_3v60 & 0.68\ns & 0.08\ns & 0.18\ns & 0.94\ns{} (1.06\,GHz) & 0.93\ns \\
+\hstoprule
+\end{tabularx}
+\end{hsblock}
+
+\emph{Lock table.} The loop locks where $50\,\mathrm{MHz} \le 8 N \fref \le 200\,\mathrm{MHz}$, the typical VCO range (Table~3). Because $\fvco = 8 N \fref$ is continuous in $\fref$, $N = 1$ to 5 over 5 to 12.5\MHz{} covers 40 to 500\MHz{} without gaps, so any VCO band a corner produces inside that span still has a lock point.
+
+\begin{hsblock}
+\tablelabel{Table 3 / which N lock at each reference}
+\begin{tabularx}{\linewidth}{@{}L{70pt}L{90pt}L{130pt}Y@{}}
+\hstoprule
+\hshead{$\fref$} & \hshead{$N$ that lock} & \hshead{$\fvco$} & \hshead{Step $8\fref$} \\
+\hstoprule
+5\MHz & 2, 3, 4, 5 & 80, 120, 160, 200\MHz & 40\MHz \\ \hline
+6.25\MHz & 1, 2, 3, 4 & 50, 100, 150, 200\MHz & 50\MHz \\ \hline
+10\MHz & 1, 2 & 80, 160\MHz & 80\MHz \\ \hline
+12.5\MHz & 1, 2 & 100, 200\MHz & 100\MHz \\
+\hstoprule
+\end{tabularx}
+\end{hsblock}
+
+\clearpage
+
+\subsection{Loop design}\label{sec:loopdesign}
+With the pump current $\icp$, the VCO gain $\kvco$ in rad/s/V, the total divide ratio $PN$ and the series $R$ and $C_1$ of the filter, the loop's natural frequency and damping are
+\begin{align}
+\omega_n &= \sqrt{\frac{\icp\,\kvco}{2\pi\,P N\,C_1}}, \label{eq:wn}\\
+\zeta &= \frac{R\,C_1\,\omega_n}{2}. \label{eq:zeta}
+\end{align}
+With $\kvco = 2\pi \cdot 100$\,MHz/V, the values of Table~1 give $\omega_n \approx 2\pi \cdot 400$\kHz{} and $\zeta \approx 0.65$ at the nominal $PN = 16$. The zero is at 306\kHz{} and $C_2$ adds a pole at 3.4\MHz, so the phase margin is $\approx 51\dg$ \est; the first typical-corner ngspice run gives $49.5\dg$ and $f_c \approx 480$\kHz. Both $\omega_n$ and $\zeta$ scale as $\sqrt{\icp/PN}$: across $PN = 8$ to 40, $\zeta$ runs from 0.92 to 0.41 and the phase margin with $C_2$ from $56\dg$ to $38\dg$ \est. $\icp$ stays at 20\uA; doubling it with the trim at $PN = 32$ to 40 lifts $\zeta$ to 0.65 to 0.58 (margin $51\dg$ to $48\dg$).
+
+For acquisition, $\vctrl$ slews at most $\icp/(C_1+C_2) \approx 0.9$\,V/\textmu s, so a 1.5\,V swing takes a few microseconds; with the settling above, this sets the 50\us{} lock-time bound.
+
+\emph{Filter area.} A 20\pF{} capacitor is large. At an assumed MIM density of 1 to 2\,fF/\textmu m\textsuperscript{2} it needs roughly 10{,}000 to 20{,}000\,\textmu m\textsuperscript{2}, a large share of a two-tile area; this is also why the alternative implementation places the filter off chip.
+
+\emph{Reference spur.} Pump mismatch sets the reference spur. With a PFD reset pulse of about 1\,ns \est, a 10\,\% UP/DN mismatch gives a static phase offset of about 0.1\,ns ($0.23\dg$ at 6.25\MHz) and a ripple on $\vctrl$ every reference cycle. The $C_2$ pole at 3.4\MHz{} attenuates a 6.25\MHz{} spur by only about 6\,dB, so $C_2 = C_1/10$ does little for spurs. The spur level is reported from ngspice; it cannot be measured through the pads.
+
+\emph{Pad loading.} The $\vctrl$ node is brought out on \pin{ua[0]} for observation. The pad path (up to 5\pF~[2]) sits in parallel with $C_2$, so the on-chip $C_2$ is sized with the pad included: 2\pF{} plus 5\pF{} of pad drops the margin from $51\dg$ to $35\dg$ at $PN = 16$ and $38\dg$ to $27\dg$ at $PN = 40$ \est.
+
+\begin{hscallout}{Why Vctrl is not probed directly}
+A scope probe (about 15\pF) on \pin{ua[0]} would push the phase margin below $20\dg$, so $\vctrl$ is observed only through a high-impedance buffer or with the loop open. Pad capacitance adds to $C_2$, not $C_1$; a $C_1$ that is too small needs the $R$ to $C_1$ node on a third analog pin.
+\end{hscallout}
+
+\hsprovenance{Equations (1) and (2) with the Table 1 values, hand estimates revised 1 October 2026 for $R \approx 26$\kohm; ngspice results across corners replace them at the Nov 5 evaluation.}
+\clearpage
+
+\section{Architecture}\label{sec:arch}
+\hslead{One loop runs from the reference through the PFD, pump and filter to the VCO, and back through the prescaler and divider. The lock detector watches the PFD, and the prescaler brings the VCO out to a pin.}
+
+\begin{hsfigure}{Figure 1 / the charge-pump PLL on the analog tile}%
+{Sand boxes are digital blocks built from standard cells, sage boxes are analog, the slate box meets a pin, and the rust box is the lock check. The heavy outline marks the VCO. The PFD drives the pump with UP and DN; the pump sources $\icp$ into the filter, whose node $\vctrl$ is also brought out on \pin{ua[0]}. Only the prescaler runs above 50\MHz. Frequencies are estimates.}
+\hsdiagram{figures/cppll-blocks}
+\end{hsfigure}
+\hsprovenance{Figure 1 from figures/cppll-blocks.json, rendered with diagram-maker, 24 September 2026.}
+
+\subsection{Blocks}
+
+\emph{PFD (digital).} Two D flops clocked by the reference and the feedback, with an AND reset. A short reset delay removes the dead zone. It is built from standard cells, with keep attributes on the delay chain so synthesis does not remove it. Its width is checked in ngspice, not in RTL. Its feedback flop and reset path see only the divided feedback, at most 41.6\MHz{} ($N = 1$, fast corner, during acquisition).
+
+\emph{Charge pump (analog).} Switched PMOS and NMOS current sources, with $\icp$ set by a mirror from a bias. The design concerns are UP/DN current mismatch across $\vctrl$, which causes a static phase offset and reference spurs, and charge sharing at switching. A unity-gain buffer to equalise the switch nodes is optional and goes in only if ngspice shows it is needed.
+
+\emph{Loop filter (analog).} A series $R$ and $C_1$ with shunt $C_2$ on the $\vctrl$ node, brought out on \pin{ua[0]}; its sizing with the pad included is in Section~\ref{sec:loopdesign}.
+
+\emph{VCO (analog).} A current-starved inverter ring with an odd number of stages. $\vctrl$ sets the starving current. It is designed for monotonic tuning across corners, and the stage count is chosen from the ngspice sweep.
+
+\emph{Prescaler (digital).} Three ripple toggle flops (\pin{dffq\_1} with an inverter from Q to D) divide the VCO by 8. It is the only logic above 50\MHz, and it is placed next to the VCO output.
+
+\emph{Divider and observation (digital).} A programmable $\div N$ counter ($N = 1$ to 5; $N = 1$ passes the prescaler output through), clocked by the prescaler output at no more than 41.6\MHz. The observation output is the prescaler output (VCO $\div$ 8) or one more toggle flop ($\div$ 16), selected by \pin{ui\_in[7]}. At lock, VCO $\div$ 8 is $N\fref$ and the feedback output on \pin{uo\_out[1]} is $\fref$, so the ratio of the two pins reads $N$.
+
+\emph{Lock detector (digital).} Lock asserts when UP and DN pulses have stayed shorter than a threshold for $K$ consecutive reference cycles, and drops when they do not. It is clocked by the reference.
+
+\subsection{Alternative implementation: digital tile, off-chip filter}\label{sec:alt}
+
+The same loop can be built on the standard digital template. \pin{uio[0]} acts as the charge pump: it is driven high on UP, low on DN and tri-stated (\pin{uio\_oe} = 0) otherwise, the same arrangement as the three-state phase comparator in a CD4046~[3]. During the PFD reset overlap, when UP and DN are both high, the pin stays tri-stated. An off-chip series resistor into an off-chip RC loop filter turns the pad into an approximate current source, with $I \approx (V_\mathrm{DD} - \vctrl)/R$ on UP and $\vctrl/R$ on DN. The two match only at $\vctrl = V_\mathrm{DD}/2$, and the current varies with $\vctrl$, so loop gain varies across the tuning range.
+
+An off-chip VCO closes the loop through a \pin{ui} input: a 4046-class part or a discrete oscillator in the low tens of MHz. The on-chip prescaler, $\div N$ divider, PFD and lock detector are unchanged, so the loop still multiplies by $8N$ and the core stays at or below 50\MHz{} whatever the VCO. With a VCO of about 30\MHz, $N = 5$ ($PN = 40$) needs a reference of about 0.75\MHz, so this implementation runs \pin{clk} well below the 5 to 12.5\MHz{} of Table~1.
+
+\begin{hsfigure}{Figure 2 / the alternative implementation, with the filter and VCO off chip}%
+{Sand boxes are digital blocks on the die and sage boxes are off-chip parts on the board; the slate box is the reference pin and the rust box is the lock check. The pump leaves the die on \pin{uio[0]}, and the VCO returns on \pin{ui\_in[0]} into the on-chip prescaler.}
+\hsdiagram{figures/cppll-alt}
+\end{hsfigure}
+
+In this form the silicon holds the digital half of the loop, as an integer-N synthesizer IC with an external VCO and loop filter does, but with a voltage-output pump, so it does not lock without the off-chip parts. A middle form keeps an analog tile for the VCO alone (one analog pin for $\vctrl$) and puts the pump on \pin{uio[0]} and the filter off chip.
+
+\hsprovenance{Figure 2 from figures/cppll-alt.json, rendered with diagram-maker, 24 September 2026.}
+\clearpage
+\section{Interface and pin allocation}\label{sec:pins}
+
+\begin{hsblock}
+\tablelabel{Table 4 / every pin of the analog-tile implementation}
+\begin{tabularx}{\linewidth}{@{}L{112pt}L{44pt}Y@{}}
+\hstoprule
+\hshead{Pin} & \hshead{Dir} & \hshead{Use} \\
+\hstoprule
+\pin{ui\_in[2:0]} & in & $N$ (1 to 5; codes 0, 6 and 7 not supported) \\ \hline
+\pin{ui\_in[5:3]} & in & spare \\ \hline
+\pin{ui\_in[6]} & in & PLL enable (power-down of pump and VCO) \\ \hline
+\pin{ui\_in[7]} & in & observation select ($\div$ 8 or $\div$ 16) \\ \hline
+\pin{uo\_out[0]} & out & VCO $\div$ 8 or $\div$ 16 \\ \hline
+\pin{uo\_out[1]} & out & feedback divider output \\ \hline
+\pin{uo\_out[2]} & out & lock \\ \hline
+\pin{uo\_out[3]}, \pin{uo\_out[4]} & out & UP, DN (debug; short pulses may not survive the pads) \\ \hline
+\pin{uo\_out[7:5]} & out & driven low, spare \\ \hline
+\pin{uio[1:0]} & in & charge-pump current trim \\ \hline
+\pin{uio[7:2]} & in & spare \\ \hline
+\pin{ua[0]} & analog & $\vctrl$, the loop filter node \\ \hline
+\pin{ua[1]} & analog & bias reference (external resistor), optional \\ \hline
+\pin{clk}, \pin{rst\_n}, \pin{ena} & in & reference; standard \\
+\hstoprule
+\end{tabularx}
+\end{hsblock}
+
+\emph{Alternative implementation.} \pin{ui\_in[0]} external VCO in, \pin{ui\_in[3:1]} $N$, \pin{ui\_in[6:4]} spare, \pin{ui\_in[7]} enable; \pin{uio[0]} pump out (dynamic \pin{uio\_oe}); \pin{uio[1]} observation select (input); \pin{uo\_out} shows the feedback divider, lock, UP, DN and VCO $\div$ 8 or $\div$ 16.
+
+
+\clearpage
+\section{Testing the whole loop}\label{sec:verification}
+\hslead{The VCO needs picosecond time steps, and lock takes tens of microseconds. A full transistor-level lock is about ten million steps, so the loop is tested in layers, each one putting more of it at transistor level than the layer before.}
+
+The VCO runs at up to 200\MHz, a 5\ns{} period, and ngspice needs steps of a few picoseconds to place its edges. The PFD acts once per reference cycle, 160\ns{} at 6.25\MHz, and the loop settles through a crossover near 500\kHz, so lock from power-up takes tens of microseconds: about 50\us{} over 5\,ps, or $10^7$ time steps, each solving the whole netlist. Each layer therefore models the fast parts it does not need to resolve and simulates the part it tests in full. A layer proves only what it simulates at transistor level, and the layers above it check its models. Layers 1 and 2 run in seconds and are rerun on every change; layers 4 and 5 run for hours and are run a few times (Figure~3, Table~5). The Dec~3 documentation reports all five and the silicon test plan of Section~\ref{sec:silicon}.
+
+\begin{hsblock}
+\tablelabel{Table 5 / the five test layers, from seconds to overnight}
+\begin{tabularx}{\linewidth}{@{}L{70pt}L{96pt}YL{50pt}L{56pt}@{}}
+\hstoprule
+\hshead{Layer} & \hshead{Tool} & \hshead{What it proves} & \hshead{Runtime} & \hshead{Deadline} \\
+\hstoprule
+1. Linear phase model & python-control and scipy; the ngspice open-loop AC bench & phase margin, crossover $f_c$ and a lock-time estimate for every $N$, trim and corner & seconds & Oct 16, refined by Nov 5 \\ \hline
+2. Real-number loop & Icarus and cocotb on the real RTL; Python pump, filter and VCO & the real PFD, dividers and lock detector lock the loop for $N = 1$ to 5 from startup in under 50\us & seconds to a minute per run & bench Oct 16, results Nov 5 \\ \hline
+3. Co-simulation & cocotbext-ams: RTL in Icarus, pump and filter in ngspice & the transistor-level pump and filter work with real PFD pulses & minutes to about an hour & Nov 5 to Nov 26 \\ \hline
+4. Transistor-level loop & \pin{ngspice -b}, started near lock, $N = 1$, 5 to 10\us & lock holds and the loop settles with every block at transistor level & hours & Nov 26 \\ \hline
+5. Cold start to lock & \pin{ngspice -b}, typical corner, extracted if possible & the loop locks from power-up & overnight & Nov 26 \\
+\hstoprule
+\end{tabularx}
+\end{hsblock}
+
+\begin{hsfigure}{Figure 3 / each layer puts more of the loop at transistor level}%
+{Sand layers model all of the analog loop; sage layers simulate some or all of it at transistor level in ngspice. Runtime, on the right, grows by roughly an order of magnitude per layer.}
+\hsdiagram{figures/test-layers}
+\end{hsfigure}
+\hsprovenance{Figure 3 from figures/test-layers.json, rendered with diagram-maker, 1 October 2026. Layers, tools and runtimes from the test research of 1 October 2026, on the IIC-OSIC-TOOLS 2026.09 image.}
+
+\subsection{Layer 1: linear phase model}
+Near lock the loop is linear, so its phase-domain transfer function gives the phase margin, the crossover $f_c$ and a lock-time estimate in seconds. A python-control and scipy script sweeps every $N$ from 1 to 5, every pump trim code and every corner, with $\icp$ and $\kvco$ taken per corner from the block benches of Section~\ref{sec:blocks}. It also checks the Gardner limit~[1] at every lock point of Table~3. The ngspice open-loop AC bench (\pin{pll\_analog\_ol\_tb}) checks the script at the typical corner; the first typical-corner ngspice run gave $49.5\dg$ and $f_c \approx 480$\kHz{} at $PN = 16$, against $51\dg$ and 535\kHz{} by hand. The script's first version serves Oct~16; refined with the corner data, it fixes $R$, $C_1$, $C_2$ and $\icp$ at Nov~5.
+
+\subsection{Layer 2: the real RTL around a real-number loop}
+\emph{Block tests.} The CocoTB bench checks the PFD's UP/DN widths against known phase offsets, and both frequency-detection directions. The dead-zone reset pulse has no width in zero-delay RTL; CocoTB checks that it happens, and its width comes from ngspice. The bench checks the prescaler's $\div 8$ and the $\div 16$ tap, $\div N$ for every $N$ from 1 to 5 (so the total ratio $8N$), and the lock detector's assert and deassert thresholds.
+
+\emph{Loop tests.} The real RTL runs in Icarus under cocotb, and a Python model stands in for the pump, filter and VCO. It integrates $\icp$ into the filter state each time step and sets the VCO period from $\vctrl$ through the $f(\vctrl)$ curve the \pin{vco\_tb} ngspice bench measures at each corner, up to the 333\MHz{} fast-corner maximum. For the alternative implementation, Python models the off-chip RC and VCO from \pin{uio\_oe}/\pin{uio\_out} and drives \pin{ui\_in[0]}. From startup, lock is checked three ways at every ($\fref$, $N$) point of Table~3:
+
+\begin{enumerate}[leftmargin=18pt,itemsep=2pt,topsep=4pt]
+\item The lock flag rises within 50\us.
+\item Python edge timestamps show the average feedback period equal to the reference period, and the VCO period equal to the reference period divided by $8N$, with the phase error bounded.
+\item The modelled $\vctrl$ settles.
+\end{enumerate}
+
+The loop must also relock after a change of $N$. The bench is mutation-tested with a swapped UP/DN, a missing PFD reset, a divider off by one and a prescaler of $\div 4$; each must fail at least one check. A run takes seconds to a minute. The bench is ready by Oct~16, and at Nov~5 it shows the full loop locking at the typical corner with the model calibrated against the typical-corner benches. Layer 2 proves the model, not the transistors, unless the model is calibrated (Table~6).
+
+\emph{Timing.} Static timing constrains the prescaler output as a generated clock (VCO $\div$ 8) at 50\MHz, and everything after it (the divider, the PFD feedback flop and the $\div 16$ flop) meets that. The reference domain (the PFD reference flop and the lock detector) is constrained at 12.5\MHz. The three prescaler flops are checked against the Liberty minimum period and pulse widths at the fast-corner VCO rate.
+
+\subsection{Analog blocks in ngspice}\label{sec:blocks}
+The block benches supply the numbers every layer uses. They run with the PDK device models across corners (typical, fast, slow), supply $\pm 10$\,\% and $-40$ to 125\,\textdegree C, and cover:
+
+\begin{itemize}[leftmargin=18pt,itemsep=2pt,topsep=4pt]
+\item charge pump: UP/DN matching against $\vctrl$, and charge sharing;
+\item loop filter: AC response and phase margin;
+\item VCO: frequency against $\vctrl$, $\kvco$, range and monotonicity, plus period jitter from transient noise, injected with \pin{trnoise} sources~[4] sized from the device noise models (an estimate);
+\item prescaler: the first toggle flop driven by the VCO at the fast-corner maximum.
+\end{itemize}
+
+\subsection{Layer 3: co-simulation of the RTL and the transistor-level pump}
+cocotbext-ams~[8] runs the RTL in Icarus and the transistor-level pump and filter in ngspice through \pin{libngspice}. The VCO is behavioural, a B-source or Verilog-A compiled with OpenVAF to OSDI, or transistor-level for short windows. It is the first layer in which real PFD pulses, with their finite reset width, drive the real pump, so it proves the pump and filter against the logic that layer 2 only models. A run takes minutes to about an hour. The bench does not exist yet; it is built and run between Nov~5 and Nov~26.
+
+\subsection{Layer 4: the whole loop at transistor level}
+Plain \pin{ngspice -b} runs the whole loop, with the PFD, prescaler and divider from the standard-cell SPICE netlists. To keep a run to hours, it starts with an \pin{.ic} on $\vctrl$ near its lock value, uses $N = 1$ ($PN = 8$, the fastest loop, settling in about 1.2\us{} by hand) and a 5 to 10\us{} window, and solves with KLU. \pin{.option interp} only thins the saved output and does not speed up the solve. This layer shows that lock holds and $\vctrl$ settles with every block at transistor level, for Nov~26.
+
+\subsection{Layer 5: cold start to lock, and the layout}
+One overnight run goes from power-up to lock at the typical corner, post-layout with extracted parasitics if the layout is ready. For scale, the post-layout full-loop run of \pin{tt\_um\_tiny\_pll}~[6] took about 10 hours. The ring oscillator needs a kick pulse to start in simulation.
+
+Layout is drawn in Magic or with a parameterised generator. Magic and KLayout DRC run on every revision; because precheck runs DRC only, netgen LVS is part of this plan, and the extracted parasitics are re-simulated in the block benches and in layers 4 and 5 before sign-off at Nov~26.
+
+\subsection{CppSim, an optional cross-check}
+CppSim~[7] (M.~Perrott, version 5.3, 2014) is free for education and industry but not open source: its \pin{net2code} compiler and PLL Design Assistant are closed binaries. Its area-conservation timing gives jitter-accurate behavioural loop simulations with noise in seconds, and the Design Assistant covers the loop filter, phase margin and noise. Its Linux build targets RHEL~5, and the GUI and Design Assistant need Wine, which is not installed here; headless runs are possible through its Python module. VppSim co-simulates with Icarus, but CppSim does not read ngspice netlists. It is optional, for noise and jitter beside layers 1 and 2; the CocoTB model stays the verification tool because it runs the real RTL.
+
+\subsection{Risks to the test plan}
+\begin{hsblock}
+\tablelabel{Table 6 / what could weaken the layers and what answers it}
+\begin{tabularx}{\linewidth}{@{}L{170pt}Y@{}}
+\hstoprule
+\hshead{Risk} & \hshead{Mitigation} \\
+\hstoprule
+The Icarus backend of ngspice's \pin{d\_cosim} is broken in this tool image (a hardcoded \pin{libvvp} path); Verilator \pin{d\_cosim} is untested & layer 3 runs on cocotbext-ams; layers 2 and 4 need no co-simulation and bracket it if it slips \\ \hline
+\pin{libngspice} has an open bug: the time step underflows at forced stop or sync times, which affects layer 3 (cocotbext-ams, SpiceBind) & read the ngspice logs of every layer-3 run, not only exit codes \\ \hline
+No co-simulation bench exists yet & built from the charge-pump PLL example that ships with cocotbext-ams, with a kick pulse to start the ring \\ \hline
+Layer 2 proves only its model & $\icp$ and $f(\vctrl)$ fitted per corner from the pump and \pin{vco\_tb} benches; layer 4 confirms the lock layer 2 predicts \\
+\hstoprule
+\end{tabularx}
+\end{hsblock}
+
+\subsection{Silicon test plan}\label{sec:silicon}
+On the returned chip, a signal generator drives \pin{clk} and a scope or frequency counter reads the outputs.
+
+\begin{itemize}[leftmargin=18pt,itemsep=2pt,topsep=4pt]
+\item Sweep $N$ from 1 to 5 on \pin{ui\_in[2:0]} at each reference of Table~3. \pin{uo\_out[0]} shows the VCO divided by~8, which reads $N\fref$ at lock (half that with \pin{ui\_in[7]} set for $\div$~16), so the VCO runs at $8N\fref$.
+\item At lock, \pin{uo\_out[1]}, the feedback, matches the reference in frequency and holds a steady phase against it.
+\item The lock pin \pin{uo\_out[2]} is high at every lock point; sweeping $\fref$ for each $N$ finds the lock range where it drops.
+\item $\vctrl$ on \pin{ua[0]} is read only through a high-impedance buffer, never a bare scope probe, for $\vctrl$ against $N$.
+\item The divided-output jitter on the scope gives a bound only; the pump trim on \pin{uio[1:0]} is repeated at $PN = 32$ to 40.
+\end{itemize}
+
+\section{Schedule and milestones}\label{sec:milestones}
+
+\begin{hsblock}
+\tablelabel{Table 7 / what each course deadline delivers}
+\begin{tabularx}{\linewidth}{@{}L{44pt}Y@{}}
+\hstoprule
+\hshead{Date} & \hshead{Deliverable} \\
+\hstoprule
+Oct 16 & End of reading week: digital RTL (PFD, prescaler, divider, lock detector) with the CocoTB block tests passing; layer 1 model and the layer 2 loop bench; first-pass pump and VCO schematics; implementation fixed (analog tile or alternative) \\ \hline
+Nov 5 & Evaluation: each stage simulated in ngspice across corners; the full loop locks in simulation at the typical corner; loop parameters fixed; layout under way \\ \hline
+Nov 26 & System verification: layers 3 to 5; layout DRC-clean, LVS clean, post-layout re-simulation, Actions and precheck green, submission ready \\ \hline
+Dec 3 & Documentation and the silicon test plan ($\vctrl$ against $N$, lock range, divided-output jitter) \\
+\hstoprule
+\end{tabularx}
+\end{hsblock}
+
+\subsection{Who does what}
+The work is split by loop stage, and each person owns the design, simulation and layout of their stages. Ihsan Salari takes detect and filter: the PFD, charge pump and loop filter. Dhyey Bhatt takes oscillate and divide: the VCO, prescaler, divider and lock detector. Both share the loop model, integration, full-loop simulation (layers 1 to 5) and documentation.
+
+\section{Technical risks and mitigations}\label{sec:risks}
+
+\begin{hsblock}
+\tablelabel{Table 8 / each design risk and what answers it}
+\begin{tabularx}{\linewidth}{@{}L{170pt}Y@{}}
+\hstoprule
+\hshead{Risk} & \hshead{Mitigation} \\
+\hstoprule
+Layout errors not caught by precheck (DRC only) & netgen LVS and extracted re-simulation \\ \hline
+Hand layout overruns the schedule & small topology, generator where possible, layout started by early November \\ \hline
+Filter capacitor too large for the area & bring out the $R$ to $C_1$ node for an off-chip $C_1$ (a third analog pin); capacitance on \pin{ua[0]} only adds to $C_2$ \\ \hline
+Pump mismatch gives spurs or offset & sized from the ngspice sweep, current trim on \pin{uio[1:0]} \\ \hline
+VCO range misses at corners & the reference is adjustable, and $8N\fref$ covers 40 to 500\MHz{} without gaps \\ \hline
+First prescaler flop too slow for the VCO & Liberty gives a 0.94\ns{} toggle loop at the fast corner against a 3.0\ns{} VCO period; confirmed in the ngspice prescaler transient \\ \hline
+Loop dynamics vary with $PN$: $\zeta$ drops from 0.92 at $PN = 8$ to about 0.41 at $PN = 40$ ($\omega_n$ and $\zeta$ scale as $\sqrt{\icp/PN}$), and with $C_2$ the phase margin falls from $56\dg$ to about $38\dg$ \est & $\icp$ stays at 20\uA; doubling it with the trim on \pin{uio[1:0]} at $PN = 32$ to 40 lifts $\zeta$ to 0.65 to 0.58; layer 1 of Section~\ref{sec:verification} checks every $N$, trim and corner; loop parameters fixed in the Nov~5 evaluation \\ \hline
+Standard cells inside the analog tile & digital blocks hardened as a macro and placed by hand \\ \hline
+Pads limit observation & divided outputs only \\
+\hstoprule
+\end{tabularx}
+\end{hsblock}
+
+\clearpage
+\section*{References}\hsgsection{References}
+\begin{hssources}[before={\hsgsection{References}\fontsize{9.5pt}{14pt}\selectfont\raggedright}]
+\item F.~M. Gardner, ``Charge-pump phase-lock loops,'' \emph{IEEE Transactions on Communications}, vol.~28, no.~11, pp.~1849--1859, Nov.~1980.
+\item Tiny Tapeout, ``Analog specifications.'' \hsurl{https://tinytapeout.com/specs/analog/}
+\item Texas Instruments, \emph{CD4046B CMOS Micropower Phase-Locked Loop}, datasheet.
+\item ngspice User's Manual, independent sources (\pin{trnoise}). \hsurl{https://ngspice.sourceforge.io/docs.html}
+\item Tiny Tapeout, \pin{ttgf-analog-template}. \hsurl{https://github.com/TinyTapeout/ttgf-analog-template}
+\item Tiny Tapeout, \pin{tt\_um\_tiny\_pll} (TTSKY25a). \hsurl{https://tinytapeout.com/chips/ttsky25a/tt_um_tiny_pll}
+\item M.~H. Perrott, \emph{CppSim and VppSim Primer}, version 5. \hsurl{https://cppsim.com/Manuals/cppsim_vppsim_primer5.pdf}
+\item cocotbext-ams, with a charge-pump PLL example. \hsurl{https://vlsida.github.io/cocotbext-ams/}
+\end{hssources}
+
+\end{document}

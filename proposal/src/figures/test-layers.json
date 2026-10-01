@@ -1,0 +1,12 @@
+{
+ "type": "stack",
+ "alt": "Five test layers: each puts more of the loop at transistor level and runs longer",
+ "canvas": 576,
+ "layers": [
+  {"title": "1. Linear phase model", "sub": "equations only: margin, crossover, lock time", "note": "seconds"},
+  {"title": "2. Real RTL, modelled analog", "sub": "Icarus and CocoTB, Python pump, filter, VCO", "note": "seconds to a minute"},
+  {"title": "3. Real RTL, transistor pump and filter", "sub": "Icarus with ngspice, behavioural VCO", "role": "work", "note": "minutes to an hour"},
+  {"title": "4. Whole loop at transistor level", "sub": "ngspice, started near lock, 5 to 10 µs", "role": "work", "note": "hours"},
+  {"title": "5. Cold start to lock, extracted", "sub": "ngspice overnight, typical corner", "role": "work", "note": "overnight"}
+ ]
+}

@@ -1,0 +1,135 @@
+{
+ "type": "context",
+ "alt": "The alternative implementation: the digital half, prescaler included, on the die; the filter and VCO on the bench",
+ "canvas": 576,
+ "nodes": [
+  {
+   "id": "ref",
+   "title": "Reference",
+   "sub": [
+    "clk pin",
+    "below 5 MHz"
+   ],
+   "role": "io",
+   "col": 0,
+   "row": 0
+  },
+  {
+   "id": "pfd",
+   "title": "PFD",
+   "sub": [
+    "unchanged",
+    "on chip"
+   ],
+   "col": 1,
+   "row": 0
+  },
+  {
+   "id": "pump",
+   "title": "Pad as pump",
+   "sub": [
+    "tri-state",
+    "out on uio[0]"
+   ],
+   "col": 2,
+   "row": 0
+  },
+  {
+   "id": "lf",
+   "title": "RC filter",
+   "sub": [
+    "off chip",
+    "series R into RC"
+   ],
+   "role": "work",
+   "col": 3,
+   "row": 0
+  },
+  {
+   "id": "lock",
+   "title": "Lock detect",
+   "sub": [
+    "unchanged",
+    "on uo_out"
+   ],
+   "role": "gate",
+   "col": 1,
+   "row": 1
+  },
+  {
+   "id": "div",
+   "title": "Divider",
+   "sub": [
+    "÷N, N on",
+    "ui_in[3:1]"
+   ],
+   "col": 2,
+   "row": 1
+  },
+  {
+   "id": "vco",
+   "title": "VCO",
+   "sub": [
+    "off chip",
+    "into ui_in[0]"
+   ],
+   "role": "work",
+   "col": 3,
+   "row": 1
+  },
+  {
+   "id": "pre",
+   "title": "Prescaler",
+   "sub": [
+    "÷8, on chip",
+    "unchanged"
+   ],
+   "col": 3,
+   "row": 2
+  }
+ ],
+ "edges": [
+  {
+   "from": "ref",
+   "to": "pfd"
+  },
+  {
+   "from": "pfd",
+   "to": "pump"
+  },
+  {
+   "from": "pump",
+   "to": "lf"
+  },
+  {
+   "from": "lf",
+   "to": "vco",
+   "label": "Vctrl",
+   "labelSide": "left"
+  },
+  {
+   "from": "vco",
+   "to": "pre"
+  },
+  {
+   "from": "pre",
+   "to": "div",
+   "route": "hv"
+  },
+  {
+   "from": "div",
+   "to": "pfd",
+   "route": "vhv",
+   "toAt": 0.75,
+   "label": "feedback"
+  },
+  {
+   "from": "pfd",
+   "to": "lock",
+   "route": "v",
+   "fromAt": 0.25,
+   "toAt": 0.25
+  }
+ ],
+ "colGap": 24
+}

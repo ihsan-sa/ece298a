@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 370" width="576" height="370" font-family="'Source Serif 4', 'Source Serif Pro', Georgia, serif" role="img">
+<title>Five test layers: each puts more of the loop at transistor level and runs longer</title>
+<defs></defs>
+<rect fill="#FAF8F3" width="576" height="370"/>
+<g transform="translate(8.5,8)">
+<rect class="dg-n neutral" stroke-width="1.1" fill="#F0EADE" stroke="#77716A" x="0" y="0" width="431.73" height="58" rx="3"/><text class="dg-t" font-size="14" font-weight="600" fill="#15140F" x="215.86" y="25.5" text-anchor="middle">1. Linear phase model</text><text class="dg-s" font-size="11.33" fill="#4A4740" x="215.86" y="41.5" text-anchor="middle">equations only: margin, crossover, lock time</text>
+<rect class="dg-n neutral" stroke-width="1.1" fill="#F0EADE" stroke="#77716A" x="0" y="74" width="431.73" height="58" rx="3"/><text class="dg-t" font-size="14" font-weight="600" fill="#15140F" x="215.86" y="99.5" text-anchor="middle">2. Real RTL, modelled analog</text><text class="dg-s" font-size="11.33" fill="#4A4740" x="215.86" y="115.5" text-anchor="middle">Icarus and CocoTB, Python pump, filter, VCO</text>
+<rect class="dg-n work" stroke-width="1.1" fill="#ECEFEB" stroke="#5E7A5A" x="0" y="148" width="431.73" height="58" rx="3"/><text class="dg-t" font-size="14" font-weight="600" fill="#15140F" x="215.86" y="173.5" text-anchor="middle">3. Real RTL, transistor pump and filter</text><text class="dg-s" font-size="11.33" fill="#4A4740" x="215.86" y="189.5" text-anchor="middle">Icarus with ngspice, behavioural VCO</text>
+<rect class="dg-n work" stroke-width="1.1" fill="#ECEFEB" stroke="#5E7A5A" x="0" y="222" width="431.73" height="58" rx="3"/><text class="dg-t" font-size="14" font-weight="600" fill="#15140F" x="215.86" y="247.5" text-anchor="middle">4. Whole loop at transistor level</text><text class="dg-s" font-size="11.33" fill="#4A4740" x="215.86" y="263.5" text-anchor="middle">ngspice, started near lock, 5 to 10 µs</text>
+<rect class="dg-n work" stroke-width="1.1" fill="#ECEFEB" stroke="#5E7A5A" x="0" y="296" width="431.73" height="58" rx="3"/><text class="dg-t" font-size="14" font-weight="600" fill="#15140F" x="215.86" y="321.5" text-anchor="middle">5. Cold start to lock, extracted</text><text class="dg-s" font-size="11.33" fill="#4A4740" x="215.86" y="337.5" text-anchor="middle">ngspice overnight, typical corner</text>
+<text class="dg-note" font-size="11.33" fill="#4A4740" x="447.73" y="33" text-anchor="start">seconds</text>
+<text class="dg-note" font-size="11.33" fill="#4A4740" x="447.73" y="107" text-anchor="start">seconds to a minute</text>
+<text class="dg-note" font-size="11.33" fill="#4A4740" x="447.73" y="181" text-anchor="start">minutes to an hour</text>
+<text class="dg-note" font-size="11.33" fill="#4A4740" x="447.73" y="255" text-anchor="start">hours</text>
+<text class="dg-note" font-size="11.33" fill="#4A4740" x="447.73" y="329" text-anchor="start">overnight</text>
+</g>
+</svg>
