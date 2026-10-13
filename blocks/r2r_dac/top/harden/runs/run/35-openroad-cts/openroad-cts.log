@@ -57,3 +57,118 @@ Reading design constraints file at '/home/ihsan/.cc/toolchains/iic-osic-tools-20
 [INFO CTS-0051] Sink buffer is gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.
 [INFO CTS-0052] The following clock buffers will be used for CTS:
                     gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+                    gf180mcu_fd_sc_mcu7t5v0__clkbuf_4
+                    gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+[INFO CTS-0049] Characterization buffer is gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.
+[INFO CTS-0007] Net "clk" found for clock "clk".
+[INFO CTS-0010]  Clock net "clk" has 50 sinks.
+[INFO CTS-0008] TritonCTS found 1 clock nets.
+[INFO CTS-0097] Characterization used 3 buffer(s) types.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net clk.
+[INFO CTS-0028]  Total number of sinks: 50.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(379680, 505680), (654080, 631120)].
+[INFO CTS-0024]  Normalized sink region: [(9.68571, 12.9), (16.6857, 16.1)].
+[INFO CTS-0025]     Width:  7.0000.
+[INFO CTS-0026]     Height: 3.2000.
+ Level 1
+    Direction: Horizontal
+    Sinks per sub-region: 25
+    Sub-region size: 3.5000 X 3.2000
+[INFO CTS-0034]     Segment length (rounded): 2.
+ Level 2
+    Direction: Vertical
+    Sinks per sub-region: 13
+    Sub-region size: 3.5000 X 1.6000
+[INFO CTS-0034]     Segment length (rounded): 1.
+ Level 3
+    Direction: Horizontal
+    Sinks per sub-region: 7
+    Sub-region size: 1.7500 X 1.6000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 10.
+[INFO CTS-0035]  Number of sinks covered: 50.
+[INFO CTS-0018]     Created 9 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 9 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 6:6, 7:2..
+[INFO CTS-0017]     Max level of the clock tree: 3.
+[INFO CTS-0098] Clock net "clk"
+[INFO CTS-0099]  Sinks 56
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 182.83 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 6
+[INFO] Repairing long wires on clock nets…
+[INFO RSZ-0058] Using max wire length 334316um.
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+u_analog matched with u_analog
+[INFO ODB-0403] 60 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     1   29380.17
+  Endcap cell                             246    1080.04
+  Tap cell                                449    1971.29
+  Tie cell                                 16     140.49
+  Clock buffer                             15     619.05
+  Timing Repair Buffer                     58    1365.41
+  Inverter                                 20     223.91
+  Sequential cell                          50    3222.55
+  Multi-Input combinational cell          272    7494.41
+  Total                                  1127   45497.33
+Writing OpenROAD database to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/35-openroad-cts/tt_um_r2r_dac_digital.odb'…
+Writing netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/35-openroad-cts/tt_um_r2r_dac_digital.nl.v'…
+Writing powered netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/35-openroad-cts/tt_um_r2r_dac_digital.pnl.v'…
+Writing layout to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/35-openroad-cts/tt_um_r2r_dac_digital.def'…
+Writing timing constraints to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/35-openroad-cts/tt_um_r2r_dac_digital.sdc'…
+[INFO] Legalizing…
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement        320.4 u
+average displacement        0.3 u
+max displacement           14.6 u
+original HPWL           16454.1 u
+legalized HPWL          17328.1 u
+delta HPWL                    5 %
+
+[INFO DPL-0020] Mirrored 207 instances
+[INFO DPL-0021] HPWL before           17328.1 u
+[INFO DPL-0022] HPWL after            16672.3 u
+[INFO DPL-0023] HPWL delta               -3.8 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+u_analog matched with u_analog
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     1   29380.17
+  Endcap cell                             246    1080.04
+  Tap cell                                449    1971.29
+  Tie cell                                 16     140.49
+  Clock buffer                             15     619.05
+  Timing Repair Buffer                     58    1365.41
+  Inverter                                 20     223.91
+  Sequential cell                          50    3222.55
+  Multi-Input combinational cell          272    7494.41
+  Total                                  1127   45497.33
+Writing OpenROAD database to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/35-openroad-cts/tt_um_r2r_dac_digital.odb'…
+Writing netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/35-openroad-cts/tt_um_r2r_dac_digital.nl.v'…
+Writing powered netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/35-openroad-cts/tt_um_r2r_dac_digital.pnl.v'…
+Writing layout to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/35-openroad-cts/tt_um_r2r_dac_digital.def'…
+Writing timing constraints to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/35-openroad-cts/tt_um_r2r_dac_digital.sdc'…
+%OL_CREATE_REPORT cts.rpt
+Total number of Clock Roots: 1.
+Total number of Buffers Inserted: 9.
+Total number of Clock Subnets: 9.
+Total number of Sinks: 50.
+Cells used:
+  gf180mcu_fd_sc_mcu7t5v0__clkbuf_8: 9
+Dummys used:
+  gf180mcu_fd_sc_mcu7t5v0__clkbuf_2: 6
+%OL_END_REPORT

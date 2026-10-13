@@ -1,0 +1,18 @@
+
+===========================================================================
+Violator List
+============================================================================
+[setup reg-reg] _584_/Q -> _588_/D : -4.500956
+[setup reg-reg] _584_/Q -> _586_/D : -4.369458
+[setup reg-reg] _584_/Q -> _587_/D : -3.899896
+[setup reg-reg] _584_/Q -> _585_/D : -3.799219
+[setup reg-reg] _584_/Q -> _589_/D : -3.610330
+[setup reg-reg] _584_/Q -> _591_/D : -2.996416
+[setup reg-reg] _584_/Q -> _590_/D : -0.554930
+[setup reg-reg] _584_/Q -> _592_/D : -0.192893
+Writing metric timing__hold_vio__count__corner:nom_tt_025C_3v30: 0
+Writing metric timing__hold_r2r__ws__corner:nom_tt_025C_3v30: 0.925522
+Writing metric timing__hold_r2r_vio__count__corner:nom_tt_025C_3v30: 0
+Writing metric timing__setup_vio__count__corner:nom_tt_025C_3v30: 8
+Writing metric timing__setup_r2r__ws__corner:nom_tt_025C_3v30: -4.500956
+Writing metric timing__setup_r2r_vio__count__corner:nom_tt_025C_3v30: 8
