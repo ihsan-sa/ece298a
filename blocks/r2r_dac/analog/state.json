@@ -1,10 +1,10 @@
 {
  "version": 3,
  "skill": "ade",
- "block": "r2r_dac",
+ "block": "r2r_dac_analog",
  "workspace": "blocks/r2r_dac/analog",
  "created": "2026-09-25T05:47:00",
- "updated": "2026-09-27T04:56:31",
+ "updated": "2026-10-13T03:52:55",
  "phase": "P5",
  "toolchain": null,
  "gates": {
@@ -98,14 +98,15 @@
   "netlist_lint": {
    "phase": "P4",
    "status": "pass",
-   "attempts": 5,
+   "attempts": 6,
    "last": {
-    "ts": "2026-09-25T08:49:52",
+    "ts": "2026-10-13T03:52:55",
     "status": "pass",
     "failing_count": 0,
     "total": 0,
     "inputs": {
-     "netlist": "dir_text:1b6ee7b2d52b33fc582a6a8380a88d7291bdb3a8d705a420d02b1029e02d3d3c"
+     "netlist": "dir_text:13970a2f19f36bd8aa49baa3a94132821e16917455715ba77b23b074b4551548",
+     "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d"
     },
     "job": null
    },
@@ -157,6 +158,17 @@
      "total": 0,
      "inputs": {
       "netlist": "dir_text:1b6ee7b2d52b33fc582a6a8380a88d7291bdb3a8d705a420d02b1029e02d3d3c"
+     },
+     "job": null
+    },
+    {
+     "ts": "2026-10-13T03:52:55",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "netlist": "dir_text:13970a2f19f36bd8aa49baa3a94132821e16917455715ba77b23b074b4551548",
+      "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d"
      },
      "job": null
     }
@@ -472,13 +484,13 @@
    "path": "spec/spec.yaml",
    "kind": "spec_yaml",
    "sha256": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d",
-   "hashed": "2026-09-25T08:49:14"
+   "hashed": "2026-10-13T03:52:55"
   },
   "netlist": {
    "path": "netlist",
    "kind": "netlist",
-   "sha256": "dir_text:1b6ee7b2d52b33fc582a6a8380a88d7291bdb3a8d705a420d02b1029e02d3d3c",
-   "hashed": "2026-09-25T09:46:36"
+   "sha256": "dir_text:13970a2f19f36bd8aa49baa3a94132821e16917455715ba77b23b074b4551548",
+   "hashed": "2026-10-13T03:52:55"
   },
   "tb": {
    "path": "tb",
@@ -511,6 +523,12 @@
    "why": "task_router fell back to the dirname at nested init (breakage 14/21), so lvs/pex_sim/top_harden looked for netlist/analog.cir; r2r_dac matches netlist/r2r_dac.cir without touching netlist/",
    "phase": "P5",
    "ts": "2026-09-25T09:40:45"
+  },
+  {
+   "what": "state.block r2r_dac -> r2r_dac_analog; git mv netlist/r2r_dac.cir -> r2r_dac_analog.cir, gen_r2r_dac.py -> gen_r2r_dac_analog.py; dropped old layout GDS/abstract (layout_gen regenerates)",
+   "why": "engine >= #44 router refuses (msde_split_name): the msde split's analog side must be <block>_analog; subckt and cell were already r2r_dac_analog, so file contents are unchanged",
+   "phase": "P5",
+   "ts": "2026-10-13T03:52:21"
   }
  ],
  "edits": [
@@ -948,6 +966,19 @@
    "checkpoint": "H1",
    "status": "approved",
    "challenge": "H1-fd2294"
+  },
+  {
+   "ts": "2026-10-13T03:52:21",
+   "event": "decision",
+   "what": "state.block r2r_dac -> r2r_dac_analog; git mv netlist/r2r_dac.cir -> r2r_dac_analog.cir, gen_r2r_dac.py -> gen_r2r_dac_analog.py; dropped old layout GDS/abstract (layout_gen regenerates)"
+  },
+  {
+   "ts": "2026-10-13T03:52:55",
+   "event": "gate",
+   "gate": "netlist_lint",
+   "status": "pass",
+   "attempt": 6,
+   "failing_count": 0
   }
  ]
 }
