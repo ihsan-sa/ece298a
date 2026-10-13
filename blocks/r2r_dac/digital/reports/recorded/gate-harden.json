@@ -22,8 +22,8 @@
  "facts": {
   "top": "r2r_dac_digital",
   "run_tag": "run",
-  "resumed": false,
-  "wall_s": 94.6,
+  "resumed": true,
+  "wall_s": 87.71,
   "run_dir": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run",
   "metrics": {
    "design__instance__count": 1824,
@@ -64,12 +64,12 @@
  },
  "inputs_at_start": {
   "rtl": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
-  "harden_config": null,
+  "harden_config": "json_canonical:e899bc155ae015131bda920bd8ea413c1fa425763b6c26cce0fa06270324086a",
   "harden_override": null,
   "harden_sdc": null,
-  "harden_info": null,
+  "harden_info": "json_canonical:e722bc7d8de703255711480061816e03c2199ce2ea6dff004d19c5a958436590",
   "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
  },
- "recorded_ts": "2026-10-13T03:54:20",
- "attempts": 1
+ "recorded_ts": "2026-10-13T03:56:33",
+ "attempts": 2
 }
