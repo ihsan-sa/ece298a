@@ -221,8 +221,10 @@ the layout agent $1.4, and orchestration for the rest.
 |---|---|
 | digital: all gates, release | pass; timing waived by the owner (-0.87 ns, about 47 MHz met at ss/125 °C) |
 | digital H2 | asked (H2-a7bfe1), unanswered |
-| analog: spec_lint to bench_strength, drc, lvs | pass |
-| analog pex_sim | 26 fixed; errors on 34 (sim timeout), passes when run by hand |
+| analog: spec_lint to bench_strength, drc, lvs, release | pass (re-run fresh on 84ea5df) |
+| analog H2 | asked (H2-4da295), unanswered |
+| analog pex_sim | pass (34 fixed by a spec `sim_timeout_s: {pex_sim: 600}`; run takes 297 s) |
 | top_harden | fail on 33 (routing clean; magic DRC 23, LVS 73) |
 | top_drc, top_lvs, precheck | not reached |
-| cosim, msde release, design document | not reached (needs analog release) |
+| cosim | in progress (integrator writing the bench) |
+| msde release, design document | not reached |

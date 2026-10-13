@@ -40,8 +40,8 @@
  },
  "inputs_at_start": {
   "layout": "dir_text:7a954c277f279e0a8b3d75e97ed6833bf445cf7e04f4ec0eefae35be290d869d",
-  "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d"
+  "spec_yaml": "json_canonical:99047ed51c88b1767b136d48e2c3832967daa1e22eec34905494620acacea45d"
  },
- "recorded_ts": "2026-10-13T04:51:35",
- "attempts": 7
+ "recorded_ts": "2026-10-13T06:13:09",
+ "attempts": 8
 }
