@@ -4,16 +4,16 @@
  "block": "r2r_dac_analog",
  "workspace": "blocks/r2r_dac/analog",
  "created": "2026-09-25T05:47:00",
- "updated": "2026-10-13T03:57:30",
+ "updated": "2026-10-13T03:57:56",
  "phase": "P5",
  "toolchain": null,
  "gates": {
   "spec_lint": {
    "phase": "P1",
    "status": "pass",
-   "attempts": 7,
+   "attempts": 8,
    "last": {
-    "ts": "2026-09-25T08:49:14",
+    "ts": "2026-10-13T03:57:56",
     "status": "pass",
     "failing_count": 0,
     "total": 0,
@@ -85,6 +85,16 @@
     },
     {
      "ts": "2026-09-25T08:49:14",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d"
+     },
+     "job": null
+    },
+    {
+     "ts": "2026-10-13T03:57:56",
      "status": "pass",
      "failing_count": 0,
      "total": 0,
@@ -593,7 +603,7 @@
    "path": "spec/spec.yaml",
    "kind": "spec_yaml",
    "sha256": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d",
-   "hashed": "2026-10-13T03:57:30"
+   "hashed": "2026-10-13T03:57:56"
   },
   "netlist": {
    "path": "netlist",
@@ -1198,6 +1208,14 @@
    "gate": "lvs",
    "status": "pass",
    "attempt": 2,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-13T03:57:56",
+   "event": "gate",
+   "gate": "spec_lint",
+   "status": "pass",
+   "attempt": 8,
    "failing_count": 0
   }
  ]
