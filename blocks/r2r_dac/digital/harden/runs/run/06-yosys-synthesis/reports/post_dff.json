@@ -1,6 +1,6 @@
 {
    "creator": "Yosys 0.69 (git sha1 9f75ca1f9, Release, GNU /usr/bin/c++ 13.3.0)",
-   "invocation": "stat -json -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/cd6b278b1a3647e3868ee4bc454e0ca7.lib -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/2665e611fd3b4acfbf531b15ee5a104d.lib ",
+   "invocation": "stat -json -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/914494e2571349a6b76863c770132588.lib -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/9699e1f10d494c4d825268d991095fbf.lib ",
    "modules": {
       "\\tt_um_r2r_dac_digital": {
          "num_wires":         422,

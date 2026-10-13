@@ -3,7 +3,7 @@
  "gate": "timing",
  "phase": "P6",
  "tool": "timing",
- "input_digest": "dir_text:f866a5fa98728f1a85652f2f71830c3685ff9662d5e5482c48f7af1734cf022e",
+ "input_digest": "dir_text:5821a52dddd0ca3471bcfc5e6de2994279d5b215d6f63f86f8522cf60ee15d3e",
  "status": "fail",
  "criteria": {
   "fail_severities": [
@@ -12,15 +12,15 @@
   "max_count": 0
  },
  "counts": {
-  "total": 3,
+  "total": 9,
   "by_severity": {
-   "error": 3
+   "error": 9
   },
   "by_source": {
-   "opensta": 3
+   "opensta": 9
   }
  },
- "failing_count": 3,
+ "failing_count": 9,
  "failing": [
   {
    "check": "timing",
@@ -30,11 +30,11 @@
    "line": null,
    "kind": "setup_violation",
    "refs": [],
-   "msg": "corner max_ss_125C_3v00: worst setup slack -1.4900ns",
+   "msg": "corner max_ss_125C_3v00: worst setup slack -8.6700ns",
    "source": "opensta",
    "items": [
     {
-     "msg": "corner max_ss_125C_3v00: worst setup slack -1.4900ns",
+     "msg": "corner max_ss_125C_3v00: worst setup slack -8.6700ns",
      "file": null,
      "line": null
     }
@@ -47,13 +47,51 @@
    "file": null,
    "module": "tt_um_r2r_dac_digital",
    "line": null,
-   "kind": "setup_violation",
+   "kind": "slew_or_cap_or_fanout_violation",
    "refs": [],
-   "msg": "corner min_ss_125C_3v00: worst setup slack -0.6000ns",
+   "msg": "corner max_ss_125C_3v00: max slew: 109 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN, _432_/B ...",
    "source": "opensta",
    "items": [
     {
-     "msg": "corner min_ss_125C_3v00: worst setup slack -0.6000ns",
+     "msg": "corner max_ss_125C_3v00: max slew: 109 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN, _432_/B ...",
+     "file": null,
+     "line": null
+    }
+   ],
+   "corner": "max_ss_125C_3v00"
+  },
+  {
+   "check": "timing",
+   "severity": "error",
+   "file": null,
+   "module": "tt_um_r2r_dac_digital",
+   "line": null,
+   "kind": "slew_or_cap_or_fanout_violation",
+   "refs": [],
+   "msg": "corner max_tt_025C_3v30: max slew: 6 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN, _432_/B ...",
+   "source": "opensta",
+   "items": [
+    {
+     "msg": "corner max_tt_025C_3v30: max slew: 6 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN, _432_/B ...",
+     "file": null,
+     "line": null
+    }
+   ],
+   "corner": "max_tt_025C_3v30"
+  },
+  {
+   "check": "timing",
+   "severity": "error",
+   "file": null,
+   "module": "tt_um_r2r_dac_digital",
+   "line": null,
+   "kind": "setup_violation",
+   "refs": [],
+   "msg": "corner min_ss_125C_3v00: worst setup slack -6.0200ns",
+   "source": "opensta",
+   "items": [
+    {
+     "msg": "corner min_ss_125C_3v00: worst setup slack -6.0200ns",
      "file": null,
      "line": null
     }
@@ -66,18 +104,94 @@
    "file": null,
    "module": "tt_um_r2r_dac_digital",
    "line": null,
-   "kind": "setup_violation",
+   "kind": "slew_or_cap_or_fanout_violation",
    "refs": [],
-   "msg": "corner nom_ss_125C_3v00: worst setup slack -1.0000ns",
+   "msg": "corner min_ss_125C_3v00: max slew: 46 violating pin(s): _574_/ZN, _575_/A2, _570_/ZN, _571_/A2, _430_/ZN ...",
    "source": "opensta",
    "items": [
     {
-     "msg": "corner nom_ss_125C_3v00: worst setup slack -1.0000ns",
+     "msg": "corner min_ss_125C_3v00: max slew: 46 violating pin(s): _574_/ZN, _575_/A2, _570_/ZN, _571_/A2, _430_/ZN ...",
+     "file": null,
+     "line": null
+    }
+   ],
+   "corner": "min_ss_125C_3v00"
+  },
+  {
+   "check": "timing",
+   "severity": "error",
+   "file": null,
+   "module": "tt_um_r2r_dac_digital",
+   "line": null,
+   "kind": "slew_or_cap_or_fanout_violation",
+   "refs": [],
+   "msg": "corner min_tt_025C_3v30: max slew: 4 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN",
+   "source": "opensta",
+   "items": [
+    {
+     "msg": "corner min_tt_025C_3v30: max slew: 4 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN",
+     "file": null,
+     "line": null
+    }
+   ],
+   "corner": "min_tt_025C_3v30"
+  },
+  {
+   "check": "timing",
+   "severity": "error",
+   "file": null,
+   "module": "tt_um_r2r_dac_digital",
+   "line": null,
+   "kind": "setup_violation",
+   "refs": [],
+   "msg": "corner nom_ss_125C_3v00: worst setup slack -7.2000ns",
+   "source": "opensta",
+   "items": [
+    {
+     "msg": "corner nom_ss_125C_3v00: worst setup slack -7.2000ns",
      "file": null,
      "line": null
     }
    ],
    "corner": "nom_ss_125C_3v00"
+  },
+  {
+   "check": "timing",
+   "severity": "error",
+   "file": null,
+   "module": "tt_um_r2r_dac_digital",
+   "line": null,
+   "kind": "slew_or_cap_or_fanout_violation",
+   "refs": [],
+   "msg": "corner nom_ss_125C_3v00: max slew: 65 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN, _430_/ZN ...",
+   "source": "opensta",
+   "items": [
+    {
+     "msg": "corner nom_ss_125C_3v00: max slew: 65 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN, _430_/ZN ...",
+     "file": null,
+     "line": null
+    }
+   ],
+   "corner": "nom_ss_125C_3v00"
+  },
+  {
+   "check": "timing",
+   "severity": "error",
+   "file": null,
+   "module": "tt_um_r2r_dac_digital",
+   "line": null,
+   "kind": "slew_or_cap_or_fanout_violation",
+   "refs": [],
+   "msg": "corner nom_tt_025C_3v30: max slew: 4 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN",
+   "source": "opensta",
+   "items": [
+    {
+     "msg": "corner nom_tt_025C_3v30: max slew: 4 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN",
+     "file": null,
+     "line": null
+    }
+   ],
+   "corner": "nom_tt_025C_3v30"
   }
  ],
  "violations": [
@@ -89,11 +203,11 @@
    "line": null,
    "kind": "setup_violation",
    "refs": [],
-   "msg": "corner max_ss_125C_3v00: worst setup slack -1.4900ns",
+   "msg": "corner max_ss_125C_3v00: worst setup slack -8.6700ns",
    "source": "opensta",
    "items": [
     {
-     "msg": "corner max_ss_125C_3v00: worst setup slack -1.4900ns",
+     "msg": "corner max_ss_125C_3v00: worst setup slack -8.6700ns",
      "file": null,
      "line": null
     }
@@ -106,13 +220,51 @@
    "file": null,
    "module": "tt_um_r2r_dac_digital",
    "line": null,
-   "kind": "setup_violation",
+   "kind": "slew_or_cap_or_fanout_violation",
    "refs": [],
-   "msg": "corner min_ss_125C_3v00: worst setup slack -0.6000ns",
+   "msg": "corner max_ss_125C_3v00: max slew: 109 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN, _432_/B ...",
    "source": "opensta",
    "items": [
     {
-     "msg": "corner min_ss_125C_3v00: worst setup slack -0.6000ns",
+     "msg": "corner max_ss_125C_3v00: max slew: 109 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN, _432_/B ...",
+     "file": null,
+     "line": null
+    }
+   ],
+   "corner": "max_ss_125C_3v00"
+  },
+  {
+   "check": "timing",
+   "severity": "error",
+   "file": null,
+   "module": "tt_um_r2r_dac_digital",
+   "line": null,
+   "kind": "slew_or_cap_or_fanout_violation",
+   "refs": [],
+   "msg": "corner max_tt_025C_3v30: max slew: 6 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN, _432_/B ...",
+   "source": "opensta",
+   "items": [
+    {
+     "msg": "corner max_tt_025C_3v30: max slew: 6 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN, _432_/B ...",
+     "file": null,
+     "line": null
+    }
+   ],
+   "corner": "max_tt_025C_3v30"
+  },
+  {
+   "check": "timing",
+   "severity": "error",
+   "file": null,
+   "module": "tt_um_r2r_dac_digital",
+   "line": null,
+   "kind": "setup_violation",
+   "refs": [],
+   "msg": "corner min_ss_125C_3v00: worst setup slack -6.0200ns",
+   "source": "opensta",
+   "items": [
+    {
+     "msg": "corner min_ss_125C_3v00: worst setup slack -6.0200ns",
      "file": null,
      "line": null
     }
@@ -125,65 +277,141 @@
    "file": null,
    "module": "tt_um_r2r_dac_digital",
    "line": null,
-   "kind": "setup_violation",
+   "kind": "slew_or_cap_or_fanout_violation",
    "refs": [],
-   "msg": "corner nom_ss_125C_3v00: worst setup slack -1.0000ns",
+   "msg": "corner min_ss_125C_3v00: max slew: 46 violating pin(s): _574_/ZN, _575_/A2, _570_/ZN, _571_/A2, _430_/ZN ...",
    "source": "opensta",
    "items": [
     {
-     "msg": "corner nom_ss_125C_3v00: worst setup slack -1.0000ns",
+     "msg": "corner min_ss_125C_3v00: max slew: 46 violating pin(s): _574_/ZN, _575_/A2, _570_/ZN, _571_/A2, _430_/ZN ...",
+     "file": null,
+     "line": null
+    }
+   ],
+   "corner": "min_ss_125C_3v00"
+  },
+  {
+   "check": "timing",
+   "severity": "error",
+   "file": null,
+   "module": "tt_um_r2r_dac_digital",
+   "line": null,
+   "kind": "slew_or_cap_or_fanout_violation",
+   "refs": [],
+   "msg": "corner min_tt_025C_3v30: max slew: 4 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN",
+   "source": "opensta",
+   "items": [
+    {
+     "msg": "corner min_tt_025C_3v30: max slew: 4 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN",
+     "file": null,
+     "line": null
+    }
+   ],
+   "corner": "min_tt_025C_3v30"
+  },
+  {
+   "check": "timing",
+   "severity": "error",
+   "file": null,
+   "module": "tt_um_r2r_dac_digital",
+   "line": null,
+   "kind": "setup_violation",
+   "refs": [],
+   "msg": "corner nom_ss_125C_3v00: worst setup slack -7.2000ns",
+   "source": "opensta",
+   "items": [
+    {
+     "msg": "corner nom_ss_125C_3v00: worst setup slack -7.2000ns",
      "file": null,
      "line": null
     }
    ],
    "corner": "nom_ss_125C_3v00"
+  },
+  {
+   "check": "timing",
+   "severity": "error",
+   "file": null,
+   "module": "tt_um_r2r_dac_digital",
+   "line": null,
+   "kind": "slew_or_cap_or_fanout_violation",
+   "refs": [],
+   "msg": "corner nom_ss_125C_3v00: max slew: 65 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN, _430_/ZN ...",
+   "source": "opensta",
+   "items": [
+    {
+     "msg": "corner nom_ss_125C_3v00: max slew: 65 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN, _430_/ZN ...",
+     "file": null,
+     "line": null
+    }
+   ],
+   "corner": "nom_ss_125C_3v00"
+  },
+  {
+   "check": "timing",
+   "severity": "error",
+   "file": null,
+   "module": "tt_um_r2r_dac_digital",
+   "line": null,
+   "kind": "slew_or_cap_or_fanout_violation",
+   "refs": [],
+   "msg": "corner nom_tt_025C_3v30: max slew: 4 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN",
+   "source": "opensta",
+   "items": [
+    {
+     "msg": "corner nom_tt_025C_3v30: max slew: 4 violating pin(s): _575_/A2, _574_/ZN, _571_/A2, _570_/ZN",
+     "file": null,
+     "line": null
+    }
+   ],
+   "corner": "nom_tt_025C_3v30"
   }
  ],
  "facts": {
   "top": "tt_um_r2r_dac_digital",
   "corners": {
    "max_ff_n40C_3v60": {
-    "setup_ws": 10.98,
-    "hold_ws": 0.41
+    "setup_ws": 8.56,
+    "hold_ws": 0.42
    },
    "max_ss_125C_3v00": {
-    "setup_ws": -1.49,
-    "hold_ws": 2.3
+    "setup_ws": -8.67,
+    "hold_ws": 2.32
    },
    "max_tt_025C_3v30": {
-    "setup_ws": 7.46,
+    "setup_ws": 3.38,
     "hold_ws": 0.98
    },
    "min_ff_n40C_3v60": {
-    "setup_ws": 11.21,
+    "setup_ws": 9.4,
     "hold_ws": 0.41
    },
    "min_ss_125C_3v00": {
-    "setup_ws": -0.6,
-    "hold_ws": 2.28
+    "setup_ws": -6.02,
+    "hold_ws": 2.29
    },
    "min_tt_025C_3v30": {
-    "setup_ws": 7.85,
-    "hold_ws": 0.96
+    "setup_ws": 4.76,
+    "hold_ws": 0.97
    },
    "nom_ff_n40C_3v60": {
-    "setup_ws": 11.11,
+    "setup_ws": 9.03,
     "hold_ws": 0.41
    },
    "nom_ss_125C_3v00": {
-    "setup_ws": -1.0,
-    "hold_ws": 2.29
+    "setup_ws": -7.2,
+    "hold_ws": 2.3
    },
    "nom_tt_025C_3v30": {
-    "setup_ws": 7.67,
-    "hold_ws": 0.97
+    "setup_ws": 4.13,
+    "hold_ws": 0.98
    }
   }
  },
  "inputs_at_start": {
-  "harden": "dir_text:f866a5fa98728f1a85652f2f71830c3685ff9662d5e5482c48f7af1734cf022e",
+  "harden": "dir_text:5821a52dddd0ca3471bcfc5e6de2994279d5b215d6f63f86f8522cf60ee15d3e",
   "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
  },
- "recorded_ts": "2026-10-13T03:57:08",
- "attempts": 1
+ "recorded_ts": "2026-10-13T04:01:56",
+ "attempts": 2
 }
