@@ -1,0 +1,93 @@
+{
+  "script": "gate",
+  "gate": "harden",
+  "phase": "P6",
+  "tool": "harden",
+  "input_digest": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
+  "status": "pass",
+  "criteria": {
+    "fail_severities": [
+      "error"
+    ],
+    "max_count": 0
+  },
+  "counts": {
+    "total": 0,
+    "by_severity": {},
+    "by_source": {}
+  },
+  "failing_count": 0,
+  "failing": [],
+  "violations": [],
+  "facts": {
+    "top": "r2r_dac_digital",
+    "run_tag": "run",
+    "resumed": false,
+    "wall_s": 94.6,
+    "run_dir": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run",
+    "metrics": {
+      "design__instance__count": 1824,
+      "design__instance__area": 51967,
+      "design__instance_unmapped__count": 0,
+      "timing__hold__ws": 0.40602283795439625,
+      "timing__setup__ws": -1.4874288888254827,
+      "timing__hold__tns": 0,
+      "timing__setup__tns": -7.345177118880131,
+      "timing__hold__wns": 0,
+      "timing__setup__wns": -1.4874288888254827,
+      "timing__hold_vio__count": 0,
+      "timing__hold_r2r__ws": 0.406023,
+      "timing__hold_r2r_vio__count": 0,
+      "timing__setup_vio__count": 17,
+      "timing__setup_r2r__ws": -1.487429,
+      "timing__setup_r2r_vio__count": 17,
+      "design__die__bbox": "0.0 0.0 346.64 160.72",
+      "design__core__bbox": "3.36 3.92 343.28 156.8",
+      "design__die__area": 55712,
+      "design__core__area": 51967,
+      "design__instance__count__stdcell": 903,
+      "design__instance__area__stdcell": 18075.3,
+      "design__instance__count__macros": 0,
+      "design__instance__area__macros": 0,
+      "design__instance__count__padcells": 0,
+      "design__instance__area__padcells": 0,
+      "design__instance__count__cover": 0,
+      "design__instance__area__cover": 0,
+      "design__instance__utilization": 0.347822,
+      "design__instance__utilization__stdcell": 0.347822,
+      "design__instance__displacement__total": 257.04,
+      "design__instance__displacement__mean": 0.2845,
+      "design__instance__displacement__max": 20.72,
+      "design__instance__count__setup_buffer": 18,
+      "design__instance__count__hold_buffer": 0
+    }
+  },
+  "inputs_at_start": {
+    "rtl": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
+    "harden_config": null,
+    "harden_override": null,
+    "harden_sdc": null,
+    "harden_info": null,
+    "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
+  },
+  "record_result": {
+    "ok": true,
+    "recorded": true,
+    "workspace": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital",
+    "gate": "harden",
+    "status": "pass",
+    "attempts": 1,
+    "inputs": {
+      "rtl": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
+      "harden_config": null,
+      "harden_override": null,
+      "harden_sdc": null,
+      "harden_info": null,
+      "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
+    },
+    "inputs_changed_during_run": [
+      "harden_config",
+      "harden_info"
+    ]
+  }
+}

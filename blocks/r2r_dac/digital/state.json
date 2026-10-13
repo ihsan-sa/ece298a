@@ -4,7 +4,7 @@
  "block": "r2r_dac",
  "workspace": "blocks/r2r_dac/digital",
  "created": "2026-09-25T08:51:49",
- "updated": "2026-10-13T03:52:45",
+ "updated": "2026-10-13T03:54:20",
  "phase": "P4",
  "toolchain": null,
  "gates": {
@@ -476,6 +476,57 @@
      }
     }
    ]
+  },
+  "harden": {
+   "phase": "P6",
+   "status": "pass",
+   "attempts": 1,
+   "last": {
+    "ts": "2026-10-13T03:54:20",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 0,
+    "inputs": {
+     "rtl": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
+     "harden_config": null,
+     "harden_override": null,
+     "harden_sdc": null,
+     "harden_info": null,
+     "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
+    },
+    "job": null,
+    "inputs_changed_during_run": [
+     "harden_config",
+     "harden_info"
+    ],
+    "facts": {
+     "wall_s": 94.6
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-10-13T03:54:20",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "rtl": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
+      "harden_config": null,
+      "harden_override": null,
+      "harden_sdc": null,
+      "harden_info": null,
+      "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
+     },
+     "job": null,
+     "inputs_changed_during_run": [
+      "harden_config",
+      "harden_info"
+     ],
+     "facts": {
+      "wall_s": 94.6
+     }
+    }
+   ]
   }
  },
  "jobs": {
@@ -520,7 +571,7 @@
    "path": "rtl",
    "kind": "rtl",
    "sha256": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
-   "hashed": "2026-10-13T03:52:37"
+   "hashed": "2026-10-13T03:54:20"
   },
   "tb": {
    "path": "tb",
@@ -550,7 +601,31 @@
    "path": "spec/spec.yaml",
    "kind": "spec_yaml_sans_formal",
    "sha256": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1",
-   "hashed": "2026-10-13T03:52:37"
+   "hashed": "2026-10-13T03:54:20"
+  },
+  "harden_config": {
+   "path": "harden/config.json",
+   "kind": "harden_config",
+   "sha256": null,
+   "hashed": "2026-10-13T03:54:20"
+  },
+  "harden_override": {
+   "path": "harden/config.override.json",
+   "kind": "harden_override",
+   "sha256": null,
+   "hashed": "2026-10-13T03:54:20"
+  },
+  "harden_sdc": {
+   "path": "harden/constraints.sdc",
+   "kind": "harden_sdc",
+   "sha256": null,
+   "hashed": "2026-10-13T03:54:20"
+  },
+  "harden_info": {
+   "path": "harden/info.yaml",
+   "kind": "harden_info",
+   "sha256": null,
+   "hashed": "2026-10-13T03:54:20"
   }
  },
  "open_issues": [
@@ -1108,6 +1183,18 @@
    "job": "1",
    "gate": "harden",
    "pid": 15787
+  },
+  {
+   "ts": "2026-10-13T03:54:20",
+   "event": "gate",
+   "gate": "harden",
+   "status": "pass",
+   "attempt": 1,
+   "failing_count": 0,
+   "inputs_changed_during_run": [
+    "harden_config",
+    "harden_info"
+   ]
   }
  ]
 }
