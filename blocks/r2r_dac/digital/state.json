@@ -4,7 +4,7 @@
  "block": "r2r_dac",
  "workspace": "blocks/r2r_dac/digital",
  "created": "2026-09-25T08:51:49",
- "updated": "2026-10-13T04:10:17",
+ "updated": "2026-10-13T04:10:18",
  "phase": "P6",
  "toolchain": null,
  "gates": {
@@ -412,20 +412,21 @@
   "formal": {
    "phase": "P4",
    "status": "pass",
-   "attempts": 1,
+   "attempts": 2,
    "last": {
-    "ts": "2026-09-25T09:00:49",
+    "ts": "2026-10-13T04:10:18",
     "status": "pass",
     "failing_count": 0,
     "total": 0,
     "inputs": {
-     "rtl": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
+     "rtl": "dir_text:467072fcb827af020645576f4da4ad1cf92b6669c1b856871d2389fe2be4efc3",
      "formal": "dir_text:0cbdb8e51b0405f12c8713d365734a0cb69f95296c3acbc8c77be015ea156529",
      "spec_yaml": "json_canonical:cee93f343d721dc9797350155b3f0e85133a766eb1f1963c30aacd1d23e5d2f4"
     },
     "job": null,
     "facts": {
-     "depth": 12
+     "depth": 12,
+     "cover_depth": 12
     }
    },
    "history": [
@@ -443,14 +444,22 @@
      "facts": {
       "depth": 12
      }
-    }
-   ],
-   "stale": [
+    },
     {
-     "ts": "2026-10-13T04:10:14",
-     "edit_class": "rtl_edit",
-     "refs": [],
-     "human_hold": 1
+     "ts": "2026-10-13T04:10:18",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "rtl": "dir_text:467072fcb827af020645576f4da4ad1cf92b6669c1b856871d2389fe2be4efc3",
+      "formal": "dir_text:0cbdb8e51b0405f12c8713d365734a0cb69f95296c3acbc8c77be015ea156529",
+      "spec_yaml": "json_canonical:cee93f343d721dc9797350155b3f0e85133a766eb1f1963c30aacd1d23e5d2f4"
+     },
+     "job": null,
+     "facts": {
+      "depth": 12,
+      "cover_depth": 12
+     }
     }
    ]
   },
@@ -1169,13 +1178,13 @@
    "path": "spec/spec.yaml",
    "kind": "spec_yaml",
    "sha256": "json_canonical:cee93f343d721dc9797350155b3f0e85133a766eb1f1963c30aacd1d23e5d2f4",
-   "hashed": "2026-09-27T00:31:09"
+   "hashed": "2026-10-13T04:10:18"
   },
   "rtl": {
    "path": "rtl",
    "kind": "rtl",
    "sha256": "dir_text:467072fcb827af020645576f4da4ad1cf92b6669c1b856871d2389fe2be4efc3",
-   "hashed": "2026-10-13T04:10:17"
+   "hashed": "2026-10-13T04:10:18"
   },
   "tb": {
    "path": "tb",
@@ -1193,7 +1202,7 @@
    "path": "formal",
    "kind": "formal",
    "sha256": "dir_text:0cbdb8e51b0405f12c8713d365734a0cb69f95296c3acbc8c77be015ea156529",
-   "hashed": "2026-09-25T09:00:49"
+   "hashed": "2026-10-13T04:10:18"
   },
   "mutant_rulings": {
    "path": "spec/mutant_rulings.yaml",
@@ -2215,6 +2224,14 @@
    "gate": "holdout",
    "status": "pass",
    "attempt": 5,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-13T04:10:18",
+   "event": "gate",
+   "gate": "formal",
+   "status": "pass",
+   "attempt": 2,
    "failing_count": 0
   }
  ]

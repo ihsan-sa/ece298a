@@ -34,20 +34,20 @@ Module r2r_dac_digital_formal directly or indirectly contains formal properties 
 
         +----------Local Count, excluding submodules.
         | 
-       29 wires
-      142 wire bits
-       14 public wires
-       64 public wire bits
+       34 wires
+      168 wire bits
+       16 public wires
+       73 public wire bits
         8 ports
        30 port bits
-       22 cells
+       27 cells
         2   $add
-        4   $anyinit
+        6   $anyinit
         1   $assume
         3   $eq
         1   $logic_not
         1   $mem_v2
-        6   $mux
+        9   $mux
         2   $not
         1   $or
         1   $pmux
@@ -80,23 +80,23 @@ Module r2r_dac_digital_formal directly or indirectly contains formal properties 
 
         +----------Count including submodules.
         | 
-       54 r2r_dac_digital_formal
-       22 r2r_dac_digital
+       59 r2r_dac_digital_formal
+       27 r2r_dac_digital
 
         +----------Count including submodules.
         | 
-       68 wires
-      213 wire bits
-       37 public wires
-      119 public wire bits
+       73 wires
+      239 wire bits
+       39 public wires
+      128 public wire bits
        16 ports
        60 port bits
         - memories
         - memory bits
         - processes
-       54 cells
+       59 cells
         2   $add
-       12   $anyinit
+       14   $anyinit
         3   $assert
         2   $assume
         7   $eq
@@ -105,7 +105,7 @@ Module r2r_dac_digital_formal directly or indirectly contains formal properties 
         3   $logic_not
         2   $logic_or
         1   $mem_v2
-        8   $mux
+       11   $mux
         3   $not
         1   $or
         1   $pmux
@@ -120,6 +120,6 @@ Module r2r_dac_digital_formal directly or indirectly contains formal properties 
 Creating SMT-LIBv2 representation of module r2r_dac_digital.
 Creating SMT-LIBv2 representation of module r2r_dac_digital_formal.
 
-End of script. Logfile hash: 935faedbe1, time: 0.06s, user: 0.02s, system: 0.01s, MEM: 28.16 MB peak
+End of script. Logfile hash: 6d5ba7d2cb, time: 0.01s, user: 0.01s, system: 0.01s, MEM: 27.41 MB peak
 Yosys 0.69 (git sha1 9f75ca1f9, Release, GNU /usr/bin/c++ 13.3.0)
-Time spent: 61% 2x write_smt2 (0 sec), 19% 2x read_rtlil (0 sec), ...
+Time spent: 62% 2x write_smt2 (0 sec), 21% 2x read_rtlil (0 sec), ...
