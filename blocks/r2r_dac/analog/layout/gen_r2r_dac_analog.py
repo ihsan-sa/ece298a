@@ -26,7 +26,13 @@ Routing, one scheme for every net:
     their x, which drops to a metal2 bus under everything; the bus lands on
     the vss track (rtb's end) and on a metal2 strip joining the buffers'
     VSS rails. vdd: a metal2 strip joining the buffers' VDD rails.
-Pins are labelled on metal1 in the subckt's own order.
+  - supplies for the tile's PDN (its Metal4 stripes join a macro only on
+    Metal3): vss is a metal3 strap along the bottom, the full cell width,
+    over the metal2 vss bus and joined to it by via2s; vdd is a metal3
+    strap along the top, the full width, reached by the vdd metal2 strip
+    run up to it and a via2. Nothing else is on metal3, nothing above it.
+Pins are labelled in the subckt's own order: signals on metal1, vdd and
+vss on their metal3 straps.
 """
 from __future__ import annotations
 
@@ -39,6 +45,11 @@ import layoutlib  # noqa: E402
 L1 = layoutlib.GF180_LAYER["metal1"]
 L2 = layoutlib.GF180_LAYER["metal2"]
 L1LBL = layoutlib.GF180_LAYER["metal1_label"]
+VIA2 = (38, 0)
+L3 = (42, 0)
+L3LBL = (42, 10)
+VIA2_SIZE = 0.26
+STRAP_H = 1.0          # metal3 supply strap height
 
 CELL = "r2r_dac_analog"
 PINS = [f"dac_code[{k}]" for k in range(7, -1, -1)] + ["vout", "vdd", "vss"]
@@ -76,6 +87,13 @@ def resistor_rows():
     rows.append(("xrta", RU_L, "n0", "mt"))
     rows.append(("xrtb", RU_L, "mt", "vss"))
     return rows
+
+
+def via2(top, cx, cy):
+    """A metal2-to-metal3 cut; the metal2 wire (0.4 wide) and the metal3
+    strap it sits in enclose it."""
+    h = VIA2_SIZE / 2
+    layoutlib.rect(top, cx - h, cy - h, cx + h, cy + h, VIA2)
 
 
 def std_cell(name):
@@ -222,7 +240,6 @@ def generate():
                    max(vdd_ys) + W / 2, L2)
     layoutlib.rect(top, x_vss - W / 2, y_bus - W / 2, x_vss + W / 2,
                    max(vss_ys) + W / 2, L2)
-    labels.append(("vdd", x_vdd - 1.0, vdd_ys[0], L1LBL))
 
     # ---------------------------------------------------------- vss
     sx, s0, s1 = sub_x
@@ -233,11 +250,40 @@ def generate():
                    y_bus + W / 2, L2)
     layoutlib.via1(top, track_x["vss"], y_bus)
     layoutlib.via1(top, x_vss, y_bus)
-    labels.append(("vss", sx, y_res0 - 2.0, L1LBL))
 
     # ---------------------------------------------------------- vout
     vx = track_x["vout"]
     labels.append(("vout", vx, min(pts["vout"]), L1LBL))
+
+    # ---------------------------------------------------------- metal3
+    bb = top.dbbox()
+    x_l, x_r = bb.left, bb.right
+    # vss: strap over the metal2 vss bus (its lower edge at the bus's),
+    # via2 cuts along the bus clear of the bus's via1s
+    vss_y0 = y_bus - W / 2
+    vss_y1 = vss_y0 + STRAP_H
+    layoutlib.rect(top, x_l, vss_y0, x_r, vss_y1, L3)
+    v1_xs = (sxv, track_x["vss"], x_vss)
+    n_v2 = 0
+    x = sxv + 2.0
+    while x < x_vss - 1.0:
+        xv = round(x / 0.005) * 0.005
+        if all(abs(xv - v) > 1.0 for v in v1_xs):
+            via2(top, xv, y_bus)
+            n_v2 += 1
+        x += 10.0
+    if n_v2 == 0:
+        raise layoutlib.LayoutError("no via2 from the vss bus to its strap")
+    labels.append(("vss", x_l + 1.0, (vss_y0 + vss_y1) / 2, L3LBL))
+    # vdd: strap along the top; the vdd metal2 strip runs up to it
+    vdd_y1 = bb.top
+    vdd_y0 = vdd_y1 - STRAP_H
+    vdd_yc = round((vdd_y0 + vdd_y1) / 2 / 0.005) * 0.005
+    layoutlib.rect(top, x_l, vdd_y0, x_r, vdd_y1, L3)
+    layoutlib.rect(top, x_vdd - W / 2, max(vdd_ys), x_vdd + W / 2,
+                   vdd_yc + W / 2, L2)
+    via2(top, x_vdd, vdd_yc)
+    labels.append(("vdd", x_l + 1.0, (vdd_y0 + vdd_y1) / 2, L3LBL))
 
     labels.sort(key=lambda lbl: PINS.index(lbl[0]))
     return layoutlib.finalize(top, CELL, labels)
