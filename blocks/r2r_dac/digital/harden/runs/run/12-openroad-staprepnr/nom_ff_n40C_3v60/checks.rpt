@@ -4,8 +4,8 @@ report_checks -unconstrained
 ===========================================================================
 ======================= nom_ff_n40C_3v60 Corner ===================================
 
-Startpoint: rst_n (input port clocked by clk)
-Endpoint: _581_ (rising edge-triggered flip-flop clocked by clk)
+Startpoint: uio_in[2] (input port clocked by clk)
+Endpoint: _586_ (rising edge-triggered flip-flop clocked by clk)
 Path Group: clk
 Path Type: max
 
@@ -14,50 +14,53 @@ Fanout         Cap        Slew       Delay        Time   Description
                       0.150000    0.000000    0.000000   clock clk (rise edge)
                                   0.000000    0.000000   clock network delay (ideal)
                                   4.000000    4.000000 ^ input external delay
-    20    0.091760    1.373406    0.807342    4.807342 ^ rst_n (in)
-                                                         rst_n (net)
-                      1.373406    0.000000    4.807342 ^ _296_/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
-    23    0.090339    1.254917    1.073793    5.881135 v _296_/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+     7    0.030007    0.477902    0.266844    4.266844 ^ uio_in[2] (in)
+                                                         uio_in[2] (net)
+                      0.477902    0.000000    4.266844 ^ _298_/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+     7    0.028079    0.418291    0.364538    4.631382 v _298_/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
                                                          _055_ (net)
-                      1.254917    0.000000    5.881135 v _320_/A1 (gf180mcu_fd_sc_mcu7t5v0__or3_1)
-    20    0.096418    0.866376    1.476663    7.357798 v _320_/Z (gf180mcu_fd_sc_mcu7t5v0__or3_1)
-                                                         _076_ (net)
-                      0.866376    0.000000    7.357798 v _321_/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
-    14    0.063289    0.983432    0.848790    8.206588 ^ _321_/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
-                                                         _025_ (net)
-                      0.983432    0.000000    8.206588 ^ _355_/A2 (gf180mcu_fd_sc_mcu7t5v0__oai21_1)
-     3    0.014227    0.483162    0.293309    8.499897 v _355_/ZN (gf180mcu_fd_sc_mcu7t5v0__oai21_1)
-                                                         _106_ (net)
-                      0.483162    0.000000    8.499897 v _403_/B1 (gf180mcu_fd_sc_mcu7t5v0__oai221_1)
-     1    0.002808    0.523730    0.442804    8.942701 ^ _403_/ZN (gf180mcu_fd_sc_mcu7t5v0__oai221_1)
-                                                         _153_ (net)
-                      0.523730    0.000000    8.942701 ^ _404_/A2 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
-     1    0.004257    0.129241    0.268956    9.211658 ^ _404_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
-                                                         _154_ (net)
-                      0.129241    0.000000    9.211658 ^ _405_/B2 (gf180mcu_fd_sc_mcu7t5v0__aoi221_1)
-     1    0.003854    0.293130    0.187529    9.399186 v _405_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi221_1)
-                                                         _155_ (net)
-                      0.293130    0.000000    9.399186 v _418_/C (gf180mcu_fd_sc_mcu7t5v0__aoi211_1)
-     1    0.009858    0.645486    0.510733    9.909920 ^ _418_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi211_1)
+                      0.418291    0.000000    4.631382 v _334_/A2 (gf180mcu_fd_sc_mcu7t5v0__or3_1)
+     1    0.004140    0.171852    0.577550    5.208932 v _334_/Z (gf180mcu_fd_sc_mcu7t5v0__or3_1)
+                                                         _087_ (net)
+                      0.171852    0.000000    5.208932 v _336_/A2 (gf180mcu_fd_sc_mcu7t5v0__nand3_1)
+    19    0.084217    1.654520    1.043793    6.252725 ^ _336_/ZN (gf180mcu_fd_sc_mcu7t5v0__nand3_1)
+                                                         _089_ (net)
+                      1.654520    0.000000    6.252725 ^ _337_/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+    21    0.090851    1.334634    1.134689    7.387414 v _337_/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+                                                         _030_ (net)
+                      1.334634    0.000000    7.387414 v _374_/B (gf180mcu_fd_sc_mcu7t5v0__oai21_1)
+     2    0.008142    0.508703    0.560736    7.948150 ^ _374_/ZN (gf180mcu_fd_sc_mcu7t5v0__oai21_1)
+                                                         _123_ (net)
+                      0.508703    0.000000    7.948150 ^ _420_/B (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.004168    0.257545    0.205090    8.153240 v _420_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
                                                          _168_ (net)
-                      0.645486    0.000000    9.909920 ^ _419_/S (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
-     1    0.002426    0.101547    0.353379   10.263298 v _419_/Z (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
+                      0.257545    0.000000    8.153240 v _421_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.004257    0.284615    0.200164    8.353404 ^ _421_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         _169_ (net)
+                      0.284615    0.000000    8.353404 ^ _422_/B2 (gf180mcu_fd_sc_mcu7t5v0__aoi221_1)
+     1    0.003854    0.373125    0.202568    8.555972 v _422_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi221_1)
+                                                         _170_ (net)
+                      0.373125    0.000000    8.555972 v _423_/C (gf180mcu_fd_sc_mcu7t5v0__aoi211_1)
+     1    0.009858    0.646132    0.519772    9.075744 ^ _423_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi211_1)
+                                                         _171_ (net)
+                      0.646132    0.000000    9.075744 ^ _424_/S (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
+     1    0.002426    0.100713    0.353391    9.429135 v _424_/Z (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
                                                          _001_ (net)
-                      0.101547    0.000000   10.263298 v _581_/D (gf180mcu_fd_sc_mcu7t5v0__dffq_1)
-                                             10.263298   data arrival time
+                      0.100713    0.000000    9.429135 v _586_/D (gf180mcu_fd_sc_mcu7t5v0__dffq_1)
+                                              9.429135   data arrival time
 
                       0.150000   20.000000   20.000000   clock clk (rise edge)
                                   0.000000   20.000000   clock network delay (ideal)
                                  -0.250000   19.750002   clock uncertainty
                                   0.000000   19.750002   clock reconvergence pessimism
-                                             19.750002 ^ _581_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffq_1)
-                                 -0.183014   19.566986   library setup time
-                                             19.566986   data required time
+                                             19.750002 ^ _586_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffq_1)
+                                 -0.182831   19.567169   library setup time
+                                             19.567169   data required time
 ---------------------------------------------------------------------------------------------
-                                             19.566986   data required time
-                                            -10.263298   data arrival time
+                                             19.567169   data required time
+                                             -9.429135   data arrival time
 ---------------------------------------------------------------------------------------------
-                                              9.303689   slack (MET)
+                                             10.138035   slack (MET)
 
 
 
@@ -79,26 +82,24 @@ max fanout
 
 Pin                                   Limit Fanout  Slack
 ---------------------------------------------------------
-_296_/ZN                                 10     23    -13 (VIOLATED)
-_330_/ZN                                 10     21    -11 (VIOLATED)
-rst_n                                    10     20    -10 (VIOLATED)
-_320_/Z                                  10     20    -10 (VIOLATED)
-_316_/ZN                                 10     19     -9 (VIOLATED)
-_344_/Z                                  10     18     -8 (VIOLATED)
-_345_/ZN                                 10     16     -6 (VIOLATED)
-_485_/ZN                                 10     16     -6 (VIOLATED)
-_321_/ZN                                 10     14     -4 (VIOLATED)
-_331_/ZN                                 10     14     -4 (VIOLATED)
-_305_/ZN                                 10     11        (VIOLATED)
-_315_/Z                                  10     11        (VIOLATED)
-_337_/ZN                                 10     11        (VIOLATED)
+_301_/ZN                                 10     23    -13 (VIOLATED)
+_337_/ZN                                 10     21    -11 (VIOLATED)
+_321_/Z                                  10     20    -10 (VIOLATED)
+_349_/ZN                                 10     20    -10 (VIOLATED)
+_336_/ZN                                 10     19     -9 (VIOLATED)
+_584_/Q                                  10     19     -9 (VIOLATED)
+_322_/ZN                                 10     17     -7 (VIOLATED)
+_325_/Z                                  10     16     -6 (VIOLATED)
+_326_/ZN                                 10     16     -6 (VIOLATED)
+_497_/ZN                                 10     16     -6 (VIOLATED)
+_348_/ZN                                 10     15     -5 (VIOLATED)
 
 
 
 ===========================================================================
 report_parasitic_annotation -report_unannotated
 ============================================================================
-Found 374 unannotated drivers.
+Found 377 unannotated drivers.
  clk
  ena
  rst_n
@@ -118,8 +119,6 @@ Found 374 unannotated drivers.
  uio_in[5]
  uio_in[6]
  uio_in[7]
- _290_/ZN
- _291_/ZN
  _292_/ZN
  _293_/ZN
  _294_/ZN
@@ -127,69 +126,69 @@ Found 374 unannotated drivers.
  _296_/ZN
  _297_/ZN
  _298_/ZN
- _299_/Z
+ _299_/ZN
  _300_/ZN
  _301_/ZN
  _302_/ZN
  _303_/ZN
  _304_/ZN
  _305_/ZN
- _306_/Z
- _307_/ZN
+ _306_/ZN
+ _307_/Z
  _308_/Z
- _309_/ZN
+ _309_/Z
  _310_/ZN
  _311_/ZN
- _312_/Z
+ _312_/ZN
  _313_/ZN
  _314_/ZN
- _315_/Z
+ _315_/ZN
  _316_/ZN
  _317_/ZN
- _318_/ZN
+ _318_/Z
  _319_/ZN
- _320_/Z
- _321_/ZN
+ _320_/ZN
+ _321_/Z
  _322_/ZN
  _323_/ZN
  _324_/ZN
  _325_/Z
  _326_/ZN
  _327_/ZN
- _328_/Z
+ _328_/ZN
  _329_/ZN
- _330_/ZN
+ _330_/Z
  _331_/ZN
  _332_/ZN
  _333_/ZN
- _334_/ZN
+ _334_/Z
  _335_/ZN
- _336_/Z
+ _336_/ZN
  _337_/ZN
  _338_/ZN
  _339_/ZN
- _340_/Z
+ _340_/ZN
  _341_/ZN
  _342_/ZN
  _343_/ZN
- _344_/Z
+ _344_/ZN
  _345_/ZN
  _346_/ZN
  _347_/ZN
  _348_/ZN
  _349_/ZN
  _350_/ZN
- _351_/Z
+ _351_/ZN
  _352_/ZN
  _353_/ZN
  _354_/ZN
- _355_/ZN
+ _355_/Z
  _356_/ZN
- _357_/Z
+ _357_/ZN
  _358_/ZN
  _359_/ZN
- _360_/ZN
- _361_/ZN
+ _360_/Z
+ _361_/Z
  _362_/ZN
  _363_/ZN
  _364_/ZN
@@ -199,15 +198,15 @@ Found 374 unannotated drivers.
  _368_/ZN
  _369_/ZN
  _370_/ZN
- _371_/Z
+ _371_/ZN
  _372_/ZN
  _373_/ZN
  _374_/ZN
  _375_/ZN
  _376_/ZN
- _377_/Z
+ _377_/ZN
  _378_/ZN
- _379_/ZN
+ _379_/Z
  _380_/ZN
  _381_/ZN
  _382_/ZN
@@ -216,30 +215,30 @@ Found 374 unannotated drivers.
  _385_/ZN
  _386_/ZN
  _387_/Z
- _388_/Z
+ _388_/ZN
  _389_/ZN
  _390_/ZN
- _391_/Z
+ _391_/ZN
  _392_/ZN
  _393_/ZN
  _394_/ZN
  _395_/ZN
  _396_/ZN
- _397_/Z
+ _397_/ZN
  _398_/ZN
  _399_/ZN
  _400_/ZN
  _401_/ZN
  _402_/ZN
  _403_/ZN
- _404_/Z
+ _404_/ZN
  _405_/ZN
  _406_/ZN
  _407_/ZN
- _408_/Z
+ _408_/ZN
  _409_/ZN
  _410_/ZN
- _411_/Z
+ _411_/ZN
  _412_/ZN
  _413_/ZN
  _414_/ZN
@@ -247,13 +246,13 @@ Found 374 unannotated drivers.
  _416_/ZN
  _417_/ZN
  _418_/ZN
- _419_/Z
+ _419_/ZN
  _420_/ZN
  _421_/ZN
  _422_/ZN
  _423_/ZN
- _424_/ZN
- _425_/Z
+ _424_/Z
+ _425_/ZN
  _426_/ZN
  _427_/ZN
  _428_/ZN
@@ -267,13 +266,13 @@ Found 374 unannotated drivers.
  _436_/ZN
  _437_/ZN
  _438_/ZN
- _439_/Z
+ _439_/ZN
  _440_/ZN
  _441_/Z
- _442_/Z
+ _442_/ZN
  _443_/ZN
  _444_/ZN
- _445_/Z
+ _445_/ZN
  _446_/ZN
  _447_/ZN
  _448_/ZN
@@ -289,21 +288,21 @@ Found 374 unannotated drivers.
  _458_/ZN
  _459_/Z
  _460_/ZN
- _461_/Z
- _462_/ZN
+ _461_/ZN
+ _462_/Z
  _463_/ZN
- _464_/Z
+ _464_/ZN
  _465_/ZN
  _466_/ZN
  _467_/ZN
  _468_/ZN
  _469_/ZN
  _470_/ZN
- _471_/Z
+ _471_/ZN
  _472_/ZN
  _473_/ZN
  _474_/ZN
- _475_/ZN
+ _475_/Z
  _476_/ZN
  _477_/ZN
  _478_/ZN
@@ -312,13 +311,13 @@ Found 374 unannotated drivers.
  _481_/ZN
  _482_/ZN
  _483_/ZN
- _484_/ZN
+ _484_/Z
  _485_/ZN
  _486_/ZN
  _487_/ZN
- _488_/ZN
- _489_/ZN
- _490_/ZN
+ _488_/Z
+ _489_/Z
+ _490_/Z
  _491_/ZN
  _492_/ZN
  _493_/ZN
@@ -326,10 +325,10 @@ Found 374 unannotated drivers.
  _495_/ZN
  _496_/ZN
  _497_/ZN
- _498_/ZN
+ _498_/Z
  _499_/ZN
- _500_/ZN
- _501_/ZN
+ _500_/Z
+ _501_/Z
  _502_/ZN
  _503_/ZN
  _504_/ZN
@@ -369,49 +368,49 @@ Found 374 unannotated drivers.
  _538_/ZN
  _539_/ZN
  _540_/ZN
- _541_/Z
+ _541_/ZN
  _542_/ZN
- _543_/Z
+ _543_/ZN
  _544_/ZN
  _545_/ZN
- _546_/Z
- _547_/Z
+ _546_/ZN
+ _547_/ZN
  _548_/ZN
  _549_/ZN
- _550_/Z
+ _550_/ZN
  _551_/ZN
  _552_/ZN
- _553_/ZN
+ _553_/Z
  _554_/ZN
- _555_/ZN
- _556_/Z
+ _555_/Z
+ _556_/ZN
  _557_/ZN
  _558_/Z
  _559_/Z
  _560_/ZN
  _561_/ZN
- _562_/ZN
+ _562_/Z
  _563_/ZN
  _564_/ZN
- _565_/Z
+ _565_/ZN
  _566_/ZN
- _567_/Z
- _568_/ZN
+ _567_/ZN
+ _568_/Z
  _569_/ZN
- _570_/ZN
- _571_/ZN
+ _570_/Z
+ _571_/Z
  _572_/ZN
- _573_/Z
+ _573_/ZN
  _574_/ZN
- _575_/Z
+ _575_/ZN
  _576_/ZN
  _577_/ZN
  _578_/ZN
  _579_/ZN
- _580_/Q
- _581_/Q
- _582_/Q
- _583_/Q
+ _580_/ZN
+ _581_/ZN
+ _582_/ZN
+ _583_/ZN
  _584_/Q
  _585_/Q
  _586_/Q
@@ -457,11 +456,11 @@ Found 374 unannotated drivers.
  _626_/Q
  _627_/Q
  _628_/Q
- _629_/Z
- _630_/Z
- _631_/Z
- _632_/Z
- _633_/Z
+ _629_/Q
+ _630_/Q
+ _631_/Q
+ _632_/Q
+ _633_/Q
  _634_/Z
  _635_/Z
  _636_/Z
@@ -473,11 +472,16 @@ Found 374 unannotated drivers.
  _642_/Z
  _643_/Z
  _644_/Z
+ _645_/Z
+ _646_/Z
+ _647_/Z
+ _648_/Z
+ _649_/Z
 Found 0 partially unannotated drivers.
 
 ===========================================================================
 max slew violation count 0
-max fanout violation count 13
+max fanout violation count 11
 max cap violation count 0
 ============================================================================
 

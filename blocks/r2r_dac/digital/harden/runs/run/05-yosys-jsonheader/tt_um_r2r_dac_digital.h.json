@@ -42,7 +42,7 @@
         }
       },
       "cells": {
-        "$flatten\\u_r2r_dac_digital.$add$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:313$9": {
+        "$flatten\\u_r2r_dac_digital.$add$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:319$10": {
           "hide_name": 1,
           "type": "$add",
           "parameters": {
@@ -53,7 +53,7 @@
             "Y_WIDTH": "00000000000000000000000000001000"
           },
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:313.16-313.28"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:319.16-319.28"
           },
           "port_directions": {
             "A": "input",
@@ -66,7 +66,7 @@
             "Y": [ 37, 38, 39, 40, 41, 42, 43, 44 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$add$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:316$10": {
+        "$flatten\\u_r2r_dac_digital.$add$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:322$11": {
           "hide_name": 1,
           "type": "$add",
           "parameters": {
@@ -77,7 +77,7 @@
             "Y_WIDTH": "00000000000000000000000000001000"
           },
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:316.19-316.32"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:322.19-322.32"
           },
           "port_directions": {
             "A": "input",
@@ -90,7 +90,7 @@
             "Y": [ 53, 54, 55, 56, 57, 58, 59, 60 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$auto$mem.cc:305:emit$13": {
+        "$flatten\\u_r2r_dac_digital.$auto$mem.cc:305:emit$14": {
           "hide_name": 1,
           "type": "$memrd_v2",
           "parameters": {
@@ -101,7 +101,7 @@
             "CLK_POLARITY": "00000000000000000000000000000001",
             "COLLISION_X_MASK": "",
             "INIT_VALUE": "xxxxxxxx",
-            "MEMID": "$flatten\\u_r2r_dac_digital.$auto$proc_rom.cc:155:do_switch$12",
+            "MEMID": "$flatten\\u_r2r_dac_digital.$auto$proc_rom.cc:155:do_switch$13",
             "SRST_VALUE": "xxxxxxxx",
             "TRANSPARENCY_MASK": "",
             "WIDTH": "00000000000000000000000000001000"
@@ -126,12 +126,12 @@
             "SRST": [ "0" ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$auto$mem.cc:351:emit$14": {
+        "$flatten\\u_r2r_dac_digital.$auto$mem.cc:351:emit$15": {
           "hide_name": 1,
           "type": "$meminit",
           "parameters": {
             "ABITS": "00000000000000000000000000100000",
-            "MEMID": "$flatten\\u_r2r_dac_digital.$auto$proc_rom.cc:155:do_switch$12",
+            "MEMID": "$flatten\\u_r2r_dac_digital.$auto$proc_rom.cc:155:do_switch$13",
             "PRIORITY": "00000000000000000000000000000000",
             "WIDTH": "00000000000000000000000000001000",
             "WORDS": "00000000000000000000000100000000"
@@ -148,7 +148,7 @@
             "DATA": [ "0", "0", "0", "0", "0", "0", "0", "1", "1", "1", "0", "0", "0", "0", "0", "1", "0", "1", "1", "0", "0", "0", "0", "1", "1", "0", "0", "1", "0", "0", "0", "1", "0", "0", "1", "1", "0", "0", "0", "1", "1", "1", "1", "1", "0", "0", "0", "1", "0", "1", "0", "0", "1", "0", "0", "1", "1", "0", "1", "0", "1", "0", "0", "1", "0", "0", "0", "1", "1", "0", "0", "1", "1", "1", "0", "1", "1", "0", "0", "1", "0", "1", "1", "1", "1", "0", "0", "1", "0", "1", "0", "0", "0", "1", "0", "1", "1", "0", "1", "0", "0", "1", "0", "1", "1", "1", "1", "0", "0", "1", "0", "1", "0", "1", "0", "1", "0", "1", "0", "1", "1", "0", "1", "1", "0", "1", "0", "1", "0", "0", "0", "0", "1", "1", "0", "1", "1", "1", "0", "0", "1", "1", "0", "1", "0", "1", "1", "0", "1", "1", "0", "1", "1", "0", "0", "1", "1", "1", "0", "1", "0", "0", "1", "1", "1", "1", "0", "1", "0", "1", "1", "1", "1", "1", "0", "1", "1", "0", "0", "0", "0", "0", "1", "1", "0", "0", "1", "0", "0", "0", "1", "1", "0", "1", "1", "0", "0", "0", "1", "1", "1", "0", "0", "1", "0", "0", "1", "1", "1", "1", "0", "1", "0", "0", "1", "1", "0", "1", "1", "1", "0", "0", "1", "1", "0", "0", "0", "0", "1", "0", "1", "1", "1", "1", "0", "0", "1", "0", "1", "1", "1", "0", "1", "0", "1", "0", "1", "1", "1", "1", "1", "0", "1", "0", "1", "1", "0", "1", "0", "1", "1", "0", "1", "1", "0", "0", "1", "1", "1", "0", "1", "1", "0", "1", "1", "1", "1", "0", "1", "1", "0", "0", "0", "0", "0", "1", "1", "1", "0", "1", "0", "0", "0", "1", "1", "1", "0", "0", "1", "0", "0", "1", "1", "1", "0", "1", "1", "0", "0", "1", "1", "1", "0", "0", "0", "1", "0", "1", "1", "1", "0", "1", "0", "1", "0", "1", "1", "1", "1", "1", "0", "1", "0", "1", "1", "1", "1", "0", "1", "1", "0", "1", "1", "1", "0", "1", "1", "1", "0", "1", "1", "1", "0", "0", "0", "0", "1", "1", "1", "1", "1", "0", "0", "0", "1", "1", "1", "1", "1", "1", "0", "0", "1", "1", "1", "1", "0", "0", "1", "0", "1", "1", "1", "1", "1", "0", "1", "0", "1", "1", "1", "1", "0", "1", "1", "0", "1", "1", "1", "1", "0", "0", "0", "1", "1", "1", "1", "1", "1", "0", "0", "1", "1", "1", "1", "1", "0", "1", "0", "1", "1", "1", "1", "1", "0", "1", "0", "1", "1", "1", "1", "1", "1", "1", "0", "1", "1", "1", "1", "1", "0", "0", "1", "1", "1", "1", "1", "1", "1", "0", "1", "1", "1", "1", "1", "1", "1", "0", "1", "1", "1", "1", "1", "1", "0", "1", "1", "1", "1", "1", "1", "1", "0", "1", "1", "1", "1", "1", "1", "1", "0", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "0", "1", "1", "1", "1", "1", "1", "1", "0", "1", "1", "1", "1", "1", "1", "1", "0", "1", "1", "1", "1", "1", "1", "1", "1", "0", "1", "1", "1", "1", "1", "1", "1", "0", "1", "1", "1", "1", "1", "1", "0", "0", "1", "1", "1", "1", "1", "1", "1", "1", "0", "1", "1", "1", "1", "1", "0", "1", "0", "1", "1", "1", "1", "1", "0", "1", "0", "1", "1", "1", "1", "1", "1", "0", "0", "1", "1", "1", "1", "1", "0", "0", "0", "1", "1", "1", "1", "1", "0", "1", "1", "0", "1", "1", "1", "1", "1", "0", "1", "0", "1", "1", "1", "1", "0", "0", "1", "0", "1", "1", "1", "1", "1", "1", "0", "0", "1", "1", "1", "1", "1", "0", "0", "0", "1", "1", "1", "1", "0", "0", "0", "0", "1", "1", "1", "1", "0", "1", "1", "1", "0", "1", "1", "1", "1", "0", "1", "1", "0", "1", "1", "1", "1", "1", "0", "1", "0", "1", "1", "1", "0", "1", "0", "1", "0", "1", "1", "1", "0", "0", "0", "1", "0", "1", "1", "1", "0", "1", "1", "0", "0", "1", "1", "1", "0", "0", "1", "0", "0", "1", "1", "1", "0", "1", "0", "0", "0", "1", "1", "1", "0", "0", "0", "0", "0", "1", "1", "1", "0", "1", "1", "1", "1", "0", "1", "1", "0", "0", "1", "1", "1", "0", "1", "1", "0", "1", "0", "1", "1", "0", "1", "1", "1", "1", "1", "0", "1", "0", "1", "1", "1", "0", "1", "0", "1", "0", "1", "1", "1", "1", "0", "0", "1", "0", "1", "1", "0", "0", "0", "0", "1", "0", "1", "1", "0", "1", "1", "1", "0", "0", "1", "1", "1", "1", "0", "1", "0", "0", "1", "1", "1", "0", "0", "1", "0", "0", "1", "1", "0", "1", "1", "0", "0", "0", "1", "1", "0", "0", "1", "0", "0", "0", "1", "1", "1", "0", "0", "0", "0", "0", "1", "1", "0", "1", "1", "1", "1", "1", "0", "1", "0", "0", "1", "1", "1", "1", "0", "1", "1", "0", "0", "1", "1", "1", "0", "1", "0", "1", "1", "0", "1", "1", "0", "1", "1", "1", "0", "0", "1", "1", "0", "1", "0", "0", "0", "0", "1", "1", "0", "1", "1", "0", "1", "1", "0", "1", "0", "1", "0", "1", "0", "1", "0", "1", "0", "1", "1", "1", "1", "0", "0", "1", "0", "1", "1", "0", "1", "0", "0", "1", "0", "1", "0", "1", "0", "0", "0", "1", "0", "1", "0", "1", "1", "1", "1", "0", "0", "1", "1", "1", "0", "1", "1", "0", "0", "1", "0", "0", "0", "1", "1", "0", "0", "1", "1", "0", "1", "0", "1", "0", "0", "1", "0", "1", "0", "0", "1", "0", "0", "1", "1", "1", "1", "1", "0", "0", "0", "1", "0", "0", "1", "1", "0", "0", "0", "1", "1", "0", "0", "1", "0", "0", "0", "1", "0", "1", "1", "0", "0", "0", "0", "1", "1", "1", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "1", "1", "1", "1", "1", "0", "1", "0", "0", "1", "1", "1", "1", "0", "0", "1", "1", "0", "1", "1", "1", "0", "1", "1", "0", "0", "1", "1", "1", "0", "0", "0", "0", "0", "1", "1", "1", "0", "1", "0", "1", "1", "0", "1", "1", "0", "0", "1", "0", "1", "0", "1", "1", "0", "1", "1", "1", "0", "0", "1", "1", "0", "0", "0", "1", "0", "0", "1", "1", "0", "1", "0", "0", "0", "0", "1", "1", "0", "1", "0", "1", "1", "1", "0", "1", "0", "0", "1", "0", "1", "1", "0", "1", "0", "0", "0", "0", "1", "1", "0", "1", "0", "1", "0", "1", "0", "1", "0", "1", "0", "0", "1", "0", "0", "1", "0", "1", "0", "1", "1", "1", "1", "0", "0", "1", "0", "0", "0", "1", "1", "0", "0", "1", "0", "1", "0", "0", "1", "0", "0", "1", "0", "0", "1", "1", "0", "0", "0", "1", "0", "1", "1", "0", "0", "0", "0", "1", "0", "1", "0", "0", "0", "0", "0", "1", "0", "0", "1", "1", "1", "1", "1", "0", "0", "1", "1", "0", "1", "1", "1", "0", "0", "1", "0", "0", "1", "1", "1", "0", "0", "0", "1", "1", "0", "1", "1", "0", "0", "0", "0", "1", "0", "1", "1", "0", "0", "1", "0", "0", "0", "1", "1", "0", "0", "1", "1", "1", "1", "0", "1", "0", "0", "0", "0", "1", "1", "0", "1", "0", "0", "0", "1", "0", "1", "0", "1", "0", "0", "0", "0", "0", "1", "0", "1", "0", "0", "1", "0", "1", "0", "0", "1", "0", "0", "1", "1", "0", "0", "0", "1", "0", "0", "1", "0", "0", "0", "0", "1", "0", "0", "1", "1", "1", "1", "1", "0", "0", "0", "1", "0", "1", "1", "1", "0", "0", "0", "1", "1", "0", "1", "1", "0", "0", "0", "1", "0", "0", "1", "1", "0", "0", "0", "1", "1", "1", "0", "1", "0", "0", "0", "1", "0", "1", "0", "1", "0", "0", "0", "0", "0", "1", "0", "1", "0", "0", "0", "0", "1", "0", "0", "1", "0", "0", "0", "1", "0", "0", "0", "1", "0", "0", "0", "1", "1", "1", "1", "0", "0", "0", "0", "0", "1", "1", "1", "0", "0", "0", "0", "0", "0", "1", "1", "0", "0", "0", "0", "1", "1", "0", "1", "0", "0", "0", "0", "0", "1", "0", "1", "0", "0", "0", "0", "1", "0", "0", "1", "0", "0", "0", "0", "1", "1", "1", "0", "0", "0", "0", "0", "0", "1", "1", "0", "0", "0", "0", "0", "1", "0", "1", "0", "0", "0", "0", "0", "1", "0", "1", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "1", "1", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "1", "1", "0", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "1", "0", "1", "0", "0", "0", "0", "0", "1", "0", "1", "0", "0", "0", "0", "0", "0", "1", "1", "0", "0", "0", "0", "0", "1", "1", "1", "0", "0", "0", "0", "0", "1", "0", "0", "1", "0", "0", "0", "0", "0", "1", "0", "1", "0", "0", "0", "0", "1", "1", "0", "1", "0", "0", "0", "0", "0", "0", "1", "1", "0", "0", "0", "0", "0", "1", "1", "1", "0", "0", "0", "0", "1", "1", "1", "1", "0", "0", "0", "0", "1", "0", "0", "0", "1", "0", "0", "0", "0", "1", "0", "0", "1", "0", "0", "0", "0", "0", "1", "0", "1", "0", "0", "0", "1", "0", "1", "0", "1", "0", "0", "0", "1", "1", "1", "0", "1", "0", "0", "0", "1", "0", "0", "1", "1", "0", "0", "0", "1", "1", "0", "1", "1", "0", "0", "0", "1", "0", "1", "1", "1", "0", "0", "0", "1", "1", "1", "1", "1", "0", "0", "0", "1", "0", "0", "0", "0", "1", "0", "0", "1", "1", "0", "0", "0", "1", "0", "0", "1", "0", "1", "0", "0", "1", "0", "0", "0", "0", "0", "1", "0", "1", "0", "0", "0", "1", "0", "1", "0", "1", "0", "0", "0", "0", "1", "1", "0", "1", "0", "0", "1", "1", "1", "1", "0", "1", "0", "0", "1", "0", "0", "0", "1", "1", "0", "0", "0", "0", "1", "0", "1", "1", "0", "0", "0", "1", "1", "0", "1", "1", "0", "0", "1", "0", "0", "1", "1", "1", "0", "0", "1", "1", "0", "1", "1", "1", "0", "0", "0", "1", "1", "1", "1", "1", "0", "0", "1", "0", "0", "0", "0", "0", "1", "0", "1", "1", "0", "0", "0", "0", "1", "0", "0", "1", "1", "0", "0", "0", "1", "0", "1", "0", "0", "1", "0", "0", "1", "0", "0", "0", "1", "1", "0", "0", "1", "0", "1", "1", "1", "1", "0", "0", "1", "0", "0", "1", "0", "0", "1", "0", "1", "0", "1", "0", "1", "0", "1", "0", "1", "0", "0", "0", "0", "1", "1", "0", "1", "0", "0", "1", "0", "1", "1", "0", "1", "0", "1", "0", "1", "1", "1", "0", "1", "0", "1", "0", "0", "0", "0", "1", "1", "0", "0", "0", "1", "0", "0", "1", "1", "0", "1", "1", "1", "0", "0", "1", "1", "0", "0", "1", "0", "1", "0", "1", "1", "0", "1", "0", "1", "1", "0", "1", "1", "0", "0", "0", "0", "0", "1", "1", "1", "0", "1", "1", "0", "0", "1", "1", "1", "0", "0", "1", "1", "0", "1", "1", "1", "0", "1", "0", "0", "1", "1", "1", "1", "0", "0", "0", "1", "1", "1", "1", "1", "0" ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$eq$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:304$7": {
+        "$flatten\\u_r2r_dac_digital.$eq$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:310$8": {
           "hide_name": 1,
           "type": "$eq",
           "parameters": {
@@ -159,7 +159,7 @@
             "Y_WIDTH": "00000000000000000000000000000001"
           },
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:304.20-304.34"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:310.20-310.34"
           },
           "port_directions": {
             "A": "input",
@@ -172,7 +172,7 @@
             "Y": [ 77 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$eq$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:311$8": {
+        "$flatten\\u_r2r_dac_digital.$eq$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:317$9": {
           "hide_name": 1,
           "type": "$logic_not",
           "parameters": {
@@ -181,7 +181,7 @@
             "Y_WIDTH": "00000000000000000000000000000001"
           },
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:311.11-311.24"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:317.11-317.24"
           },
           "port_directions": {
             "A": "input",
@@ -236,7 +236,7 @@
             "Y": [ 81 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procdff$45": {
+        "$flatten\\u_r2r_dac_digital.$procdff$46": {
           "hide_name": 1,
           "type": "$dff",
           "parameters": {
@@ -244,7 +244,7 @@
             "WIDTH": "00000000000000000000000000001000"
           },
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295.3-319.6"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:301.3-325.6"
           },
           "port_directions": {
             "CLK": "input",
@@ -257,7 +257,7 @@
             "Q": [ 10, 11, 12, 13, 14, 15, 16, 17 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procdff$46": {
+        "$flatten\\u_r2r_dac_digital.$procdff$47": {
           "hide_name": 1,
           "type": "$dff",
           "parameters": {
@@ -265,7 +265,7 @@
             "WIDTH": "00000000000000000000000000001000"
           },
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295.3-319.6"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:301.3-325.6"
           },
           "port_directions": {
             "CLK": "input",
@@ -278,7 +278,7 @@
             "Q": [ 98, 99, 100, 101, 102, 103, 104, 105 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procdff$47": {
+        "$flatten\\u_r2r_dac_digital.$procdff$48": {
           "hide_name": 1,
           "type": "$dff",
           "parameters": {
@@ -286,7 +286,7 @@
             "WIDTH": "00000000000000000000000000001000"
           },
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295.3-319.6"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:301.3-325.6"
           },
           "port_directions": {
             "CLK": "input",
@@ -299,7 +299,7 @@
             "Q": [ 61, 62, 63, 64, 65, 66, 67, 68 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procdff$48": {
+        "$flatten\\u_r2r_dac_digital.$procdff$49": {
           "hide_name": 1,
           "type": "$dff",
           "parameters": {
@@ -307,7 +307,7 @@
             "WIDTH": "00000000000000000000000000001000"
           },
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295.3-319.6"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:301.3-325.6"
           },
           "port_directions": {
             "CLK": "input",
@@ -320,7 +320,7 @@
             "Q": [ 29, 30, 31, 32, 33, 34, 35, 36 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procdff$49": {
+        "$flatten\\u_r2r_dac_digital.$procdff$50": {
           "hide_name": 1,
           "type": "$dff",
           "parameters": {
@@ -328,7 +328,7 @@
             "WIDTH": "00000000000000000000000000000001"
           },
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295.3-319.6"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:301.3-325.6"
           },
           "port_directions": {
             "CLK": "input",
@@ -341,7 +341,7 @@
             "Q": [ 80 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procdff$50": {
+        "$flatten\\u_r2r_dac_digital.$procdff$51": {
           "hide_name": 1,
           "type": "$dff",
           "parameters": {
@@ -349,7 +349,7 @@
             "WIDTH": "00000000000000000000000000001000"
           },
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295.3-319.6"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:301.3-325.6"
           },
           "port_directions": {
             "CLK": "input",
@@ -362,7 +362,28 @@
             "Q": [ 45, 46, 47, 48, 49, 50, 51, 52 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procmux$16": {
+        "$flatten\\u_r2r_dac_digital.$procdff$52": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:299.3-299.40"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 27 ],
+            "D": [ 28 ],
+            "Q": [ 131 ]
+          }
+        },
+        "$flatten\\u_r2r_dac_digital.$procmux$17": {
           "hide_name": 1,
           "type": "$pmux",
           "parameters": {
@@ -371,7 +392,7 @@
           },
           "attributes": {
             "full_case": "00000000000000000000000000000001",
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:307.32-307.32|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:305.7-310.14"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:313.32-313.32|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:311.7-316.14"
           },
           "port_directions": {
             "A": "input",
@@ -382,33 +403,8 @@
           "connections": {
             "A": [ 98, 99, 100, 101, 102, 103, 104, 105 ],
             "B": [ 69, 70, 71, 72, 73, 74, 75, 76, 61, 62, 63, 64, 65, 66, 67, 68, 2, 3, 4, 5, 6, 7, 8, 9 ],
-            "S": [ 131, 132, 133 ],
-            "Y": [ 134, 135, 136, 137, 138, 139, 140, 141 ]
-          }
-        },
-        "$flatten\\u_r2r_dac_digital.$procmux$17_CMP0": {
-          "hide_name": 1,
-          "type": "$eq",
-          "parameters": {
-            "A_SIGNED": "00000000000000000000000000000000",
-            "A_WIDTH": "00000000000000000000000000000010",
-            "B_SIGNED": "00000000000000000000000000000000",
-            "B_WIDTH": "00000000000000000000000000000010",
-            "Y_WIDTH": "00000000000000000000000000000001"
-          },
-          "attributes": {
-            "full_case": "00000000000000000000000000000001",
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:307.32-307.32|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:305.7-310.14"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "Y": "output"
-          },
-          "connections": {
-            "A": [ 18, 19 ],
-            "B": [ "0", "1" ],
-            "Y": [ 131 ]
+            "S": [ 132, 133, 134 ],
+            "Y": [ 135, 136, 137, 138, 139, 140, 141, 142 ]
           }
         },
         "$flatten\\u_r2r_dac_digital.$procmux$18_CMP0": {
@@ -423,7 +419,32 @@
           },
           "attributes": {
             "full_case": "00000000000000000000000000000001",
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:306.34-306.34|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:305.7-310.14"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:313.32-313.32|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:311.7-316.14"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18, 19 ],
+            "B": [ "0", "1" ],
+            "Y": [ 132 ]
+          }
+        },
+        "$flatten\\u_r2r_dac_digital.$procmux$19_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:312.34-312.34|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:311.7-316.14"
           },
           "port_directions": {
             "A": "input",
@@ -433,10 +454,10 @@
           "connections": {
             "A": [ 18, 19 ],
             "B": [ "1", "0" ],
-            "Y": [ 132 ]
+            "Y": [ 133 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procmux$19_CMP0": {
+        "$flatten\\u_r2r_dac_digital.$procmux$20_CMP0": {
           "hide_name": 1,
           "type": "$logic_not",
           "parameters": {
@@ -446,7 +467,7 @@
           },
           "attributes": {
             "full_case": "00000000000000000000000000000001",
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:305.18-305.18|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:305.7-310.14"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:311.18-311.18|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:311.7-316.14"
           },
           "port_directions": {
             "A": "input",
@@ -454,10 +475,10 @@
           },
           "connections": {
             "A": [ 18, 19 ],
-            "Y": [ 133 ]
+            "Y": [ 134 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procmux$21": {
+        "$flatten\\u_r2r_dac_digital.$procmux$22": {
           "hide_name": 1,
           "type": "$mux",
           "parameters": {
@@ -465,7 +486,7 @@
           },
           "attributes": {
             "full_case": "00000000000000000000000000000001",
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:296.9-296.15|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:296.5-318.8"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:302.9-302.15|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:302.5-324.8"
           },
           "port_directions": {
             "A": "input",
@@ -475,12 +496,12 @@
           },
           "connections": {
             "A": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
-            "B": [ 134, 135, 136, 137, 138, 139, 140, 141 ],
-            "S": [ 28 ],
+            "B": [ 135, 136, 137, 138, 139, 140, 141, 142 ],
+            "S": [ 131 ],
             "Y": [ 82, 83, 84, 85, 86, 87, 88, 89 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procmux$24": {
+        "$flatten\\u_r2r_dac_digital.$procmux$25": {
           "hide_name": 1,
           "type": "$mux",
           "parameters": {
@@ -488,7 +509,7 @@
           },
           "attributes": {
             "full_case": "00000000000000000000000000000001",
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:296.9-296.15|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:296.5-318.8"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:302.9-302.15|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:302.5-324.8"
           },
           "port_directions": {
             "A": "input",
@@ -499,11 +520,11 @@
           "connections": {
             "A": [ "0" ],
             "B": [ 77 ],
-            "S": [ 28 ],
+            "S": [ 131 ],
             "Y": [ 122 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procmux$27": {
+        "$flatten\\u_r2r_dac_digital.$procmux$28": {
           "hide_name": 1,
           "type": "$mux",
           "parameters": {
@@ -511,7 +532,7 @@
           },
           "attributes": {
             "full_case": "00000000000000000000000000000001",
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:296.9-296.15|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:296.5-318.8"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:302.9-302.15|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:302.5-324.8"
           },
           "port_directions": {
             "A": "input",
@@ -522,18 +543,18 @@
           "connections": {
             "A": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
             "B": [ 37, 38, 39, 40, 41, 42, 43, 44 ],
-            "S": [ 28 ],
+            "S": [ 131 ],
             "Y": [ 114, 115, 116, 117, 118, 119, 120, 121 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procmux$29": {
+        "$flatten\\u_r2r_dac_digital.$procmux$30": {
           "hide_name": 1,
           "type": "$mux",
           "parameters": {
             "WIDTH": "00000000000000000000000000001000"
           },
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:314.11-314.15|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:314.7-317.10"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:320.11-320.15|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:320.7-323.10"
           },
           "port_directions": {
             "A": "input",
@@ -545,10 +566,10 @@
             "A": [ 45, 46, 47, 48, 49, 50, 51, 52 ],
             "B": [ 53, 54, 55, 56, 57, 58, 59, 60 ],
             "S": [ 81 ],
-            "Y": [ 142, 143, 144, 145, 146, 147, 148, 149 ]
+            "Y": [ 143, 144, 145, 146, 147, 148, 149, 150 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procmux$32": {
+        "$flatten\\u_r2r_dac_digital.$procmux$33": {
           "hide_name": 1,
           "type": "$mux",
           "parameters": {
@@ -556,7 +577,7 @@
           },
           "attributes": {
             "full_case": "00000000000000000000000000000001",
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:296.9-296.15|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:296.5-318.8"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:302.9-302.15|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:302.5-324.8"
           },
           "port_directions": {
             "A": "input",
@@ -566,19 +587,19 @@
           },
           "connections": {
             "A": [ "1", "0", "0", "0", "0", "0", "0", "0" ],
-            "B": [ 142, 143, 144, 145, 146, 147, 148, 149 ],
-            "S": [ 28 ],
+            "B": [ 143, 144, 145, 146, 147, 148, 149, 150 ],
+            "S": [ 131 ],
             "Y": [ 123, 124, 125, 126, 127, 128, 129, 130 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procmux$34": {
+        "$flatten\\u_r2r_dac_digital.$procmux$35": {
           "hide_name": 1,
           "type": "$mux",
           "parameters": {
             "WIDTH": "00000000000000000000000000001000"
           },
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:314.11-314.15|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:314.7-317.10"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:320.11-320.15|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:320.7-323.10"
           },
           "port_directions": {
             "A": "input",
@@ -590,10 +611,10 @@
             "A": [ 61, 62, 63, 64, 65, 66, 67, 68 ],
             "B": [ 45, 46, 47, 48, 49, 50, 51, 52 ],
             "S": [ 81 ],
-            "Y": [ 150, 151, 152, 153, 154, 155, 156, 157 ]
+            "Y": [ 151, 152, 153, 154, 155, 156, 157, 158 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procmux$37": {
+        "$flatten\\u_r2r_dac_digital.$procmux$38": {
           "hide_name": 1,
           "type": "$mux",
           "parameters": {
@@ -601,7 +622,7 @@
           },
           "attributes": {
             "full_case": "00000000000000000000000000000001",
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:296.9-296.15|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:296.5-318.8"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:302.9-302.15|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:302.5-324.8"
           },
           "port_directions": {
             "A": "input",
@@ -611,19 +632,19 @@
           },
           "connections": {
             "A": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
-            "B": [ 150, 151, 152, 153, 154, 155, 156, 157 ],
-            "S": [ 28 ],
+            "B": [ 151, 152, 153, 154, 155, 156, 157, 158 ],
+            "S": [ 131 ],
             "Y": [ 106, 107, 108, 109, 110, 111, 112, 113 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procmux$39": {
+        "$flatten\\u_r2r_dac_digital.$procmux$40": {
           "hide_name": 1,
           "type": "$mux",
           "parameters": {
             "WIDTH": "00000000000000000000000000001000"
           },
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:311.11-311.24|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:311.7-312.27"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:317.11-317.24|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:317.7-318.27"
           },
           "port_directions": {
             "A": "input",
@@ -635,10 +656,10 @@
             "A": [ 98, 99, 100, 101, 102, 103, 104, 105 ],
             "B": [ 2, 3, 4, 5, 6, 7, 8, 9 ],
             "S": [ 78 ],
-            "Y": [ 158, 159, 160, 161, 162, 163, 164, 165 ]
+            "Y": [ 159, 160, 161, 162, 163, 164, 165, 166 ]
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procmux$42": {
+        "$flatten\\u_r2r_dac_digital.$procmux$43": {
           "hide_name": 1,
           "type": "$mux",
           "parameters": {
@@ -646,7 +667,7 @@
           },
           "attributes": {
             "full_case": "00000000000000000000000000000001",
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:296.9-296.15|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:296.5-318.8"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:302.9-302.15|/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:302.5-324.8"
           },
           "port_directions": {
             "A": "input",
@@ -656,14 +677,14 @@
           },
           "connections": {
             "A": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
-            "B": [ 158, 159, 160, 161, 162, 163, 164, 165 ],
-            "S": [ 28 ],
+            "B": [ 159, 160, 161, 162, 163, 164, 165, 166 ],
+            "S": [ 131 ],
             "Y": [ 90, 91, 92, 93, 94, 95, 96, 97 ]
           }
         }
       },
       "memories": {
-        "$flatten\\u_r2r_dac_digital.$auto$proc_rom.cc:155:do_switch$12": {
+        "$flatten\\u_r2r_dac_digital.$auto$proc_rom.cc:155:do_switch$13": {
           "hide_name": 1,
           "attributes": {
             "full_case": "00000000000000000000000000000001",
@@ -679,70 +700,70 @@
           "hide_name": 1,
           "bits": [ 106, 107, 108, 109, 110, 111, 112, 113 ],
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295.3-319.6"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:301.3-325.6"
           }
         },
         "$flatten\\u_r2r_dac_digital.$0\\cnt_p1[7:0]": {
           "hide_name": 1,
           "bits": [ 123, 124, 125, 126, 127, 128, 129, 130 ],
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295.3-319.6"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:301.3-325.6"
           }
         },
         "$flatten\\u_r2r_dac_digital.$0\\code_reg[7:0]": {
           "hide_name": 1,
           "bits": [ 90, 91, 92, 93, 94, 95, 96, 97 ],
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295.3-319.6"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:301.3-325.6"
           }
         },
         "$flatten\\u_r2r_dac_digital.$0\\dac_code[7:0]": {
           "hide_name": 1,
           "bits": [ 82, 83, 84, 85, 86, 87, 88, 89 ],
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295.3-319.6"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:301.3-325.6"
           }
         },
         "$flatten\\u_r2r_dac_digital.$0\\presc[7:0]": {
           "hide_name": 1,
           "bits": [ 114, 115, 116, 117, 118, 119, 120, 121 ],
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295.3-319.6"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:301.3-325.6"
           }
         },
         "$flatten\\u_r2r_dac_digital.$0\\presc_tc[0:0]": {
           "hide_name": 1,
           "bits": [ 122 ],
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295.3-319.6"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:301.3-325.6"
           }
         },
-        "$flatten\\u_r2r_dac_digital.$add$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:313$9_Y": {
+        "$flatten\\u_r2r_dac_digital.$add$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:319$10_Y": {
           "hide_name": 1,
           "bits": [ 37, 38, 39, 40, 41, 42, 43, 44 ],
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:313.16-313.28"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:319.16-319.28"
           }
         },
-        "$flatten\\u_r2r_dac_digital.$add$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:316$10_Y": {
+        "$flatten\\u_r2r_dac_digital.$add$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:322$11_Y": {
           "hide_name": 1,
           "bits": [ 53, 54, 55, 56, 57, 58, 59, 60 ],
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:316.19-316.32"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:322.19-322.32"
           }
         },
-        "$flatten\\u_r2r_dac_digital.$eq$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:304$7_Y": {
+        "$flatten\\u_r2r_dac_digital.$eq$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:310$8_Y": {
           "hide_name": 1,
           "bits": [ 77 ],
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:304.20-304.34"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:310.20-310.34"
           }
         },
-        "$flatten\\u_r2r_dac_digital.$eq$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:311$8_Y": {
+        "$flatten\\u_r2r_dac_digital.$eq$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:317$9_Y": {
           "hide_name": 1,
           "bits": [ 78 ],
           "attributes": {
-            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:311.11-311.24"
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:317.11-317.24"
           }
         },
         "$flatten\\u_r2r_dac_digital.$not$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:293$3_Y": {
@@ -752,15 +773,9 @@
             "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:293.15-293.20"
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procmux$16_Y": {
+        "$flatten\\u_r2r_dac_digital.$procmux$17_Y": {
           "hide_name": 1,
-          "bits": [ 134, 135, 136, 137, 138, 139, 140, 141 ],
-          "attributes": {
-          }
-        },
-        "$flatten\\u_r2r_dac_digital.$procmux$17_CMP": {
-          "hide_name": 1,
-          "bits": [ 131 ],
+          "bits": [ 135, 136, 137, 138, 139, 140, 141, 142 ],
           "attributes": {
           }
         },
@@ -776,21 +791,27 @@
           "attributes": {
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procmux$29_Y": {
+        "$flatten\\u_r2r_dac_digital.$procmux$20_CMP": {
           "hide_name": 1,
-          "bits": [ 142, 143, 144, 145, 146, 147, 148, 149 ],
+          "bits": [ 134 ],
           "attributes": {
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procmux$34_Y": {
+        "$flatten\\u_r2r_dac_digital.$procmux$30_Y": {
           "hide_name": 1,
-          "bits": [ 150, 151, 152, 153, 154, 155, 156, 157 ],
+          "bits": [ 143, 144, 145, 146, 147, 148, 149, 150 ],
           "attributes": {
           }
         },
-        "$flatten\\u_r2r_dac_digital.$procmux$39_Y": {
+        "$flatten\\u_r2r_dac_digital.$procmux$35_Y": {
           "hide_name": 1,
-          "bits": [ 158, 159, 160, 161, 162, 163, 164, 165 ],
+          "bits": [ 151, 152, 153, 154, 155, 156, 157, 158 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_r2r_dac_digital.$procmux$40_Y": {
+          "hide_name": 1,
+          "bits": [ 159, 160, 161, 162, 163, 164, 165, 166 ],
           "attributes": {
           }
         },
@@ -853,6 +874,14 @@
           "attributes": {
             "hdlname": "u_r2r_dac_digital presc_tc",
             "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:290.13-290.21"
+          }
+        },
+        "u_r2r_dac_digital.rst_q": {
+          "hide_name": 0,
+          "bits": [ 131 ],
+          "attributes": {
+            "hdlname": "u_r2r_dac_digital rst_q",
+            "src": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:298.7-298.12"
           }
         },
         "u_r2r_dac_digital.sine_val": {

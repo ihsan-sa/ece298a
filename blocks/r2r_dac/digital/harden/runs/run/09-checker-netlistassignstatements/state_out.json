@@ -6,8 +6,8 @@
         "design__lint_timing_construct__count": 0,
         "design__lint_warning__count": 0,
         "design__inferred_latch__count": 0,
-        "design__instance__count": 355,
-        "design__instance__area": 8280.2944,
+        "design__instance__count": 358,
+        "design__instance__area": 8335.1744,
         "design__instance_unmapped__count": 0,
         "synthesis__check_error__count": 0
     }

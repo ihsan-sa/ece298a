@@ -17,14 +17,14 @@ Placement Analysis
 total displacement          0.0 u
 average displacement        0.0 u
 max displacement            0.0 u
-original HPWL           12177.5 u
-legalized HPWL          12760.3 u
+original HPWL           13660.8 u
+legalized HPWL          14283.7 u
 delta HPWL                    5 %
 
-[INFO DPL-0020] Mirrored 201 instances
-[INFO DPL-0021] HPWL before           12760.3 u
-[INFO DPL-0022] HPWL after            12177.5 u
-[INFO DPL-0023] HPWL delta               -4.6 %
+[INFO DPL-0020] Mirrored 215 instances
+[INFO DPL-0021] HPWL before           14283.7 u
+[INFO DPL-0022] HPWL after            13660.8 u
+[INFO DPL-0023] HPWL delta               -4.4 %
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
 [INFO ODB-0403] 0 connections made, 0 conflicts skipped.
@@ -34,11 +34,11 @@ Cell type report:                       Count       Area
   Tap cell                                348    1527.86
   Tie cell                                  8      70.25
   Buffer                                    8     140.49
-  Timing Repair Buffer                     54    1290.78
-  Inverter                                 16     158.05
-  Sequential cell                          49    3158.89
-  Multi-Input combinational cell          274    5929.24
-  Total                                   835   12618.01
+  Timing Repair Buffer                     67    1558.59
+  Inverter                                 20     219.52
+  Sequential cell                          50    3222.55
+  Multi-Input combinational cell          272    7514.17
+  Total                                   851   14595.88
 Writing OpenROAD database to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/34-openroad-detailedplacement/tt_um_r2r_dac_digital.odb'…
 Writing netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/34-openroad-detailedplacement/tt_um_r2r_dac_digital.nl.v'…
 Writing powered netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/34-openroad-detailedplacement/tt_um_r2r_dac_digital.pnl.v'…

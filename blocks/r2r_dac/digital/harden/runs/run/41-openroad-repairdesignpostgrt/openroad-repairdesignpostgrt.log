@@ -74,91 +74,92 @@ Metal3     Horizontal      11102          7394          33.40%
 Metal4     Vertical        10152          6786          33.16%
 ---------------------------------------------------------------
 
-[INFO GRT-0197] Via related to pin nodes: 2552
-[INFO GRT-0198] Via related Steiner nodes: 30
+[INFO GRT-0197] Via related to pin nodes: 2604
+[INFO GRT-0198] Via related Steiner nodes: 55
 [INFO GRT-0199] Via filling finished.
-[INFO GRT-0111] Final number of vias: 3142
-[INFO GRT-0112] Final usage 3D: 11221
+[INFO GRT-0111] Final number of vias: 3262
+[INFO GRT-0112] Final usage 3D: 11721
 
 [INFO GRT-0096] Final congestion report:
 Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
 ---------------------------------------------------------------------------------------
 Metal1               0             0            0.00%             0 /  0 /  0
-Metal2            6786           825           12.16%             0 /  0 /  0
-Metal3            7394           936           12.66%             0 /  0 /  0
-Metal4            6786            34            0.50%             0 /  0 /  0
+Metal2            6786           889           13.10%             0 /  0 /  0
+Metal3            7394          1010           13.66%             0 /  0 /  0
+Metal4            6786            36            0.53%             0 /  0 /  0
 ---------------------------------------------------------------------------------------
-Total            20966          1795            8.56%             0 /  0 /  0
+Total            20966          1935            9.23%             0 /  0 /  0
 
-[INFO GRT-0018] Total wirelength: 24242 um
-[INFO GRT-0014] Routed nets: 430
+[INFO GRT-0018] Total wirelength: 26115 um
+[INFO GRT-0014] Routed nets: 445
 [INFO GRT-0303] Global routing runtime = 00:00:00
 + repair_design -verbose -max_wire_length 0.0 -slew_margin 10.0 -cap_margin 10.0
 Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
 ---------------------------------------------------------------------
-        0 |     +0.0% |       0 |       0 |             0 |       443
-       10 |     +0.0% |       0 |       0 |             0 |       433
-       20 |     +0.0% |       0 |       0 |             0 |       423
-       30 |     +0.0% |       0 |       0 |             0 |       413
-       40 |     +0.0% |       0 |       0 |             0 |       403
-       50 |     +0.0% |       0 |       0 |             0 |       393
-       60 |     +0.0% |       0 |       0 |             0 |       383
-       70 |     +0.0% |       0 |       0 |             0 |       373
-       80 |     +0.0% |       0 |       0 |             0 |       363
-       90 |     +0.0% |       0 |       0 |             0 |       353
-      100 |     +0.0% |       0 |       0 |             0 |       343
-      110 |     +0.0% |       0 |       0 |             0 |       333
-      120 |     +0.0% |       0 |       0 |             0 |       323
-      130 |     +0.2% |       1 |       1 |             1 |       313
-      140 |     +0.2% |       1 |       1 |             1 |       303
-      150 |     +0.2% |       1 |       1 |             1 |       293
-      160 |     +0.2% |       1 |       1 |             1 |       283
-      170 |     +0.2% |       1 |       1 |             1 |       273
-      180 |     +0.2% |       1 |       1 |             1 |       263
-      190 |     +0.2% |       1 |       1 |             1 |       253
-      200 |     +0.2% |       1 |       1 |             1 |       243
-      210 |     +0.2% |       1 |       1 |             1 |       233
-      220 |     +0.2% |       1 |       1 |             1 |       223
-      230 |     +0.2% |       1 |       1 |             1 |       213
-      240 |     +0.2% |       1 |       1 |             1 |       203
-      250 |     +0.2% |       1 |       1 |             1 |       193
-      260 |     +0.2% |       1 |       1 |             1 |       183
-      270 |     +0.2% |       1 |       1 |             1 |       173
-      280 |     +0.2% |       1 |       1 |             1 |       163
-      290 |     +0.2% |       1 |       1 |             1 |       153
-      300 |     +0.2% |       1 |       1 |             1 |       143
-      310 |     +0.2% |       1 |       1 |             1 |       133
-      320 |     +0.2% |       1 |       1 |             1 |       123
-      330 |     +0.3% |       2 |       2 |             2 |       113
-      340 |     +0.3% |       2 |       2 |             2 |       103
-      350 |     +0.3% |       2 |       2 |             2 |        93
-      360 |     +0.3% |       2 |       2 |             2 |        83
-      370 |     +0.3% |       2 |       2 |             2 |        73
-      380 |     +0.3% |       2 |       2 |             2 |        63
-      390 |     +0.3% |       2 |       2 |             2 |        53
-      400 |     +0.3% |       2 |       2 |             2 |        43
-      410 |     +0.3% |       2 |       2 |             2 |        33
-      420 |     +0.3% |       2 |       2 |             2 |        23
-      430 |     +0.3% |       2 |       2 |             2 |        13
-      440 |     +0.3% |       2 |       2 |             2 |         3
-    final |     +0.3% |       2 |       2 |             2 |         0
+        0 |     +0.0% |       0 |       0 |             0 |       457
+       10 |     +0.0% |       0 |       0 |             0 |       447
+       20 |     +0.0% |       0 |       0 |             0 |       437
+       30 |     +0.0% |       0 |       0 |             0 |       427
+       40 |     +0.0% |       0 |       0 |             0 |       417
+       50 |     +0.0% |       0 |       0 |             0 |       407
+       60 |     +0.0% |       0 |       0 |             0 |       397
+       70 |     +0.0% |       0 |       0 |             0 |       387
+       80 |     +0.0% |       0 |       0 |             0 |       377
+       90 |     +0.0% |       0 |       0 |             0 |       367
+      100 |     +0.0% |       0 |       0 |             0 |       357
+      110 |     +0.0% |       0 |       0 |             0 |       347
+      120 |     +0.0% |       0 |       0 |             0 |       337
+      130 |     +0.0% |       0 |       0 |             0 |       327
+      140 |     +0.0% |       0 |       0 |             0 |       317
+      150 |     +0.0% |       0 |       0 |             0 |       307
+      160 |     +0.0% |       0 |       0 |             0 |       297
+      170 |     +0.0% |       0 |       0 |             0 |       287
+      180 |     +0.3% |       1 |       1 |             1 |       277
+      190 |     +0.3% |       1 |       1 |             1 |       267
+      200 |     +0.3% |       1 |       1 |             1 |       257
+      210 |     +0.7% |       3 |       3 |             3 |       247
+      220 |     +0.7% |       3 |       3 |             3 |       237
+      230 |     +0.7% |       3 |       3 |             3 |       227
+      240 |     +0.7% |       3 |       3 |             3 |       217
+      250 |     +0.7% |       3 |       3 |             3 |       207
+      260 |     +0.7% |       3 |       3 |             3 |       197
+      270 |     +0.7% |       3 |       3 |             3 |       187
+      280 |     +0.8% |       4 |       4 |             4 |       177
+      290 |     +0.8% |       4 |       4 |             4 |       167
+      300 |     +0.8% |       5 |       4 |             4 |       157
+      310 |     +0.8% |       5 |       4 |             4 |       147
+      320 |     +0.8% |       5 |       4 |             4 |       137
+      330 |     +0.8% |       5 |       4 |             4 |       127
+      340 |     +0.8% |       5 |       4 |             4 |       117
+      350 |     +0.9% |       6 |       5 |             5 |       107
+      360 |     +0.9% |       6 |       5 |             5 |        97
+      370 |     +0.9% |       6 |       5 |             5 |        87
+      380 |     +0.9% |       6 |       5 |             5 |        77
+      390 |     +0.9% |       6 |       5 |             5 |        67
+      400 |     +0.9% |       6 |       5 |             5 |        57
+      410 |     +0.9% |       6 |       5 |             5 |        47
+      420 |     +0.9% |       6 |       5 |             5 |        37
+      430 |     +0.9% |       6 |       5 |             5 |        27
+      440 |     +0.9% |       6 |       5 |             5 |        17
+      450 |     +0.9% |       6 |       5 |             5 |         7
+    final |     +0.9% |       6 |       5 |             5 |         0
 ---------------------------------------------------------------------
-[INFO RSZ-0034] Found 2 slew violations.
-[INFO RSZ-0039] Resized 2 instances.
-[INFO RSZ-0038] Inserted 2 buffers in 2 nets.
+[INFO RSZ-0034] Found 6 slew violations.
+[INFO RSZ-0039] Resized 6 instances.
+[INFO RSZ-0038] Inserted 5 buffers in 5 nets.
 + detailed_placement -max_displacement  500 100 
 Placement Analysis
 ---------------------------------
-total displacement         43.7 u
+total displacement        123.2 u
 average displacement        0.1 u
-max displacement            7.8 u
-original HPWL           13174.7 u
-legalized HPWL          13845.5 u
+max displacement           20.7 u
+original HPWL           14512.8 u
+legalized HPWL          15257.3 u
 delta HPWL                    5 %
 
-[INFO DPL-0020] Mirrored 205 instances
-[INFO DPL-0021] HPWL before           13845.5 u
-[INFO DPL-0022] HPWL after            13232.3 u
+[INFO DPL-0020] Mirrored 219 instances
+[INFO DPL-0021] HPWL before           15257.3 u
+[INFO DPL-0022] HPWL after            14592.7 u
 [INFO DPL-0023] HPWL delta               -4.4 %
 + global_route -congestion_iterations 50 -verbose -allow_congestion
 [INFO GRT-0020] Min routing layer: Metal2
@@ -185,40 +186,40 @@ Metal3     Horizontal      11102          7394          33.40%
 Metal4     Vertical        10152          6786          33.16%
 ---------------------------------------------------------------
 
-[INFO GRT-0197] Via related to pin nodes: 2567
-[INFO GRT-0198] Via related Steiner nodes: 32
+[INFO GRT-0197] Via related to pin nodes: 2633
+[INFO GRT-0198] Via related Steiner nodes: 49
 [INFO GRT-0199] Via filling finished.
-[INFO GRT-0111] Final number of vias: 3160
-[INFO GRT-0112] Final usage 3D: 11283
+[INFO GRT-0111] Final number of vias: 3303
+[INFO GRT-0112] Final usage 3D: 11864
 
 [INFO GRT-0096] Final congestion report:
 Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
 ---------------------------------------------------------------------------------------
 Metal1               0             0            0.00%             0 /  0 /  0
-Metal2            6786           829           12.22%             0 /  0 /  0
-Metal3            7394           940           12.71%             0 /  0 /  0
-Metal4            6786            34            0.50%             0 /  0 /  0
+Metal2            6786           903           13.31%             0 /  0 /  0
+Metal3            7394          1024           13.85%             0 /  0 /  0
+Metal4            6786            28            0.41%             0 /  0 /  0
 ---------------------------------------------------------------------------------------
-Total            20966          1803            8.60%             0 /  0 /  0
+Total            20966          1955            9.32%             0 /  0 /  0
 
-[INFO GRT-0018] Total wirelength: 24351 um
-[INFO GRT-0014] Routed nets: 432
+[INFO GRT-0018] Total wirelength: 26325 um
+[INFO GRT-0014] Routed nets: 450
 [INFO GRT-0303] Global routing runtime = 00:00:00
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
-[INFO ODB-0403] 8 connections made, 0 conflicts skipped.
+[INFO ODB-0403] 20 connections made, 0 conflicts skipped.
 Updating metrics…
 Cell type report:                       Count       Area
   Endcap cell                              78     342.45
   Tap cell                                348    1527.86
   Tie cell                                  8      70.25
   Buffer                                    8     140.49
-  Clock buffer                             16     636.61
-  Timing Repair Buffer                     55    1189.80
-  Inverter                                 16     180.01
-  Sequential cell                          49    3158.89
-  Multi-Input combinational cell          274    5977.53
-  Total                                   852   13223.88
+  Clock buffer                             15     619.05
+  Timing Repair Buffer                     70    1488.35
+  Inverter                                 20     232.69
+  Sequential cell                          50    3237.92
+  Multi-Input combinational cell          272    7560.27
+  Total                                   869   15219.32
 Writing OpenROAD database to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/41-openroad-repairdesignpostgrt/tt_um_r2r_dac_digital.odb'…
 Writing netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/41-openroad-repairdesignpostgrt/tt_um_r2r_dac_digital.nl.v'…
 Writing powered netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/41-openroad-repairdesignpostgrt/tt_um_r2r_dac_digital.pnl.v'…

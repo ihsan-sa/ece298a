@@ -4,7 +4,7 @@
  "block": "r2r_dac",
  "workspace": "blocks/r2r_dac/digital",
  "created": "2026-09-25T08:51:49",
- "updated": "2026-10-13T04:17:11",
+ "updated": "2026-10-13T04:17:16",
  "phase": "P6",
  "toolchain": null,
  "gates": {
@@ -1430,6 +1430,15 @@
    "status": "running",
    "log": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/log/jobs/job-5.log",
    "result": null
+  },
+  "6": {
+   "gate": "harden",
+   "pid": 21761,
+   "started": "2026-10-13T04:17:16",
+   "finished": null,
+   "status": "running",
+   "log": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/log/jobs/job-6.log",
+   "result": null
   }
  },
  "holdout": {
@@ -1623,7 +1632,7 @@
   }
  ],
  "next_issue_id": 6,
- "next_job_id": 6,
+ "next_job_id": 7,
  "budgets": {
   "fix_loops": {
    "sim": 2,
@@ -2820,6 +2829,13 @@
    "status": "pass",
    "attempt": 3,
    "failing_count": 0
+  },
+  {
+   "ts": "2026-10-13T04:17:16",
+   "event": "job_start",
+   "job": "6",
+   "gate": "harden",
+   "pid": 21761
   }
  ]
 }

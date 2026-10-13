@@ -5,13 +5,13 @@
         +----------Local Count, excluding submodules.
         |        +-Local Area, excluding submodules.
         |        | 
-      448        - wires
-      553        - wire bits
-       15        - public wires
-       85        - public wire bits
+      449        - wires
+      554        - wire bits
+       16        - public wires
+       86        - public wire bits
         8        - ports
        43        - port bits
-      501 3.12E+03 cells
+      502  3183.04 cells
        29        -   $_ANDNOT_
        86        -   $_AND_
        88        -   $_MUX_
@@ -22,7 +22,7 @@
        24        -   $_OR_
         6        -   $_XNOR_
        12        -   $_XOR_
-       49 3.12E+03   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+       50  3183.04   gf180mcu_fd_sc_mcu7t5v0__dffq_1
 
    Area for cell type $_ANDNOT_ is unknown!
    Area for cell type $_AND_ is unknown!
@@ -35,6 +35,6 @@
    Area for cell type $_XNOR_ is unknown!
    Area for cell type $_XOR_ is unknown!
 
-   Chip area for module '\tt_um_r2r_dac_digital': 3119.379200
-     of which used for sequential elements: 3119.379200 (100.00%)
+   Chip area for module '\tt_um_r2r_dac_digital': 3183.040000
+     of which used for sequential elements: 3183.040000 (100.00%)
 

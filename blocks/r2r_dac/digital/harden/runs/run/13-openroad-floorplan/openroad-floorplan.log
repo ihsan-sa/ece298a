@@ -108,9 +108,9 @@ Using site height: 3.92 and site width: 0.56…
 [INFO IFP-0100] Die BBox:  (  0.000  0.000 ) ( 346.640 160.720 ) um
 [INFO IFP-0101] Core BBox: (  3.360  3.920 ) ( 343.280 156.800 ) um
 [INFO IFP-0102] Core area:                        51966.970 um^2
-[INFO IFP-0103] Total instances area:              8280.294 um^2
-[INFO IFP-0104] Effective utilization:                0.159
-[INFO IFP-0105] Number of instances:                    355
+[INFO IFP-0103] Total instances area:              8335.174 um^2
+[INFO IFP-0104] Effective utilization:                0.160
+[INFO IFP-0105] Number of instances:                    358
 [INFO IFP-0030] Inserted 0 tiecells using gf180mcu_fd_sc_mcu7t5v0__tiel/ZN.
 [INFO IFP-0030] Inserted 0 tiecells using gf180mcu_fd_sc_mcu7t5v0__tieh/Z.
 [INFO] Extracting DIE_AREA and CORE_AREA from the floorplan
@@ -125,10 +125,10 @@ Updating metrics…
 Cell type report:                       Count       Area
   Tie cell                                  8      70.25
   Buffer                                    8     105.37
-  Inverter                                 16     140.49
-  Sequential cell                          49    3119.38
-  Multi-Input combinational cell          274    4844.81
-  Total                                   355    8280.29
+  Inverter                                 20     175.62
+  Sequential cell                          50    3183.04
+  Multi-Input combinational cell          272    4800.90
+  Total                                   358    8335.17
 Writing OpenROAD database to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/13-openroad-floorplan/tt_um_r2r_dac_digital.odb'…
 Writing netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/13-openroad-floorplan/tt_um_r2r_dac_digital.nl.v'…
 Writing powered netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/13-openroad-floorplan/tt_um_r2r_dac_digital.pnl.v'…
