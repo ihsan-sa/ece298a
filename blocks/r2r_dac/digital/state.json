@@ -4,7 +4,7 @@
  "block": "r2r_dac",
  "workspace": "blocks/r2r_dac/digital",
  "created": "2026-09-25T08:51:49",
- "updated": "2026-10-13T04:10:21",
+ "updated": "2026-10-13T04:10:22",
  "phase": "P6",
  "toolchain": null,
  "gates": {
@@ -532,19 +532,19 @@
   "synth": {
    "phase": "P5",
    "status": "pass",
-   "attempts": 1,
+   "attempts": 2,
    "last": {
-    "ts": "2026-10-13T03:52:37",
+    "ts": "2026-10-13T04:10:22",
     "status": "pass",
     "failing_count": 0,
     "total": 0,
     "inputs": {
-     "rtl": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
+     "rtl": "dir_text:467072fcb827af020645576f4da4ad1cf92b6669c1b856871d2389fe2be4efc3",
      "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
     },
     "job": null,
     "facts": {
-     "area": 7331.968
+     "area": 8036.6272
     }
    },
    "history": [
@@ -561,14 +561,20 @@
      "facts": {
       "area": 7331.968
      }
-    }
-   ],
-   "stale": [
+    },
     {
-     "ts": "2026-10-13T04:10:14",
-     "edit_class": "rtl_edit",
-     "refs": [],
-     "human_hold": 1
+     "ts": "2026-10-13T04:10:22",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "rtl": "dir_text:467072fcb827af020645576f4da4ad1cf92b6669c1b856871d2389fe2be4efc3",
+      "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
+     },
+     "job": null,
+     "facts": {
+      "area": 8036.6272
+     }
     }
    ]
   },
@@ -1197,7 +1203,7 @@
    "path": "rtl",
    "kind": "rtl",
    "sha256": "dir_text:467072fcb827af020645576f4da4ad1cf92b6669c1b856871d2389fe2be4efc3",
-   "hashed": "2026-10-13T04:10:21"
+   "hashed": "2026-10-13T04:10:22"
   },
   "tb": {
    "path": "tb",
@@ -1227,7 +1233,7 @@
    "path": "spec/spec.yaml",
    "kind": "spec_yaml_sans_formal",
    "sha256": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1",
-   "hashed": "2026-10-13T04:10:17"
+   "hashed": "2026-10-13T04:10:22"
   },
   "harden_config": {
    "path": "harden/config.json",
@@ -2251,6 +2257,14 @@
    "ts": "2026-10-13T04:10:21",
    "event": "gate",
    "gate": "cover",
+   "status": "pass",
+   "attempt": 2,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-13T04:10:22",
+   "event": "gate",
+   "gate": "synth",
    "status": "pass",
    "attempt": 2,
    "failing_count": 0
