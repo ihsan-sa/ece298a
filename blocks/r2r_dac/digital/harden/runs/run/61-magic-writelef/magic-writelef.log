@@ -2236,11 +2236,11 @@ Reading DEF data from file /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_
 This action cannot be undone.
   Processed 3 vias total.
   Processed 1 non-default rules total.
-  Processed 1824 subcell instances total.
+  Processed 1981 subcell instances total.
   Processed 45 pins total.
   Processed 2 special nets total.
-  Processed 496 nets total.
-DEF read: Processed 10752 lines.
+  Processed 438 nets total.
+DEF read: Processed 9628 lines.
 [INFO] Ignoring 'VPWR VGND'
 [INFO] Writing abstract LEF…
 [INFO] Specifying -pinonly (nets connected to pins on the same layer are declared as obstructions)…

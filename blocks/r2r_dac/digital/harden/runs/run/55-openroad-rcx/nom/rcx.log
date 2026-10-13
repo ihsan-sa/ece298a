@@ -91,9 +91,9 @@ The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/too
 [INFO ODB-0127] Reading DEF file: /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/54-odb-cellfrequencytables/tt_um_r2r_dac_digital.def
 [INFO ODB-0128] Design: tt_um_r2r_dac_digital
 [INFO ODB-0130]     Created 45 pins.
-[INFO ODB-0131]     Created 1824 components and 8001 component-terminals.
-[INFO ODB-0132]     Created 2 special nets and 6444 connections.
-[INFO ODB-0133]     Created 496 nets and 1557 connections.
+[INFO ODB-0131]     Created 1981 components and 8494 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 7072 connections.
+[INFO ODB-0133]     Created 438 nets and 1415 connections.
 [INFO ODB-0134] Finished DEF file: /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/54-odb-cellfrequencytables/tt_um_r2r_dac_digital.def
 Using RCX ruleset '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.tech/librelane/rules.openrcx.gf180mcuD.nom'…
 [INFO RCX-0431] Defined process_corner CURRENT_CORNER with ext_model_index 0
@@ -101,22 +101,22 @@ Using RCX ruleset '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/g
 + extract_parasitics  -ext_model_file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.tech/librelane/rules.openrcx.gf180mcuD.nom -lef_res
 [INFO RCX-0435] Reading extraction model file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.tech/librelane/rules.openrcx.gf180mcuD.nom ...
 [INFO RCX-0436] RC segment generation tt_um_r2r_dac_digital (max_merge_res 50.0) ...
-[INFO RCX-0040] Final 1648 rc segments
+[INFO RCX-0040] Final 1581 rc segments
 [INFO RCX-0439] Coupling Cap extraction tt_um_r2r_dac_digital ...
 [INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
-[INFO RCX-0442] 45% of 3303 wires extracted
-[INFO RCX-0442] 100% of 3303 wires extracted
-[INFO RCX-0045] Extract 496 nets, 2138 rsegs, 2138 caps, 4948 ccs
+[INFO RCX-0442] 47% of 2717 wires extracted
+[INFO RCX-0442] 100% of 2717 wires extracted
+[INFO RCX-0045] Extract 438 nets, 2013 rsegs, 2013 caps, 3686 ccs
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
 [INFO ODB-0403] 0 connections made, 0 conflicts skipped.
 Updating metrics…
 Cell type report:                       Count       Area
   Endcap cell                              78     342.45
-  Fill cell                               921   33891.69
+  Fill cell                              1129   38743.08
   Tap cell                                348    1527.86
   Tie cell                                  8      70.25
-  Standard cell                           469   16134.72
-  Total                                  1824   51966.97
+  Standard cell                           418   11283.33
+  Total                                  1981   51966.97
 Writing extracted parasitics to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/55-openroad-rcx/nom/tt_um_r2r_dac_digital.nom.spef'…
-[INFO RCX-0443] 496 nets finished
+[INFO RCX-0443] 438 nets finished

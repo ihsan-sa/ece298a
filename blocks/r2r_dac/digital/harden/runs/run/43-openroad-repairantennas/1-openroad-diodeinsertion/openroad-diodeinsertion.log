@@ -22,11 +22,11 @@ Cell type report:                       Count       Area
   Tap cell                                348    1527.86
   Tie cell                                  8      70.25
   Buffer                                    8     140.49
-  Clock buffer                              9     513.68
-  Timing Repair Buffer                    103    3209.38
-  Inverter                                 25     298.55
-  Sequential cell                          40    2649.61
-  Multi-Input combinational cell          284    9323.01
-  Total                                   903   18075.28
+  Clock buffer                             16     636.61
+  Timing Repair Buffer                     55    1189.80
+  Inverter                                 16     180.01
+  Sequential cell                          49    3158.89
+  Multi-Input combinational cell          274    5977.53
+  Total                                   852   13223.88
 Writing OpenROAD database to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/43-openroad-repairantennas/1-openroad-diodeinsertion/tt_um_r2r_dac_digital.odb'…
 Writing layout to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/43-openroad-repairantennas/1-openroad-diodeinsertion/tt_um_r2r_dac_digital.def'…

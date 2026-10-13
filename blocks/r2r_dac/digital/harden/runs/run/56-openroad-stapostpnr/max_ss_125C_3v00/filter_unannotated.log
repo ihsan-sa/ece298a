@@ -2,17 +2,36 @@
 Unannotated report:
 ['report_parasitic_annotation -report_unannotated\n',
  '============================================================================\n',
- 'Found 6 unannotated drivers.\n',
+ 'Found 13 unannotated drivers.\n',
  ' ena\n',
  ' uio_in[3]\n',
  ' uio_in[4]\n',
  ' uio_in[5]\n',
  ' uio_in[6]\n',
  ' uio_in[7]\n',
+ ' clkload0/Z\n',
+ ' clkload1/Z\n',
+ ' clkload2/Z\n',
+ ' clkload3/Z\n',
+ ' clkload4/Z\n',
+ ' clkload5/Z\n',
+ ' clkload6/Z\n',
  'Found 0 partially unannotated drivers.\n',
  '\n']
 Reported nets:
-['ena', 'uio_in[3]', 'uio_in[4]', 'uio_in[5]', 'uio_in[6]', 'uio_in[7]']
+['ena',
+ 'uio_in[3]',
+ 'uio_in[4]',
+ 'uio_in[5]',
+ 'uio_in[6]',
+ 'uio_in[7]',
+ 'clkload0/Z',
+ 'clkload1/Z',
+ 'clkload2/Z',
+ 'clkload3/Z',
+ 'clkload4/Z',
+ 'clkload5/Z',
+ 'clkload6/Z']
 Filtered nets:
 []
 done

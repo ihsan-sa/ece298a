@@ -6,15 +6,15 @@
         "cpu_time_iowait": "00:00:00.000"
     },
     "peak_resources": {
-        "cpu_percent": 99.6,
-        "memory_rss": "121MiB",
-        "memory_vms": "295MiB",
+        "cpu_percent": 99.5,
+        "memory_rss": "137MiB",
+        "memory_vms": "315MiB",
         "threads": 1
     },
     "avg_resources": {
-        "cpu_percent": 47.839999999999996,
-        "memory_rss": "43MiB",
-        "memory_vms": "113MiB",
+        "cpu_percent": 47.8,
+        "memory_rss": "47MiB",
+        "memory_vms": "118MiB",
         "threads": 0.8
     }
 }

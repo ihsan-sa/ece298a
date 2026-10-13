@@ -6,8 +6,8 @@
  \----------------------------------------------------------------------------/
  Yosys 0.69 (git sha1 9f75ca1f9, Release, GNU /usr/bin/c++ 13.3.0)
 
-1. Executing Verilog-2005 frontend: /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/36ae0819ebc44e8cb7d2ee78597bd711.bb.v
-Parsing SystemVerilog input from `/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/36ae0819ebc44e8cb7d2ee78597bd711.bb.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/1d73aad23e2e4a468607d304ece35225.bb.v
+Parsing SystemVerilog input from `/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/1d73aad23e2e4a468607d304ece35225.bb.v' to AST representation.
 Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addf_1'.
 Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addf_2'.
 Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addf_4'.
@@ -308,8 +308,8 @@ Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor3_4'.
 Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor3_func'.
 Successfully finished Verilog frontend.
 
-2. Executing Verilog-2005 frontend: /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/44ab62921451405bb3e0656224d5ffe1.bb.v
-Parsing SystemVerilog input from `/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/44ab62921451405bb3e0656224d5ffe1.bb.v' to AST representation.
+2. Executing Verilog-2005 frontend: /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/74f4ab87b6794078aa91c5b408de7225.bb.v
+Parsing SystemVerilog input from `/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/74f4ab87b6794078aa91c5b408de7225.bb.v' to AST representation.
 Generating RTLIL representation for module `\gf180mcu_ef_io__bi_t'.
 Generating RTLIL representation for module `\gf180mcu_fd_io__asig_5p0'.
 Generating RTLIL representation for module `\gf180mcu_fd_io__bi_24t'.
@@ -366,13 +366,13 @@ Renaming module tt_um_r2r_dac_digital to tt_um_r2r_dac_digital.
 Cleaned up 0 empty switches.
 
 7.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 2 switch rules as full_case in process $proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:285$6 in module r2r_dac_digital.
+Marked 2 switch rules as full_case in process $proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295$5 in module r2r_dac_digital.
 Removed 1 dead cases from process $proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:21$2 in module r2r_dac_digital.
 Marked 1 switch rules as full_case in process $proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:21$2 in module r2r_dac_digital.
 Removed a total of 1 dead cases.
 
 7.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
-Removed 2 redundant assignments.
+Removed 3 redundant assignments.
 Promoted 1 assignment to connection.
 
 7.4. Executing PROC_INIT pass (extract init attributes).
@@ -384,11 +384,13 @@ Converted 1 switch.
 <suppressed ~4 debug messages>
 
 7.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:285$6'.
-     1/4: $0\dac_code[7:0]
-     2/4: $0\presc[7:0]
-     3/4: $0\cnt[7:0]
-     4/4: $0\code_reg[7:0]
+Creating decoders for process `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295$5'.
+     1/6: $0\dac_code[7:0]
+     2/6: $0\presc_tc[0:0]
+     3/6: $0\presc[7:0]
+     4/6: $0\cnt_p1[7:0]
+     5/6: $0\cnt[7:0]
+     6/6: $0\code_reg[7:0]
 Creating decoders for process `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:21$2'.
      1/1: $1\sine_val[7:0]
 
@@ -396,20 +398,24 @@ Creating decoders for process `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/
 No latch inferred for signal `\r2r_dac_digital.\sine_val' from process `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:21$2'.
 
 7.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\r2r_dac_digital.\dac_code' using process `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:285$6'.
-  created $dff cell `$procdff$37' with positive edge clock.
-Creating register for signal `\r2r_dac_digital.\code_reg' using process `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:285$6'.
-  created $dff cell `$procdff$38' with positive edge clock.
-Creating register for signal `\r2r_dac_digital.\cnt' using process `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:285$6'.
-  created $dff cell `$procdff$39' with positive edge clock.
-Creating register for signal `\r2r_dac_digital.\presc' using process `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:285$6'.
-  created $dff cell `$procdff$40' with positive edge clock.
+Creating register for signal `\r2r_dac_digital.\dac_code' using process `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295$5'.
+  created $dff cell `$procdff$45' with positive edge clock.
+Creating register for signal `\r2r_dac_digital.\code_reg' using process `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295$5'.
+  created $dff cell `$procdff$46' with positive edge clock.
+Creating register for signal `\r2r_dac_digital.\cnt' using process `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295$5'.
+  created $dff cell `$procdff$47' with positive edge clock.
+Creating register for signal `\r2r_dac_digital.\presc' using process `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295$5'.
+  created $dff cell `$procdff$48' with positive edge clock.
+Creating register for signal `\r2r_dac_digital.\presc_tc' using process `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295$5'.
+  created $dff cell `$procdff$49' with positive edge clock.
+Creating register for signal `\r2r_dac_digital.\cnt_p1' using process `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295$5'.
+  created $dff cell `$procdff$50' with positive edge clock.
 
 7.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 7.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 4 empty switches in `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:285$6'.
-Removing empty process `r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:285$6'.
+Found and cleaned up 4 empty switches in `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295$5'.
+Removing empty process `r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:295$5'.
 Found and cleaned up 1 empty switch in `\r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:21$2'.
 Removing empty process `r2r_dac_digital.$proc$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:21$2'.
 Cleaned up 5 empty switches.
@@ -418,7 +424,7 @@ Cleaned up 5 empty switches.
 Optimizing module tt_um_r2r_dac_digital.
 <suppressed ~1 debug messages>
 Optimizing module r2r_dac_digital.
-<suppressed ~6 debug messages>
+<suppressed ~8 debug messages>
 
 8. Executing FLATTEN pass (flatten design).
 Deleting now unused module r2r_dac_digital.
@@ -426,5 +432,5 @@ Deleting now unused module r2r_dac_digital.
 
 9. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \tt_um_r2r_dac_digital..
-Removed 2 unused cells and 34 unused wires.
+Removed 2 unused cells and 39 unused wires.
 <suppressed ~21 debug messages>

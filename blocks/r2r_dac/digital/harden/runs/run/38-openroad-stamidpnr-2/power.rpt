@@ -7,16 +7,16 @@
 Group                    Internal    Switching      Leakage        Total
                             Power        Power        Power        Power (Watts)
 ------------------------------------------------------------------------
-Sequential           4.485817e-04 1.603099e-05 7.544725e-09 4.646202e-04  33.1%
-Combinational        2.046190e-04 2.616763e-04 3.339433e-08 4.663287e-04  33.2%
-Clock                2.859875e-04 1.869747e-04 1.065685e-08 4.729728e-04  33.7%
+Sequential           5.609803e-04 1.945940e-05 9.075954e-09 5.804488e-04  37.0%
+Combinational        1.806830e-04 2.450161e-04 2.093548e-08 4.257200e-04  27.2%
+Clock                3.439916e-04 2.178308e-04 1.105028e-08 5.618335e-04  35.8%
 Macro                0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00   0.0%
 Pad                  0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00   0.0%
 ------------------------------------------------------------------------
-Total                9.391883e-04 4.646820e-04 5.159589e-08 1.403922e-03 100.0%
-                            66.9%        33.1%         0.0%
-Writing metric power__internal__total: 0.0009391882922500372
-Writing metric power__switching__total: 0.00046468203072436154
-Writing metric power__leakage__total: 5.159589022696309e-8
-Writing metric power__total: 0.0014039218658581376
+Total                1.085655e-03 4.823063e-04 4.106168e-08 1.568002e-03 100.0%
+                            69.2%        30.8%         0.0%
+Writing metric power__internal__total: 0.0010856549488380551
+Writing metric power__switching__total: 0.00048230626271106303
+Writing metric power__leakage__total: 4.1061682054532866e-8
+Writing metric power__total: 0.0015680022770538926
 
