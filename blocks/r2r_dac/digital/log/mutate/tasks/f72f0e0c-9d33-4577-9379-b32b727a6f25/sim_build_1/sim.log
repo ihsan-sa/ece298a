@@ -1,0 +1,48 @@
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/usr/lib/x86_64-linux-gnu/libpython3.12.so.1.0'
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:233  in gpi_load_users                  Running entry func 'initialize' from loaded library '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/usr/local/lib/python3.12/dist-packages/cocotb/simulator.cpython-312-x86_64-linux-gnu.so'
+     -.--ns INFO     pygpi                              ..ib/pygpi/embed.cpp:114  in initialize                      Using Python 3.12.12 interpreter at /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/usr/bin/python3.12
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1791879662
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/usr/local/lib/python3.12/dist-packages/cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Icarus Verilog version 14.0 (devel)
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running test_r2r_dac_digital.test_reset_clears (1/8)
+   230.00ns INFO     cocotb.regression                  test_r2r_dac_digital.test_reset_clears passed
+   230.00ns INFO     cocotb.regression                  running test_r2r_dac_digital.test_register_capture (2/8)
+   460.00ns INFO     cocotb.regression                  test_r2r_dac_digital.test_register_capture passed
+   460.00ns INFO     cocotb.regression                  running test_r2r_dac_digital.test_registered_output (3/8)
+   570.00ns INFO     cocotb.regression                  test_r2r_dac_digital.test_registered_output passed
+   570.00ns INFO     cocotb.regression                  running test_r2r_dac_digital.test_hold_keeps_captured_code (4/8)
+   960.00ns INFO     cocotb.regression                  test_r2r_dac_digital.test_hold_keeps_captured_code passed
+   960.00ns INFO     cocotb.regression                  running test_r2r_dac_digital.test_ramp_all_codes_and_wrap (5/8)
+  7030.00ns INFO     cocotb.regression                  test_r2r_dac_digital.test_ramp_all_codes_and_wrap passed
+  7030.00ns INFO     cocotb.regression                  running test_r2r_dac_digital.test_slow_prescale (6/8)
+ 22540.01ns WARNING  cocotb.regression                  test_r2r_dac_digital.test_slow_prescale failed
+                                                        Traceback (most recent call last):
+                                                          File "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/tb/test_r2r_dac_digital.py", line 133, in test_slow_prescale
+                                                            assert changes[0] == 256, f"first slow step after {changes[0]} clocks, not 256"
+                                                        AssertionError: first slow step after 32 clocks, not 256
+                                                        assert 32 == 256
+ 22540.01ns INFO     cocotb.regression                  running test_r2r_dac_digital.test_sine_table_all_entries (7/8)
+ 27890.01ns INFO     cocotb.regression                  test_r2r_dac_digital.test_sine_table_all_entries passed
+ 27890.01ns INFO     cocotb.regression                  running test_r2r_dac_digital.test_random_mode_switching_against_model (8/8)
+ 43860.01ns WARNING  cocotb.regression                  test_r2r_dac_digital.test_random_mode_switching_against_model failed
+                                                        Traceback (most recent call last):
+                                                          File "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/tb/test_r2r_dac_digital.py", line 185, in test_random_mode_switching_against_model
+                                                            assert got == want, f"cycle {cyc}: mode {mode} got {got} want {want}"
+                                                        AssertionError: cycle 794: mode 1 got 1 want 0
+                                                        assert 1 == 0
+ 43860.01ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_r2r_dac_digital.test_reset_clears                          PASS         230.00           0.00     117061.09  **
+                                                        ** test_r2r_dac_digital.test_register_capture                      PASS         230.00           0.00     211937.62  **
+                                                        ** test_r2r_dac_digital.test_registered_output                     PASS         110.00           0.00     250439.41  **
+                                                        ** test_r2r_dac_digital.test_hold_keeps_captured_code              PASS         390.00           0.00     381695.82  **
+                                                        ** test_r2r_dac_digital.test_ramp_all_codes_and_wrap               PASS        6070.00           0.02     329004.98  **
+                                                        ** test_r2r_dac_digital.test_slow_prescale                         FAIL       15510.00           0.03     568929.31  **
+                                                        ** test_r2r_dac_digital.test_sine_table_all_entries                PASS        5350.00           0.01     415158.84  **
+                                                        ** test_r2r_dac_digital.test_random_mode_switching_against_model   FAIL       15970.00           0.05     297822.29  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=8 PASS=6 FAIL=2 SKIP=0                                               43860.01           0.12     356260.23  **
+                                                        ***********************************************************************************************************************

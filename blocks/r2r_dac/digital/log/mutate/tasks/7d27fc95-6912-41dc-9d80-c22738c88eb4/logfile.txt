@@ -1,0 +1,2 @@
+task 7d27fc95-6912-41dc-9d80-c22738c88eb4 (sim)
+  1 10 mutate -mode cnot1 -module r2r_dac_digital -cell $procdff$46 -port Q -portbit 4 -ctrlbit 0 -wire code_reg -wirebit 4 -src /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:14.13-14.21 -src /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:301.3-325.6

@@ -1,0 +1,4 @@
+read_rtlil /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/log/mutate/database/design.il
+mutate -mode none
+techmap
+write_verilog -norename /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/log/mutate/tasks/b3f3e6db-4166-4528-9218-e060729e1f6f/mutated_1.v
