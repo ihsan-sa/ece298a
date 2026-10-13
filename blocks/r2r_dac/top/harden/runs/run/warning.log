@@ -2177,3 +2177,8 @@ No libs found for macro r2r_dac_analog at corner nom_tt_025C_3v30. The module wi
 [DRT-6000] Macro pin has more than 1 polygon
 [DRT-6000] Macro pin has more than 1 polygon
 [DRT-6000] message limit (1000) reached. This message will no longer print.
+No libs found for macro r2r_dac_analog at corner nom_tt_025C_3v30. The module will be black-boxed.
+[ORD-0032] Invalid thread number specification: None.
+Threshold for Threshold-surpassing long wires is not set. The checker will be skipped.
+No libs found for macro r2r_dac_analog at corner nom_tt_025C_3v30. The module will be black-boxed.
+[ORD-0032] Invalid thread number specification: None.
