@@ -10,7 +10,7 @@
 | Power pin check | ✅ |
 | Layer check | ✅ |
 | Cell name check | ✅ |
-| KLayout GF180MCU DRC | ❌ Fail: Klayout gf180mcuD failed with 2 DRC violations |
+| KLayout GF180MCU DRC | ✅ |
 | Antenna check | ✅ |
 | Analog pin check | ✅ |
 | Verilog syntax check | ✅ |

@@ -3,8 +3,8 @@
  "gate": "top_drc",
  "phase": "P3",
  "tool": "top_drc",
- "input_digest": "dir_text:08ecca8a736efe4672d50b8b756b5dc6a6843dcbdab79b605294d5e8f117ab39",
- "status": "fail",
+ "input_digest": "dir_text:0905acb9d74b569267319ec4a715fa4e5d5ec532738e6ebae11026f5a3528035",
+ "status": "pass",
  "criteria": {
   "fail_severities": [
    "error"
@@ -12,65 +12,21 @@
   "max_count": 0
  },
  "counts": {
-  "total": 1,
-  "by_severity": {
-   "error": 1
-  },
-  "by_source": {
-   "klayout": 1
-  }
+  "total": 0,
+  "by_severity": {},
+  "by_source": {}
  },
- "failing_count": 1,
- "failing": [
-  {
-   "check": "top_drc",
-   "severity": "error",
-   "file": null,
-   "module": "tt_um_r2r_dac_digital",
-   "line": null,
-   "kind": "klayout_drc_violation",
-   "refs": [],
-   "msg": "klayout gf180mcu.drc: 2 violation(s)",
-   "source": "klayout",
-   "items": [
-    {
-     "msg": "klayout gf180mcu.drc: 2 violation(s)",
-     "file": null,
-     "line": null
-    }
-   ],
-   "count": 2
-  }
- ],
- "violations": [
-  {
-   "check": "top_drc",
-   "severity": "error",
-   "file": null,
-   "module": "tt_um_r2r_dac_digital",
-   "line": null,
-   "kind": "klayout_drc_violation",
-   "refs": [],
-   "msg": "klayout gf180mcu.drc: 2 violation(s)",
-   "source": "klayout",
-   "items": [
-    {
-     "msg": "klayout gf180mcu.drc: 2 violation(s)",
-     "file": null,
-     "line": null
-    }
-   ],
-   "count": 2
-  }
- ],
+ "failing_count": 0,
+ "failing": [],
+ "violations": [],
  "facts": {
   "top": "tt_um_r2r_dac_digital",
   "magic_count": 0,
-  "klayout_count": 2
+  "klayout_count": 0
  },
  "inputs_at_start": {
-  "top_gds": "dir_text:08ecca8a736efe4672d50b8b756b5dc6a6843dcbdab79b605294d5e8f117ab39"
+  "top_gds": "dir_text:0905acb9d74b569267319ec4a715fa4e5d5ec532738e6ebae11026f5a3528035"
  },
- "recorded_ts": "2026-10-13T07:11:47",
- "attempts": 1
+ "recorded_ts": "2026-10-13T08:53:08",
+ "attempts": 2
 }

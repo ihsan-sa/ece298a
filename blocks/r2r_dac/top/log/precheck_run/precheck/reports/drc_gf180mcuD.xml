@@ -4574,29 +4574,5 @@
   </cell>
  </cells>
  <items>
-  <item>
-   <tags/>
-   <category>'DCF.1a'</category>
-   <cell>tt_um_r2r_dac_digital</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (59.67,83.75;59.67,133.64;234.45,133.64;234.45,83.75)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'DCF.1a'</category>
-   <cell>tt_um_r2r_dac_digital</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (220.36,130.07;220.36,245.53;287.53,245.53;287.53,130.07)</value>
-   </values>
-  </item>
  </items>
 </report-database>

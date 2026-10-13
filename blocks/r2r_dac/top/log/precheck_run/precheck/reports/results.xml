@@ -1,34 +1,16 @@
 <testsuites>
   <testsuite name="Tiny Tapeout Prechecks">
-    <testcase name="KLayout pin label overlapping drawing" time="1.13" />
-    <testcase name="KLayout zero area" time="1.11" />
+    <testcase name="KLayout pin label overlapping drawing" time="1.0" />
+    <testcase name="KLayout zero area" time="0.99" />
     <testcase name="KLayout Checks" time="0.01" />
     <testcase name="Pin check" time="0.01" />
     <testcase name="Boundary check" time="0.01" />
     <testcase name="Power pin check" time="0.0" />
     <testcase name="Layer check" time="0.01" />
     <testcase name="Cell name check" time="0.0" />
-    <testcase name="KLayout GF180MCU DRC" time="41.58">
-      <error message="Klayout gf180mcuD failed with 2 DRC violations">Traceback (most recent call last):
-  File "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/log/precheck_run/precheck/precheck.py", line 576, in main
-    check["check"]()
-  File "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/log/precheck_run/precheck/precheck.py", line 544, in &lt;lambda&gt;
-    "check": lambda: klayout_gf180mcuD_drc(gds_file, top_module),
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/log/precheck_run/precheck/precheck.py", line 159, in klayout_gf180mcuD_drc
-    return klayout_gf180mcuD_rule_deck(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/log/precheck_run/precheck/precheck.py", line 146, in klayout_gf180mcuD_rule_deck
-    klayout_custom_drc(check, script, script_vars, ["report"])
-  File "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/log/precheck_run/precheck/precheck.py", line 98, in klayout_custom_drc
-    check_drc_report(check, report_file)
-  File "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/log/precheck_run/precheck/precheck.py", line 80, in check_drc_report
-    raise PrecheckFailure(
-precheck_failure.PrecheckFailure: Klayout gf180mcuD failed with 2 DRC violations
-</error>
-    </testcase>
-    <testcase name="Antenna check" time="3.12" />
-    <testcase name="Analog pin check" time="0.1" />
+    <testcase name="KLayout GF180MCU DRC" time="31.5" />
+    <testcase name="Antenna check" time="2.81" />
+    <testcase name="Analog pin check" time="0.09" />
     <testcase name="Verilog syntax check" time="0.12" />
   </testsuite>
 </testsuites>

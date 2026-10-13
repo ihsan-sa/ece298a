@@ -244,7 +244,14 @@ the layout agent $1.4, and orchestration for the rest.
     between COMP must hold dummy COMP), and both regions are inside the
     macro. The fix is a fill step for the macro area (in top_harden or
     the analog layout path), or the gate has to check the fill rules
-    early. Reported, not worked around.
+    early. Reported, not worked around. Fixed in chip-flow a00b866:
+    top_harden fills the macro with COMP_Dummy, and top_drc and the TT
+    precheck pass.
+
+A note, not a breakage: msde release first failed on an open issue from
+the 33/35 top_harden failures. The engine doesn't close an issue when its
+gate later passes after an engine fix, so I marked it fixed by hand
+(`state.py issue --status fixed`) and release passed.
 
 ### Where round 3 stands
 
@@ -255,9 +262,11 @@ the layout agent $1.4, and orchestration for the rest.
 | analog: spec_lint to bench_strength, drc, lvs, release | pass (re-run fresh on 84ea5df) |
 | analog H2 | asked (H2-4da295), unanswered |
 | analog pex_sim | pass (34 fixed by a spec `sim_timeout_s: {pex_sim: 600}`; run takes 297 s) |
-| top_harden | pass on c4be2a4 (35 fixed; harden's own DRC, LVS and antenna clean, setup slack +0.29 ns) |
-| top_drc | fail on 37: magic 0, klayout 2 x DCF.1a inside the unfilled macro |
-| top_lvs | PASS on 0edfee5 (fix 36): circuits match uniquely, macro 480 fets + 25 res on both sides |
-| precheck | fail on 37: the same 2 DCF.1a in TT's own klayout DRC |
+| top_harden | pass on a00b866 (35 and 37 fixed; harden's own DRC, LVS and antenna clean, setup slack +0.29 ns) |
+| top_drc | pass on a00b866 (37 fixed: the macro is filled) |
+| top_lvs | pass on a00b866 (fix 36): circuits match uniquely, macro 480 fets + 25 res on both sides |
+| precheck | pass on a00b866 (TT's own klayout DRC clean) |
 | cosim | pass (integrator bench: released RTL + ideal-driver real ladder; DNL/INL 0.006 LSB, settling 1.19 µs) |
-| msde release, design document | not reached |
+| msde release | pass |
+| msde H2 | asked (H2-1452e6), unanswered |
+| design document | waits on H2 |
