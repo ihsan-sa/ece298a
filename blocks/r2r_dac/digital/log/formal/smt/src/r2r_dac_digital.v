@@ -292,8 +292,14 @@ module r2r_dac_digital (
 
   wire step = ~slow | presc_tc;
 
+  // rst_n is registered once before use (synchronised reset): the pad's
+  // input delay then sees only one flop, not the sine/mux logic, which is
+  // what kept ss_125C short of setup. Reset takes effect one edge later.
+  reg rst_q;
+  always @(posedge clk) rst_q <= rst_n;
+
   always @(posedge clk) begin
-    if (!rst_n) begin
+    if (!rst_q) begin
       code_reg <= 8'd0;
       cnt      <= 8'd0;
       presc    <= 8'd0;
