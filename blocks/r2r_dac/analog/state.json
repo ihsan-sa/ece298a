@@ -4,7 +4,7 @@
  "block": "r2r_dac_analog",
  "workspace": "blocks/r2r_dac/analog",
  "created": "2026-09-25T05:47:00",
- "updated": "2026-10-13T04:51:35",
+ "updated": "2026-10-13T04:51:42",
  "phase": "P5",
  "toolchain": null,
  "gates": {
@@ -568,14 +568,14 @@
   "lvs": {
    "phase": "P5",
    "status": "pass",
-   "attempts": 4,
+   "attempts": 5,
    "last": {
-    "ts": "2026-10-13T04:26:11",
+    "ts": "2026-10-13T04:51:42",
     "status": "pass",
     "failing_count": 0,
     "total": 0,
     "inputs": {
-     "layout": "dir_text:9e0c0412097973353e7b7d784d6f6f985ba2822918b154445f66466be6fdcae7",
+     "layout": "dir_text:7a954c277f279e0a8b3d75e97ed6833bf445cf7e04f4ec0eefae35be290d869d",
      "netlist": "dir_text:13970a2f19f36bd8aa49baa3a94132821e16917455715ba77b23b074b4551548",
      "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d",
      "sizing": "json_canonical:143a2b2839438ea425c0134de50627081e87e3d5ec338449012b3e9fc831a8df"
@@ -632,14 +632,19 @@
       "sizing": "json_canonical:143a2b2839438ea425c0134de50627081e87e3d5ec338449012b3e9fc831a8df"
      },
      "job": null
-    }
-   ],
-   "stale": [
+    },
     {
-     "ts": "2026-10-13T04:47:51",
-     "edit_class": "layout_code_edit",
-     "refs": [],
-     "human_hold": 1
+     "ts": "2026-10-13T04:51:42",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "layout": "dir_text:7a954c277f279e0a8b3d75e97ed6833bf445cf7e04f4ec0eefae35be290d869d",
+      "netlist": "dir_text:13970a2f19f36bd8aa49baa3a94132821e16917455715ba77b23b074b4551548",
+      "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d",
+      "sizing": "json_canonical:143a2b2839438ea425c0134de50627081e87e3d5ec338449012b3e9fc831a8df"
+     },
+     "job": null
     }
    ]
   },
@@ -759,13 +764,13 @@
    "path": "spec/spec.yaml",
    "kind": "spec_yaml",
    "sha256": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d",
-   "hashed": "2026-10-13T04:51:35"
+   "hashed": "2026-10-13T04:51:42"
   },
   "netlist": {
    "path": "netlist",
    "kind": "netlist",
    "sha256": "dir_text:13970a2f19f36bd8aa49baa3a94132821e16917455715ba77b23b074b4551548",
-   "hashed": "2026-10-13T04:26:11"
+   "hashed": "2026-10-13T04:51:42"
   },
   "tb": {
    "path": "tb",
@@ -777,13 +782,13 @@
    "path": "layout",
    "kind": "layout",
    "sha256": "dir_text:7a954c277f279e0a8b3d75e97ed6833bf445cf7e04f4ec0eefae35be290d869d",
-   "hashed": "2026-10-13T04:51:35"
+   "hashed": "2026-10-13T04:51:42"
   },
   "sizing": {
    "path": "sizing/sizing.yaml",
    "kind": "sizing",
    "sha256": "json_canonical:143a2b2839438ea425c0134de50627081e87e3d5ec338449012b3e9fc831a8df",
-   "hashed": "2026-10-13T04:26:11"
+   "hashed": "2026-10-13T04:51:42"
   },
   "mutant_rulings": {
    "path": "spec/mutant_rulings.yaml",
@@ -1522,6 +1527,14 @@
    "gate": "drc",
    "status": "pass",
    "attempt": 7,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-13T04:51:42",
+   "event": "gate",
+   "gate": "lvs",
+   "status": "pass",
+   "attempt": 5,
    "failing_count": 0
   }
  ]

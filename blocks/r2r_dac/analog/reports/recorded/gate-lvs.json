@@ -3,7 +3,7 @@
  "gate": "lvs",
  "phase": "P5",
  "tool": "analog_lvs",
- "input_digest": "dir_text:9e0c0412097973353e7b7d784d6f6f985ba2822918b154445f66466be6fdcae7",
+ "input_digest": "dir_text:7a954c277f279e0a8b3d75e97ed6833bf445cf7e04f4ec0eefae35be290d869d",
  "status": "pass",
  "criteria": {
   "fail_severities": [
@@ -35,11 +35,11 @@
   "log": "log/lvs/netgen_lvs.log"
  },
  "inputs_at_start": {
-  "layout": "dir_text:9e0c0412097973353e7b7d784d6f6f985ba2822918b154445f66466be6fdcae7",
+  "layout": "dir_text:7a954c277f279e0a8b3d75e97ed6833bf445cf7e04f4ec0eefae35be290d869d",
   "netlist": "dir_text:13970a2f19f36bd8aa49baa3a94132821e16917455715ba77b23b074b4551548",
   "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d",
   "sizing": "json_canonical:143a2b2839438ea425c0134de50627081e87e3d5ec338449012b3e9fc831a8df"
  },
- "recorded_ts": "2026-10-13T04:26:11",
- "attempts": 4
+ "recorded_ts": "2026-10-13T04:51:42",
+ "attempts": 5
 }
