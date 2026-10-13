@@ -4,7 +4,7 @@
  "block": "r2r_dac",
  "workspace": "blocks/r2r_dac/digital",
  "created": "2026-09-25T08:51:49",
- "updated": "2026-10-13T04:19:08",
+ "updated": "2026-10-13T04:20:03",
  "phase": "P6",
  "toolchain": null,
  "gates": {
@@ -1162,15 +1162,15 @@
   "drc": {
    "phase": "P6",
    "status": "pass",
-   "attempts": 1,
+   "attempts": 2,
    "last": {
-    "ts": "2026-10-13T03:57:47",
+    "ts": "2026-10-13T04:20:03",
     "status": "pass",
     "failing_count": 0,
     "total": 0,
     "inputs": {
-     "harden": "dir_text:f866a5fa98728f1a85652f2f71830c3685ff9662d5e5482c48f7af1734cf022e",
-     "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
+     "harden": "dir_text:5e0fc600709e3cc97c7324a97c0c78553ef21db49b5a2f1a7ca5465fd7d2b2f2",
+     "spec_yaml_sans_formal": "json_canonical_sans_formal:ed8f31d7b49d1395e51d6ee5b8f5bdd0ed70710413c640dc29961fe29e015119"
     },
     "job": null,
     "facts": {
@@ -1193,38 +1193,21 @@
       "magic_count": 0,
       "klayout_count": 0
      }
-    }
-   ],
-   "stale": [
-    {
-     "ts": "2026-10-13T03:59:55",
-     "edit_class": "harden_config_edit",
-     "refs": [],
-     "human_hold": 2
     },
     {
-     "ts": "2026-10-13T04:02:35",
-     "edit_class": "harden_config_edit",
-     "refs": [],
-     "human_hold": 2
-    },
-    {
-     "ts": "2026-10-13T04:10:14",
-     "edit_class": "rtl_edit",
-     "refs": [],
-     "human_hold": 1
-    },
-    {
-     "ts": "2026-10-13T04:16:47",
-     "edit_class": "spec_edit",
-     "refs": [],
-     "human_hold": 2
-    },
-    {
-     "ts": "2026-10-13T04:16:47",
-     "edit_class": "rtl_edit",
-     "refs": [],
-     "human_hold": 1
+     "ts": "2026-10-13T04:20:03",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "harden": "dir_text:5e0fc600709e3cc97c7324a97c0c78553ef21db49b5a2f1a7ca5465fd7d2b2f2",
+      "spec_yaml_sans_formal": "json_canonical_sans_formal:ed8f31d7b49d1395e51d6ee5b8f5bdd0ed70710413c640dc29961fe29e015119"
+     },
+     "job": null,
+     "facts": {
+      "magic_count": 0,
+      "klayout_count": 0
+     }
     }
    ]
   },
@@ -1559,7 +1542,7 @@
    "path": "spec/spec.yaml",
    "kind": "spec_yaml_sans_formal",
    "sha256": "json_canonical_sans_formal:ed8f31d7b49d1395e51d6ee5b8f5bdd0ed70710413c640dc29961fe29e015119",
-   "hashed": "2026-10-13T04:19:08"
+   "hashed": "2026-10-13T04:20:03"
   },
   "harden_config": {
    "path": "harden/config.json",
@@ -1589,7 +1572,7 @@
    "path": "harden",
    "kind": "harden",
    "sha256": "dir_text:5e0fc600709e3cc97c7324a97c0c78553ef21db49b5a2f1a7ca5465fd7d2b2f2",
-   "hashed": "2026-10-13T04:19:08"
+   "hashed": "2026-10-13T04:20:03"
   }
  },
  "open_issues": [
@@ -1701,6 +1684,12 @@
    "why": "owner, #ece298a 1791879206.573569, 2026-10-13: 'Yes, take the one more attempt and register rst_n internally. A synchronised reset is good practice anyway, and it's cheap. If it still misses at ss/125C after that, accept it and stop: write the remaining slack and the max clock it does meet at that corner into the design notes, so nobody is surprised later.'",
    "phase": "P6",
    "ts": "2026-10-13T04:15:16"
+  },
+  {
+   "what": "timing at ss_125C_3v00 accepted as failing after a4: worst setup slack -0.87 ns (max parasitics; nom -0.55, min -0.29) at 50 MHz; about 47.4 MHz (21.1 ns) met at that corner; tt +7.4 ns, ff +11.0 ns, hold met everywhere",
+   "why": "owner, #ece298a 1791879206.573569: 'If it still misses at ss/125C after that, accept it and stop: write the remaining slack and the max clock it does meet at that corner into the design notes.' a4 (rst_n registered) kept: the owner wants the synchronised reset; the worst path moved to uio_in[2] (slow) with the TT 20% input delay. Max clock is estimated from the reported path (0.2T + 17.58 ns <= T + 0.72 ns), not from an STA rerun at 21.1 ns.",
+   "phase": "P6",
+   "ts": "2026-10-13T04:19:46"
   }
  ],
  "edits": [
@@ -2925,6 +2914,19 @@
    "status": "fail",
    "attempt": 5,
    "failing_count": 3
+  },
+  {
+   "ts": "2026-10-13T04:19:46",
+   "event": "decision",
+   "what": "timing at ss_125C_3v00 accepted as failing after a4: worst setup slack -0.87 ns (max parasitics; nom -0.55, min -0.29) at 50 MHz; about 47.4 MHz (21.1 ns) met at that corner; tt +7.4 ns, ff +11.0 ns, hold met everywhere"
+  },
+  {
+   "ts": "2026-10-13T04:20:03",
+   "event": "gate",
+   "gate": "drc",
+   "status": "pass",
+   "attempt": 2,
+   "failing_count": 0
   }
  ]
 }

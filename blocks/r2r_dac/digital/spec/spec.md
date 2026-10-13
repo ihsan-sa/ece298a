@@ -113,3 +113,21 @@ presc[7:0], dac_code register. Next dac_code = mux(mode: 00 -> ui_in, 01 -> cnt,
 11 -> code_reg). Sine table is a combinational case statement. uo_out = dac_code (wire).
 TT standalone pins: ui_in -> ui_in, mode -> uio_in[1:0], slow -> uio_in[2], dac_code -> uio_out[7:0]
 (uio_oe driven by the wrapper), uo_out -> uo_out[7:0], rst_n -> rst_n (active-low, no inversion).
+
+## Timing at the slow corner (accepted shortfall)
+
+The block meets 50 MHz at tt and ff but not at ss / 125 C / 3.0 V. After
+the last allowed fix (rst_n registered inside the block), the worst setup
+slack there is -0.87 ns with max parasitics (-0.55 ns nominal, -0.29 ns
+min). Hold is met at every corner. At tt the setup slack is +7.4 ns and at
+ff +11.0 ns.
+
+The worst path starts at `slow` (uio_in[2]) and ends at an internal flop.
+Tiny Tapeout constrains inputs to arrive 20% of the period after the clock,
+so that path needs a period of about 21.1 ns: the block meets roughly
+47 MHz at ss / 125 C. That figure comes from the reported path, not from
+a rerun of timing at 21.1 ns.
+
+The owner accepted this on 2026-10-13. At 50 MHz the front end should
+be correct at typical and fast silicon, and may miss setup on a hot,
+slow die at low supply. Clock it at 47 MHz or below if that case matters.
