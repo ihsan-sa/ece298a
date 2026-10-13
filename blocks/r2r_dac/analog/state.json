@@ -4,7 +4,7 @@
  "block": "r2r_dac_analog",
  "workspace": "blocks/r2r_dac/analog",
  "created": "2026-09-25T05:47:00",
- "updated": "2026-10-13T04:26:11",
+ "updated": "2026-10-13T04:47:51",
  "phase": "P5",
  "toolchain": null,
  "gates": {
@@ -552,6 +552,14 @@
      },
      "job": null
     }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:47:51",
+     "edit_class": "layout_code_edit",
+     "refs": [],
+     "human_hold": 1
+    }
    ]
   },
   "lvs": {
@@ -621,6 +629,14 @@
       "sizing": "json_canonical:143a2b2839438ea425c0134de50627081e87e3d5ec338449012b3e9fc831a8df"
      },
      "job": null
+    }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:47:51",
+     "edit_class": "layout_code_edit",
+     "refs": [],
+     "human_hold": 1
     }
    ]
   },
@@ -909,6 +925,24 @@
    "class": "layout_code_edit",
    "refs": [],
    "note": "fix msde top_harden macro_power_unreachable: vdd/vss Metal3 straps (wo-1)",
+   "human_hold": 1,
+   "gates": [
+    "drc",
+    "lvs",
+    "pex_sim",
+    "release"
+   ],
+   "gates_marked": [
+    "drc",
+    "lvs"
+   ],
+   "stale_artifacts": []
+  },
+  {
+   "ts": "2026-10-13T04:47:51",
+   "class": "layout_code_edit",
+   "refs": [],
+   "note": "fix msde top_harden a2: dac_code pins as Metal2 tracks to the cell edge (wo-2)",
    "human_hold": 1,
    "gates": [
     "drc",
@@ -1465,6 +1499,19 @@
    "status": "pass",
    "attempt": 4,
    "failing_count": 0
+  },
+  {
+   "ts": "2026-10-13T04:47:33",
+   "event": "snapshot",
+   "label": "pre-fix-top_harden-a2",
+   "files": 12
+  },
+  {
+   "ts": "2026-10-13T04:47:51",
+   "event": "edit",
+   "edit_class": "layout_code_edit",
+   "refs": [],
+   "human_hold": 1
   }
  ]
 }

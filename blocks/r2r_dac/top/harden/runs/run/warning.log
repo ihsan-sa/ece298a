@@ -2182,3 +2182,44 @@ No libs found for macro r2r_dac_analog at corner nom_tt_025C_3v30. The module wi
 Threshold for Threshold-surpassing long wires is not set. The checker will be skipped.
 No libs found for macro r2r_dac_analog at corner nom_tt_025C_3v30. The module will be black-boxed.
 [ORD-0032] Invalid thread number specification: None.
+[ORD-0032] Invalid thread number specification: None.
+[ORD-0032] Invalid thread number specification: None.
+[ORD-0032] Invalid thread number specification: None.
+No libs found for macro r2r_dac_analog at corner nom_tt_025C_3v30. The module will be black-boxed.
+No libs found for macro r2r_dac_analog at corner nom_ss_125C_3v00. The module will be black-boxed.
+No libs found for macro r2r_dac_analog at corner nom_ff_n40C_3v60. The module will be black-boxed.
+No libs found for macro r2r_dac_analog at corner min_tt_025C_3v30. The module will be black-boxed.
+No libs found for macro r2r_dac_analog at corner min_ss_125C_3v00. The module will be black-boxed.
+No libs found for macro r2r_dac_analog at corner min_ff_n40C_3v60. The module will be black-boxed.
+No libs found for macro r2r_dac_analog at corner max_tt_025C_3v30. The module will be black-boxed.
+No libs found for macro r2r_dac_analog at corner max_ss_125C_3v00. The module will be black-boxed.
+No libs found for macro r2r_dac_analog at corner max_ff_n40C_3v60. The module will be black-boxed.
+'VSRC_LOC_FILES' was not given a value, which may make the results of IR drop analysis inaccurate. If you are not integrating a top-level chip for manufacture, you may ignore this warning, otherwise, see the documentation for 'VSRC_LOC_FILES'.
+No libs found for macro r2r_dac_analog at corner nom_tt_025C_3v30. The module will be black-boxed.
+[ORD-0032] Invalid thread number specification: None.
+[ODB-0186] macro gf180mcu_fd_io__asig_5p0 references unknown site GF_IO_Site
+[ODB-0186] macro gf180mcu_fd_io__dvss references unknown site GF_IO_Site
+[ODB-0186] macro gf180mcu_fd_io__fill5 references unknown site GF_IO_Site
+[ODB-0186] macro gf180mcu_ef_io__bi_t references unknown site GF_IO_Site
+[ODB-0186] macro gf180mcu_fd_io__bi_24t references unknown site GF_IO_Site
+[ODB-0186] macro gf180mcu_fd_io__in_c references unknown site GF_IO_Site
+[ODB-0186] macro gf180mcu_fd_io__brk2 references unknown site GF_IO_Site
+[ODB-0186] macro gf180mcu_fd_io__fillnc references unknown site GF_IO_Site
+[ODB-0186] macro gf180mcu_fd_io__brk5 references unknown site GF_IO_Site
+[ODB-0186] macro gf180mcu_fd_io__fill1 references unknown site GF_IO_Site
+[ODB-0186] macro gf180mcu_fd_io__bi_t references unknown site GF_IO_Site
+[ODB-0186] macro gf180mcu_fd_io__fill10 references unknown site GF_IO_Site
+[ODB-0186] macro gf180mcu_fd_io__dvdd references unknown site GF_IO_Site
+[ODB-0186] macro gf180mcu_fd_io__cor references unknown site GF_COR_Site
+[ODB-0186] macro gf180mcu_fd_io__in_s references unknown site GF_IO_Site
+Cell 'tt_um_r2r_dac_digital' has (7) inout pin(s) without antenna gate information not antenna diffusion information. They might be disconnected.
+Cell 'tt_um_r2r_dac_digital' has (6) input pin(s) without antenna gate information. They might not be connected to a gate.
+Setup violations found in the following corners:
+* max_ss_125C_3v00
+* min_ss_125C_3v00
+* nom_ss_125C_3v00
+Max Slew violations found in the following corners:
+* max_ss_125C_3v00
+* min_ss_125C_3v00
+* nom_ss_125C_3v00
+klayout__drc_error__count not reported. KLayout.DRC may have been skipped.
