@@ -4,7 +4,7 @@
  "block": "r2r_dac_analog",
  "workspace": "blocks/r2r_dac/analog",
  "created": "2026-09-25T05:47:00",
- "updated": "2026-10-13T03:57:56",
+ "updated": "2026-10-13T03:58:26",
  "phase": "P5",
  "toolchain": null,
  "gates": {
@@ -513,16 +513,16 @@
   },
   "bench_strength": {
    "phase": "P4",
-   "status": "fail",
-   "attempts": 2,
+   "status": "pass",
+   "attempts": 3,
    "last": {
-    "ts": "2026-10-13T03:56:34",
-    "status": "fail",
-    "failing_count": 4,
-    "total": 4,
+    "ts": "2026-10-13T03:58:26",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 0,
     "inputs": {
      "netlist": "dir_text:13970a2f19f36bd8aa49baa3a94132821e16917455715ba77b23b074b4551548",
-     "tb": "dir_text:b929c151416c6f615144916d3ae3ccf0a18e46bb346562f4e8966b0ba63f89ea",
+     "tb": "dir_text:bd1a8539e7092bb573bd6811f95fc170b4fce78f2829463999ce0bfe4f4a0609",
      "mutant_rulings": null,
      "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d",
      "sizing": "json_canonical:143a2b2839438ea425c0134de50627081e87e3d5ec338449012b3e9fc831a8df"
@@ -530,11 +530,11 @@
     "job": null,
     "facts": {
      "total_mutants": 58,
-     "killed": 54,
-     "survived": 4,
+     "killed": 58,
+     "survived": 0,
      "devices_total": 33,
      "devices_mutated": 33,
-     "killed_by_sensitivity": 0,
+     "killed_by_sensitivity": 4,
      "equivalent": 0,
      "below_spread": 0
     }
@@ -579,6 +579,30 @@
       "equivalent": 0,
       "below_spread": 0
      }
+    },
+    {
+     "ts": "2026-10-13T03:58:26",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "netlist": "dir_text:13970a2f19f36bd8aa49baa3a94132821e16917455715ba77b23b074b4551548",
+      "tb": "dir_text:bd1a8539e7092bb573bd6811f95fc170b4fce78f2829463999ce0bfe4f4a0609",
+      "mutant_rulings": null,
+      "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d",
+      "sizing": "json_canonical:143a2b2839438ea425c0134de50627081e87e3d5ec338449012b3e9fc831a8df"
+     },
+     "job": null,
+     "facts": {
+      "total_mutants": 58,
+      "killed": 58,
+      "survived": 0,
+      "devices_total": 33,
+      "devices_mutated": 33,
+      "killed_by_sensitivity": 4,
+      "equivalent": 0,
+      "below_spread": 0
+     }
     }
    ]
   }
@@ -603,19 +627,19 @@
    "path": "spec/spec.yaml",
    "kind": "spec_yaml",
    "sha256": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d",
-   "hashed": "2026-10-13T03:57:56"
+   "hashed": "2026-10-13T03:58:26"
   },
   "netlist": {
    "path": "netlist",
    "kind": "netlist",
    "sha256": "dir_text:13970a2f19f36bd8aa49baa3a94132821e16917455715ba77b23b074b4551548",
-   "hashed": "2026-10-13T03:57:30"
+   "hashed": "2026-10-13T03:58:26"
   },
   "tb": {
    "path": "tb",
    "kind": "tb",
-   "sha256": "dir_text:b929c151416c6f615144916d3ae3ccf0a18e46bb346562f4e8966b0ba63f89ea",
-   "hashed": "2026-10-13T03:56:34"
+   "sha256": "dir_text:bd1a8539e7092bb573bd6811f95fc170b4fce78f2829463999ce0bfe4f4a0609",
+   "hashed": "2026-10-13T03:58:26"
   },
   "layout": {
    "path": "layout",
@@ -627,13 +651,13 @@
    "path": "sizing/sizing.yaml",
    "kind": "sizing",
    "sha256": "json_canonical:143a2b2839438ea425c0134de50627081e87e3d5ec338449012b3e9fc831a8df",
-   "hashed": "2026-10-13T03:57:30"
+   "hashed": "2026-10-13T03:58:26"
   },
   "mutant_rulings": {
    "path": "spec/mutant_rulings.yaml",
    "kind": "mutant_rulings",
    "sha256": null,
-   "hashed": "2026-10-13T03:56:34"
+   "hashed": "2026-10-13T03:58:26"
   }
  },
  "open_issues": [
@@ -1216,6 +1240,14 @@
    "gate": "spec_lint",
    "status": "pass",
    "attempt": 8,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-13T03:58:26",
+   "event": "gate",
+   "gate": "bench_strength",
+   "status": "pass",
+   "attempt": 3,
    "failing_count": 0
   }
  ]
