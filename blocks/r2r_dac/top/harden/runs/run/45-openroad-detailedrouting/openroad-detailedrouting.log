@@ -1539,3 +1539,735 @@ Up-via summary (total 2873):
  Metal2    1295
  Metal3      88
  Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0195] Start 17th optimization iteration.
+    Completing 10% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 20% with 8 violations.
+    elapsed time = 00:00:01, memory = 452.07 (MB).
+    Completing 30% with 8 violations.
+    elapsed time = 00:00:01, memory = 452.07 (MB).
+    Completing 40% with 8 violations.
+    elapsed time = 00:00:01, memory = 452.07 (MB).
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:01, memory = 452.07 (MB).
+    Completing 60% with 8 violations.
+    elapsed time = 00:00:01, memory = 452.07 (MB).
+    Completing 70% with 8 violations.
+    elapsed time = 00:00:01, memory = 452.07 (MB).
+    Completing 80% with 8 violations.
+    elapsed time = 00:00:01, memory = 452.07 (MB).
+    Completing 90% with 8 violations.
+    elapsed time = 00:00:01, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:01, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:01, elapsed time = 00:00:01, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19021 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8270 um.
+Total wire length on LAYER Metal3 = 9300 um.
+Total wire length on LAYER Metal4 = 1449 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2873.
+Up-via summary (total 2873):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      88
+ Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0195] Start 18th guides tiles iteration.
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19019 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8270 um.
+Total wire length on LAYER Metal3 = 9299 um.
+Total wire length on LAYER Metal4 = 1449 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2873.
+Up-via summary (total 2873):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      88
+ Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0195] Start 19th stubborn tiles iteration.
+    Completing 10% with 8 violations.
+    elapsed time = 00:00:05, memory = 452.07 (MB).
+    Completing 20% with 8 violations.
+    elapsed time = 00:00:09, memory = 452.07 (MB).
+    Completing 30% with 8 violations.
+    elapsed time = 00:00:15, memory = 452.07 (MB).
+    Completing 40% with 8 violations.
+    elapsed time = 00:00:19, memory = 452.07 (MB).
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:27, memory = 452.07 (MB).
+    Completing 60% with 8 violations.
+    elapsed time = 00:00:31, memory = 452.07 (MB).
+    Completing 70% with 8 violations.
+    elapsed time = 00:00:37, memory = 452.07 (MB).
+    Completing 80% with 8 violations.
+    elapsed time = 00:00:41, memory = 452.07 (MB).
+    Completing 90% with 8 violations.
+    elapsed time = 00:00:47, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:51, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:51, elapsed time = 00:00:51, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19022 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8269 um.
+Total wire length on LAYER Metal3 = 9303 um.
+Total wire length on LAYER Metal4 = 1449 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2873.
+Up-via summary (total 2873):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      88
+ Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0195] Start 20th guides tiles iteration.
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19019 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8270 um.
+Total wire length on LAYER Metal3 = 9299 um.
+Total wire length on LAYER Metal4 = 1449 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2873.
+Up-via summary (total 2873):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      88
+ Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0195] Start 21st stubborn tiles iteration.
+    Completing 10% with 8 violations.
+    elapsed time = 00:00:04, memory = 452.07 (MB).
+    Completing 20% with 8 violations.
+    elapsed time = 00:00:08, memory = 452.07 (MB).
+    Completing 30% with 8 violations.
+    elapsed time = 00:00:14, memory = 452.07 (MB).
+    Completing 40% with 8 violations.
+    elapsed time = 00:00:18, memory = 452.07 (MB).
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:23, memory = 452.07 (MB).
+    Completing 60% with 8 violations.
+    elapsed time = 00:00:27, memory = 452.07 (MB).
+    Completing 70% with 8 violations.
+    elapsed time = 00:00:33, memory = 452.07 (MB).
+    Completing 80% with 8 violations.
+    elapsed time = 00:00:37, memory = 452.07 (MB).
+    Completing 90% with 8 violations.
+    elapsed time = 00:00:43, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:48, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:48, elapsed time = 00:00:48, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19023 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8269 um.
+Total wire length on LAYER Metal3 = 9304 um.
+Total wire length on LAYER Metal4 = 1449 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2873.
+Up-via summary (total 2873):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      88
+ Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0200] Skipping iteration 22
+[INFO DRT-0195] Start 23rd guides tiles iteration.
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19022 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8270 um.
+Total wire length on LAYER Metal3 = 9300 um.
+Total wire length on LAYER Metal4 = 1451 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2873.
+Up-via summary (total 2873):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      88
+ Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0195] Start 24th guides tiles iteration.
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19020 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8270 um.
+Total wire length on LAYER Metal3 = 9300 um.
+Total wire length on LAYER Metal4 = 1449 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2873.
+Up-via summary (total 2873):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      88
+ Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0195] Start 25th optimization iteration.
+    Completing 10% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 20% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 30% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 40% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 60% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 70% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 80% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 90% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19033 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8270 um.
+Total wire length on LAYER Metal3 = 9313 um.
+Total wire length on LAYER Metal4 = 1449 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2873.
+Up-via summary (total 2873):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      88
+ Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0195] Start 26th guides tiles iteration.
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19016 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8270 um.
+Total wire length on LAYER Metal3 = 9295 um.
+Total wire length on LAYER Metal4 = 1450 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2872.
+Up-via summary (total 2872):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      87
+ Metal4       0
+---------------
+       2872
+
+
+[INFO DRT-0195] Start 27th stubborn tiles iteration.
+    Completing 10% with 8 violations.
+    elapsed time = 00:00:06, memory = 452.07 (MB).
+    Completing 20% with 8 violations.
+    elapsed time = 00:00:10, memory = 452.07 (MB).
+    Completing 30% with 8 violations.
+    elapsed time = 00:00:15, memory = 452.07 (MB).
+    Completing 40% with 8 violations.
+    elapsed time = 00:00:20, memory = 452.07 (MB).
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:25, memory = 452.07 (MB).
+    Completing 60% with 8 violations.
+    elapsed time = 00:00:30, memory = 452.07 (MB).
+    Completing 70% with 8 violations.
+    elapsed time = 00:00:35, memory = 452.07 (MB).
+    Completing 80% with 8 violations.
+    elapsed time = 00:00:39, memory = 452.07 (MB).
+    Completing 90% with 8 violations.
+    elapsed time = 00:00:45, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:49, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:49, elapsed time = 00:00:49, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19019 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8269 um.
+Total wire length on LAYER Metal3 = 9300 um.
+Total wire length on LAYER Metal4 = 1450 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2872.
+Up-via summary (total 2872):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      87
+ Metal4       0
+---------------
+       2872
+
+
+[INFO DRT-0200] Skipping iteration 28
+[INFO DRT-0200] Skipping iteration 29
+[INFO DRT-0195] Start 30th guides tiles iteration.
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19022 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8270 um.
+Total wire length on LAYER Metal3 = 9300 um.
+Total wire length on LAYER Metal4 = 1451 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2873.
+Up-via summary (total 2873):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      88
+ Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0195] Start 31st guides tiles iteration.
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19020 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8270 um.
+Total wire length on LAYER Metal3 = 9300 um.
+Total wire length on LAYER Metal4 = 1449 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2873.
+Up-via summary (total 2873):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      88
+ Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0195] Start 32nd stubborn tiles iteration.
+    Completing 10% with 8 violations.
+    elapsed time = 00:00:04, memory = 452.07 (MB).
+    Completing 20% with 8 violations.
+    elapsed time = 00:00:08, memory = 452.07 (MB).
+    Completing 30% with 8 violations.
+    elapsed time = 00:00:14, memory = 452.07 (MB).
+    Completing 40% with 8 violations.
+    elapsed time = 00:00:18, memory = 452.07 (MB).
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:23, memory = 452.07 (MB).
+    Completing 60% with 8 violations.
+    elapsed time = 00:00:27, memory = 452.07 (MB).
+    Completing 70% with 8 violations.
+    elapsed time = 00:00:32, memory = 452.07 (MB).
+    Completing 80% with 8 violations.
+    elapsed time = 00:00:37, memory = 452.07 (MB).
+    Completing 90% with 8 violations.
+    elapsed time = 00:00:42, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:46, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:46, elapsed time = 00:00:46, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19019 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8270 um.
+Total wire length on LAYER Metal3 = 9299 um.
+Total wire length on LAYER Metal4 = 1449 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2873.
+Up-via summary (total 2873):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      88
+ Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0195] Start 33rd optimization iteration.
+    Completing 10% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 20% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 30% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 40% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 60% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 70% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 80% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 90% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19035 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8270 um.
+Total wire length on LAYER Metal3 = 9314 um.
+Total wire length on LAYER Metal4 = 1449 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2873.
+Up-via summary (total 2873):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      88
+ Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0195] Start 34th guides tiles iteration.
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19022 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8270 um.
+Total wire length on LAYER Metal3 = 9301 um.
+Total wire length on LAYER Metal4 = 1449 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2873.
+Up-via summary (total 2873):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      88
+ Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0195] Start 35th stubborn tiles iteration.
+    Completing 10% with 8 violations.
+    elapsed time = 00:00:04, memory = 452.07 (MB).
+    Completing 20% with 8 violations.
+    elapsed time = 00:00:08, memory = 452.07 (MB).
+    Completing 30% with 8 violations.
+    elapsed time = 00:00:13, memory = 452.07 (MB).
+    Completing 40% with 8 violations.
+    elapsed time = 00:00:17, memory = 452.07 (MB).
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:22, memory = 452.07 (MB).
+    Completing 60% with 8 violations.
+    elapsed time = 00:00:27, memory = 452.07 (MB).
+    Completing 70% with 8 violations.
+    elapsed time = 00:00:32, memory = 452.07 (MB).
+    Completing 80% with 8 violations.
+    elapsed time = 00:00:36, memory = 452.07 (MB).
+    Completing 90% with 8 violations.
+    elapsed time = 00:00:41, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:46, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:46, elapsed time = 00:00:46, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19019 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8270 um.
+Total wire length on LAYER Metal3 = 9299 um.
+Total wire length on LAYER Metal4 = 1449 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2873.
+Up-via summary (total 2873):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      88
+ Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0200] Skipping iteration 36
+[INFO DRT-0195] Start 37th guides tiles iteration.
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19022 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8270 um.
+Total wire length on LAYER Metal3 = 9300 um.
+Total wire length on LAYER Metal4 = 1451 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2873.
+Up-via summary (total 2873):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      88
+ Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0195] Start 38th guides tiles iteration.
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19020 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8270 um.
+Total wire length on LAYER Metal3 = 9300 um.
+Total wire length on LAYER Metal4 = 1449 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2873.
+Up-via summary (total 2873):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      88
+ Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0195] Start 39th stubborn tiles iteration.
+    Completing 10% with 8 violations.
+    elapsed time = 00:00:04, memory = 452.07 (MB).
+    Completing 20% with 8 violations.
+    elapsed time = 00:00:08, memory = 452.07 (MB).
+    Completing 30% with 8 violations.
+    elapsed time = 00:00:13, memory = 452.07 (MB).
+    Completing 40% with 8 violations.
+    elapsed time = 00:00:17, memory = 452.07 (MB).
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:22, memory = 452.07 (MB).
+    Completing 60% with 8 violations.
+    elapsed time = 00:00:27, memory = 452.07 (MB).
+    Completing 70% with 8 violations.
+    elapsed time = 00:00:32, memory = 452.07 (MB).
+    Completing 80% with 8 violations.
+    elapsed time = 00:00:36, memory = 452.07 (MB).
+    Completing 90% with 8 violations.
+    elapsed time = 00:00:41, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:46, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:46, elapsed time = 00:00:46, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19019 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8270 um.
+Total wire length on LAYER Metal3 = 9299 um.
+Total wire length on LAYER Metal4 = 1449 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2873.
+Up-via summary (total 2873):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      88
+ Metal4       0
+---------------
+       2873
+
+
+[INFO DRT-0195] Start 40th guides tiles iteration.
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer      Metal2
+Short                8
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 452.07 (MB), peak = 452.91 (MB)
+Total wire length = 19036 um.
+Total wire length on LAYER Metal1 = 0 um.
+Total wire length on LAYER Metal2 = 8270 um.
+Total wire length on LAYER Metal3 = 9315 um.
+Total wire length on LAYER Metal4 = 1450 um.
+Total wire length on LAYER Metal5 = 0 um.
+Total number of vias = 2872.
+Up-via summary (total 2872):
+
+---------------
+  Poly2       0
+ Metal1    1490
+ Metal2    1295
+ Metal3      87
+ Metal4       0
+---------------
+       2872
+
+
+[INFO DRT-0195] Start 41st optimization iteration.
+    Completing 10% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 20% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 30% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 40% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 60% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 70% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 80% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 90% with 8 violations.
+    elapsed time = 00:00:00, memory = 452.07 (MB).
+    Completing 100% with 8 violations.
