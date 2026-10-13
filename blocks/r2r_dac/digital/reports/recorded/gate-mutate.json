@@ -78,8 +78,14 @@
    "21": "pdr"
   },
   "unproven_survivors": {},
-  "wall_s": 159.99
+  "wall_s": 15.61
  },
- "recorded_ts": "2026-09-27T00:30:20",
- "attempts": 3
+ "inputs_at_start": {
+  "rtl": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
+  "tb": "dir_text:6aa2b475089f5db2f0d695236744c00ac8db1a3787df914d5d5ae69a447205de",
+  "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1",
+  "mutant_rulings": null
+ },
+ "recorded_ts": "2026-10-13T03:51:40",
+ "attempts": 4
 }

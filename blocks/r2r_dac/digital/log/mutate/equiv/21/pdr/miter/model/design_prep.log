@@ -61,6 +61,6 @@ Finding unused cells or wires in module \miter..
 13. Executing RTLIL backend.
 Output filename: ../model/design_prep.il
 
-End of script. Logfile hash: e37f9b4cb6, time: 0.14s, user: 0.06s, system: 0.02s, MEM: 29.70 MB peak
+End of script. Logfile hash: e37f9b4cb6, time: 0.02s, user: 0.02s, system: 0.01s, MEM: 29.56 MB peak
 Yosys 0.69 (git sha1 9f75ca1f9, Release, GNU /usr/bin/c++ 13.3.0)
-Time spent: 43% 4x opt_clean (0 sec), 14% 1x check (0 sec), ...
+Time spent: 40% 4x opt_clean (0 sec), 13% 1x check (0 sec), ...

@@ -1854,6 +1854,6 @@ Warning: Treating undriven bit miter.\in_clk like $anyseq.
 Warning: Treating a total of 13 undriven bits in miter like $anyseq.
 
 Warnings: 14 unique messages, 14 total
-End of script. Logfile hash: bacae27672, time: 0.59s, user: 0.24s, system: 0.03s, MEM: 37.68 MB peak
+End of script. Logfile hash: bacae27672, time: 0.09s, user: 0.08s, system: 0.02s, MEM: 37.86 MB peak
 Yosys 0.69 (git sha1 9f75ca1f9, Release, GNU /usr/bin/c++ 13.3.0)
-Time spent: 28% 6x opt_clean (0 sec), 17% 7x opt_expr (0 sec), ...
+Time spent: 28% 6x opt_clean (0 sec), 15% 7x opt_expr (0 sec), ...
