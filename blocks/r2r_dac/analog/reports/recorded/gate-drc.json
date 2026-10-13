@@ -3,7 +3,7 @@
  "gate": "drc",
  "phase": "P5",
  "tool": "analog_drc",
- "input_digest": "dir_text:9e0c0412097973353e7b7d784d6f6f985ba2822918b154445f66466be6fdcae7",
+ "input_digest": "dir_text:7a954c277f279e0a8b3d75e97ed6833bf445cf7e04f4ec0eefae35be290d869d",
  "status": "pass",
  "criteria": {
   "fail_severities": [
@@ -31,17 +31,17 @@
   "bbox_um": {
    "x0": -2.04,
    "y0": -3.2,
-   "x1": 205.78,
+   "x1": 208.48,
    "y1": 136.36,
-   "width": 207.82,
+   "width": 210.52,
    "height": 139.56
   },
   "footprint": null
  },
  "inputs_at_start": {
-  "layout": "dir_text:9e0c0412097973353e7b7d784d6f6f985ba2822918b154445f66466be6fdcae7",
+  "layout": "dir_text:7a954c277f279e0a8b3d75e97ed6833bf445cf7e04f4ec0eefae35be290d869d",
   "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d"
  },
- "recorded_ts": "2026-10-13T04:26:09",
- "attempts": 6
+ "recorded_ts": "2026-10-13T04:51:35",
+ "attempts": 7
 }

@@ -4,7 +4,7 @@
  "block": "r2r_dac_analog",
  "workspace": "blocks/r2r_dac/analog",
  "created": "2026-09-25T05:47:00",
- "updated": "2026-10-13T04:47:51",
+ "updated": "2026-10-13T04:51:35",
  "phase": "P5",
  "toolchain": null,
  "gates": {
@@ -471,14 +471,14 @@
   "drc": {
    "phase": "P5",
    "status": "pass",
-   "attempts": 6,
+   "attempts": 7,
    "last": {
-    "ts": "2026-10-13T04:26:09",
+    "ts": "2026-10-13T04:51:35",
     "status": "pass",
     "failing_count": 0,
     "total": 0,
     "inputs": {
-     "layout": "dir_text:9e0c0412097973353e7b7d784d6f6f985ba2822918b154445f66466be6fdcae7",
+     "layout": "dir_text:7a954c277f279e0a8b3d75e97ed6833bf445cf7e04f4ec0eefae35be290d869d",
      "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d"
     },
     "job": null
@@ -551,14 +551,17 @@
       "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d"
      },
      "job": null
-    }
-   ],
-   "stale": [
+    },
     {
-     "ts": "2026-10-13T04:47:51",
-     "edit_class": "layout_code_edit",
-     "refs": [],
-     "human_hold": 1
+     "ts": "2026-10-13T04:51:35",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "layout": "dir_text:7a954c277f279e0a8b3d75e97ed6833bf445cf7e04f4ec0eefae35be290d869d",
+      "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d"
+     },
+     "job": null
     }
    ]
   },
@@ -756,7 +759,7 @@
    "path": "spec/spec.yaml",
    "kind": "spec_yaml",
    "sha256": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d",
-   "hashed": "2026-10-13T04:26:11"
+   "hashed": "2026-10-13T04:51:35"
   },
   "netlist": {
    "path": "netlist",
@@ -773,8 +776,8 @@
   "layout": {
    "path": "layout",
    "kind": "layout",
-   "sha256": "dir_text:9e0c0412097973353e7b7d784d6f6f985ba2822918b154445f66466be6fdcae7",
-   "hashed": "2026-10-13T04:26:11"
+   "sha256": "dir_text:7a954c277f279e0a8b3d75e97ed6833bf445cf7e04f4ec0eefae35be290d869d",
+   "hashed": "2026-10-13T04:51:35"
   },
   "sizing": {
    "path": "sizing/sizing.yaml",
@@ -1512,6 +1515,14 @@
    "edit_class": "layout_code_edit",
    "refs": [],
    "human_hold": 1
+  },
+  {
+   "ts": "2026-10-13T04:51:35",
+   "event": "gate",
+   "gate": "drc",
+   "status": "pass",
+   "attempt": 7,
+   "failing_count": 0
   }
  ]
 }

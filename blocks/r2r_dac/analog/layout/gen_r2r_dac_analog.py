@@ -31,8 +31,15 @@ Routing, one scheme for every net:
     over the metal2 vss bus and joined to it by via2s; vdd is a metal3
     strap along the top, the full width, reached by the vdd metal2 strip
     run up to it and a via2. Nothing else is on metal3, nothing above it.
-Pins are labelled in the subckt's own order: signals on metal1, vdd and
-vss on their metal3 straps.
+Pins are labelled in the subckt's own order. Every signal pin is a metal2
+track out to the cell's RIGHT edge, labelled on metal2 at that edge (the
+tile router lands there, never on buried metal): each buffer's I gets a
+via1 at its right end and a metal2 wire right, at the I strip's own y,
+past the row's end; vout's top-left stub is carried on right the same way.
+The wires dip to metal1 for 3um to pass under the vdd/vss metal2 strips,
+then come back up to a short metal2 pin stub at the edge. Each Z stub
+runs in the lower Z metal1 band, 0.4um below the I wire. vdd and vss are
+labelled on their metal3 straps.
 """
 from __future__ import annotations
 
@@ -44,7 +51,7 @@ import layoutlib  # noqa: E402
 
 L1 = layoutlib.GF180_LAYER["metal1"]
 L2 = layoutlib.GF180_LAYER["metal2"]
-L1LBL = layoutlib.GF180_LAYER["metal1_label"]
+L2LBL = layoutlib.GF180_LAYER["metal2_label"]
 VIA2 = (38, 0)
 L3 = (42, 0)
 L3LBL = (42, 10)
@@ -68,10 +75,18 @@ TIE = f"{STD_LIB}__filltie"
 CELL_H = 3.92
 BUF_W = 34.72
 TIE_W = 1.12
-# via positions inside buf_20 (its LEF): Z's wide metal1 at x 22.23-23.13,
-# y 1.51-2.27; I's metal1 at x 0.63-9.90, y 1.74-2.15.
-Z_VIA = (22.68, 1.89)
-I_LBL = (5.0, 1.945)
+# via positions inside buf_20 (its LEF): Z's lower metal1 band at x
+# 12.565-32.955, y 0.865-1.51; I's metal1 at x 0.63-9.90, y 1.74-2.15.
+# The Z via's metal2 pad (y 0.90-1.30) sits 0.445um below the I wire's
+# (1.745-2.145), over M2.2a's 0.28um.
+Z_VIA = (22.68, 1.10)
+I_VIA = (9.50, 1.945)
+# right of the rows: the bridge's via1s, the vdd/vss strips between them
+BR_X0 = 0.6            # first bridge via1, past the row's end
+VDD_DX = 2.0           # vdd metal2 strip, past the row's end
+VSS_DX = 3.5           # vss metal2 strip, past the row's end
+BR_X1 = 5.0            # second bridge via1, past the row's end
+EDGE_DX = 6.0          # the cell's right edge, past the row's end
 
 
 def resistor_rows():
@@ -110,6 +125,7 @@ def generate():
     _draw_fet, draw_res = layoutlib.gf180_cells()
     top = gf.Component()
     labels = []
+    edge_pins = []  # (pin, x where its metal2 wire starts, y)
 
     # ---------------------------------------------------------- buffers
     buf = std_cell(BUF)
@@ -222,12 +238,13 @@ def generate():
         dx = track_x[f"d{k}"]
         layoutlib.rect(top, dx - W / 2, zy - W / 2, zx + W / 2, zy + W / 2, L2)
         layoutlib.via1(top, dx, zy)
-        labels.append((f"dac_code[{k}]", x_buf + I_LBL[0], ty(r, I_LBL[1]),
-                       L1LBL))
+        iy = ty(r, I_VIA[1])
+        layoutlib.via1(top, x_buf + I_VIA[0], iy)
+        edge_pins.append((f"dac_code[{k}]", x_buf + I_VIA[0], iy))
 
     # supply rails: VSS at y = 0, 2H, 4H, ...; VDD at H, 3H, ...
-    x_vdd = x_row_end + 1.5
-    x_vss = x_row_end + 3.0
+    x_vdd = x_row_end + VDD_DX
+    x_vss = x_row_end + VSS_DX
     vdd_ys = [CELL_H * j for j in range(1, n_bufs + 1, 2)]
     vss_ys = [CELL_H * j for j in range(0, n_bufs + 1, 2)]
     for y in vdd_ys:
@@ -252,8 +269,20 @@ def generate():
     layoutlib.via1(top, x_vss, y_bus)
 
     # ---------------------------------------------------------- vout
-    vx = track_x["vout"]
-    labels.append(("vout", vx, min(pts["vout"]), L1LBL))
+    # carried right from its track along its top stub's y (that stub's own
+    # row has no other metal2 right of the track at that y)
+    edge_pins.append(("vout", track_x["vout"], max(pts["vout"])))
+
+    # ---------------------------------------------------------- edge pins
+    xb0, xb1 = x_row_end + BR_X0, x_row_end + BR_X1
+    x_edge = x_row_end + EDGE_DX
+    for pin, x0, y in edge_pins:
+        layoutlib.rect(top, x0 - W / 2, y - W / 2, xb0 + W / 2, y + W / 2, L2)
+        layoutlib.via1(top, xb0, y)
+        layoutlib.rect(top, xb0 - W / 2, y - W / 2, xb1 + W / 2, y + W / 2, L1)
+        layoutlib.via1(top, xb1, y)
+        layoutlib.rect(top, xb1 - W / 2, y - W / 2, x_edge, y + W / 2, L2)
+        labels.append((pin, x_edge - 0.25, y, L2LBL))
 
     # ---------------------------------------------------------- metal3
     bb = top.dbbox()
