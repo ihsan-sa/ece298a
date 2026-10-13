@@ -215,6 +215,16 @@ the layout agent $1.4, and orchestration for the rest.
     glitch energy 23.8/14.9 pV·s (bound 260 pV·s), glitch peak
     21.8/22.5 mV (bound 52 mV). Reported, not worked around.
 
+35. top_harden places the analog GDS at the wrong offset. The macro's
+    bbox starts at (-2.04, -3.2) µm because its vss Metal3 strap sits
+    below y = 0, so the LEF has `ORIGIN 2.040 3.200`. OpenROAD puts the
+    LEF's lower-left corner at the DEF point and routes to the pins
+    there, but the final GDS puts the cell's (0, 0) at that point. Every
+    pin and the vdd rail land 2.04 µm left and 3.2 µm below the wires
+    that should reach them, so the 12 LVS errors are dac_code[7:0], vout
+    and vdd left open. Fix 33 worked: magic DRC, routing DRC and antenna
+    are all 0, and LVS fell from 73 to 12. Reported, not worked around.
+
 ### Where round 3 stands
 
 | step | result |
@@ -224,7 +234,7 @@ the layout agent $1.4, and orchestration for the rest.
 | analog: spec_lint to bench_strength, drc, lvs, release | pass (re-run fresh on 84ea5df) |
 | analog H2 | asked (H2-4da295), unanswered |
 | analog pex_sim | pass (34 fixed by a spec `sim_timeout_s: {pex_sim: 600}`; run takes 297 s) |
-| top_harden | fail on 33 (routing clean; magic DRC 23, LVS 73) |
+| top_harden | fail on 35 (fix 33 works: DRC 0; LVS 12, every macro pin open because the GDS sits 2.04/3.2 µm off the LEF) |
 | top_drc, top_lvs, precheck | not reached |
 | cosim | pass (integrator bench: released RTL + ideal-driver real ladder; DNL/INL 0.006 LSB, settling 1.19 µs) |
 | msde release, design document | not reached |

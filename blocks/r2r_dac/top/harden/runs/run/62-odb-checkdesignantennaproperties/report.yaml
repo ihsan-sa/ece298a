@@ -1,5 +1,6 @@
 - cell: tt_um_r2r_dac_digital
   inout:
+  - ua[0]
   - ua[1]
   - ua[2]
   - ua[3]

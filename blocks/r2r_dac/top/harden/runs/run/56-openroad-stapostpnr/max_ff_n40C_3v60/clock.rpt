@@ -19,24 +19,24 @@ Clock clk
 rise -> rise
     min     max
 0.000000 0.000000 source latency
-0.558583         network latency _590_/CLK
-        0.629455 network latency _609_/CLK
+0.553118         network latency _617_/CLK
+        0.635349 network latency _590_/CLK
 ---------------
-0.558583 0.629455 latency
-        0.070871 skew
+0.553118 0.635349 latency
+        0.082231 skew
 
 fall -> fall
     min     max
 0.000000 0.000000 source latency
-0.565455         network latency _590_/CLK
-        0.637726 network latency _609_/CLK
+0.560897         network latency _617_/CLK
+        0.645349 network latency _590_/CLK
 ---------------
-0.565455 0.637726 latency
-        0.072271 skew
+0.560897 0.645349 latency
+        0.084452 skew
 
 
 
 ===========================================================================
 report_clock_min_period
 ============================================================================
-clk period_min = 6.13 fmax = 163.23
+clk period_min = 6.01 fmax = 166.35

@@ -12,24 +12,24 @@ Reading design constraints file at '/home/ihsan/.cc/toolchains/iic-osic-tools-20
 [INFO] Setting clock transition to: 0.15
 [INFO] Setting timing derate to: 5.0%
 gf180mcu_fd_sc_mcu7t5v0__fillcap_* gf180mcu_fd_sc_mcu7t5v0__fill_*
-[INFO DPL-0001] Placed 1427 filler instances.
+[INFO DPL-0001] Placed 1482 filler instances.
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
 u_analog matched with u_analog
-[INFO ODB-0403] 5708 connections made, 0 conflicts skipped.
+[INFO ODB-0403] 5928 connections made, 0 conflicts skipped.
 Updating metrics…
 Cell type report:                       Count       Area
   Macro                                     1   29380.17
   Endcap cell                             246    1080.04
-  Fill cell                              1427   53723.13
+  Fill cell                              1482   53990.94
   Tap cell                                449    1971.29
   Tie cell                                 16     140.49
   Clock buffer                             15     619.05
-  Timing Repair Buffer                     57    1290.78
-  Inverter                                 20     232.69
-  Sequential cell                          50    3270.85
-  Multi-Input combinational cell          272    7617.34
-  Total                                  2553   99325.83
+  Timing Repair Buffer                     51    1176.63
+  Inverter                                 20     228.30
+  Sequential cell                          50    3277.43
+  Multi-Input combinational cell          272    7461.48
+  Total                                  2602   99325.83
 Writing OpenROAD database to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/53-openroad-fillinsertion/tt_um_r2r_dac_digital.odb'…
 Writing netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/53-openroad-fillinsertion/tt_um_r2r_dac_digital.nl.v'…
 Writing powered netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/53-openroad-fillinsertion/tt_um_r2r_dac_digital.pnl.v'…

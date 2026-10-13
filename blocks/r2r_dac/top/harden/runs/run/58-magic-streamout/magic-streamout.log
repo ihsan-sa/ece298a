@@ -265,7 +265,7 @@ Creating new cell
 > lef read /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/macros/r2r_dac_analog.lef
 Reading LEF data from file /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/macros/r2r_dac_analog.lef.
 This action cannot be undone.
-LEF read: Processed 1199 lines.
+LEF read: Processed 1181 lines.
 > gds read /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/gds/gf180mcu_fd_io.gds
 Warning: Calma reading is not undoable!  I hope that's OK.
 Library written using GDS-II Release 3.0
@@ -2312,11 +2312,11 @@ Reading DEF data from file /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_
 This action cannot be undone.
   Processed 7 vias total.
   Processed 1 non-default rules total.
-  Processed 2553 subcell instances total.
+  Processed 2602 subcell instances total.
   Processed 53 pins total.
   Processed 2 special nets total.
-  Processed 451 nets total.
-DEF read: Processed 11220 lines.
+  Processed 445 nets total.
+DEF read: Processed 11268 lines.
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__fillcap_32 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__endcap from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
@@ -2328,66 +2328,68 @@ DEF read: Processed 11220 lines.
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__fill_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Copying output for cell r2r_dac_analog from /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/macros/r2r_dac_analog.gds
 Reading "r2r_dac_analog".
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__inv_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nor3_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai21_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__buf_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai21_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nor2_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai211_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__aoi21_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nor2_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__buf_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai221_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai221_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__dffq_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nor3_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nand2_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai32_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__mux2_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__buf_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nor2_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai21_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__inv_3 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai21_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nor3_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__inv_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nor3_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__dffq_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__inv_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai32_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai211_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai211_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai221_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__aoi21_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nand3_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nor2_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__and3_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__and2_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai221_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__aoi221_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nand2_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__mux2_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__and3_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__inv_3 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__buf_8 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__buf_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nor2_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__or3_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nand3_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__inv_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__and2_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__and3_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__dlyb_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__xor2_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nor3_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__aoi221_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nand2_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__buf_8 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai211_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__buf_3 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__or3_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai21_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__inv_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__dffq_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__xor2_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai211_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai31_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nand3_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__buf_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai31_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nor4_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai22_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__aoi221_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__aoi211_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__and4_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__or2_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__and2_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nand2_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai211_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__and3_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__dffq_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__aoi22_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
-   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__aoi211_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__dffq_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__and4_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__nor4_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__aoi211_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__and2_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__buf_3 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__aoi221_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai22_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__or2_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai31_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__aoi211_4 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__oai21_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__aoi22_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Copying output for cell gf180mcu_fd_sc_mcu7t5v0__tiel from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+   Copying output for cell gf180mcu_fd_sc_mcu7t5v0__or2_2 from $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
    Generating output for cell tt_um_r2r_dac_digital
 [INFO] GDS Write Complete

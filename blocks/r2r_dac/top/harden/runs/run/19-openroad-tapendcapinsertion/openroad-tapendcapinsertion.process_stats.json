@@ -13,7 +13,7 @@
     },
     "avg_resources": {
         "cpu_percent": 51.48333333333333,
-        "memory_rss": "53MiB",
+        "memory_rss": "52MiB",
         "memory_vms": "141MiB",
         "threads": 0.8333333333333334
     }
