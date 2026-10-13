@@ -206,6 +206,14 @@ the layout agent $1.4, and orchestration for the rest.
     into the macro's vdd). `-pinonly` alone gives a 10 nm pin because
     the layout labels are points, so the fix also needs pin-sized label
     shapes. Reported, not worked around.
+34. pex_sim (`check_pex_sim.py`) runs ngspice with a fixed 120 s
+    timeout and takes no `--timeout`, unlike sim_tt and sim_pvt. Fix 26
+    got pex_sim through extraction, but the DAC's RC-extracted bench
+    needs 5 min 36 s, so the gate errors out. Run by hand, the same
+    bench lands every measure inside its bound: settling 1.20 µs rise
+    and fall (bound 1.5 µs), 10-90 % edges 424/422 ns (bound 500 ns),
+    glitch energy 23.8/14.9 pV·s (bound 260 pV·s), glitch peak
+    21.8/22.5 mV (bound 52 mV). Reported, not worked around.
 
 ### Where round 3 stands
 
@@ -214,7 +222,7 @@ the layout agent $1.4, and orchestration for the rest.
 | digital: all gates, release | pass; timing waived by the owner (-0.87 ns, about 47 MHz met at ss/125 °C) |
 | digital H2 | asked (H2-a7bfe1), unanswered |
 | analog: spec_lint to bench_strength, drc, lvs | pass |
-| analog pex_sim | blocked on 26 |
+| analog pex_sim | 26 fixed; errors on 34 (sim timeout), passes when run by hand |
 | top_harden | fail on 33 (routing clean; magic DRC 23, LVS 73) |
 | top_drc, top_lvs, precheck | not reached |
 | cosim, msde release, design document | not reached (needs analog release) |
