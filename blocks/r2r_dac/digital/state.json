@@ -4,8 +4,8 @@
  "block": "r2r_dac",
  "workspace": "blocks/r2r_dac/digital",
  "created": "2026-09-25T08:51:49",
- "updated": "2026-10-13T04:21:08",
- "phase": "P6",
+ "updated": "2026-10-13T04:22:30",
+ "phase": "P8",
  "toolchain": null,
  "gates": {
   "spec_lint": {
@@ -1335,6 +1335,35 @@
      }
     }
    ]
+  },
+  "release": {
+   "phase": "P8",
+   "status": "pass",
+   "attempts": 1,
+   "last": {
+    "ts": "2026-10-13T04:21:56",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 0,
+    "inputs": {
+     "rtl": "dir_text:08d2e63a30253fb8dcb71be29ca5aa7209711132e317fcb0e4bc99f0e226a305",
+     "harden": "dir_text:5e0fc600709e3cc97c7324a97c0c78553ef21db49b5a2f1a7ca5465fd7d2b2f2"
+    },
+    "job": null
+   },
+   "history": [
+    {
+     "ts": "2026-10-13T04:21:56",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "rtl": "dir_text:08d2e63a30253fb8dcb71be29ca5aa7209711132e317fcb0e4bc99f0e226a305",
+      "harden": "dir_text:5e0fc600709e3cc97c7324a97c0c78553ef21db49b5a2f1a7ca5465fd7d2b2f2"
+     },
+     "job": null
+    }
+   ]
   }
  },
  "jobs": {
@@ -1423,6 +1452,13 @@
    "ts": "2026-09-27T04:56:32",
    "answer": "approved H1-c4eeea \u2014 owner \ud83d\udc4d on the chip-flow H1 approval card, which listed this code (planning thread #iiks1 1790483808.349329)",
    "note": null
+  },
+  "H2": {
+   "status": "presented",
+   "challenge": "H2-a7bfe1",
+   "digest": "9d9c15af5d74dd8f0458bff7ea36c3b444512e59017cfc10bd2399c5772b8b48",
+   "presented": "2026-10-13T04:22:30",
+   "phase": "P8"
   }
  },
  "artifacts": {
@@ -1436,7 +1472,7 @@
    "path": "rtl",
    "kind": "rtl",
    "sha256": "dir_text:08d2e63a30253fb8dcb71be29ca5aa7209711132e317fcb0e4bc99f0e226a305",
-   "hashed": "2026-10-13T04:21:08"
+   "hashed": "2026-10-13T04:21:56"
   },
   "tb": {
    "path": "tb",
@@ -1504,7 +1540,7 @@
    "path": "harden",
    "kind": "harden",
    "sha256": "dir_text:5e0fc600709e3cc97c7324a97c0c78553ef21db49b5a2f1a7ca5465fd7d2b2f2",
-   "hashed": "2026-10-13T04:21:01"
+   "hashed": "2026-10-13T04:21:56"
   }
  },
  "open_issues": [
@@ -1545,11 +1581,11 @@
   },
   {
    "id": 3,
-   "status": "escalated",
+   "status": "waived",
    "agent": null,
    "attempts": 0,
    "opened": "2026-10-13T03:58:13",
-   "closed": null,
+   "closed": "2026-10-13T04:21:34",
    "gate": "timing",
    "phase": "P6",
    "fixer": "harden",
@@ -1558,15 +1594,17 @@
    ],
    "severity": "error",
    "count": 3,
-   "work_order": "blocks/r2r_dac/digital/log/workorders/wo-3.json"
+   "work_order": "blocks/r2r_dac/digital/log/workorders/wo-3.json",
+   "note": "owner accepted the ss_125C setup shortfall after the last attempt (#ece298a 1791879206.573569, 2026-10-13): -0.87 ns worst, about 47 MHz met at ss/125C; recorded in spec/spec.md",
+   "approved_by": "owner (#ece298a 1791879206.573569)"
   },
   {
    "id": 4,
-   "status": "escalated",
+   "status": "waived",
    "agent": null,
    "attempts": 0,
    "opened": "2026-10-13T04:02:13",
-   "closed": null,
+   "closed": "2026-10-13T04:21:34",
    "gate": "timing",
    "phase": "P6",
    "fixer": "harden",
@@ -1575,15 +1613,17 @@
    ],
    "severity": "error",
    "count": 3,
-   "work_order": "blocks/r2r_dac/digital/log/workorders/wo-4.json"
+   "work_order": "blocks/r2r_dac/digital/log/workorders/wo-4.json",
+   "note": "owner accepted the ss_125C setup shortfall after the last attempt (#ece298a 1791879206.573569, 2026-10-13): -0.87 ns worst, about 47 MHz met at ss/125C; recorded in spec/spec.md",
+   "approved_by": "owner (#ece298a 1791879206.573569)"
   },
   {
    "id": 5,
-   "status": "escalated",
+   "status": "waived",
    "agent": null,
    "attempts": 0,
    "opened": "2026-10-13T04:05:27",
-   "closed": null,
+   "closed": "2026-10-13T04:21:34",
    "gate": "timing",
    "phase": "P6",
    "fixer": "harden",
@@ -1592,7 +1632,9 @@
    ],
    "severity": "error",
    "count": 3,
-   "work_order": "blocks/r2r_dac/digital/log/workorders/wo-5.json"
+   "work_order": "blocks/r2r_dac/digital/log/workorders/wo-5.json",
+   "note": "owner accepted the ss_125C setup shortfall after the last attempt (#ece298a 1791879206.573569, 2026-10-13): -0.87 ns worst, about 47 MHz met at ss/125C; recorded in spec/spec.md",
+   "approved_by": "owner (#ece298a 1791879206.573569)"
   }
  ],
  "next_issue_id": 6,
@@ -2891,6 +2933,61 @@
    "status": "pass",
    "attempt": 5,
    "failing_count": 0
+  },
+  {
+   "ts": "2026-10-13T04:21:34",
+   "event": "issue",
+   "id": 3,
+   "status": "waived",
+   "agent": null,
+   "attempts": 0
+  },
+  {
+   "ts": "2026-10-13T04:21:34",
+   "event": "issue",
+   "id": 4,
+   "status": "waived",
+   "agent": null,
+   "attempts": 0
+  },
+  {
+   "ts": "2026-10-13T04:21:34",
+   "event": "issue",
+   "id": 5,
+   "status": "waived",
+   "agent": null,
+   "attempts": 0
+  },
+  {
+   "ts": "2026-10-13T04:21:56",
+   "event": "gate",
+   "gate": "release",
+   "status": "pass",
+   "attempt": 1,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-13T04:22:30",
+   "event": "phase_forced",
+   "phase": "P8",
+   "prev": "P6",
+   "missing": [],
+   "failed": [
+    "timing"
+   ]
+  },
+  {
+   "ts": "2026-10-13T04:22:30",
+   "event": "phase",
+   "phase": "P8",
+   "prev": "P6"
+  },
+  {
+   "ts": "2026-10-13T04:22:30",
+   "event": "human_presented",
+   "checkpoint": "H2",
+   "challenge": "H2-a7bfe1",
+   "digest": "9d9c15af5d74dd8f0458bff7ea36c3b444512e59017cfc10bd2399c5772b8b48"
   }
  ]
 }

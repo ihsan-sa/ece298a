@@ -5,9 +5,11 @@ VERSION 5.7 ;
 MACRO r2r_dac_analog
   CLASS BLOCK ;
   FOREIGN r2r_dac_analog ;
-  ORIGIN -165.520 0.000 ;
-  SIZE 36.960 BY 31.360 ;
+  ORIGIN 1.900 3.200 ;
+  SIZE 207.680 BY 139.560 ;
   PIN dac_code[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
     ANTENNAGATEAREA 11.020000 ;
     PORT
       LAYER Metal1 ;
@@ -15,6 +17,8 @@ MACRO r2r_dac_analog
     END
   END dac_code[7]
   PIN dac_code[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
     ANTENNAGATEAREA 11.020000 ;
     PORT
       LAYER Metal1 ;
@@ -22,6 +26,8 @@ MACRO r2r_dac_analog
     END
   END dac_code[6]
   PIN dac_code[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
     ANTENNAGATEAREA 11.020000 ;
     PORT
       LAYER Metal1 ;
@@ -29,6 +35,8 @@ MACRO r2r_dac_analog
     END
   END dac_code[5]
   PIN dac_code[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
     ANTENNAGATEAREA 11.020000 ;
     PORT
       LAYER Metal1 ;
@@ -36,6 +44,8 @@ MACRO r2r_dac_analog
     END
   END dac_code[4]
   PIN dac_code[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
     ANTENNAGATEAREA 11.020000 ;
     PORT
       LAYER Metal1 ;
@@ -43,6 +53,8 @@ MACRO r2r_dac_analog
     END
   END dac_code[3]
   PIN dac_code[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
     ANTENNAGATEAREA 11.020000 ;
     PORT
       LAYER Metal1 ;
@@ -50,6 +62,8 @@ MACRO r2r_dac_analog
     END
   END dac_code[2]
   PIN dac_code[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
     ANTENNAGATEAREA 11.020000 ;
     PORT
       LAYER Metal1 ;
@@ -57,6 +71,8 @@ MACRO r2r_dac_analog
     END
   END dac_code[1]
   PIN dac_code[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
     ANTENNAGATEAREA 11.020000 ;
     PORT
       LAYER Metal1 ;

@@ -4,7 +4,7 @@
  "block": "r2r_dac_analog",
  "workspace": "blocks/r2r_dac/analog",
  "created": "2026-09-25T05:47:00",
- "updated": "2026-10-13T04:00:21",
+ "updated": "2026-10-13T04:23:28",
  "phase": "P5",
  "toolchain": null,
  "gates": {
@@ -1335,6 +1335,12 @@
    "status": "pass",
    "attempt": 3,
    "failing_count": 0
+  },
+  {
+   "ts": "2026-10-13T04:23:28",
+   "event": "snapshot",
+   "label": "pre-fix-top_harden-a1",
+   "files": 12
   }
  ]
 }
