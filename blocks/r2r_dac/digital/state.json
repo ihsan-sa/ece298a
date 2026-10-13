@@ -4,7 +4,7 @@
  "block": "r2r_dac",
  "workspace": "blocks/r2r_dac/digital",
  "created": "2026-09-25T08:51:49",
- "updated": "2026-10-13T03:58:36",
+ "updated": "2026-10-13T03:59:55",
  "phase": "P6",
  "toolchain": null,
  "gates": {
@@ -540,6 +540,14 @@
       "wall_s": 87.71
      }
     }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T03:59:55",
+     "edit_class": "harden_config_edit",
+     "refs": [],
+     "human_hold": 2
+    }
    ]
   },
   "timing": {
@@ -649,6 +657,14 @@
       }
      }
     }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T03:59:55",
+     "edit_class": "harden_config_edit",
+     "refs": [],
+     "human_hold": 2
+    }
    ]
   },
   "drc": {
@@ -686,6 +702,14 @@
       "klayout_count": 0
      }
     }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T03:59:55",
+     "edit_class": "harden_config_edit",
+     "refs": [],
+     "human_hold": 2
+    }
    ]
   },
   "lvs": {
@@ -714,6 +738,14 @@
       "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
      },
      "job": null
+    }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T03:59:55",
+     "edit_class": "harden_config_edit",
+     "refs": [],
+     "human_hold": 2
     }
    ]
   },
@@ -745,6 +777,14 @@
       "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
      },
      "job": null
+    }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T03:59:55",
+     "edit_class": "harden_config_edit",
+     "refs": [],
+     "human_hold": 2
     }
    ]
   },
@@ -783,6 +823,14 @@
       "checks_run": 12
      }
     }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T03:59:55",
+     "edit_class": "harden_config_edit",
+     "refs": [],
+     "human_hold": 2
+    }
    ]
   }
  },
@@ -808,6 +856,15 @@
    "result": {
     "exit_code": 0
    }
+  },
+  "3": {
+   "gate": "harden",
+   "pid": 57106,
+   "started": "2026-10-13T03:59:55",
+   "finished": null,
+   "status": "running",
+   "log": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/log/jobs/job-3.log",
+   "result": null
   }
  },
  "holdout": {
@@ -959,7 +1016,7 @@
   }
  ],
  "next_issue_id": 4,
- "next_job_id": 3,
+ "next_job_id": 4,
  "budgets": {
   "fix_loops": {
    "sim": 2,
@@ -1020,6 +1077,31 @@
    ],
    "gates_marked": [
     "holdout"
+   ],
+   "stale_artifacts": []
+  },
+  {
+   "ts": "2026-10-13T03:59:55",
+   "class": "harden_config_edit",
+   "refs": [],
+   "note": "timing wo-3: config.override.json RUN_POST_GRT_RESIZER_TIMING=1, GRT_RESIZER_SETUP_SLACK_MARGIN=9.5",
+   "human_hold": 2,
+   "gates": [
+    "harden",
+    "timing",
+    "drc",
+    "lvs",
+    "glsim",
+    "precheck",
+    "release"
+   ],
+   "gates_marked": [
+    "harden",
+    "timing",
+    "drc",
+    "lvs",
+    "glsim",
+    "precheck"
    ],
    "stale_artifacts": []
   }
@@ -1590,6 +1672,20 @@
    "status": "pass",
    "attempt": 1,
    "failing_count": 0
+  },
+  {
+   "ts": "2026-10-13T03:59:55",
+   "event": "edit",
+   "edit_class": "harden_config_edit",
+   "refs": [],
+   "human_hold": 2
+  },
+  {
+   "ts": "2026-10-13T03:59:55",
+   "event": "job_start",
+   "job": "3",
+   "gate": "harden",
+   "pid": 57106
   }
  ]
 }
