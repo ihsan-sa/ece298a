@@ -4,7 +4,7 @@
  "block": "r2r_dac_analog",
  "workspace": "blocks/r2r_dac/analog",
  "created": "2026-09-25T05:47:00",
- "updated": "2026-10-13T04:25:27",
+ "updated": "2026-10-13T04:26:09",
  "phase": "P5",
  "toolchain": null,
  "gates": {
@@ -471,9 +471,9 @@
   "drc": {
    "phase": "P5",
    "status": "pass",
-   "attempts": 5,
+   "attempts": 6,
    "last": {
-    "ts": "2026-10-13T04:25:25",
+    "ts": "2026-10-13T04:26:09",
     "status": "pass",
     "failing_count": 0,
     "total": 0,
@@ -540,6 +540,17 @@
       "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d"
      },
      "job": null
+    },
+    {
+     "ts": "2026-10-13T04:26:09",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "layout": "dir_text:9e0c0412097973353e7b7d784d6f6f985ba2822918b154445f66466be6fdcae7",
+      "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d"
+     },
+     "job": null
     }
    ]
   },
@@ -597,6 +608,14 @@
       "sizing": "json_canonical:143a2b2839438ea425c0134de50627081e87e3d5ec338449012b3e9fc831a8df"
      },
      "job": null
+    }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:25:56",
+     "edit_class": "layout_code_edit",
+     "refs": [],
+     "human_hold": 1
     }
    ]
   },
@@ -716,7 +735,7 @@
    "path": "spec/spec.yaml",
    "kind": "spec_yaml",
    "sha256": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d",
-   "hashed": "2026-10-13T04:25:27"
+   "hashed": "2026-10-13T04:26:09"
   },
   "netlist": {
    "path": "netlist",
@@ -734,7 +753,7 @@
    "path": "layout",
    "kind": "layout",
    "sha256": "dir_text:9e0c0412097973353e7b7d784d6f6f985ba2822918b154445f66466be6fdcae7",
-   "hashed": "2026-10-13T04:25:27"
+   "hashed": "2026-10-13T04:26:09"
   },
   "sizing": {
    "path": "sizing/sizing.yaml",
@@ -877,6 +896,24 @@
    ],
    "gates_marked": [
     "drc"
+   ],
+   "stale_artifacts": []
+  },
+  {
+   "ts": "2026-10-13T04:25:56",
+   "class": "layout_code_edit",
+   "refs": [],
+   "note": "fix msde top_harden macro_power_unreachable: vdd/vss Metal3 straps (wo-1)",
+   "human_hold": 1,
+   "gates": [
+    "drc",
+    "lvs",
+    "pex_sim",
+    "release"
+   ],
+   "gates_marked": [
+    "drc",
+    "lvs"
    ],
    "stale_artifacts": []
   }
@@ -1399,6 +1436,21 @@
    "gate": "lvs",
    "status": "pass",
    "attempt": 3,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-13T04:25:56",
+   "event": "edit",
+   "edit_class": "layout_code_edit",
+   "refs": [],
+   "human_hold": 1
+  },
+  {
+   "ts": "2026-10-13T04:26:09",
+   "event": "gate",
+   "gate": "drc",
+   "status": "pass",
+   "attempt": 6,
    "failing_count": 0
   }
  ]
