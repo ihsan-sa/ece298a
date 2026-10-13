@@ -1,0 +1,54 @@
+{
+ "label": "pre-fix-bench_strength-a1",
+ "ts": "2026-10-13T03:57:10",
+ "files": [
+  {
+   "path": "spec/spec.yaml",
+   "sha256": "f72d33cc4ce674e5b2dedd7b116a939ca62dd67d709783e6c660696f3e0b7da8"
+  },
+  {
+   "path": "netlist/r2r_dac_analog.cir",
+   "sha256": "dc89728b73ca409311d6acb19eac9f06d86dc6cdd8f89cd07cbf6498e247d93c"
+  },
+  {
+   "path": "tb/r2r_dac_glitch_tb.bounds.json",
+   "sha256": "d14173617ae90a65215184057eab0845c81ccc558ef9df932740c8d885248c8b"
+  },
+  {
+   "path": "tb/r2r_dac_glitch_tb.cir",
+   "sha256": "9840f0974f320ac9f388521e06cec5654d0cbad3c3d0d159466e5f749bb4f381"
+  },
+  {
+   "path": "tb/r2r_dac_step_tb.bounds.json",
+   "sha256": "d51f112b47fc4927c88d9dc20202c8e00806b1a28279d9640bb80309a640a206"
+  },
+  {
+   "path": "tb/r2r_dac_step_tb.cir",
+   "sha256": "d70ea2a14272224c464e818374acf925bc65d5453deded11cb873365de0ddc1c"
+  },
+  {
+   "path": "tb/r2r_dac_tb.bounds.json",
+   "sha256": "ad16f2389dde952c0ddb2d1f2128cf32295af9cc158e1399cb402da6ff2d5d70"
+  },
+  {
+   "path": "tb/r2r_dac_tb.cir",
+   "sha256": "3cf564f1592c54614b13a19bcac5201148027dd828de37caf290b11b3d496ff6"
+  },
+  {
+   "path": "layout/gen_r2r_dac_analog.py",
+   "sha256": "bb8637257257035ffa4993c2602fe142ef8c08d129ee6bb80d669608b7615666"
+  },
+  {
+   "path": "layout/r2r_dac_analog.abstract.json",
+   "sha256": "c4a4960f1eca20f0094c72f43b8f66b5afdf63b7f8c0cbfab4d197f5af62de40"
+  },
+  {
+   "path": "layout/r2r_dac_analog.gds",
+   "sha256": "b3a5c619ace998e621eb8083892ceb481d14ea7e61c5412bcd75ec6e358636fe"
+  },
+  {
+   "path": "sizing/sizing.yaml",
+   "sha256": "0e20cbf855e0dd0ddf8087ba30750bfa6d83da75bf9ca459fb0c49c226e67b14"
+  }
+ ]
+}
