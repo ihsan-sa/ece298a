@@ -4,7 +4,7 @@
  "block": "r2r_dac",
  "workspace": "blocks/r2r_dac/digital",
  "created": "2026-09-25T08:51:49",
- "updated": "2026-09-27T04:56:32",
+ "updated": "2026-10-13T03:51:14",
  "phase": "P4",
  "toolchain": null,
  "gates": {
@@ -48,15 +48,15 @@
   "lint": {
    "phase": "P4",
    "status": "pass",
-   "attempts": 1,
+   "attempts": 2,
    "last": {
-    "ts": "2026-09-25T08:54:56",
+    "ts": "2026-10-13T03:51:14",
     "status": "pass",
     "failing_count": 0,
     "total": 0,
     "inputs": {
      "rtl": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
-     "spec_yaml": "json_canonical:cee93f343d721dc9797350155b3f0e85133a766eb1f1963c30aacd1d23e5d2f4"
+     "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
     },
     "job": null
    },
@@ -69,6 +69,17 @@
      "inputs": {
       "rtl": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
       "spec_yaml": "json_canonical:cee93f343d721dc9797350155b3f0e85133a766eb1f1963c30aacd1d23e5d2f4"
+     },
+     "job": null
+    },
+    {
+     "ts": "2026-10-13T03:51:14",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "rtl": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
+      "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
      },
      "job": null
     }
@@ -412,7 +423,7 @@
    "path": "rtl",
    "kind": "rtl",
    "sha256": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
-   "hashed": "2026-09-27T00:31:09"
+   "hashed": "2026-10-13T03:51:14"
   },
   "tb": {
    "path": "tb",
@@ -437,6 +448,12 @@
    "kind": "mutant_rulings",
    "sha256": null,
    "hashed": "2026-09-27T00:30:20"
+  },
+  "spec_yaml_sans_formal": {
+   "path": "spec/spec.yaml",
+   "kind": "spec_yaml_sans_formal",
+   "sha256": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1",
+   "hashed": "2026-10-13T03:51:14"
   }
  },
  "open_issues": [
@@ -947,6 +964,14 @@
    "checkpoint": "H1",
    "status": "approved",
    "challenge": "H1-c4eeea"
+  },
+  {
+   "ts": "2026-10-13T03:51:14",
+   "event": "gate",
+   "gate": "lint",
+   "status": "pass",
+   "attempt": 2,
+   "failing_count": 0
   }
  ]
 }
