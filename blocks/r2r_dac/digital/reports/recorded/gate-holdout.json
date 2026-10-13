@@ -3,7 +3,7 @@
  "gate": "holdout",
  "phase": "P4",
  "tool": "holdout",
- "input_digest": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
+ "input_digest": "dir_text:467072fcb827af020645576f4da4ad1cf92b6669c1b856871d2389fe2be4efc3",
  "status": "pass",
  "criteria": {
   "fail_severities": [
@@ -28,10 +28,10 @@
   "tests_passed": 2
  },
  "inputs_at_start": {
-  "rtl": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
+  "rtl": "dir_text:467072fcb827af020645576f4da4ad1cf92b6669c1b856871d2389fe2be4efc3",
   "holdout": "dir_text:323dd5f5d42ea1ed5e8a148ab193810c06ff30e60dfc38673be3c7b6debf69c9",
   "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
  },
- "recorded_ts": "2026-10-13T03:51:18",
- "attempts": 4
+ "recorded_ts": "2026-10-13T04:10:17",
+ "attempts": 5
 }

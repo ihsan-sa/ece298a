@@ -4,7 +4,7 @@
  "block": "r2r_dac",
  "workspace": "blocks/r2r_dac/digital",
  "created": "2026-09-25T08:51:49",
- "updated": "2026-10-13T04:10:16",
+ "updated": "2026-10-13T04:10:17",
  "phase": "P6",
  "toolchain": null,
  "gates": {
@@ -196,14 +196,14 @@
   "holdout": {
    "phase": "P4",
    "status": "pass",
-   "attempts": 4,
+   "attempts": 5,
    "last": {
-    "ts": "2026-10-13T03:51:18",
+    "ts": "2026-10-13T04:10:17",
     "status": "pass",
     "failing_count": 0,
     "total": 0,
     "inputs": {
-     "rtl": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
+     "rtl": "dir_text:467072fcb827af020645576f4da4ad1cf92b6669c1b856871d2389fe2be4efc3",
      "holdout": "dir_text:323dd5f5d42ea1ed5e8a148ab193810c06ff30e60dfc38673be3c7b6debf69c9",
      "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
     },
@@ -272,14 +272,21 @@
      "facts": {
       "tests_passed": 2
      }
-    }
-   ],
-   "stale": [
+    },
     {
-     "ts": "2026-10-13T04:10:14",
-     "edit_class": "rtl_edit",
-     "refs": [],
-     "human_hold": 1
+     "ts": "2026-10-13T04:10:17",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "rtl": "dir_text:467072fcb827af020645576f4da4ad1cf92b6669c1b856871d2389fe2be4efc3",
+      "holdout": "dir_text:323dd5f5d42ea1ed5e8a148ab193810c06ff30e60dfc38673be3c7b6debf69c9",
+      "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
+     },
+     "job": null,
+     "facts": {
+      "tests_passed": 2
+     }
     }
    ]
   },
@@ -1168,7 +1175,7 @@
    "path": "rtl",
    "kind": "rtl",
    "sha256": "dir_text:467072fcb827af020645576f4da4ad1cf92b6669c1b856871d2389fe2be4efc3",
-   "hashed": "2026-10-13T04:10:16"
+   "hashed": "2026-10-13T04:10:17"
   },
   "tb": {
    "path": "tb",
@@ -1180,7 +1187,7 @@
    "path": "holdout",
    "kind": "holdout",
    "sha256": "dir_text:323dd5f5d42ea1ed5e8a148ab193810c06ff30e60dfc38673be3c7b6debf69c9",
-   "hashed": "2026-10-13T03:51:18"
+   "hashed": "2026-10-13T04:10:17"
   },
   "formal": {
    "path": "formal",
@@ -1198,7 +1205,7 @@
    "path": "spec/spec.yaml",
    "kind": "spec_yaml_sans_formal",
    "sha256": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1",
-   "hashed": "2026-10-13T04:10:16"
+   "hashed": "2026-10-13T04:10:17"
   },
   "harden_config": {
    "path": "harden/config.json",
@@ -2198,6 +2205,14 @@
    "ts": "2026-10-13T04:10:16",
    "event": "gate",
    "gate": "sim",
+   "status": "pass",
+   "attempt": 5,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-13T04:10:17",
+   "event": "gate",
+   "gate": "holdout",
    "status": "pass",
    "attempt": 5,
    "failing_count": 0
