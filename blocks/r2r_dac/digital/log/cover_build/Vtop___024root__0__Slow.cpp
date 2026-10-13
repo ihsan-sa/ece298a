@@ -175,6 +175,18 @@ VL_ATTR_COLD void Vtop___024root___stl_sequent__TOP__0(Vtop___024root* vlSelf) {
         vlSelfRef.r2r_dac_digital__DOT____Vtogcov__presc 
             = vlSelfRef.r2r_dac_digital__DOT__presc;
     }
+    if (((IData)(vlSelfRef.r2r_dac_digital__DOT__presc_tc) 
+         ^ (IData)(vlSelfRef.r2r_dac_digital__DOT____Vtogcov__presc_tc))) {
+        VL_COV_TOGGLE_CHG_ST_I(1, vlSelf->__Vcoverage + 384, vlSelfRef.r2r_dac_digital__DOT__presc_tc, vlSelfRef.r2r_dac_digital__DOT____Vtogcov__presc_tc);
+        vlSelfRef.r2r_dac_digital__DOT____Vtogcov__presc_tc 
+            = vlSelfRef.r2r_dac_digital__DOT__presc_tc;
+    }
+    if ((0U != ((IData)(vlSelfRef.r2r_dac_digital__DOT__cnt_p1) 
+                ^ (IData)(vlSelfRef.r2r_dac_digital__DOT____Vtogcov__cnt_p1)))) {
+        VL_COV_TOGGLE_CHG_ST_I(8, vlSelf->__Vcoverage + 386, vlSelfRef.r2r_dac_digital__DOT__cnt_p1, vlSelfRef.r2r_dac_digital__DOT____Vtogcov__cnt_p1);
+        vlSelfRef.r2r_dac_digital__DOT____Vtogcov__cnt_p1 
+            = vlSelfRef.r2r_dac_digital__DOT__cnt_p1;
+    }
     vlSelfRef.dac_code = vlSelfRef.r2r_dac_digital__DOT__dac_code;
     if ((0x00000080U & (IData)(vlSelfRef.r2r_dac_digital__DOT__cnt))) {
         if ((0x00000040U & (IData)(vlSelfRef.r2r_dac_digital__DOT__cnt))) {
@@ -1251,15 +1263,15 @@ VL_ATTR_COLD void Vtop___024root___stl_sequent__TOP__0(Vtop___024root* vlSelf) {
             = vlSelfRef.r2r_dac_digital__DOT__ena;
     }
     vlSelfRef.r2r_dac_digital__DOT__unused_ena = vlSelfRef.r2r_dac_digital__DOT__ena;
-    if ((0xffU == (IData)(vlSelfRef.r2r_dac_digital__DOT__presc))) {
-        ++(vlSelf->__Vcoverage[386]);
+    if (vlSelfRef.r2r_dac_digital__DOT__presc_tc) {
+        ++(vlSelf->__Vcoverage[404]);
     }
     if ((1U & (~ (IData)(vlSelfRef.r2r_dac_digital__DOT__slow)))) {
-        ++(vlSelf->__Vcoverage[387]);
+        ++(vlSelf->__Vcoverage[405]);
     }
     if (((IData)(vlSelfRef.r2r_dac_digital__DOT__slow) 
-         & (0xffU != (IData)(vlSelfRef.r2r_dac_digital__DOT__presc)))) {
-        ++(vlSelf->__Vcoverage[388]);
+         & (~ (IData)(vlSelfRef.r2r_dac_digital__DOT__presc_tc)))) {
+        ++(vlSelf->__Vcoverage[406]);
     }
     if (((IData)(vlSelfRef.r2r_dac_digital__DOT__slow) 
          ^ (IData)(vlSelfRef.r2r_dac_digital__DOT____Vtogcov__slow))) {
@@ -1268,8 +1280,7 @@ VL_ATTR_COLD void Vtop___024root___stl_sequent__TOP__0(Vtop___024root* vlSelf) {
             = vlSelfRef.r2r_dac_digital__DOT__slow;
     }
     vlSelfRef.r2r_dac_digital__DOT__step = (1U & ((~ (IData)(vlSelfRef.r2r_dac_digital__DOT__slow)) 
-                                                  | (0xffU 
-                                                     == (IData)(vlSelfRef.r2r_dac_digital__DOT__presc))));
+                                                  | (IData)(vlSelfRef.r2r_dac_digital__DOT__presc_tc)));
     if (((IData)(vlSelfRef.r2r_dac_digital__DOT__unused_ena) 
          ^ (IData)(vlSelfRef.r2r_dac_digital__DOT____Vtogcov__unused_ena))) {
         VL_COV_TOGGLE_CHG_ST_I(1, vlSelf->__Vcoverage + 124, vlSelfRef.r2r_dac_digital__DOT__unused_ena, vlSelfRef.r2r_dac_digital__DOT____Vtogcov__unused_ena);
@@ -1278,7 +1289,7 @@ VL_ATTR_COLD void Vtop___024root___stl_sequent__TOP__0(Vtop___024root* vlSelf) {
     }
     if (((IData)(vlSelfRef.r2r_dac_digital__DOT__step) 
          ^ (IData)(vlSelfRef.r2r_dac_digital__DOT____Vtogcov__step))) {
-        VL_COV_TOGGLE_CHG_ST_I(1, vlSelf->__Vcoverage + 384, vlSelfRef.r2r_dac_digital__DOT__step, vlSelfRef.r2r_dac_digital__DOT____Vtogcov__step);
+        VL_COV_TOGGLE_CHG_ST_I(1, vlSelf->__Vcoverage + 402, vlSelfRef.r2r_dac_digital__DOT__step, vlSelfRef.r2r_dac_digital__DOT____Vtogcov__step);
         vlSelfRef.r2r_dac_digital__DOT____Vtogcov__step 
             = vlSelfRef.r2r_dac_digital__DOT__step;
     }
@@ -1341,6 +1352,8 @@ VL_ATTR_COLD void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf) {
     vlSelf->r2r_dac_digital__DOT__presc = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 3679302164131038106ull);
     vlSelf->r2r_dac_digital__DOT__sine_val = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 10027949200640439009ull);
     vlSelf->r2r_dac_digital__DOT__unused_ena = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 9529587741972799750ull);
+    vlSelf->r2r_dac_digital__DOT__presc_tc = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 7631908473669598704ull);
+    vlSelf->r2r_dac_digital__DOT__cnt_p1 = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 3075261225829953646ull);
     vlSelf->r2r_dac_digital__DOT__step = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 13065795380928746585ull);
     vlSelf->r2r_dac_digital__DOT____Vtogcov__clk = 0;
     vlSelf->r2r_dac_digital__DOT____Vtogcov__rst_n = 0;
@@ -1355,6 +1368,8 @@ VL_ATTR_COLD void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf) {
     vlSelf->r2r_dac_digital__DOT____Vtogcov__presc = 0;
     vlSelf->r2r_dac_digital__DOT____Vtogcov__sine_val = 0;
     vlSelf->r2r_dac_digital__DOT____Vtogcov__unused_ena = 0;
+    vlSelf->r2r_dac_digital__DOT____Vtogcov__presc_tc = 0;
+    vlSelf->r2r_dac_digital__DOT____Vtogcov__cnt_p1 = 0;
     vlSelf->r2r_dac_digital__DOT____Vtogcov__step = 0;
     for (int __Vi0 = 0; __Vi0 < 1; ++__Vi0) {
         vlSelf->__VstlTriggered[__Vi0] = 0;
@@ -1906,37 +1921,39 @@ VL_ATTR_COLD void Vtop___024root___configure_coverage(Vtop___024root* vlSelf, bo
     vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 382, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 279, 7, ".r2r_dac_digital", "v_line/r2r_dac_digital", "case", "279", "", "", "", "");
     vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 383, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 21, 3, ".r2r_dac_digital", "v_line/r2r_dac_digital", "block", "21-22", "", "", "", "");
     vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 383, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 21, 3, ".r2r_dac_digital", "v_line/r2r_dac_digital", "block", "21-22", "", "", "", "");
-    vlSelf->__vlCoverToggleInsert(0, 0, 0, vlSelf->__Vcoverage + 384, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 283, 8, ".r2r_dac_digital", "v_toggle/r2r_dac_digital", "step");
-    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 386, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 283, 21, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "((presc == 8'hff)==1) => 1", "", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 386, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 283, 21, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "((presc == 8'hff)==1) => 1", "", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 387, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 283, 21, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(slow==0) => 1", "", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 387, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 283, 21, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(slow==0) => 1", "", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 388, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 283, 21, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(slow==1 && (presc == 8'hff)==0) => 0", "", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 388, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 283, 21, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(slow==1 && (presc == 8'hff)==0) => 0", "", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 389, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 293, 14, ".r2r_dac_digital", "v_line/r2r_dac_digital", "case", "293", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 389, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 293, 14, ".r2r_dac_digital", "v_line/r2r_dac_digital", "case", "293", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 390, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 294, 14, ".r2r_dac_digital", "v_line/r2r_dac_digital", "case", "294", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 390, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 294, 14, ".r2r_dac_digital", "v_line/r2r_dac_digital", "case", "294", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 391, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 295, 14, ".r2r_dac_digital", "v_line/r2r_dac_digital", "case", "295", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 391, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 295, 14, ".r2r_dac_digital", "v_line/r2r_dac_digital", "case", "295", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 392, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 296, 9, ".r2r_dac_digital", "v_line/r2r_dac_digital", "case", "296", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 392, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 296, 9, ".r2r_dac_digital", "v_line/r2r_dac_digital", "case", "296", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 393, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 298, 7, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "if", "298-299", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 393, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 298, 7, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "if", "298-299", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 394, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 298, 8, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "else", "", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 394, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 298, 8, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "else", "", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 395, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 301, 7, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "if", "301-302", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 395, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 301, 7, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "if", "301-302", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 396, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 301, 8, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "else", "", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 396, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 301, 8, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "else", "", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 397, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 286, 5, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "if", "286-290", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 397, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 286, 5, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "if", "286-290", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 398, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 286, 6, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "else", "291-292,300", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 398, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 286, 6, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "else", "291-292,300", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 399, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 286, 9, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(rst_n==0) => 1", "", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 399, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 286, 9, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(rst_n==0) => 1", "", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 400, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 286, 9, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(rst_n==1) => 0", "", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 400, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 286, 9, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(rst_n==1) => 0", "", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 401, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 285, 3, ".r2r_dac_digital", "v_line/r2r_dac_digital", "block", "285", "", "", "", "");
-    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 401, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 285, 3, ".r2r_dac_digital", "v_line/r2r_dac_digital", "block", "285", "", "", "", "");
+    vlSelf->__vlCoverToggleInsert(0, 0, 0, vlSelf->__Vcoverage + 384, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 290, 13, ".r2r_dac_digital", "v_toggle/r2r_dac_digital", "presc_tc");
+    vlSelf->__vlCoverToggleInsert(0, 7, 1, vlSelf->__Vcoverage + 386, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 291, 13, ".r2r_dac_digital", "v_toggle/r2r_dac_digital", "cnt_p1");
+    vlSelf->__vlCoverToggleInsert(0, 0, 0, vlSelf->__Vcoverage + 402, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 293, 8, ".r2r_dac_digital", "v_toggle/r2r_dac_digital", "step");
+    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 404, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 293, 21, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(presc_tc==1) => 1", "", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 404, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 293, 21, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(presc_tc==1) => 1", "", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 405, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 293, 21, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(slow==0) => 1", "", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 405, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 293, 21, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(slow==0) => 1", "", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 406, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 293, 21, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(slow==1 && presc_tc==0) => 0", "", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 406, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 293, 21, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(slow==1 && presc_tc==0) => 0", "", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 407, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 306, 14, ".r2r_dac_digital", "v_line/r2r_dac_digital", "case", "306", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 407, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 306, 14, ".r2r_dac_digital", "v_line/r2r_dac_digital", "case", "306", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 408, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 307, 14, ".r2r_dac_digital", "v_line/r2r_dac_digital", "case", "307", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 408, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 307, 14, ".r2r_dac_digital", "v_line/r2r_dac_digital", "case", "307", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 409, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 308, 14, ".r2r_dac_digital", "v_line/r2r_dac_digital", "case", "308", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 409, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 308, 14, ".r2r_dac_digital", "v_line/r2r_dac_digital", "case", "308", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 410, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 309, 9, ".r2r_dac_digital", "v_line/r2r_dac_digital", "case", "309", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 410, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 309, 9, ".r2r_dac_digital", "v_line/r2r_dac_digital", "case", "309", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 411, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 311, 7, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "if", "311-312", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 411, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 311, 7, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "if", "311-312", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 412, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 311, 8, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "else", "", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 412, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 311, 8, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "else", "", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 413, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 314, 7, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "if", "314-316", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 413, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 314, 7, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "if", "314-316", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 414, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 314, 8, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "else", "", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 414, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 314, 8, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "else", "", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 415, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 296, 5, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "if", "296-302", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 415, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 296, 5, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "if", "296-302", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 416, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 296, 6, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "else", "303-305,313", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 416, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 296, 6, ".r2r_dac_digital", "v_branch/r2r_dac_digital", "else", "303-305,313", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 417, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 296, 9, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(rst_n==0) => 1", "", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 417, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 296, 9, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(rst_n==0) => 1", "", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 418, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 296, 9, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(rst_n==1) => 0", "", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 418, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 296, 9, ".r2r_dac_digital", "v_expr/r2r_dac_digital", "(rst_n==1) => 0", "", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSelf->__Vcoverage + 419, first, true, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 295, 3, ".r2r_dac_digital", "v_line/r2r_dac_digital", "block", "295", "", "", "", "");
+    vlSelf->__vlCoverInsert(vlSymsp->__Vcoverage + 419, first, false, "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v", 295, 3, ".r2r_dac_digital", "v_line/r2r_dac_digital", "block", "295", "", "", "", "");
 }
