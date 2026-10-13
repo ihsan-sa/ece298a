@@ -363,21 +363,21 @@ module tt_um_r2r_dac_digital (clk,
  wire net10;
  wire net11;
  wire net12;
- wire net50;
- wire net51;
- wire net52;
- wire net53;
- wire net54;
- wire net55;
- wire net56;
- wire net57;
- wire net58;
  wire net59;
  wire net60;
  wire net61;
  wire net62;
  wire net63;
  wire net64;
+ wire net65;
+ wire net66;
+ wire net67;
+ wire net68;
+ wire net69;
+ wire net70;
+ wire net71;
+ wire net72;
+ wire net73;
  wire net13;
  wire net14;
  wire net15;
@@ -415,6 +415,15 @@ module tt_um_r2r_dac_digital (clk,
  wire net47;
  wire net48;
  wire net49;
+ wire net50;
+ wire net51;
+ wire net52;
+ wire net53;
+ wire net54;
+ wire net55;
+ wire net56;
+ wire net57;
+ wire net58;
  wire net;
 
  gf180mcu_fd_sc_mcu7t5v0__endcap PHY_EDGE_ROW_0_Left_81 ();
@@ -1130,7 +1139,7 @@ module tt_um_r2r_dac_digital (clk,
     .ZN(_056_));
  gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _300_ (.I(net11),
     .ZN(_057_));
- gf180mcu_fd_sc_mcu7t5v0__inv_1 _301_ (.I(net46),
+ gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _301_ (.I(net56),
     .ZN(_058_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_2 _302_ (.A1(net12),
     .A2(_056_),
@@ -1141,7 +1150,7 @@ module tt_um_r2r_dac_digital (clk,
  gf180mcu_fd_sc_mcu7t5v0__oai211_4 _304_ (.A1(\u_r2r_dac_digital.cnt[7] ),
     .A2(_059_),
     .B(_060_),
-    .C(net46),
+    .C(net55),
     .ZN(_061_));
  gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _305_ (.I(_061_),
     .ZN(_033_));
@@ -1173,14 +1182,14 @@ module tt_um_r2r_dac_digital (clk,
     .B(\u_r2r_dac_digital.cnt_p1[0] ),
     .ZN(_068_));
  gf180mcu_fd_sc_mcu7t5v0__nor2_4 _313_ (.A1(_065_),
-    .A2(net43),
+    .A2(net50),
     .ZN(_069_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_4 _314_ (.A1(_066_),
     .A2(_068_),
     .ZN(_070_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_4 _315_ (.A1(_065_),
-    .A2(net43),
-    .B(net46),
+    .A2(net50),
+    .B(net55),
     .ZN(_071_));
  gf180mcu_fd_sc_mcu7t5v0__inv_3 _316_ (.I(_071_),
     .ZN(_026_));
@@ -1198,11 +1207,11 @@ module tt_um_r2r_dac_digital (clk,
     .A2(_056_),
     .B(\u_r2r_dac_digital.cnt_p1[2] ),
     .ZN(_075_));
- gf180mcu_fd_sc_mcu7t5v0__or3_1 _321_ (.A1(net45),
+ gf180mcu_fd_sc_mcu7t5v0__or3_1 _321_ (.A1(net54),
     .A2(_074_),
     .A3(_075_),
     .Z(_076_));
- gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _322_ (.I(net39),
+ gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _322_ (.I(net46),
     .ZN(_028_));
  gf180mcu_fd_sc_mcu7t5v0__nor3_2 _323_ (.A1(\u_r2r_dac_digital.cnt[1] ),
     .A2(_055_),
@@ -1212,31 +1221,31 @@ module tt_um_r2r_dac_digital (clk,
     .A2(_056_),
     .B(\u_r2r_dac_digital.cnt_p1[1] ),
     .ZN(_078_));
- gf180mcu_fd_sc_mcu7t5v0__or3_1 _325_ (.A1(net45),
+ gf180mcu_fd_sc_mcu7t5v0__or3_1 _325_ (.A1(net54),
     .A2(_077_),
     .A3(_078_),
     .Z(_079_));
- gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _326_ (.I(net36),
+ gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _326_ (.I(net43),
     .ZN(_027_));
- gf180mcu_fd_sc_mcu7t5v0__nor2_2 _327_ (.A1(net29),
-    .A2(net27),
+ gf180mcu_fd_sc_mcu7t5v0__nor2_2 _327_ (.A1(net28),
+    .A2(net26),
     .ZN(_080_));
- gf180mcu_fd_sc_mcu7t5v0__nand2_4 _328_ (.A1(net38),
-    .A2(net36),
+ gf180mcu_fd_sc_mcu7t5v0__nand2_4 _328_ (.A1(net45),
+    .A2(net43),
     .ZN(_081_));
- gf180mcu_fd_sc_mcu7t5v0__nand2_2 _329_ (.A1(net29),
-    .A2(net27),
+ gf180mcu_fd_sc_mcu7t5v0__nand2_2 _329_ (.A1(net28),
+    .A2(net26),
     .ZN(_082_));
  gf180mcu_fd_sc_mcu7t5v0__and2_1 _330_ (.A1(_081_),
     .A2(_082_),
     .Z(_083_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_1 _331_ (.A1(_070_),
-    .A2(net27),
-    .B(net29),
+    .A2(net26),
+    .B(net28),
     .ZN(_084_));
- gf180mcu_fd_sc_mcu7t5v0__aoi21_4 _332_ (.A1(net42),
-    .A2(net36),
-    .B(net38),
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_4 _332_ (.A1(net49),
+    .A2(net43),
+    .B(net45),
     .ZN(_085_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_1 _333_ (.A1(_080_),
     .A2(_085_),
@@ -1250,11 +1259,11 @@ module tt_um_r2r_dac_digital (clk,
     .A2(\u_r2r_dac_digital.presc_tc ),
     .B(_050_),
     .ZN(_088_));
- gf180mcu_fd_sc_mcu7t5v0__nand3_1 _336_ (.A1(net46),
+ gf180mcu_fd_sc_mcu7t5v0__nand3_1 _336_ (.A1(net55),
     .A2(_087_),
     .A3(_088_),
     .ZN(_089_));
- gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _337_ (.I(net35),
+ gf180mcu_fd_sc_mcu7t5v0__inv_3 _337_ (.I(net42),
     .ZN(_030_));
  gf180mcu_fd_sc_mcu7t5v0__nand3_1 _338_ (.A1(_073_),
     .A2(_081_),
@@ -1270,7 +1279,7 @@ module tt_um_r2r_dac_digital (clk,
  gf180mcu_fd_sc_mcu7t5v0__oai211_4 _341_ (.A1(\u_r2r_dac_digital.cnt[5] ),
     .A2(_059_),
     .B(_092_),
-    .C(net47),
+    .C(net55),
     .ZN(_093_));
  gf180mcu_fd_sc_mcu7t5v0__inv_4 _342_ (.I(_093_),
     .ZN(_031_));
@@ -1280,44 +1289,44 @@ module tt_um_r2r_dac_digital (clk,
  gf180mcu_fd_sc_mcu7t5v0__oai211_4 _344_ (.A1(\u_r2r_dac_digital.cnt[6] ),
     .A2(_059_),
     .B(_094_),
-    .C(net46),
+    .C(net55),
     .ZN(_095_));
- gf180mcu_fd_sc_mcu7t5v0__inv_2 _345_ (.I(_095_),
+ gf180mcu_fd_sc_mcu7t5v0__inv_3 _345_ (.I(_095_),
     .ZN(_032_));
- gf180mcu_fd_sc_mcu7t5v0__nor2_2 _346_ (.A1(net22),
+ gf180mcu_fd_sc_mcu7t5v0__nor2_2 _346_ (.A1(net23),
     .A2(_032_),
     .ZN(_096_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _347_ (.A1(net15),
     .A2(net21),
     .ZN(_097_));
- gf180mcu_fd_sc_mcu7t5v0__nand3_1 _348_ (.A1(net46),
+ gf180mcu_fd_sc_mcu7t5v0__nand3_1 _348_ (.A1(net55),
     .A2(_062_),
     .A3(_063_),
     .ZN(_098_));
- gf180mcu_fd_sc_mcu7t5v0__inv_2 _349_ (.I(net32),
+ gf180mcu_fd_sc_mcu7t5v0__inv_2 _349_ (.I(net31),
     .ZN(_029_));
- gf180mcu_fd_sc_mcu7t5v0__nand2_4 _350_ (.A1(net35),
+ gf180mcu_fd_sc_mcu7t5v0__nand2_4 _350_ (.A1(net42),
     .A2(net20),
     .ZN(_099_));
- gf180mcu_fd_sc_mcu7t5v0__nor2_2 _351_ (.A1(net41),
-    .A2(net36),
+ gf180mcu_fd_sc_mcu7t5v0__nor2_2 _351_ (.A1(net48),
+    .A2(net43),
     .ZN(_100_));
  gf180mcu_fd_sc_mcu7t5v0__nor2_2 _352_ (.A1(_026_),
-    .A2(net27),
+    .A2(net26),
     .ZN(_101_));
  gf180mcu_fd_sc_mcu7t5v0__oai221_4 _353_ (.A1(_065_),
     .A2(_067_),
     .B1(_077_),
     .B2(_078_),
-    .C(net46),
+    .C(net55),
     .ZN(_102_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_4 _354_ (.A1(_070_),
-    .A2(net37),
+    .A2(net43),
     .B(_102_),
     .ZN(_103_));
  gf180mcu_fd_sc_mcu7t5v0__mux2_2 _355_ (.I0(_070_),
     .I1(_071_),
-    .S(net37),
+    .S(net44),
     .Z(_104_));
  gf180mcu_fd_sc_mcu7t5v0__nor2_1 _356_ (.A1(_099_),
     .A2(_104_),
@@ -1325,77 +1334,77 @@ module tt_um_r2r_dac_digital (clk,
  gf180mcu_fd_sc_mcu7t5v0__nor2_1 _357_ (.A1(_097_),
     .A2(_105_),
     .ZN(_106_));
- gf180mcu_fd_sc_mcu7t5v0__oai21_4 _358_ (.A1(net39),
-    .A2(net28),
-    .B(net33),
+ gf180mcu_fd_sc_mcu7t5v0__oai21_4 _358_ (.A1(net46),
+    .A2(net26),
+    .B(net32),
     .ZN(_107_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _359_ (.A1(_026_),
-    .A2(net38),
+    .A2(net45),
     .ZN(_108_));
  gf180mcu_fd_sc_mcu7t5v0__mux2_2 _360_ (.I0(_070_),
     .I1(_071_),
-    .S(net39),
+    .S(net46),
     .Z(_109_));
- gf180mcu_fd_sc_mcu7t5v0__mux2_2 _361_ (.I0(_069_),
+ gf180mcu_fd_sc_mcu7t5v0__mux2_2 _361_ (.I0(net49),
     .I1(_026_),
-    .S(net39),
+    .S(net45),
     .Z(_110_));
  gf180mcu_fd_sc_mcu7t5v0__nor3_4 _362_ (.A1(_070_),
-    .A2(net39),
+    .A2(net45),
     .A3(net24),
     .ZN(_111_));
- gf180mcu_fd_sc_mcu7t5v0__oai32_4 _363_ (.A1(net32),
+ gf180mcu_fd_sc_mcu7t5v0__oai32_4 _363_ (.A1(net31),
     .A2(_100_),
     .A3(_110_),
     .B1(_111_),
     .B2(_107_),
     .ZN(_112_));
- gf180mcu_fd_sc_mcu7t5v0__oai211_2 _364_ (.A1(net39),
-    .A2(net28),
-    .B(net33),
+ gf180mcu_fd_sc_mcu7t5v0__oai211_2 _364_ (.A1(net46),
+    .A2(net27),
+    .B(net32),
     .C(_102_),
     .ZN(_113_));
- gf180mcu_fd_sc_mcu7t5v0__aoi21_2 _365_ (.A1(net26),
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_2 _365_ (.A1(net25),
     .A2(_113_),
     .B(net15),
     .ZN(_114_));
- gf180mcu_fd_sc_mcu7t5v0__aoi21_2 _366_ (.A1(net38),
-    .A2(net36),
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_2 _366_ (.A1(net45),
+    .A2(net43),
     .B(net19),
     .ZN(_115_));
- gf180mcu_fd_sc_mcu7t5v0__oai21_4 _367_ (.A1(net29),
-    .A2(net27),
-    .B(net32),
+ gf180mcu_fd_sc_mcu7t5v0__oai21_4 _367_ (.A1(net28),
+    .A2(net26),
+    .B(net31),
     .ZN(_116_));
- gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _368_ (.A1(net29),
-    .A2(net36),
+ gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _368_ (.A1(net28),
+    .A2(net43),
     .B1(_116_),
     .B2(_073_),
     .ZN(_117_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_4 _369_ (.A1(_026_),
-    .A2(net27),
+    .A2(net26),
     .B(net19),
     .ZN(_118_));
  gf180mcu_fd_sc_mcu7t5v0__nor2_1 _370_ (.A1(_110_),
     .A2(_118_),
     .ZN(_119_));
- gf180mcu_fd_sc_mcu7t5v0__nor2_1 _371_ (.A1(net24),
+ gf180mcu_fd_sc_mcu7t5v0__nor2_2 _371_ (.A1(net24),
     .A2(net22),
     .ZN(_120_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_1 _372_ (.A1(_117_),
     .A2(_119_),
     .B(_120_),
     .ZN(_121_));
- gf180mcu_fd_sc_mcu7t5v0__oai211_1 _373_ (.A1(net39),
+ gf180mcu_fd_sc_mcu7t5v0__oai211_2 _373_ (.A1(net45),
     .A2(_103_),
     .B(_108_),
-    .C(net32),
+    .C(net31),
     .ZN(_122_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_1 _374_ (.A1(_070_),
-    .A2(net32),
+    .A2(net31),
     .B(net24),
     .ZN(_123_));
- gf180mcu_fd_sc_mcu7t5v0__nor2_1 _375_ (.A1(net23),
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _375_ (.A1(net22),
     .A2(_123_),
     .ZN(_124_));
  gf180mcu_fd_sc_mcu7t5v0__aoi221_2 _376_ (.A1(_112_),
@@ -1413,10 +1422,10 @@ module tt_um_r2r_dac_digital (clk,
     .A2(_032_),
     .ZN(_127_));
  gf180mcu_fd_sc_mcu7t5v0__and2_1 _379_ (.A1(_064_),
-    .A2(net29),
+    .A2(net28),
     .Z(_128_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_4 _380_ (.A1(_064_),
-    .A2(net30),
+    .A2(net29),
     .ZN(_129_));
  gf180mcu_fd_sc_mcu7t5v0__oai221_2 _381_ (.A1(_107_),
     .A2(_109_),
@@ -1432,13 +1441,13 @@ module tt_um_r2r_dac_digital (clk,
     .A2(net19),
     .ZN(_132_));
  gf180mcu_fd_sc_mcu7t5v0__nor3_4 _384_ (.A1(_026_),
-    .A2(net26),
+    .A2(net25),
     .A3(net20),
     .ZN(_133_));
  gf180mcu_fd_sc_mcu7t5v0__aoi221_4 _385_ (.A1(_026_),
-    .A2(net37),
+    .A2(net44),
     .B1(_104_),
-    .B2(net30),
+    .B2(net29),
     .C(_099_),
     .ZN(_134_));
  gf180mcu_fd_sc_mcu7t5v0__oai31_2 _386_ (.A1(_131_),
@@ -1446,16 +1455,16 @@ module tt_um_r2r_dac_digital (clk,
     .A3(_134_),
     .B(net14),
     .ZN(_135_));
- gf180mcu_fd_sc_mcu7t5v0__or2_1 _387_ (.A1(net31),
+ gf180mcu_fd_sc_mcu7t5v0__or2_1 _387_ (.A1(net30),
     .A2(_126_),
     .Z(_136_));
- gf180mcu_fd_sc_mcu7t5v0__nand3_1 _388_ (.A1(net31),
+ gf180mcu_fd_sc_mcu7t5v0__nand3_1 _388_ (.A1(net30),
     .A2(_126_),
     .A3(_135_),
     .ZN(_137_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_2 _389_ (.A1(_080_),
     .A2(_133_),
-    .B(net31),
+    .B(net30),
     .ZN(_138_));
  gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _390_ (.I(_138_),
     .ZN(_139_));
@@ -1464,24 +1473,24 @@ module tt_um_r2r_dac_digital (clk,
     .B(_137_),
     .C(_136_),
     .ZN(_000_));
- gf180mcu_fd_sc_mcu7t5v0__nor3_4 _392_ (.A1(net41),
-    .A2(net38),
-    .A3(net36),
+ gf180mcu_fd_sc_mcu7t5v0__nor3_4 _392_ (.A1(net48),
+    .A2(net45),
+    .A3(net43),
     .ZN(_140_));
  gf180mcu_fd_sc_mcu7t5v0__nor2_1 _393_ (.A1(_118_),
     .A2(net17),
     .ZN(_141_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_4 _394_ (.A1(net19),
     .A2(_104_),
-    .B(net34),
+    .B(net38),
     .ZN(_142_));
- gf180mcu_fd_sc_mcu7t5v0__aoi21_2 _395_ (.A1(net30),
-    .A2(net28),
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_2 _395_ (.A1(net29),
+    .A2(net27),
     .B(net20),
     .ZN(_143_));
- gf180mcu_fd_sc_mcu7t5v0__oai21_4 _396_ (.A1(net38),
-    .A2(net36),
-    .B(net32),
+ gf180mcu_fd_sc_mcu7t5v0__oai21_4 _396_ (.A1(net46),
+    .A2(net43),
+    .B(net31),
     .ZN(_144_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_1 _397_ (.A1(_100_),
     .A2(_109_),
@@ -1497,24 +1506,24 @@ module tt_um_r2r_dac_digital (clk,
     .B(_146_),
     .ZN(_147_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_2 _400_ (.A1(_064_),
-    .A2(net27),
+    .A2(net26),
     .ZN(_148_));
  gf180mcu_fd_sc_mcu7t5v0__oai22_1 _401_ (.A1(_072_),
-    .A2(net30),
-    .B1(net37),
-    .B2(net42),
+    .A2(net28),
+    .B1(net43),
+    .B2(net49),
     .ZN(_149_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_2 _402_ (.A1(_148_),
     .A2(_149_),
-    .B(net35),
+    .B(net33),
     .ZN(_150_));
- gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _403_ (.A1(_069_),
-    .A2(net28),
-    .B(net30),
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_2 _403_ (.A1(_069_),
+    .A2(net27),
+    .B(net29),
     .ZN(_151_));
  gf180mcu_fd_sc_mcu7t5v0__nor3_1 _404_ (.A1(_070_),
-    .A2(net39),
-    .A3(net37),
+    .A2(net46),
+    .A3(net44),
     .ZN(_152_));
  gf180mcu_fd_sc_mcu7t5v0__nor2_1 _405_ (.A1(_151_),
     .A2(_152_),
@@ -1527,10 +1536,10 @@ module tt_um_r2r_dac_digital (clk,
     .A3(_150_),
     .A4(_154_),
     .ZN(_155_));
- gf180mcu_fd_sc_mcu7t5v0__nor2_4 _408_ (.A1(net38),
+ gf180mcu_fd_sc_mcu7t5v0__nor2_4 _408_ (.A1(net45),
     .A2(_104_),
     .ZN(_156_));
- gf180mcu_fd_sc_mcu7t5v0__aoi21_2 _409_ (.A1(net30),
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_2 _409_ (.A1(net29),
     .A2(_103_),
     .B(_151_),
     .ZN(_157_));
@@ -1538,12 +1547,12 @@ module tt_um_r2r_dac_digital (clk,
     .A2(net27),
     .B(net29),
     .ZN(_158_));
- gf180mcu_fd_sc_mcu7t5v0__oai21_4 _411_ (.A1(net41),
-    .A2(net36),
-    .B(net38),
+ gf180mcu_fd_sc_mcu7t5v0__oai21_4 _411_ (.A1(net49),
+    .A2(net44),
+    .B(net46),
     .ZN(_159_));
- gf180mcu_fd_sc_mcu7t5v0__oai221_4 _412_ (.A1(net40),
-    .A2(net28),
+ gf180mcu_fd_sc_mcu7t5v0__oai221_4 _412_ (.A1(net46),
+    .A2(net27),
     .B1(_101_),
     .B2(_159_),
     .C(net20),
@@ -1551,17 +1560,17 @@ module tt_um_r2r_dac_digital (clk,
  gf180mcu_fd_sc_mcu7t5v0__oai211_4 _413_ (.A1(net20),
     .A2(_157_),
     .B(_160_),
-    .C(net35),
+    .C(net42),
     .ZN(_161_));
  gf180mcu_fd_sc_mcu7t5v0__nor3_2 _414_ (.A1(_064_),
-    .A2(net41),
-    .A3(net38),
+    .A2(net48),
+    .A3(net45),
     .ZN(_162_));
- gf180mcu_fd_sc_mcu7t5v0__nor3_4 _415_ (.A1(net27),
+ gf180mcu_fd_sc_mcu7t5v0__nor3_4 _415_ (.A1(net26),
     .A2(net34),
     .A3(_162_),
     .ZN(_163_));
- gf180mcu_fd_sc_mcu7t5v0__nor2_2 _416_ (.A1(net23),
+ gf180mcu_fd_sc_mcu7t5v0__nor2_2 _416_ (.A1(net22),
     .A2(_163_),
     .ZN(_164_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _417_ (.A1(_064_),
@@ -1571,10 +1580,10 @@ module tt_um_r2r_dac_digital (clk,
     .A2(net17),
     .ZN(_166_));
  gf180mcu_fd_sc_mcu7t5v0__oai221_4 _419_ (.A1(net19),
-    .A2(net18),
+    .A2(_140_),
     .B1(_156_),
     .B2(_165_),
-    .C(net34),
+    .C(net39),
     .ZN(_167_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _420_ (.A1(_109_),
     .A2(_115_),
@@ -1595,29 +1604,29 @@ module tt_um_r2r_dac_digital (clk,
     .C(_170_),
     .ZN(_171_));
  gf180mcu_fd_sc_mcu7t5v0__mux2_2 _424_ (.I0(_138_),
-    .I1(net31),
+    .I1(net30),
     .S(_171_),
     .Z(_001_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_2 _425_ (.A1(net24),
     .A2(_115_),
     .ZN(_172_));
- gf180mcu_fd_sc_mcu7t5v0__oai31_2 _426_ (.A1(net27),
-    .A2(net34),
-    .A3(net32),
-    .B(net23),
+ gf180mcu_fd_sc_mcu7t5v0__oai31_4 _426_ (.A1(net26),
+    .A2(net40),
+    .A3(net31),
+    .B(net22),
     .ZN(_173_));
  gf180mcu_fd_sc_mcu7t5v0__oai32_4 _427_ (.A1(net24),
-    .A2(_140_),
+    .A2(net18),
     .A3(_165_),
     .B1(_172_),
     .B2(_156_),
     .ZN(_174_));
  gf180mcu_fd_sc_mcu7t5v0__oai22_1 _428_ (.A1(_081_),
-    .A2(net32),
+    .A2(net31),
     .B1(_104_),
     .B2(_144_),
     .ZN(_175_));
- gf180mcu_fd_sc_mcu7t5v0__nor2_1 _429_ (.A1(net22),
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _429_ (.A1(net23),
     .A2(_132_),
     .ZN(_176_));
  gf180mcu_fd_sc_mcu7t5v0__aoi221_1 _430_ (.A1(_120_),
@@ -1631,21 +1640,21 @@ module tt_um_r2r_dac_digital (clk,
     .B(_177_),
     .ZN(_178_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _432_ (.A1(_064_),
-    .A2(net24),
+    .A2(net25),
     .ZN(_179_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _433_ (.A1(_153_),
     .A2(_179_),
     .ZN(_180_));
- gf180mcu_fd_sc_mcu7t5v0__oai211_1 _434_ (.A1(net34),
+ gf180mcu_fd_sc_mcu7t5v0__oai211_1 _434_ (.A1(net33),
     .A2(_160_),
     .B(_180_),
     .C(net14),
     .ZN(_181_));
- gf180mcu_fd_sc_mcu7t5v0__aoi21_4 _435_ (.A1(net42),
-    .A2(net29),
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_4 _435_ (.A1(net48),
+    .A2(net28),
     .B(_148_),
     .ZN(_182_));
- gf180mcu_fd_sc_mcu7t5v0__oai32_4 _436_ (.A1(net34),
+ gf180mcu_fd_sc_mcu7t5v0__oai32_4 _436_ (.A1(net37),
     .A2(_116_),
     .A3(net17),
     .B1(_142_),
@@ -1658,8 +1667,8 @@ module tt_um_r2r_dac_digital (clk,
     .A2(_181_),
     .A3(_184_),
     .ZN(_185_));
- gf180mcu_fd_sc_mcu7t5v0__oai21_2 _439_ (.A1(net31),
-    .A2(net14),
+ gf180mcu_fd_sc_mcu7t5v0__oai21_2 _439_ (.A1(net30),
+    .A2(_127_),
     .B(_139_),
     .ZN(_186_));
  gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _440_ (.I(_186_),
@@ -1672,7 +1681,7 @@ module tt_um_r2r_dac_digital (clk,
     .A2(net19),
     .ZN(_187_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _443_ (.A1(_084_),
-    .A2(net32),
+    .A2(net31),
     .ZN(_188_));
  gf180mcu_fd_sc_mcu7t5v0__nand3_1 _444_ (.A1(_081_),
     .A2(_082_),
@@ -1681,34 +1690,34 @@ module tt_um_r2r_dac_digital (clk,
  gf180mcu_fd_sc_mcu7t5v0__aoi221_4 _445_ (.A1(_083_),
     .A2(net19),
     .B1(_182_),
-    .B2(net34),
+    .B2(net35),
     .C(_187_),
     .ZN(_190_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_2 _446_ (.A1(_188_),
     .A2(_189_),
-    .B(net25),
+    .B(net24),
     .ZN(_191_));
- gf180mcu_fd_sc_mcu7t5v0__oai21_2 _447_ (.A1(net29),
+ gf180mcu_fd_sc_mcu7t5v0__oai21_2 _447_ (.A1(net28),
     .A2(_104_),
     .B(_082_),
     .ZN(_192_));
- gf180mcu_fd_sc_mcu7t5v0__aoi21_2 _448_ (.A1(net38),
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_2 _448_ (.A1(net46),
     .A2(_103_),
     .B(_144_),
     .ZN(_193_));
  gf180mcu_fd_sc_mcu7t5v0__aoi211_4 _449_ (.A1(net20),
     .A2(_192_),
     .B(_193_),
-    .C(net34),
+    .C(net36),
     .ZN(_194_));
- gf180mcu_fd_sc_mcu7t5v0__nor2_2 _450_ (.A1(net36),
+ gf180mcu_fd_sc_mcu7t5v0__nor2_2 _450_ (.A1(net44),
     .A2(_129_),
     .ZN(_195_));
- gf180mcu_fd_sc_mcu7t5v0__oai221_4 _451_ (.A1(net37),
+ gf180mcu_fd_sc_mcu7t5v0__oai221_4 _451_ (.A1(net44),
     .A2(_129_),
     .B1(net16),
-    .B2(net32),
-    .C(net35),
+    .B2(net31),
+    .C(net41),
     .ZN(_196_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _452_ (.A1(_073_),
     .A2(_116_),
@@ -1724,7 +1733,7 @@ module tt_um_r2r_dac_digital (clk,
     .B1(_194_),
     .B2(_198_),
     .ZN(_199_));
- gf180mcu_fd_sc_mcu7t5v0__oai21_1 _455_ (.A1(net29),
+ gf180mcu_fd_sc_mcu7t5v0__oai21_1 _455_ (.A1(net28),
     .A2(_118_),
     .B(net25),
     .ZN(_200_));
@@ -1733,11 +1742,11 @@ module tt_um_r2r_dac_digital (clk,
     .B1(_196_),
     .B2(_200_),
     .ZN(_201_));
- gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _457_ (.A1(_159_),
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _457_ (.A1(net16),
     .A2(_166_),
     .B(net25),
     .ZN(_202_));
- gf180mcu_fd_sc_mcu7t5v0__nand2_1 _458_ (.A1(net35),
+ gf180mcu_fd_sc_mcu7t5v0__nand2_1 _458_ (.A1(net42),
     .A2(_096_),
     .ZN(_203_));
  gf180mcu_fd_sc_mcu7t5v0__or3_1 _459_ (.A1(_064_),
@@ -1752,34 +1761,34 @@ module tt_um_r2r_dac_digital (clk,
  gf180mcu_fd_sc_mcu7t5v0__aoi221_4 _461_ (.A1(_032_),
     .A2(net13),
     .B1(_201_),
-    .B2(_127_),
+    .B2(net14),
     .C(_205_),
     .ZN(_206_));
  gf180mcu_fd_sc_mcu7t5v0__mux2_2 _462_ (.I0(_138_),
-    .I1(net31),
+    .I1(net30),
     .S(_206_),
     .Z(_003_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_1 _463_ (.A1(_128_),
     .A2(_143_),
-    .B(net26),
+    .B(net25),
     .ZN(_207_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _464_ (.A1(net20),
     .A2(net16),
     .B(net25),
     .ZN(_208_));
- gf180mcu_fd_sc_mcu7t5v0__oai211_2 _465_ (.A1(net33),
+ gf180mcu_fd_sc_mcu7t5v0__oai211_2 _465_ (.A1(net32),
     .A2(_158_),
     .B(_144_),
-    .C(net35),
+    .C(net42),
     .ZN(_209_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _466_ (.A1(_207_),
     .A2(_209_),
     .B(net15),
     .ZN(_210_));
- gf180mcu_fd_sc_mcu7t5v0__nand2_1 _467_ (.A1(net33),
+ gf180mcu_fd_sc_mcu7t5v0__nand2_1 _467_ (.A1(net32),
     .A2(_158_),
     .ZN(_211_));
- gf180mcu_fd_sc_mcu7t5v0__nand3_1 _468_ (.A1(net35),
+ gf180mcu_fd_sc_mcu7t5v0__nand3_1 _468_ (.A1(net42),
     .A2(_129_),
     .A3(_211_),
     .ZN(_212_));
@@ -1788,19 +1797,19 @@ module tt_um_r2r_dac_digital (clk,
     .B(_210_),
     .C(_032_),
     .ZN(_213_));
- gf180mcu_fd_sc_mcu7t5v0__aoi211_4 _470_ (.A1(net34),
+ gf180mcu_fd_sc_mcu7t5v0__aoi211_4 _470_ (.A1(net42),
     .A2(_158_),
     .B(_132_),
-    .C(net22),
+    .C(net23),
     .ZN(_214_));
  gf180mcu_fd_sc_mcu7t5v0__aoi221_4 _471_ (.A1(_026_),
-    .A2(net39),
+    .A2(net47),
     .B1(_081_),
     .B2(_082_),
     .C(net20),
     .ZN(_215_));
- gf180mcu_fd_sc_mcu7t5v0__oai21_1 _472_ (.A1(net33),
-    .A2(_159_),
+ gf180mcu_fd_sc_mcu7t5v0__oai21_1 _472_ (.A1(net32),
+    .A2(net16),
     .B(net25),
     .ZN(_216_));
  gf180mcu_fd_sc_mcu7t5v0__oai22_1 _473_ (.A1(_187_),
@@ -1808,10 +1817,10 @@ module tt_um_r2r_dac_digital (clk,
     .B1(_215_),
     .B2(_216_),
     .ZN(_217_));
- gf180mcu_fd_sc_mcu7t5v0__oai31_1 _474_ (.A1(net34),
+ gf180mcu_fd_sc_mcu7t5v0__oai31_1 _474_ (.A1(net42),
     .A2(_187_),
     .A3(_195_),
-    .B(net22),
+    .B(net23),
     .ZN(_218_));
  gf180mcu_fd_sc_mcu7t5v0__and3_1 _475_ (.A1(_032_),
     .A2(_217_),
@@ -1826,7 +1835,7 @@ module tt_um_r2r_dac_digital (clk,
     .A3(_219_),
     .B(_220_),
     .ZN(_004_));
- gf180mcu_fd_sc_mcu7t5v0__aoi21_2 _478_ (.A1(net25),
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_2 _478_ (.A1(_030_),
     .A2(_144_),
     .B(_208_),
     .ZN(_221_));
@@ -1848,7 +1857,7 @@ module tt_um_r2r_dac_digital (clk,
     .A2(_223_),
     .B(_224_),
     .ZN(_005_));
- gf180mcu_fd_sc_mcu7t5v0__oai21_1 _483_ (.A1(net35),
+ gf180mcu_fd_sc_mcu7t5v0__oai21_1 _483_ (.A1(net42),
     .A2(_143_),
     .B(net14),
     .ZN(_225_));
@@ -1858,11 +1867,11 @@ module tt_um_r2r_dac_digital (clk,
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _485_ (.A1(_032_),
     .A2(_214_),
     .ZN(_227_));
- gf180mcu_fd_sc_mcu7t5v0__nand3_1 _486_ (.A1(net31),
+ gf180mcu_fd_sc_mcu7t5v0__nand3_1 _486_ (.A1(net30),
     .A2(_225_),
     .A3(_227_),
     .ZN(_228_));
- gf180mcu_fd_sc_mcu7t5v0__oai211_1 _487_ (.A1(net31),
+ gf180mcu_fd_sc_mcu7t5v0__oai211_1 _487_ (.A1(net30),
     .A2(_227_),
     .B(_228_),
     .C(_226_),
@@ -1883,7 +1892,7 @@ module tt_um_r2r_dac_digital (clk,
     .ZN(_232_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_1 _492_ (.A1(\u_r2r_dac_digital.cnt_p1[6] ),
     .A2(_231_),
-    .B(net47),
+    .B(net56),
     .ZN(_233_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _493_ (.A1(\u_r2r_dac_digital.cnt_p1[6] ),
     .A2(_231_),
@@ -1891,7 +1900,7 @@ module tt_um_r2r_dac_digital (clk,
     .ZN(_007_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_1 _494_ (.A1(_053_),
     .A2(_232_),
-    .B(net47),
+    .B(net56),
     .ZN(_234_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _495_ (.A1(_053_),
     .A2(_232_),
@@ -1907,7 +1916,7 @@ module tt_um_r2r_dac_digital (clk,
     .A2(net10),
     .Z(_237_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _499_ (.A1(net2),
-    .A2(net48),
+    .A2(net57),
     .ZN(_238_));
  gf180mcu_fd_sc_mcu7t5v0__and2_2 _500_ (.A1(net11),
     .A2(net10),
@@ -1921,33 +1930,33 @@ module tt_um_r2r_dac_digital (clk,
     .B2(\u_r2r_dac_digital.code_reg[0] ),
     .ZN(_241_));
  gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _503_ (.A1(net2),
-    .A2(net48),
+    .A2(net57),
     .B1(_240_),
     .B2(\u_r2r_dac_digital.cnt[0] ),
     .ZN(_242_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _504_ (.A1(_241_),
     .A2(_242_),
-    .B(net44),
+    .B(net52),
     .ZN(_010_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _505_ (.A1(net3),
-    .A2(net48),
+    .A2(net57),
     .ZN(_243_));
  gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _506_ (.A1(\u_r2r_dac_digital.sine_val[1] ),
-    .A2(_235_),
+    .A2(net51),
     .B1(_240_),
     .B2(\u_r2r_dac_digital.cnt[1] ),
     .ZN(_244_));
  gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _507_ (.A1(net3),
-    .A2(net48),
+    .A2(net57),
     .B1(_239_),
     .B2(\u_r2r_dac_digital.code_reg[1] ),
     .ZN(_245_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _508_ (.A1(_244_),
     .A2(_245_),
-    .B(net45),
+    .B(net54),
     .ZN(_011_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _509_ (.A1(net4),
-    .A2(net49),
+    .A2(net58),
     .ZN(_246_));
  gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _510_ (.A1(\u_r2r_dac_digital.code_reg[2] ),
     .A2(_239_),
@@ -1955,16 +1964,16 @@ module tt_um_r2r_dac_digital (clk,
     .B2(\u_r2r_dac_digital.cnt[2] ),
     .ZN(_247_));
  gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _511_ (.A1(\u_r2r_dac_digital.sine_val[2] ),
-    .A2(_235_),
-    .B1(net48),
+    .A2(net51),
+    .B1(net57),
     .B2(net4),
     .ZN(_248_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _512_ (.A1(_247_),
     .A2(_248_),
-    .B(net45),
+    .B(net54),
     .ZN(_012_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _513_ (.A1(net5),
-    .A2(net49),
+    .A2(net58),
     .ZN(_249_));
  gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _514_ (.A1(\u_r2r_dac_digital.sine_val[3] ),
     .A2(_235_),
@@ -1972,16 +1981,16 @@ module tt_um_r2r_dac_digital (clk,
     .B2(\u_r2r_dac_digital.code_reg[3] ),
     .ZN(_250_));
  gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _515_ (.A1(net5),
-    .A2(net48),
+    .A2(net57),
     .B1(_240_),
     .B2(\u_r2r_dac_digital.cnt[3] ),
     .ZN(_251_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _516_ (.A1(_250_),
     .A2(_251_),
-    .B(net45),
+    .B(net52),
     .ZN(_013_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _517_ (.A1(net6),
-    .A2(net49),
+    .A2(net58),
     .ZN(_252_));
  gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _518_ (.A1(\u_r2r_dac_digital.code_reg[4] ),
     .A2(_239_),
@@ -1989,13 +1998,13 @@ module tt_um_r2r_dac_digital (clk,
     .B2(\u_r2r_dac_digital.cnt[4] ),
     .ZN(_253_));
  gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _519_ (.A1(\u_r2r_dac_digital.sine_val[4] ),
-    .A2(_235_),
-    .B1(net48),
+    .A2(net51),
+    .B1(net57),
     .B2(net6),
     .ZN(_254_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _520_ (.A1(_253_),
     .A2(_254_),
-    .B(net45),
+    .B(net54),
     .ZN(_014_));
  gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _521_ (.A1(\u_r2r_dac_digital.code_reg[5] ),
     .A2(_239_),
@@ -2003,36 +2012,36 @@ module tt_um_r2r_dac_digital (clk,
     .B2(\u_r2r_dac_digital.cnt[5] ),
     .ZN(_255_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _522_ (.A1(net7),
-    .A2(net49),
+    .A2(net58),
     .ZN(_256_));
  gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _523_ (.A1(\u_r2r_dac_digital.sine_val[5] ),
     .A2(_235_),
-    .B1(net48),
+    .B1(net57),
     .B2(net7),
     .ZN(_257_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _524_ (.A1(_255_),
     .A2(_257_),
-    .B(net44),
+    .B(net52),
     .ZN(_015_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _525_ (.A1(net8),
-    .A2(net49),
+    .A2(net58),
     .ZN(_258_));
  gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _526_ (.A1(net8),
-    .A2(net49),
+    .A2(net58),
     .B1(_239_),
     .B2(\u_r2r_dac_digital.code_reg[6] ),
     .ZN(_259_));
  gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _527_ (.A1(\u_r2r_dac_digital.sine_val[6] ),
-    .A2(_235_),
+    .A2(net51),
     .B1(_240_),
     .B2(\u_r2r_dac_digital.cnt[6] ),
     .ZN(_260_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _528_ (.A1(_259_),
     .A2(_260_),
-    .B(net45),
+    .B(net54),
     .ZN(_016_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _529_ (.A1(net9),
-    .A2(net48),
+    .A2(net57),
     .ZN(_261_));
  gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _530_ (.A1(\u_r2r_dac_digital.code_reg[7] ),
     .A2(_239_),
@@ -2040,76 +2049,76 @@ module tt_um_r2r_dac_digital (clk,
     .B2(\u_r2r_dac_digital.cnt[7] ),
     .ZN(_262_));
  gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _531_ (.A1(\u_r2r_dac_digital.sine_val[7] ),
-    .A2(_235_),
-    .B1(net48),
+    .A2(net51),
+    .B1(net57),
     .B2(net9),
     .ZN(_263_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _532_ (.A1(_262_),
     .A2(_263_),
-    .B(net45),
+    .B(net54),
     .ZN(_017_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _533_ (.A1(\u_r2r_dac_digital.code_reg[0] ),
     .A2(_237_),
     .ZN(_264_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _534_ (.A1(_238_),
     .A2(_264_),
-    .B(net44),
+    .B(net52),
     .ZN(_018_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _535_ (.A1(\u_r2r_dac_digital.code_reg[1] ),
     .A2(_237_),
     .ZN(_265_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _536_ (.A1(_243_),
     .A2(_265_),
-    .B(net44),
+    .B(net52),
     .ZN(_019_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _537_ (.A1(\u_r2r_dac_digital.code_reg[2] ),
     .A2(_237_),
     .ZN(_266_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _538_ (.A1(_246_),
     .A2(_266_),
-    .B(net44),
+    .B(net53),
     .ZN(_020_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _539_ (.A1(\u_r2r_dac_digital.code_reg[3] ),
     .A2(_237_),
     .ZN(_267_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _540_ (.A1(_249_),
     .A2(_267_),
-    .B(net44),
+    .B(net53),
     .ZN(_021_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _541_ (.A1(\u_r2r_dac_digital.code_reg[4] ),
     .A2(_237_),
     .ZN(_268_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _542_ (.A1(_252_),
     .A2(_268_),
-    .B(net44),
+    .B(net52),
     .ZN(_022_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _543_ (.A1(\u_r2r_dac_digital.code_reg[5] ),
     .A2(_237_),
     .ZN(_269_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _544_ (.A1(_256_),
     .A2(_269_),
-    .B(net44),
+    .B(net52),
     .ZN(_023_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _545_ (.A1(\u_r2r_dac_digital.code_reg[6] ),
     .A2(_237_),
     .ZN(_270_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _546_ (.A1(_258_),
     .A2(_270_),
-    .B(_058_),
+    .B(net52),
     .ZN(_024_));
  gf180mcu_fd_sc_mcu7t5v0__nand2_1 _547_ (.A1(\u_r2r_dac_digital.code_reg[7] ),
     .A2(_237_),
     .ZN(_271_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _548_ (.A1(_261_),
     .A2(_271_),
-    .B(_058_),
+    .B(net52),
     .ZN(_025_));
  gf180mcu_fd_sc_mcu7t5v0__nor2_1 _549_ (.A1(\u_r2r_dac_digital.presc[0] ),
-    .A2(_058_),
+    .A2(net53),
     .ZN(_034_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_1 _550_ (.A1(\u_r2r_dac_digital.presc[1] ),
     .A2(\u_r2r_dac_digital.presc[0] ),
-    .B(net47),
+    .B(net56),
     .ZN(_272_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _551_ (.A1(\u_r2r_dac_digital.presc[1] ),
     .A2(\u_r2r_dac_digital.presc[0] ),
@@ -2123,7 +2132,7 @@ module tt_um_r2r_dac_digital (clk,
     .A2(\u_r2r_dac_digital.presc[0] ),
     .A3(\u_r2r_dac_digital.presc[2] ),
     .Z(_274_));
- gf180mcu_fd_sc_mcu7t5v0__nor3_1 _554_ (.A1(_058_),
+ gf180mcu_fd_sc_mcu7t5v0__nor3_1 _554_ (.A1(net53),
     .A2(_273_),
     .A3(_274_),
     .ZN(_036_));
@@ -2132,7 +2141,7 @@ module tt_um_r2r_dac_digital (clk,
     .Z(_275_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_1 _556_ (.A1(\u_r2r_dac_digital.presc[3] ),
     .A2(_274_),
-    .B(net47),
+    .B(net56),
     .ZN(_276_));
  gf180mcu_fd_sc_mcu7t5v0__nor2_1 _557_ (.A1(_275_),
     .A2(_276_),
@@ -2145,7 +2154,7 @@ module tt_um_r2r_dac_digital (clk,
     .Z(_278_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_1 _560_ (.A1(\u_r2r_dac_digital.presc[4] ),
     .A2(_275_),
-    .B(net47),
+    .B(net56),
     .ZN(_279_));
  gf180mcu_fd_sc_mcu7t5v0__nor2_1 _561_ (.A1(_278_),
     .A2(_279_),
@@ -2155,7 +2164,7 @@ module tt_um_r2r_dac_digital (clk,
     .Z(_280_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_1 _563_ (.A1(\u_r2r_dac_digital.presc[5] ),
     .A2(_278_),
-    .B(net47),
+    .B(net56),
     .ZN(_281_));
  gf180mcu_fd_sc_mcu7t5v0__nor2_1 _564_ (.A1(_280_),
     .A2(_281_),
@@ -2165,7 +2174,7 @@ module tt_um_r2r_dac_digital (clk,
     .ZN(_282_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_1 _566_ (.A1(\u_r2r_dac_digital.presc[6] ),
     .A2(_280_),
-    .B(net47),
+    .B(net56),
     .ZN(_283_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _567_ (.A1(\u_r2r_dac_digital.presc[6] ),
     .A2(_280_),
@@ -2174,7 +2183,7 @@ module tt_um_r2r_dac_digital (clk,
  gf180mcu_fd_sc_mcu7t5v0__xor2_1 _568_ (.A1(\u_r2r_dac_digital.presc[7] ),
     .A2(_282_),
     .Z(_284_));
- gf180mcu_fd_sc_mcu7t5v0__nor2_1 _569_ (.A1(net44),
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _569_ (.A1(net53),
     .A2(_284_),
     .ZN(_041_));
  gf180mcu_fd_sc_mcu7t5v0__and4_1 _570_ (.A1(\u_r2r_dac_digital.presc[1] ),
@@ -2190,13 +2199,13 @@ module tt_um_r2r_dac_digital (clk,
  gf180mcu_fd_sc_mcu7t5v0__nor2_1 _572_ (.A1(\u_r2r_dac_digital.cnt_p1[0] ),
     .A2(_059_),
     .ZN(_286_));
- gf180mcu_fd_sc_mcu7t5v0__oai21_1 _573_ (.A1(net43),
+ gf180mcu_fd_sc_mcu7t5v0__oai21_1 _573_ (.A1(net50),
     .A2(_286_),
-    .B(net46),
+    .B(net55),
     .ZN(_043_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_1 _574_ (.A1(\u_r2r_dac_digital.cnt_p1[1] ),
     .A2(_067_),
-    .B(net46),
+    .B(net55),
     .ZN(_287_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _575_ (.A1(\u_r2r_dac_digital.cnt_p1[1] ),
     .A2(_067_),
@@ -2206,20 +2215,20 @@ module tt_um_r2r_dac_digital (clk,
     .A2(_067_),
     .B(\u_r2r_dac_digital.cnt_p1[2] ),
     .ZN(_288_));
- gf180mcu_fd_sc_mcu7t5v0__nor3_1 _577_ (.A1(net45),
+ gf180mcu_fd_sc_mcu7t5v0__nor3_1 _577_ (.A1(net54),
     .A2(_229_),
     .A3(_288_),
     .ZN(_045_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_1 _578_ (.A1(\u_r2r_dac_digital.cnt_p1[3] ),
     .A2(_229_),
-    .B(net46),
+    .B(net55),
     .ZN(_289_));
  gf180mcu_fd_sc_mcu7t5v0__nor2_1 _579_ (.A1(_230_),
     .A2(_289_),
     .ZN(_046_));
  gf180mcu_fd_sc_mcu7t5v0__oai21_1 _580_ (.A1(\u_r2r_dac_digital.cnt_p1[4] ),
     .A2(_230_),
-    .B(net47),
+    .B(net56),
     .ZN(_290_));
  gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _581_ (.A1(\u_r2r_dac_digital.cnt_p1[4] ),
     .A2(_230_),
@@ -2229,7 +2238,7 @@ module tt_um_r2r_dac_digital (clk,
     .A2(_230_),
     .B(\u_r2r_dac_digital.cnt_p1[5] ),
     .ZN(_291_));
- gf180mcu_fd_sc_mcu7t5v0__nor3_1 _583_ (.A1(net44),
+ gf180mcu_fd_sc_mcu7t5v0__nor3_1 _583_ (.A1(net52),
     .A2(_231_),
     .A3(_291_),
     .ZN(_048_));
@@ -2311,16 +2320,16 @@ module tt_um_r2r_dac_digital (clk,
  gf180mcu_fd_sc_mcu7t5v0__dffq_1 _609_ (.D(_026_),
     .CLK(clk),
     .Q(\u_r2r_dac_digital.cnt[0] ));
- gf180mcu_fd_sc_mcu7t5v0__dffq_1 _610_ (.D(net28),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_1 _610_ (.D(net27),
     .CLK(clk),
     .Q(\u_r2r_dac_digital.cnt[1] ));
- gf180mcu_fd_sc_mcu7t5v0__dffq_1 _611_ (.D(net30),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_1 _611_ (.D(net29),
     .CLK(clk),
     .Q(\u_r2r_dac_digital.cnt[2] ));
  gf180mcu_fd_sc_mcu7t5v0__dffq_1 _612_ (.D(_029_),
     .CLK(clk),
     .Q(\u_r2r_dac_digital.cnt[3] ));
- gf180mcu_fd_sc_mcu7t5v0__dffq_1 _613_ (.D(net26),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_1 _613_ (.D(_030_),
     .CLK(clk),
     .Q(\u_r2r_dac_digital.cnt[4] ));
  gf180mcu_fd_sc_mcu7t5v0__dffq_1 _614_ (.D(_031_),
@@ -2387,48 +2396,48 @@ module tt_um_r2r_dac_digital (clk,
     .Z(net19));
  gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout20 (.I(_029_),
     .Z(net20));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout24 (.I(net26),
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout24 (.I(net25),
     .Z(net24));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout25 (.I(net26),
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout25 (.I(_030_),
     .Z(net25));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout26 (.I(_030_),
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout26 (.I(_027_),
     .Z(net26));
  gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout27 (.I(_027_),
     .Z(net27));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout28 (.I(_027_),
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout28 (.I(_028_),
     .Z(net28));
  gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout29 (.I(_028_),
     .Z(net29));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout30 (.I(_028_),
-    .Z(net30));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout32 (.I(net33),
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout31 (.I(net32),
+    .Z(net31));
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout32 (.I(_098_),
     .Z(net32));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout33 (.I(_098_),
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout33 (.I(net42),
     .Z(net33));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout34 (.I(net35),
-    .Z(net34));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout35 (.I(_089_),
-    .Z(net35));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout36 (.I(_079_),
-    .Z(net36));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout37 (.I(_079_),
-    .Z(net37));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout38 (.I(net39),
-    .Z(net38));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout39 (.I(net40),
-    .Z(net39));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout44 (.I(net45),
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout42 (.I(_089_),
+    .Z(net42));
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout43 (.I(_079_),
+    .Z(net43));
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout44 (.I(_079_),
     .Z(net44));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout45 (.I(_058_),
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout45 (.I(net46),
     .Z(net45));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout46 (.I(\u_r2r_dac_digital.rst_q ),
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout46 (.I(_076_),
     .Z(net46));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout47 (.I(\u_r2r_dac_digital.rst_q ),
-    .Z(net47));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout48 (.I(_236_),
-    .Z(net48));
- gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout49 (.I(_236_),
-    .Z(net49));
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout52 (.I(net54),
+    .Z(net52));
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout53 (.I(net54),
+    .Z(net53));
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout54 (.I(_058_),
+    .Z(net54));
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout55 (.I(net56),
+    .Z(net55));
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout56 (.I(\u_r2r_dac_digital.rst_q ),
+    .Z(net56));
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout57 (.I(_236_),
+    .Z(net57));
+ gf180mcu_fd_sc_mcu7t5v0__dlyb_1 fanout58 (.I(_236_),
+    .Z(net58));
  gf180mcu_fd_sc_mcu7t5v0__buf_1 input1 (.I(rst_n),
     .Z(net1));
  gf180mcu_fd_sc_mcu7t5v0__buf_1 input10 (.I(uio_in[0]),
@@ -2455,8 +2464,6 @@ module tt_um_r2r_dac_digital (clk,
     .Z(net9));
  gf180mcu_fd_sc_mcu7t5v0__buf_2 load_slew14 (.I(_127_),
     .Z(net14));
- gf180mcu_fd_sc_mcu7t5v0__buf_2 load_slew16 (.I(_159_),
-    .Z(net16));
  gf180mcu_fd_sc_mcu7t5v0__buf_2 load_slew17 (.I(net18),
     .Z(net17));
  gf180mcu_fd_sc_mcu7t5v0__buf_2 load_slew18 (.I(_140_),
@@ -2465,30 +2472,42 @@ module tt_um_r2r_dac_digital (clk,
     .Z(net21));
  gf180mcu_fd_sc_mcu7t5v0__buf_2 load_slew22 (.I(net23),
     .Z(net22));
- gf180mcu_fd_sc_mcu7t5v0__buf_2 load_slew23 (.I(_093_),
-    .Z(net23));
- gf180mcu_fd_sc_mcu7t5v0__buf_2 load_slew41 (.I(_069_),
+ gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 load_slew34 (.I(net39),
+    .Z(net34));
+ gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 load_slew35 (.I(net36),
+    .Z(net35));
+ gf180mcu_fd_sc_mcu7t5v0__buf_2 load_slew36 (.I(net37),
+    .Z(net36));
+ gf180mcu_fd_sc_mcu7t5v0__buf_2 load_slew37 (.I(net38),
+    .Z(net37));
+ gf180mcu_fd_sc_mcu7t5v0__buf_2 load_slew38 (.I(net39),
+    .Z(net38));
+ gf180mcu_fd_sc_mcu7t5v0__buf_2 load_slew39 (.I(net40),
+    .Z(net39));
+ gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 load_slew40 (.I(net33),
+    .Z(net40));
+ gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 load_slew41 (.I(net33),
     .Z(net41));
- gf180mcu_fd_sc_mcu7t5v0__buf_2 load_slew42 (.I(_069_),
-    .Z(net42));
- gf180mcu_fd_sc_mcu7t5v0__buf_2 load_slew43 (.I(_067_),
-    .Z(net43));
+ gf180mcu_fd_sc_mcu7t5v0__buf_2 load_slew50 (.I(_067_),
+    .Z(net50));
+ gf180mcu_fd_sc_mcu7t5v0__buf_2 load_slew51 (.I(_235_),
+    .Z(net51));
  gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital (.ZN(net));
- gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_50 (.ZN(net50));
- gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_51 (.ZN(net51));
- gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_52 (.ZN(net52));
- gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_53 (.ZN(net53));
- gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_54 (.ZN(net54));
- gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_55 (.ZN(net55));
- gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_56 (.ZN(net56));
- gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_57 (.ZN(net57));
- gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_58 (.ZN(net58));
  gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_59 (.ZN(net59));
  gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_60 (.ZN(net60));
  gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_61 (.ZN(net61));
  gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_62 (.ZN(net62));
  gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_63 (.ZN(net63));
  gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_64 (.ZN(net64));
+ gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_65 (.ZN(net65));
+ gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_66 (.ZN(net66));
+ gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_67 (.ZN(net67));
+ gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_68 (.ZN(net68));
+ gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_69 (.ZN(net69));
+ gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_70 (.ZN(net70));
+ gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_71 (.ZN(net71));
+ gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_72 (.ZN(net72));
+ gf180mcu_fd_sc_mcu7t5v0__tiel tt_um_r2r_dac_digital_73 (.ZN(net73));
  r2r_dac_analog u_analog (.vout(ua[0]),
     .dac_code({uo_out[7],
     uo_out[6],
@@ -2502,24 +2521,32 @@ module tt_um_r2r_dac_digital (clk,
     .Z(net13));
  gf180mcu_fd_sc_mcu7t5v0__buf_4 wire15 (.I(_031_),
     .Z(net15));
- gf180mcu_fd_sc_mcu7t5v0__buf_2 wire31 (.I(_061_),
-    .Z(net31));
- gf180mcu_fd_sc_mcu7t5v0__buf_1 wire40 (.I(_076_),
-    .Z(net40));
+ gf180mcu_fd_sc_mcu7t5v0__buf_2 wire16 (.I(_159_),
+    .Z(net16));
+ gf180mcu_fd_sc_mcu7t5v0__buf_2 wire23 (.I(_093_),
+    .Z(net23));
+ gf180mcu_fd_sc_mcu7t5v0__buf_2 wire30 (.I(_061_),
+    .Z(net30));
+ gf180mcu_fd_sc_mcu7t5v0__buf_1 wire47 (.I(_076_),
+    .Z(net47));
+ gf180mcu_fd_sc_mcu7t5v0__buf_2 wire48 (.I(net49),
+    .Z(net48));
+ gf180mcu_fd_sc_mcu7t5v0__buf_2 wire49 (.I(_069_),
+    .Z(net49));
  assign uio_oe[0] = net;
- assign uio_oe[1] = net50;
- assign uio_oe[2] = net51;
- assign uio_oe[3] = net52;
- assign uio_oe[4] = net53;
- assign uio_oe[5] = net54;
- assign uio_oe[6] = net55;
- assign uio_oe[7] = net56;
- assign uio_out[0] = net57;
- assign uio_out[1] = net58;
- assign uio_out[2] = net59;
- assign uio_out[3] = net60;
- assign uio_out[4] = net61;
- assign uio_out[5] = net62;
- assign uio_out[6] = net63;
- assign uio_out[7] = net64;
+ assign uio_oe[1] = net59;
+ assign uio_oe[2] = net60;
+ assign uio_oe[3] = net61;
+ assign uio_oe[4] = net62;
+ assign uio_oe[5] = net63;
+ assign uio_oe[6] = net64;
+ assign uio_oe[7] = net65;
+ assign uio_out[0] = net66;
+ assign uio_out[1] = net67;
+ assign uio_out[2] = net68;
+ assign uio_out[3] = net69;
+ assign uio_out[4] = net70;
+ assign uio_out[5] = net71;
+ assign uio_out[6] = net72;
+ assign uio_out[7] = net73;
 endmodule

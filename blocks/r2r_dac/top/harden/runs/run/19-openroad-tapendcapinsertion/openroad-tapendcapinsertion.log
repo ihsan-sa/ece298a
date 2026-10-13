@@ -12,7 +12,7 @@ Reading design constraints file at '/home/ihsan/.cc/toolchains/iic-osic-tools-20
 [INFO] Setting clock transition to: 0.15
 [INFO] Setting timing derate to: 5.0%
 + tapcell -halo_width_x 10.0 -halo_width_y 10.0 -distance 20.0 -tapcell_master gf180mcu_fd_sc_mcu7t5v0__filltie -endcap_master gf180mcu_fd_sc_mcu7t5v0__endcap
-[INFO ODB-0303] The initial 123 rows (32073 sites) were cut with 1 shapes for a total of 123 rows (32073 sites).
+[INFO ODB-0303] The initial 123 rows (31863 sites) were cut with 1 shapes for a total of 123 rows (31863 sites).
 [INFO TAP-0004] Inserted 162 endcaps.
 [INFO TAP-0005] Inserted 449 tapcells.
 Setting global connections for newly added cells…
@@ -21,14 +21,14 @@ u_analog matched with u_analog
 [INFO ODB-0403] 1390 connections made, 0 conflicts skipped.
 Updating metrics…
 Cell type report:                       Count       Area
-  Macro                                     1   29003.36
+  Macro                                     1   29380.17
   Endcap cell                             246    1080.04
   Tap cell                                449    1971.29
   Tie cell                                 16     140.49
   Inverter                                 20     175.62
   Sequential cell                          50    3183.04
   Multi-Input combinational cell          272    4800.90
-  Total                                  1054   40354.74
+  Total                                  1054   40731.55
 Writing OpenROAD database to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/19-openroad-tapendcapinsertion/tt_um_r2r_dac_digital.odb'…
 Writing netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/19-openroad-tapendcapinsertion/tt_um_r2r_dac_digital.nl.v'…
 Writing powered netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/19-openroad-tapendcapinsertion/tt_um_r2r_dac_digital.pnl.v'…

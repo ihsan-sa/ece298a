@@ -17,29 +17,29 @@ Placement Analysis
 total displacement          0.0 u
 average displacement        0.0 u
 max displacement            0.0 u
-original HPWL           15727.6 u
-legalized HPWL          16346.7 u
+original HPWL           15957.8 u
+legalized HPWL          16545.4 u
 delta HPWL                    4 %
 
 [INFO DPL-0020] Mirrored 196 instances
-[INFO DPL-0021] HPWL before           16346.7 u
-[INFO DPL-0022] HPWL after            15727.6 u
-[INFO DPL-0023] HPWL delta               -3.8 %
+[INFO DPL-0021] HPWL before           16545.4 u
+[INFO DPL-0022] HPWL after            15957.8 u
+[INFO DPL-0023] HPWL delta               -3.6 %
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
 u_analog matched with u_analog
 [INFO ODB-0403] 0 connections made, 0 conflicts skipped.
 Updating metrics…
 Cell type report:                       Count       Area
-  Macro                                     1   29003.36
+  Macro                                     1   29380.17
   Endcap cell                             246    1080.04
   Tap cell                                449    1971.29
   Tie cell                                 16     140.49
-  Timing Repair Buffer                     49    1220.53
-  Inverter                                 20     210.74
+  Timing Repair Buffer                     58    1365.41
+  Inverter                                 20     223.91
   Sequential cell                          50    3222.55
-  Multi-Input combinational cell          272    7421.97
-  Total                                  1103   44270.98
+  Multi-Input combinational cell          272    7494.41
+  Total                                  1112   44878.28
 Writing OpenROAD database to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/34-openroad-detailedplacement/tt_um_r2r_dac_digital.odb'…
 Writing netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/34-openroad-detailedplacement/tt_um_r2r_dac_digital.nl.v'…
 Writing powered netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/34-openroad-detailedplacement/tt_um_r2r_dac_digital.pnl.v'…

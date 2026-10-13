@@ -1,2 +1,0 @@
-magic -dnull -noconsole -rcfile /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/usr/local/lib/python3.12/dist-packages/librelane/scripts/magic/wrapper.tcl
-magic -dnull -noconsole -rcfile /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/usr/local/lib/python3.12/dist-packages/librelane/scripts/magic/wrapper.tcl

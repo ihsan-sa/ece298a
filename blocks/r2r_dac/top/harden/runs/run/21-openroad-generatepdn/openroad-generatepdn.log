@@ -23,14 +23,14 @@ u_analog matched with u_analog
 [INFO ODB-0403] 0 connections made, 0 conflicts skipped.
 Updating metrics…
 Cell type report:                       Count       Area
-  Macro                                     1   29003.36
+  Macro                                     1   29380.17
   Endcap cell                             246    1080.04
   Tap cell                                449    1971.29
   Tie cell                                 16     140.49
   Inverter                                 20     175.62
   Sequential cell                          50    3183.04
   Multi-Input combinational cell          272    4800.90
-  Total                                  1054   40354.74
+  Total                                  1054   40731.55
 Writing OpenROAD database to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/21-openroad-generatepdn/tt_um_r2r_dac_digital.odb'…
 Writing netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/21-openroad-generatepdn/tt_um_r2r_dac_digital.nl.v'…
 Writing powered netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/21-openroad-generatepdn/tt_um_r2r_dac_digital.pnl.v'…

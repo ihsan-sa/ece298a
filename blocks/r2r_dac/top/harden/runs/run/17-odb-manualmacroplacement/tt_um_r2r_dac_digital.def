@@ -454,7 +454,7 @@ COMPONENTS 359 ;
     - _647_ gf180mcu_fd_sc_mcu7t5v0__tiel ;
     - _648_ gf180mcu_fd_sc_mcu7t5v0__tiel ;
     - _649_ gf180mcu_fd_sc_mcu7t5v0__tiel ;
-    - u_analog r2r_dac_analog + FIXED ( 138880 188160 ) N ;
+    - u_analog r2r_dac_analog + FIXED ( 136640 188160 ) N ;
 END COMPONENTS
 PINS 51 ;
     - clk + NET clk + DIRECTION INPUT + USE SIGNAL ;
