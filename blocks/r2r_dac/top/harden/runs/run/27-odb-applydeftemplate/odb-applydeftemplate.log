@@ -1,0 +1,239 @@
+[WARNING ORD-0039] .openroad ignored with -python
+[WARNING] Bterm VPWR is declared as a 'POWER' pin. It will be ignored.
+[WARNING] Bterm VGND is declared as a 'GROUND' pin. It will be ignored.
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via1 :"
+  	EOLENCLOSURE 0.34 0.06 ;"
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via2 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via3 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via4 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/techlef/gf180mcu_fd_sc_mcu7t5v0__nom.tlef, created 15 layers, 56 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef, created 229 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__asig_5p0.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__asig_5p0 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__asig_5p0.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__dvss.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__dvss references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__dvss.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__fill5.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__fill5 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__fill5.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_ef_io__bi_t.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_ef_io__bi_t references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_ef_io__bi_t.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__bi_24t.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__bi_24t references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__bi_24t.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__in_c.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__in_c references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__in_c.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__brk2.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__brk2 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__brk2.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__fillnc.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__fillnc references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__fillnc.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__brk5.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__brk5 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__brk5.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__fill1.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__fill1 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__fill1.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__bi_t.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__bi_t references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__bi_t.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__fill10.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__fill10 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__fill10.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__dvdd.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__dvdd references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__dvdd.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__cor.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__cor references unknown site GF_COR_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__cor.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__in_s.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__in_s references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__in_s.lef, created 1 library cells
+[INFO ODB-0127] Reading DEF file: /home/ihsan/.claude/skills/chip-flow/engine/reference/tt/tt-support-tools/tech/gf180mcuD/def/analog/tt_analog_1x2.def
+[INFO ODB-0128] Design: tt_um_template
+[INFO ODB-0130]     Created 51 pins.
+[INFO ODB-0132]     Created 2 special nets and 0 connections.
+[INFO ODB-0133]     Created 51 nets and 0 connections.
+[INFO ODB-0134] Finished DEF file: /home/ihsan/.claude/skills/chip-flow/engine/reference/tt/tt-support-tools/tech/gf180mcuD/def/analog/tt_analog_1x2.def
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via1 :"
+  	EOLENCLOSURE 0.34 0.06 ;"
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via2 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via3 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via4 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/techlef/gf180mcu_fd_sc_mcu7t5v0__nom.tlef, created 15 layers, 56 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef, created 229 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__asig_5p0.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__asig_5p0 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__asig_5p0.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__dvss.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__dvss references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__dvss.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__fill5.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__fill5 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__fill5.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_ef_io__bi_t.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_ef_io__bi_t references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_ef_io__bi_t.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__bi_24t.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__bi_24t references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__bi_24t.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__in_c.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__in_c references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__in_c.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__brk2.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__brk2 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__brk2.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__fillnc.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__fillnc references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__fillnc.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__brk5.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__brk5 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__brk5.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__fill1.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__fill1 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__fill1.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__bi_t.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__bi_t references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__bi_t.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__fill10.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__fill10 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__fill10.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__dvdd.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__dvdd references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__dvdd.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__cor.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__cor references unknown site GF_COR_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__cor.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__in_s.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__in_s references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lef/gf180mcu_fd_io__in_s.lef, created 1 library cells
+[INFO ODB-0127] Reading DEF file: /home/ihsan/.claude/skills/chip-flow/engine/reference/tt/tt-support-tools/tech/gf180mcuD/def/analog/tt_analog_1x2.def
+[INFO ODB-0128] Design: tt_um_template
+[INFO ODB-0130]     Created 51 pins.
+[INFO ODB-0132]     Created 2 special nets and 0 connections.
+[INFO ODB-0133]     Created 51 nets and 0 connections.
+[INFO ODB-0134] Finished DEF file: /home/ihsan/.claude/skills/chip-flow/engine/reference/tt/tt-support-tools/tech/gf180mcuD/def/analog/tt_analog_1x2.def
+Using manufacturing grid: 10 Using dbu per mircons: 2000
+Found 51 block terminals in existing database...
+Found 51 template_bterms…
+Wrote pin clk at layer Metal4 at (662180, 648720, 662780, 650720, 'PLACED')...
+Wrote pin ena at layer Metal4 at (676740, 648720, 677340, 650720, 'PLACED')...
+Wrote pin rst_n at layer Metal4 at (647620, 648720, 648220, 650720, 'PLACED')...
+Wrote pin ua[0] at layer Metal4 at (651640, 0, 657640, 2000, 'PLACED')...
+Wrote pin ua[1] at layer Metal4 at (564280, 0, 570280, 2000, 'PLACED')...
+Wrote pin ua[2] at layer Metal4 at (476920, 0, 482920, 2000, 'PLACED')...
+Wrote pin ua[3] at layer Metal4 at (389560, 0, 395560, 2000, 'PLACED')...
+Wrote pin ua[4] at layer Metal4 at (302200, 0, 308200, 2000, 'PLACED')...
+Wrote pin ua[5] at layer Metal4 at (214840, 0, 220840, 2000, 'PLACED')...
+Wrote pin ua[6] at layer Metal4 at (127480, 0, 133480, 2000, 'PLACED')...
+Wrote pin ua[7] at layer Metal4 at (40120, 0, 46120, 2000, 'PLACED')...
+Wrote pin ui_in[0] at layer Metal4 at (633060, 648720, 633660, 650720, 'PLACED')...
+Wrote pin ui_in[1] at layer Metal4 at (618500, 648720, 619100, 650720, 'PLACED')...
+Wrote pin ui_in[2] at layer Metal4 at (603940, 648720, 604540, 650720, 'PLACED')...
+Wrote pin ui_in[3] at layer Metal4 at (589380, 648720, 589980, 650720, 'PLACED')...
+Wrote pin ui_in[4] at layer Metal4 at (574820, 648720, 575420, 650720, 'PLACED')...
+Wrote pin ui_in[5] at layer Metal4 at (560260, 648720, 560860, 650720, 'PLACED')...
+Wrote pin ui_in[6] at layer Metal4 at (545700, 648720, 546300, 650720, 'PLACED')...
+Wrote pin ui_in[7] at layer Metal4 at (531140, 648720, 531740, 650720, 'PLACED')...
+Wrote pin uio_in[0] at layer Metal4 at (516580, 648720, 517180, 650720, 'PLACED')...
+Wrote pin uio_in[1] at layer Metal4 at (502020, 648720, 502620, 650720, 'PLACED')...
+Wrote pin uio_in[2] at layer Metal4 at (487460, 648720, 488060, 650720, 'PLACED')...
+Wrote pin uio_in[3] at layer Metal4 at (472900, 648720, 473500, 650720, 'PLACED')...
+Wrote pin uio_in[4] at layer Metal4 at (458340, 648720, 458940, 650720, 'PLACED')...
+Wrote pin uio_in[5] at layer Metal4 at (443780, 648720, 444380, 650720, 'PLACED')...
+Wrote pin uio_in[6] at layer Metal4 at (429220, 648720, 429820, 650720, 'PLACED')...
+Wrote pin uio_in[7] at layer Metal4 at (414660, 648720, 415260, 650720, 'PLACED')...
+Wrote pin uio_oe[0] at layer Metal4 at (167140, 648720, 167740, 650720, 'PLACED')...
+Wrote pin uio_oe[1] at layer Metal4 at (152580, 648720, 153180, 650720, 'PLACED')...
+Wrote pin uio_oe[2] at layer Metal4 at (138020, 648720, 138620, 650720, 'PLACED')...
+Wrote pin uio_oe[3] at layer Metal4 at (123460, 648720, 124060, 650720, 'PLACED')...
+Wrote pin uio_oe[4] at layer Metal4 at (108900, 648720, 109500, 650720, 'PLACED')...
+Wrote pin uio_oe[5] at layer Metal4 at (94340, 648720, 94940, 650720, 'PLACED')...
+Wrote pin uio_oe[6] at layer Metal4 at (79780, 648720, 80380, 650720, 'PLACED')...
+Wrote pin uio_oe[7] at layer Metal4 at (65220, 648720, 65820, 650720, 'PLACED')...
+Wrote pin uio_out[0] at layer Metal4 at (283620, 648720, 284220, 650720, 'PLACED')...
+Wrote pin uio_out[1] at layer Metal4 at (269060, 648720, 269660, 650720, 'PLACED')...
+Wrote pin uio_out[2] at layer Metal4 at (254500, 648720, 255100, 650720, 'PLACED')...
+Wrote pin uio_out[3] at layer Metal4 at (239940, 648720, 240540, 650720, 'PLACED')...
+Wrote pin uio_out[4] at layer Metal4 at (225380, 648720, 225980, 650720, 'PLACED')...
+Wrote pin uio_out[5] at layer Metal4 at (210820, 648720, 211420, 650720, 'PLACED')...
+Wrote pin uio_out[6] at layer Metal4 at (196260, 648720, 196860, 650720, 'PLACED')...
+Wrote pin uio_out[7] at layer Metal4 at (181700, 648720, 182300, 650720, 'PLACED')...
+Wrote pin uo_out[0] at layer Metal4 at (400100, 648720, 400700, 650720, 'PLACED')...
+Wrote pin uo_out[1] at layer Metal4 at (385540, 648720, 386140, 650720, 'PLACED')...
+Wrote pin uo_out[2] at layer Metal4 at (370980, 648720, 371580, 650720, 'PLACED')...
+Wrote pin uo_out[3] at layer Metal4 at (356420, 648720, 357020, 650720, 'PLACED')...
+Wrote pin uo_out[4] at layer Metal4 at (341860, 648720, 342460, 650720, 'PLACED')...
+Wrote pin uo_out[5] at layer Metal4 at (327300, 648720, 327900, 650720, 'PLACED')...
+Wrote pin uo_out[6] at layer Metal4 at (312740, 648720, 313340, 650720, 'PLACED')...
+Wrote pin uo_out[7] at layer Metal4 at (298180, 648720, 298780, 650720, 'PLACED')...

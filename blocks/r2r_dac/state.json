@@ -4,7 +4,7 @@
  "block": "r2r_dac",
  "workspace": "blocks/r2r_dac",
  "created": "2026-09-25T05:42:01",
- "updated": "2026-10-13T04:23:28",
+ "updated": "2026-10-13T04:25:51",
  "phase": "P2",
  "toolchain": null,
  "gates": {
@@ -109,6 +109,15 @@
    "status": "running",
    "log": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/log/jobs/job-2.log",
    "result": null
+  },
+  "3": {
+   "gate": "top_harden",
+   "pid": 64309,
+   "started": "2026-10-13T04:25:51",
+   "finished": null,
+   "status": "running",
+   "log": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/log/jobs/job-3.log",
+   "result": null
   }
  },
  "holdout": null,
@@ -137,11 +146,11 @@
  "open_issues": [
   {
    "id": 1,
-   "status": "open",
+   "status": "fixed",
    "agent": null,
    "attempts": 0,
    "opened": "2026-10-13T04:23:28",
-   "closed": null,
+   "closed": "2026-10-13T04:25:51",
    "gate": "top_harden",
    "phase": "P3",
    "fixer": "review",
@@ -154,7 +163,7 @@
   }
  ],
  "next_issue_id": 2,
- "next_job_id": 3,
+ "next_job_id": 4,
  "budgets": {
   "fix_loops": {
    "top_harden": 2
@@ -297,6 +306,21 @@
    "kinds": [
     "macro_power_unreachable"
    ]
+  },
+  {
+   "ts": "2026-10-13T04:25:51",
+   "event": "issue",
+   "id": 1,
+   "status": "fixed",
+   "agent": null,
+   "attempts": 0
+  },
+  {
+   "ts": "2026-10-13T04:25:51",
+   "event": "job_start",
+   "job": "3",
+   "gate": "top_harden",
+   "pid": 64309
   }
  ]
 }
