@@ -180,6 +180,12 @@ void Vtop___024root___ico_sequent__TOP__0(Vtop___024root* vlSelf) {
         vlSelfRef.r2r_dac_digital__DOT____Vtogcov__cnt_p1 
             = vlSelfRef.r2r_dac_digital__DOT__cnt_p1;
     }
+    if (((IData)(vlSelfRef.r2r_dac_digital__DOT__rst_q) 
+         ^ (IData)(vlSelfRef.r2r_dac_digital__DOT____Vtogcov__rst_q))) {
+        VL_COV_TOGGLE_CHG_ST_I(1, vlSelf->__Vcoverage + 407, vlSelfRef.r2r_dac_digital__DOT__rst_q, vlSelfRef.r2r_dac_digital__DOT____Vtogcov__rst_q);
+        vlSelfRef.r2r_dac_digital__DOT____Vtogcov__rst_q 
+            = vlSelfRef.r2r_dac_digital__DOT__rst_q;
+    }
     vlSelfRef.dac_code = vlSelfRef.r2r_dac_digital__DOT__dac_code;
     vlSelfRef.r2r_dac_digital__DOT__clk = vlSelfRef.clk;
     if ((0x00000080U & (IData)(vlSelfRef.r2r_dac_digital__DOT__cnt))) {
@@ -1308,23 +1314,24 @@ void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) {
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
-    if (vlSelfRef.r2r_dac_digital__DOT__rst_n) {
+    ++(vlSelf->__Vcoverage[409]);
+    if (vlSelfRef.r2r_dac_digital__DOT__rst_q) {
         vlSelfRef.r2r_dac_digital__DOT__presc_tc = 
             (0xfeU == (IData)(vlSelfRef.r2r_dac_digital__DOT__presc));
         if ((0U == (IData)(vlSelfRef.r2r_dac_digital__DOT__mode))) {
-            ++(vlSelf->__Vcoverage[407]);
+            ++(vlSelf->__Vcoverage[410]);
             vlSelfRef.r2r_dac_digital__DOT__dac_code 
                 = vlSelfRef.r2r_dac_digital__DOT__ui_in;
         } else if ((1U == (IData)(vlSelfRef.r2r_dac_digital__DOT__mode))) {
-            ++(vlSelf->__Vcoverage[408]);
+            ++(vlSelf->__Vcoverage[411]);
             vlSelfRef.r2r_dac_digital__DOT__dac_code 
                 = vlSelfRef.r2r_dac_digital__DOT__cnt;
         } else if ((2U == (IData)(vlSelfRef.r2r_dac_digital__DOT__mode))) {
-            ++(vlSelf->__Vcoverage[409]);
+            ++(vlSelf->__Vcoverage[412]);
             vlSelfRef.r2r_dac_digital__DOT__dac_code 
                 = vlSelfRef.r2r_dac_digital__DOT__sine_val;
         } else {
-            ++(vlSelf->__Vcoverage[410]);
+            ++(vlSelf->__Vcoverage[413]);
             vlSelfRef.r2r_dac_digital__DOT__dac_code 
                 = vlSelfRef.r2r_dac_digital__DOT__code_reg;
         }
@@ -1332,37 +1339,37 @@ void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) {
                                                  & ((IData)(1U) 
                                                     + (IData)(vlSelfRef.r2r_dac_digital__DOT__presc)));
         if ((0U == (IData)(vlSelfRef.r2r_dac_digital__DOT__mode))) {
-            ++(vlSelf->__Vcoverage[411]);
+            ++(vlSelf->__Vcoverage[414]);
             vlSelfRef.r2r_dac_digital__DOT__code_reg 
                 = vlSelfRef.r2r_dac_digital__DOT__ui_in;
         } else {
-            ++(vlSelf->__Vcoverage[412]);
+            ++(vlSelf->__Vcoverage[415]);
         }
         if (vlSelfRef.r2r_dac_digital__DOT__step) {
-            ++(vlSelf->__Vcoverage[413]);
+            ++(vlSelf->__Vcoverage[416]);
             vlSelfRef.r2r_dac_digital__DOT__cnt = vlSelfRef.r2r_dac_digital__DOT__cnt_p1;
             vlSelfRef.r2r_dac_digital__DOT__cnt_p1 
                 = (0x000000ffU & ((IData)(1U) + (IData)(vlSelfRef.r2r_dac_digital__DOT__cnt_p1)));
         } else {
-            ++(vlSelf->__Vcoverage[414]);
+            ++(vlSelf->__Vcoverage[417]);
         }
-        ++(vlSelf->__Vcoverage[416]);
+        ++(vlSelf->__Vcoverage[419]);
     } else {
         vlSelfRef.r2r_dac_digital__DOT__presc = 0U;
         vlSelfRef.r2r_dac_digital__DOT__cnt_p1 = 1U;
-        ++(vlSelf->__Vcoverage[415]);
+        ++(vlSelf->__Vcoverage[418]);
         vlSelfRef.r2r_dac_digital__DOT__code_reg = 0U;
         vlSelfRef.r2r_dac_digital__DOT__cnt = 0U;
         vlSelfRef.r2r_dac_digital__DOT__presc_tc = 0U;
         vlSelfRef.r2r_dac_digital__DOT__dac_code = 0U;
     }
-    if ((1U & (~ (IData)(vlSelfRef.r2r_dac_digital__DOT__rst_n)))) {
-        ++(vlSelf->__Vcoverage[417]);
+    if ((1U & (~ (IData)(vlSelfRef.r2r_dac_digital__DOT__rst_q)))) {
+        ++(vlSelf->__Vcoverage[420]);
     }
-    if (vlSelfRef.r2r_dac_digital__DOT__rst_n) {
-        ++(vlSelf->__Vcoverage[418]);
+    if (vlSelfRef.r2r_dac_digital__DOT__rst_q) {
+        ++(vlSelf->__Vcoverage[421]);
     }
-    ++(vlSelf->__Vcoverage[419]);
+    ++(vlSelf->__Vcoverage[422]);
     if ((0U != ((IData)(vlSelfRef.r2r_dac_digital__DOT__presc) 
                 ^ (IData)(vlSelfRef.r2r_dac_digital__DOT____Vtogcov__presc)))) {
         VL_COV_TOGGLE_CHG_ST_I(8, vlSelf->__Vcoverage + 92, vlSelfRef.r2r_dac_digital__DOT__presc, vlSelfRef.r2r_dac_digital__DOT____Vtogcov__presc);
@@ -2437,6 +2444,7 @@ void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) {
     }
     vlSelfRef.dac_code = vlSelfRef.r2r_dac_digital__DOT__dac_code;
     vlSelfRef.r2r_dac_digital__DOT__uo_out = vlSelfRef.r2r_dac_digital__DOT__dac_code;
+    vlSelfRef.r2r_dac_digital__DOT__rst_q = vlSelfRef.r2r_dac_digital__DOT__rst_n;
     if ((0U != ((IData)(vlSelfRef.r2r_dac_digital__DOT__sine_val) 
                 ^ (IData)(vlSelfRef.r2r_dac_digital__DOT____Vtogcov__sine_val)))) {
         VL_COV_TOGGLE_CHG_ST_I(8, vlSelf->__Vcoverage + 108, vlSelfRef.r2r_dac_digital__DOT__sine_val, vlSelfRef.r2r_dac_digital__DOT____Vtogcov__sine_val);
@@ -2456,6 +2464,12 @@ void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) {
             = vlSelfRef.r2r_dac_digital__DOT__uo_out;
     }
     vlSelfRef.uo_out = vlSelfRef.r2r_dac_digital__DOT__uo_out;
+    if (((IData)(vlSelfRef.r2r_dac_digital__DOT__rst_q) 
+         ^ (IData)(vlSelfRef.r2r_dac_digital__DOT____Vtogcov__rst_q))) {
+        VL_COV_TOGGLE_CHG_ST_I(1, vlSelf->__Vcoverage + 407, vlSelfRef.r2r_dac_digital__DOT__rst_q, vlSelfRef.r2r_dac_digital__DOT____Vtogcov__rst_q);
+        vlSelfRef.r2r_dac_digital__DOT____Vtogcov__rst_q 
+            = vlSelfRef.r2r_dac_digital__DOT__rst_q;
+    }
 }
 
 void Vtop___024root___trigger_orInto__act_vec_vec(VlUnpacked<QData/*63:0*/, 1> &out, const VlUnpacked<QData/*63:0*/, 1> &in) {
