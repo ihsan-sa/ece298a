@@ -1,4 +1,0 @@
-read_rtlil /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/log/mutate/database/design.il
-mutate -mode const0 -module r2r_dac_digital -cell $procdff$48 -port Q -portbit 0 -wire presc -wirebit 0 -src /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:16.13-16.18 -src /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:301.3-325.6
-techmap
-write_verilog -norename /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/log/mutate/tasks/6e41c74f-d782-4785-9ef8-e7cafebecd01/mutated_1.v

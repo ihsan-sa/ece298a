@@ -1,2 +1,0 @@
-task 93659cd9-a990-4b0f-8768-4adfae37338d (sim)
-  1 5 mutate -mode const1 -module r2r_dac_digital -cell $or$/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:293$3 -port B -portbit 0 -wire presc_tc -wirebit 0 -src /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:290.13-290.21 -src /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:293.15-293.31

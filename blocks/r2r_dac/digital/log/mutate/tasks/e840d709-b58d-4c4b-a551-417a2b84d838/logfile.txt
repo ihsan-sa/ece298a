@@ -1,2 +1,0 @@
-task e840d709-b58d-4c4b-a551-417a2b84d838 (sim)
-  1 4 mutate -mode const0 -module r2r_dac_digital -cell $procmux$29 -port A -portbit 1 -src /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:320.11-320.15 -src /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:320.7-323.10

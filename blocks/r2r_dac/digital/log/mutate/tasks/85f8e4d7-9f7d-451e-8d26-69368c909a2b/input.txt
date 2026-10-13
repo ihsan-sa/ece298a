@@ -1,1 +1,0 @@
-1 mutate -mode cnot0 -module r2r_dac_digital -cell $procmux$19_CMP0 -port A -portbit 0 -ctrlbit 1 -src /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:311.18-311.18 -src /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:311.7-316.14

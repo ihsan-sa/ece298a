@@ -1,2 +1,0 @@
-task 3a02a14d-fc1b-4724-9b39-96d4d2345638 (sim)
-  1 6 mutate -mode inv -module r2r_dac_digital -cell $procdff$45 -port Q -portbit 4 -wire dac_code -wirebit 4 -src /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:11.23-11.31 -src /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/rtl/r2r_dac_digital.v:301.3-325.6
