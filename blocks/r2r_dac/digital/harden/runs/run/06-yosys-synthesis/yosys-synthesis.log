@@ -1802,7 +1802,7 @@ Removed 1 unused cells and 18 unused wires.
 <suppressed ~19 debug messages>
 {
    "creator": "Yosys 0.69 (git sha1 9f75ca1f9, Release, GNU /usr/bin/c++ 13.3.0)",
-   "invocation": "stat -json -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/aa938b2397e74cb7baa713f39e5c83cc.lib -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/d1bfa5b280e1432ba0b4a3972367f52a.lib ",
+   "invocation": "stat -json -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/914494e2571349a6b76863c770132588.lib -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/9699e1f10d494c4d825268d991095fbf.lib ",
    "modules": {
       "\\tt_um_r2r_dac_digital": {
          "num_wires":         373,
@@ -1968,7 +1968,7 @@ Mapping DFF/DLATCH cells in module `\tt_um_r2r_dac_digital':
   mapped 40 $_DFF_P_ cells to \gf180mcu_fd_sc_mcu7t5v0__dffq_1 cells.
 {
    "creator": "Yosys 0.69 (git sha1 9f75ca1f9, Release, GNU /usr/bin/c++ 13.3.0)",
-   "invocation": "stat -json -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/aa938b2397e74cb7baa713f39e5c83cc.lib -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/d1bfa5b280e1432ba0b4a3972367f52a.lib ",
+   "invocation": "stat -json -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/914494e2571349a6b76863c770132588.lib -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/9699e1f10d494c4d825268d991095fbf.lib ",
    "modules": {
       "\\tt_um_r2r_dac_digital": {
          "num_wires":         422,
@@ -2073,16 +2073,16 @@ Mapping DFF/DLATCH cells in module `\tt_um_r2r_dac_digital':
 
 122. Executing ABC pass (technology mapping using ABC).
 
-122.1. Extracting gate netlist of module `\tt_um_r2r_dac_digital' to `/home/ihsan/.cc/tmp/yosys-abc-xcE5tp/input.blif'..
+122.1. Extracting gate netlist of module `\tt_um_r2r_dac_digital' to `/home/ihsan/.cc/tmp/yosys-abc-wAWIjR/input.blif'..
 
 122.1.1. Executed ABC.
 Extracted 428 gates and 474 wires to a netlist network with 44 inputs and 40 outputs.
-Running ABC script: /home/ihsan/.cc/tmp/yosys-abc-xcE5tp/abc.script
+Running ABC script: /home/ihsan/.cc/tmp/yosys-abc-wAWIjR/abc.script
 ABC: UC Berkeley, ABC 1.01 (compiled Sep 22 2026 15:09:22)
 ABC: abc 01> empty
-ABC: abc 01> source /home/ihsan/.cc/tmp/yosys-abc-xcE5tp/abc.script
-ABC: + read_blif /home/ihsan/.cc/tmp/yosys-abc-xcE5tp/input.blif 
-ABC: + read_scl /home/ihsan/.cc/tmp/yosys-liberty-scl-cache-1000/yosys_merged_e280f415.scl 
+ABC: abc 01> source /home/ihsan/.cc/tmp/yosys-abc-wAWIjR/abc.script
+ABC: + read_blif /home/ihsan/.cc/tmp/yosys-abc-wAWIjR/input.blif 
+ABC: + read_scl /home/ihsan/.cc/tmp/yosys-liberty-scl-cache-1000/yosys_merged_ea060a2c.scl 
 ABC: Warning: Detected 6 multi-output cells (for example, "gf180mcu_fd_sc_mcu7t5v0__addf_1").
 ABC: + read_constr -v /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/06-yosys-synthesis/synthesis.abc.sdc 
 ABC: Setting driving cell to be "gf180mcu_fd_sc_mcu7t5v0__inv_1/ZN".
@@ -2105,7 +2105,7 @@ ABC: Path 10 --     233 : 5    2 gf180mcu_fd_sc_mcu7t5v0__oai32_1  A =  26.34  D
 ABC: Path 11 --     246 : 4    1 gf180mcu_fd_sc_mcu7t5v0__oai31_1  A =  24.15  Df =14774.2-2005.8 ps  S =5864.4 ps  Cin =  4.4 ff  Cout =  72.9 ff  Cmax = 107.3 ff  G = 1649  
 ABC: Start-point = pi27 (\u_r2r_dac_digital.presc [3]).  End-point = po1 ($$flatten\u_r2r_dac_digital.$auto$proc_rom.cc:155:do_switch$12$rdreg[0]$d [1]).
 ABC: netlist                       : i/o =   44/   40  lat =    0  nd =   309  edge =    880  area =5143.46  delay =12.00  lev = 12
-ABC: + write_blif /home/ihsan/.cc/tmp/yosys-abc-xcE5tp/output.blif 
+ABC: + write_blif /home/ihsan/.cc/tmp/yosys-abc-wAWIjR/output.blif 
 ABC:                                                                                
 ABC: YOSYS_ABC_DONE 
 
@@ -2164,7 +2164,7 @@ Checking module tt_um_r2r_dac_digital...
 Found and reported 0 problems.
 {
    "creator": "Yosys 0.69 (git sha1 9f75ca1f9, Release, GNU /usr/bin/c++ 13.3.0)",
-   "invocation": "stat -json -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/aa938b2397e74cb7baa713f39e5c83cc.lib -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/d1bfa5b280e1432ba0b4a3972367f52a.lib ",
+   "invocation": "stat -json -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/914494e2571349a6b76863c770132588.lib -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/9699e1f10d494c4d825268d991095fbf.lib ",
    "modules": {
       "\\tt_um_r2r_dac_digital": {
          "num_wires":         349,

@@ -211,7 +211,7 @@
     "RUN_POST_GRT_DESIGN_REPAIR": true,
     "RUN_CTS": true,
     "RUN_POST_CTS_RESIZER_TIMING": true,
-    "RUN_POST_GRT_RESIZER_TIMING": true,
+    "RUN_POST_GRT_RESIZER_TIMING": false,
     "RUN_HEURISTIC_DIODE_INSERTION": false,
     "RUN_ANTENNA_REPAIR": true,
     "RUN_DRT": true,
