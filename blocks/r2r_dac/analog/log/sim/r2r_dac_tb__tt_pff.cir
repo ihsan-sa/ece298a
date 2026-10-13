@@ -38,13 +38,13 @@
 * spec.yaml's `devices` resistor refdes (topology.md): a unit missing from
 * the netlist is a `no such device`/vector error, never a silent skip.
 *
-* Corners: typical selects the FET section, res_typical the matching
+* Corners: typical selects the FET section, res_ff the matching
 * resistor section (sim_run.RES_LIB_SECTION: typical/ss/ff -> res_typical/
 * res_ss/res_ff; sf/fs -> res_typical, the PDK has no res_sf/res_fs).
 
 .include '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice'
 .lib '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.spice' typical
-.lib '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.spice' res_typical
+.lib '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.spice' res_ff
 .include '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice'
 .include '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/analog/netlist/r2r_dac_analog.cir'
 .param ru_w=2e-06 ru_l=0.00015 rb_l=0.00014836
