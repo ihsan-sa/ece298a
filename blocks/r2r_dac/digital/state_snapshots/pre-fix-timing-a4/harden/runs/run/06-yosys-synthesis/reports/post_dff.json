@@ -1,0 +1,63 @@
+{
+   "creator": "Yosys 0.69 (git sha1 9f75ca1f9, Release, GNU /usr/bin/c++ 13.3.0)",
+   "invocation": "stat -json -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/08e6970592ec41a380534a3eebd6df9e.lib -liberty /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/0e510a52fa4647d38e8285f5b9a01b28.lib ",
+   "modules": {
+      "\\tt_um_r2r_dac_digital": {
+         "num_wires":         448,
+         "num_wire_bits":     553,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 85,
+         "num_ports":         8,
+         "num_port_bits":     43,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         501,
+         "num_submodules":       0,
+         "area":              3119.379200,
+         "sequential_area":    3119.379200,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 29,
+            "$_AND_": 86,
+            "$_MUX_": 88,
+            "$_NAND_": 165,
+            "$_NOR_": 15,
+            "$_NOT_": 6,
+            "$_ORNOT_": 21,
+            "$_OR_": 24,
+            "$_XNOR_": 6,
+            "$_XOR_": 12,
+            "gf180mcu_fd_sc_mcu7t5v0__dffq_1": 49
+         }
+      }
+   },
+      "design": {
+         "num_wires":         448,
+         "num_wire_bits":     553,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 85,
+         "num_ports":         8,
+         "num_port_bits":     43,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         501,
+         "num_submodules":       0,
+         "area":              3119.379200,
+         "sequential_area":    3119.379200,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 29,
+            "$_AND_": 86,
+            "$_MUX_": 88,
+            "$_NAND_": 165,
+            "$_NOR_": 15,
+            "$_NOT_": 6,
+            "$_ORNOT_": 21,
+            "$_OR_": 24,
+            "$_XNOR_": 6,
+            "$_XOR_": 12,
+            "gf180mcu_fd_sc_mcu7t5v0__dffq_1": 49
+         }
+      }
+}
+

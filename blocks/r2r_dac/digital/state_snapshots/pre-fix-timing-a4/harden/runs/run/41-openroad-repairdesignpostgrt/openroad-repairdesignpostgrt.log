@@ -1,0 +1,226 @@
+[WARNING ORD-0032] Invalid thread number specification: None.
+Reading timing models for corner max_ss_125C_3v00…
+Reading timing library for the 'max_ss_125C_3v00' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib'…
+Reading timing library for the 'max_ss_125C_3v00' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ss_125C_2v97.lib.gz'…
+Reading timing models for corner max_tt_025C_3v30…
+Reading timing library for the 'max_tt_025C_3v30' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib'…
+Reading timing library for the 'max_tt_025C_3v30' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__tt_025C_3v30.lib.gz'…
+Reading timing models for corner min_ff_n40C_3v60…
+Reading timing library for the 'min_ff_n40C_3v60' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib'…
+Reading timing library for the 'min_ff_n40C_3v60' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ff_n40C_3v63.lib.gz'…
+Reading timing models for corner nom_ss_125C_3v00…
+Reading timing library for the 'nom_ss_125C_3v00' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib'…
+[WARNING STA-1140] /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00 already exists.
+Reading timing library for the 'nom_ss_125C_3v00' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ss_125C_2v97.lib.gz'…
+[WARNING STA-1140] /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ss_125C_2v97.lib.gz line 17, library gf180mcu_fd_io__ss_125C_2v97 already exists.
+Reading timing models for corner nom_tt_025C_3v30…
+Reading timing library for the 'nom_tt_025C_3v30' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib'…
+[WARNING STA-1140] /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30 already exists.
+Reading timing library for the 'nom_tt_025C_3v30' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__tt_025C_3v30.lib.gz'…
+[WARNING STA-1140] /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__tt_025C_3v30.lib.gz line 17, library gf180mcu_fd_io__tt_025C_3v30 already exists.
+Reading timing models for corner max_ff_n40C_3v60…
+Reading timing library for the 'max_ff_n40C_3v60' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib'…
+[WARNING STA-1140] /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60 already exists.
+Reading timing library for the 'max_ff_n40C_3v60' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ff_n40C_3v63.lib.gz'…
+[WARNING STA-1140] /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ff_n40C_3v63.lib.gz line 17, library gf180mcu_fd_io__ff_n40C_3v63 already exists.
+Reading timing models for corner min_ss_125C_3v00…
+Reading timing library for the 'min_ss_125C_3v00' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib'…
+[WARNING STA-1140] /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00 already exists.
+Reading timing library for the 'min_ss_125C_3v00' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ss_125C_2v97.lib.gz'…
+[WARNING STA-1140] /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ss_125C_2v97.lib.gz line 17, library gf180mcu_fd_io__ss_125C_2v97 already exists.
+Reading timing models for corner min_tt_025C_3v30…
+Reading timing library for the 'min_tt_025C_3v30' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib'…
+[WARNING STA-1140] /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30 already exists.
+Reading timing library for the 'min_tt_025C_3v30' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__tt_025C_3v30.lib.gz'…
+[WARNING STA-1140] /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__tt_025C_3v30.lib.gz line 17, library gf180mcu_fd_io__tt_025C_3v30 already exists.
+Reading timing models for corner nom_ff_n40C_3v60…
+Reading timing library for the 'nom_ff_n40C_3v60' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib'…
+[WARNING STA-1140] /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60 already exists.
+Reading timing library for the 'nom_ff_n40C_3v60' corner at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ff_n40C_3v63.lib.gz'…
+[WARNING STA-1140] /home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/lib/gf180mcu_fd_io__ff_n40C_3v63.lib.gz line 17, library gf180mcu_fd_io__ff_n40C_3v63 already exists.
+Reading OpenROAD database at '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/39-openroad-globalrouting/tt_um_r2r_dac_digital.odb'…
+Reading design constraints file at '/home/ihsan/.cc/toolchains/iic-osic-tools-2026.09/usr/local/lib/python3.12/dist-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 4.0
+[INFO] Setting input delay to: 4.0
+[INFO] Setting load to: 0.07291
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.15
+[INFO] Setting timing derate to: 5.0%
+[INFO] Setting signal min routing layer to: Metal2 and clock min routing layer to Metal2. 
+[INFO] Setting signal max routing layer to: Metal4 and clock max routing layer to Metal4. 
++ global_route -congestion_iterations 50 -verbose -allow_congestion
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: Metal4
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.5600  line-2-Via Pitch: 0.4750
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 0
+[INFO GRT-0019] Found 10 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 11
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical        10152          6786          33.16%
+Metal3     Horizontal      11102          7394          33.40%
+Metal4     Vertical        10152          6786          33.16%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 2552
+[INFO GRT-0198] Via related Steiner nodes: 30
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 3142
+[INFO GRT-0112] Final usage 3D: 11221
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2            6786           825           12.16%             0 /  0 /  0
+Metal3            7394           936           12.66%             0 /  0 /  0
+Metal4            6786            34            0.50%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            20966          1795            8.56%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 24242 um
+[INFO GRT-0014] Routed nets: 430
+[INFO GRT-0303] Global routing runtime = 00:00:00
++ repair_design -verbose -max_wire_length 0.0 -slew_margin 10.0 -cap_margin 10.0
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |       443
+       10 |     +0.0% |       0 |       0 |             0 |       433
+       20 |     +0.0% |       0 |       0 |             0 |       423
+       30 |     +0.0% |       0 |       0 |             0 |       413
+       40 |     +0.0% |       0 |       0 |             0 |       403
+       50 |     +0.0% |       0 |       0 |             0 |       393
+       60 |     +0.0% |       0 |       0 |             0 |       383
+       70 |     +0.0% |       0 |       0 |             0 |       373
+       80 |     +0.0% |       0 |       0 |             0 |       363
+       90 |     +0.0% |       0 |       0 |             0 |       353
+      100 |     +0.0% |       0 |       0 |             0 |       343
+      110 |     +0.0% |       0 |       0 |             0 |       333
+      120 |     +0.0% |       0 |       0 |             0 |       323
+      130 |     +0.2% |       1 |       1 |             1 |       313
+      140 |     +0.2% |       1 |       1 |             1 |       303
+      150 |     +0.2% |       1 |       1 |             1 |       293
+      160 |     +0.2% |       1 |       1 |             1 |       283
+      170 |     +0.2% |       1 |       1 |             1 |       273
+      180 |     +0.2% |       1 |       1 |             1 |       263
+      190 |     +0.2% |       1 |       1 |             1 |       253
+      200 |     +0.2% |       1 |       1 |             1 |       243
+      210 |     +0.2% |       1 |       1 |             1 |       233
+      220 |     +0.2% |       1 |       1 |             1 |       223
+      230 |     +0.2% |       1 |       1 |             1 |       213
+      240 |     +0.2% |       1 |       1 |             1 |       203
+      250 |     +0.2% |       1 |       1 |             1 |       193
+      260 |     +0.2% |       1 |       1 |             1 |       183
+      270 |     +0.2% |       1 |       1 |             1 |       173
+      280 |     +0.2% |       1 |       1 |             1 |       163
+      290 |     +0.2% |       1 |       1 |             1 |       153
+      300 |     +0.2% |       1 |       1 |             1 |       143
+      310 |     +0.2% |       1 |       1 |             1 |       133
+      320 |     +0.2% |       1 |       1 |             1 |       123
+      330 |     +0.3% |       2 |       2 |             2 |       113
+      340 |     +0.3% |       2 |       2 |             2 |       103
+      350 |     +0.3% |       2 |       2 |             2 |        93
+      360 |     +0.3% |       2 |       2 |             2 |        83
+      370 |     +0.3% |       2 |       2 |             2 |        73
+      380 |     +0.3% |       2 |       2 |             2 |        63
+      390 |     +0.3% |       2 |       2 |             2 |        53
+      400 |     +0.3% |       2 |       2 |             2 |        43
+      410 |     +0.3% |       2 |       2 |             2 |        33
+      420 |     +0.3% |       2 |       2 |             2 |        23
+      430 |     +0.3% |       2 |       2 |             2 |        13
+      440 |     +0.3% |       2 |       2 |             2 |         3
+    final |     +0.3% |       2 |       2 |             2 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 2 slew violations.
+[INFO RSZ-0039] Resized 2 instances.
+[INFO RSZ-0038] Inserted 2 buffers in 2 nets.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement         43.7 u
+average displacement        0.1 u
+max displacement            7.8 u
+original HPWL           13174.7 u
+legalized HPWL          13845.5 u
+delta HPWL                    5 %
+
+[INFO DPL-0020] Mirrored 205 instances
+[INFO DPL-0021] HPWL before           13845.5 u
+[INFO DPL-0022] HPWL after            13232.3 u
+[INFO DPL-0023] HPWL delta               -4.4 %
++ global_route -congestion_iterations 50 -verbose -allow_congestion
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: Metal4
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.5600  line-2-Via Pitch: 0.4750
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 0
+[INFO GRT-0019] Found 10 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 11
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical        10152          6786          33.16%
+Metal3     Horizontal      11102          7394          33.40%
+Metal4     Vertical        10152          6786          33.16%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 2567
+[INFO GRT-0198] Via related Steiner nodes: 32
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 3160
+[INFO GRT-0112] Final usage 3D: 11283
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2            6786           829           12.22%             0 /  0 /  0
+Metal3            7394           940           12.71%             0 /  0 /  0
+Metal4            6786            34            0.50%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            20966          1803            8.60%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 24351 um
+[INFO GRT-0014] Routed nets: 432
+[INFO GRT-0303] Global routing runtime = 00:00:00
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 8 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                              78     342.45
+  Tap cell                                348    1527.86
+  Tie cell                                  8      70.25
+  Buffer                                    8     140.49
+  Clock buffer                             16     636.61
+  Timing Repair Buffer                     55    1189.80
+  Inverter                                 16     180.01
+  Sequential cell                          49    3158.89
+  Multi-Input combinational cell          274    5977.53
+  Total                                   852   13223.88
+Writing OpenROAD database to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/41-openroad-repairdesignpostgrt/tt_um_r2r_dac_digital.odb'…
+Writing netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/41-openroad-repairdesignpostgrt/tt_um_r2r_dac_digital.nl.v'…
+Writing powered netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/41-openroad-repairdesignpostgrt/tt_um_r2r_dac_digital.pnl.v'…
+Writing layout to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/41-openroad-repairdesignpostgrt/tt_um_r2r_dac_digital.def'…
+Writing timing constraints to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/41-openroad-repairdesignpostgrt/tt_um_r2r_dac_digital.sdc'…

@@ -4,21 +4,21 @@
  "block": "r2r_dac",
  "workspace": "blocks/r2r_dac/digital",
  "created": "2026-09-25T08:51:49",
- "updated": "2026-10-13T04:12:24",
+ "updated": "2026-10-13T04:16:57",
  "phase": "P6",
  "toolchain": null,
  "gates": {
   "spec_lint": {
    "phase": "P1",
    "status": "pass",
-   "attempts": 2,
+   "attempts": 3,
    "last": {
-    "ts": "2026-09-25T08:53:15",
+    "ts": "2026-10-13T04:16:57",
     "status": "pass",
     "failing_count": 0,
     "total": 0,
     "inputs": {
-     "spec_yaml": "json_canonical:cee93f343d721dc9797350155b3f0e85133a766eb1f1963c30aacd1d23e5d2f4"
+     "spec_yaml": "json_canonical:316aabe3e699eb67a766fb42296b9a90d765394b6deefb2d5178cc8865c08bbf"
     },
     "job": null
    },
@@ -40,6 +40,16 @@
      "total": 0,
      "inputs": {
       "spec_yaml": "json_canonical:cee93f343d721dc9797350155b3f0e85133a766eb1f1963c30aacd1d23e5d2f4"
+     },
+     "job": null
+    },
+    {
+     "ts": "2026-10-13T04:16:57",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "spec_yaml": "json_canonical:316aabe3e699eb67a766fb42296b9a90d765394b6deefb2d5178cc8865c08bbf"
      },
      "job": null
     }
@@ -93,6 +103,20 @@
       "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
      },
      "job": null
+    }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "spec_edit",
+     "refs": [],
+     "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
     }
    ]
   },
@@ -191,6 +215,26 @@
       "tests_passed": 8
      }
     }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "spec_edit",
+     "refs": [],
+     "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
+    },
+    {
+     "ts": "2026-10-13T04:16:48",
+     "edit_class": "tb_edit",
+     "refs": [],
+     "human_hold": 1
+    }
    ]
   },
   "holdout": {
@@ -287,6 +331,26 @@
      "facts": {
       "tests_passed": 2
      }
+    }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "spec_edit",
+     "refs": [],
+     "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
+    },
+    {
+     "ts": "2026-10-13T04:16:48",
+     "edit_class": "holdout_stimulus_edit",
+     "refs": [],
+     "human_hold": 1
     }
    ]
   },
@@ -406,6 +470,30 @@
      "edit_class": "rtl_edit",
      "refs": [],
      "human_hold": 1
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "spec_edit",
+     "refs": [],
+     "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
+    },
+    {
+     "ts": "2026-10-13T04:16:48",
+     "edit_class": "tb_edit",
+     "refs": [],
+     "human_hold": 1
+    },
+    {
+     "ts": "2026-10-13T04:16:48",
+     "edit_class": "formal_edit",
+     "refs": [],
+     "human_hold": 1
     }
    ]
   },
@@ -460,6 +548,26 @@
       "depth": 12,
       "cover_depth": 12
      }
+    }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "spec_edit",
+     "refs": [],
+     "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
+    },
+    {
+     "ts": "2026-10-13T04:16:48",
+     "edit_class": "formal_edit",
+     "refs": [],
+     "human_hold": 1
     }
    ]
   },
@@ -527,6 +635,26 @@
       "toggle_total": 146
      }
     }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "spec_edit",
+     "refs": [],
+     "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
+    },
+    {
+     "ts": "2026-10-13T04:16:48",
+     "edit_class": "tb_edit",
+     "refs": [],
+     "human_hold": 1
+    }
    ]
   },
   "synth": {
@@ -575,6 +703,20 @@
      "facts": {
       "area": 8036.6272
      }
+    }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "spec_edit",
+     "refs": [],
+     "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
     }
    ]
   },
@@ -700,6 +842,20 @@
      "facts": {
       "wall_s": 63.16
      }
+    }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "spec_edit",
+     "refs": [],
+     "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
     }
    ]
   },
@@ -963,6 +1119,20 @@
       }
      }
     }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "spec_edit",
+     "refs": [],
+     "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
+    }
    ]
   },
   "drc": {
@@ -1019,6 +1189,18 @@
      "edit_class": "rtl_edit",
      "refs": [],
      "human_hold": 1
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "spec_edit",
+     "refs": [],
+     "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
     }
    ]
   },
@@ -1065,6 +1247,18 @@
     },
     {
      "ts": "2026-10-13T04:10:14",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "spec_edit",
+     "refs": [],
+     "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
      "edit_class": "rtl_edit",
      "refs": [],
      "human_hold": 1
@@ -1116,6 +1310,18 @@
     },
     {
      "ts": "2026-10-13T04:10:14",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "spec_edit",
+     "refs": [],
+     "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
      "edit_class": "rtl_edit",
      "refs": [],
      "human_hold": 1
@@ -1173,6 +1379,18 @@
     },
     {
      "ts": "2026-10-13T04:10:14",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "spec_edit",
+     "refs": [],
+     "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:16:47",
      "edit_class": "rtl_edit",
      "refs": [],
      "human_hold": 1
@@ -1255,8 +1473,8 @@
   "spec_yaml": {
    "path": "spec/spec.yaml",
    "kind": "spec_yaml",
-   "sha256": "json_canonical:cee93f343d721dc9797350155b3f0e85133a766eb1f1963c30aacd1d23e5d2f4",
-   "hashed": "2026-10-13T04:10:21"
+   "sha256": "json_canonical:316aabe3e699eb67a766fb42296b9a90d765394b6deefb2d5178cc8865c08bbf",
+   "hashed": "2026-10-13T04:16:57"
   },
   "rtl": {
    "path": "rtl",
@@ -1274,7 +1492,15 @@
    "path": "holdout",
    "kind": "holdout",
    "sha256": "dir_text:323dd5f5d42ea1ed5e8a148ab193810c06ff30e60dfc38673be3c7b6debf69c9",
-   "hashed": "2026-10-13T04:10:17"
+   "hashed": "2026-10-13T04:10:17",
+   "stale": [
+    {
+     "ts": "2026-10-13T04:16:47",
+     "edit_class": "spec_edit",
+     "refs": [],
+     "human_hold": 2
+    }
+   ]
   },
   "formal": {
    "path": "formal",
@@ -1428,6 +1654,12 @@
    "why": "prescaler is internal-only state; XOR relabelling preserves the 256-clock step schedule from reset, unobservable at any port; no equivalent-mutant filter in check_mutate (SKILL known limit). Needs human waiver or RTL restructure.",
    "phase": "P4",
    "ts": "2026-09-25T09:00:43"
+  },
+  {
+   "what": "owner grants one more timing fix attempt (a4): register rst_n internally",
+   "why": "owner, #ece298a 1791879206.573569, 2026-10-13: 'Yes, take the one more attempt and register rst_n internally. A synchronised reset is good practice anyway, and it's cheap. If it still misses at ss/125C after that, accept it and stop: write the remaining slack and the max clock it does meet at that corner into the design notes, so nobody is surprised later.'",
+   "phase": "P6",
+   "ts": "2026-10-13T04:15:16"
   }
  ],
  "edits": [
@@ -1566,6 +1798,137 @@
     "precheck"
    ],
    "stale_artifacts": []
+  },
+  {
+   "ts": "2026-10-13T04:16:47",
+   "class": "spec_edit",
+   "refs": [],
+   "note": "timing a4 (owner-approved, #ece298a 1791879206.573569): rst_n registered once inside the block",
+   "human_hold": 2,
+   "gates": [
+    "spec_lint",
+    "lint",
+    "sim",
+    "holdout",
+    "mutate",
+    "formal",
+    "cover",
+    "synth",
+    "harden",
+    "timing",
+    "drc",
+    "lvs",
+    "glsim",
+    "precheck",
+    "release"
+   ],
+   "gates_marked": [
+    "spec_lint",
+    "lint",
+    "sim",
+    "holdout",
+    "mutate",
+    "formal",
+    "cover",
+    "synth",
+    "harden",
+    "timing",
+    "drc",
+    "lvs",
+    "glsim",
+    "precheck"
+   ],
+   "stale_artifacts": [
+    "holdout"
+   ]
+  },
+  {
+   "ts": "2026-10-13T04:16:47",
+   "class": "rtl_edit",
+   "refs": [],
+   "note": "timing a4 (owner-approved, #ece298a 1791879206.573569): rst_n registered once inside the block",
+   "human_hold": 1,
+   "gates": [
+    "lint",
+    "sim",
+    "holdout",
+    "mutate",
+    "formal",
+    "cover",
+    "synth",
+    "harden",
+    "timing",
+    "drc",
+    "lvs",
+    "glsim",
+    "precheck",
+    "release"
+   ],
+   "gates_marked": [
+    "lint",
+    "sim",
+    "holdout",
+    "mutate",
+    "formal",
+    "cover",
+    "synth",
+    "harden",
+    "timing",
+    "drc",
+    "lvs",
+    "glsim",
+    "precheck"
+   ],
+   "stale_artifacts": []
+  },
+  {
+   "ts": "2026-10-13T04:16:48",
+   "class": "tb_edit",
+   "refs": [],
+   "note": "timing a4 (owner-approved, #ece298a 1791879206.573569): rst_n registered once inside the block",
+   "human_hold": 1,
+   "gates": [
+    "sim",
+    "mutate",
+    "cover"
+   ],
+   "gates_marked": [
+    "sim",
+    "mutate",
+    "cover"
+   ],
+   "stale_artifacts": []
+  },
+  {
+   "ts": "2026-10-13T04:16:48",
+   "class": "formal_edit",
+   "refs": [],
+   "note": "timing a4 (owner-approved, #ece298a 1791879206.573569): rst_n registered once inside the block",
+   "human_hold": 1,
+   "gates": [
+    "formal",
+    "mutate"
+   ],
+   "gates_marked": [
+    "formal",
+    "mutate"
+   ],
+   "stale_artifacts": []
+  },
+  {
+   "ts": "2026-10-13T04:16:48",
+   "class": "holdout_stimulus_edit",
+   "refs": [],
+   "note": "timing a4 (owner-approved, #ece298a 1791879206.573569): rst_n registered once inside the block; owner allowed the holdout reset test change",
+   "human_hold": 1,
+   "gates": [
+    "holdout"
+   ],
+   "gates_marked": [
+    "holdout"
+   ],
+   "stale_artifacts": [],
+   "baseline": "pre-fix-timing-a4"
   }
  ],
  "spawns": [
@@ -2358,6 +2721,74 @@
    "status": "escalated",
    "agent": null,
    "attempts": 0
+  },
+  {
+   "ts": "2026-10-13T04:15:16",
+   "event": "decision",
+   "what": "owner grants one more timing fix attempt (a4): register rst_n internally"
+  },
+  {
+   "ts": "2026-10-13T04:15:16",
+   "event": "budget_granted",
+   "path": "fix_loops.timing",
+   "remaining": 1,
+   "by": "owner",
+   "ref": "#ece298a 1791879206.573569"
+  },
+  {
+   "ts": "2026-10-13T04:15:17",
+   "event": "budget",
+   "path": "fix_loops.timing",
+   "remaining": 0
+  },
+  {
+   "ts": "2026-10-13T04:15:17",
+   "event": "snapshot",
+   "label": "pre-fix-timing-a4",
+   "files": 1092
+  },
+  {
+   "ts": "2026-10-13T04:16:47",
+   "event": "edit",
+   "edit_class": "spec_edit",
+   "refs": [],
+   "human_hold": 2
+  },
+  {
+   "ts": "2026-10-13T04:16:47",
+   "event": "edit",
+   "edit_class": "rtl_edit",
+   "refs": [],
+   "human_hold": 1
+  },
+  {
+   "ts": "2026-10-13T04:16:48",
+   "event": "edit",
+   "edit_class": "tb_edit",
+   "refs": [],
+   "human_hold": 1
+  },
+  {
+   "ts": "2026-10-13T04:16:48",
+   "event": "edit",
+   "edit_class": "formal_edit",
+   "refs": [],
+   "human_hold": 1
+  },
+  {
+   "ts": "2026-10-13T04:16:48",
+   "event": "edit",
+   "edit_class": "holdout_stimulus_edit",
+   "refs": [],
+   "human_hold": 1
+  },
+  {
+   "ts": "2026-10-13T04:16:57",
+   "event": "gate",
+   "gate": "spec_lint",
+   "status": "pass",
+   "attempt": 3,
+   "failing_count": 0
   }
  ]
 }

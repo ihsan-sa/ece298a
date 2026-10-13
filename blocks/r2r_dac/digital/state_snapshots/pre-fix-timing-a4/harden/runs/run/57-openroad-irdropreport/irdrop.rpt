@@ -1,0 +1,26 @@
++ analyze_power_grid -net VPWR -voltage_file /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/57-openroad-irdropreport/net-VPWR.csv
+[INFO PSM-0040] All shapes on net VPWR are connected.
+########## IR report #################
+Net              : VPWR
+Corner           : nom_tt_025C_3v30
+Total power      : 1.57e-03 W
+Supply voltage   : 3.30e+00 V
+Worstcase voltage: 3.30e+00 V
+Average voltage  : 3.30e+00 V
+Average IR drop  : 4.11e-05 V
+Worstcase IR drop: 2.44e-04 V
+Percentage drop  : 0.01 %
+######################################
++ analyze_power_grid -net VGND -voltage_file /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/57-openroad-irdropreport/net-VGND.csv
+[INFO PSM-0040] All shapes on net VGND are connected.
+########## IR report #################
+Net              : VGND
+Corner           : nom_tt_025C_3v30
+Total power      : 1.57e-03 W
+Supply voltage   : 0.00e+00 V
+Worstcase voltage: 2.78e-04 V
+Average voltage  : 4.24e-05 V
+Average IR drop  : 4.24e-05 V
+Worstcase IR drop: 2.78e-04 V
+Percentage drop  : 0.01 %
+######################################
