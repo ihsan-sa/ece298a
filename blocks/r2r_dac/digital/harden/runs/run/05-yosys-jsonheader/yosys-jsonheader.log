@@ -6,8 +6,8 @@
  \----------------------------------------------------------------------------/
  Yosys 0.69 (git sha1 9f75ca1f9, Release, GNU /usr/bin/c++ 13.3.0)
 
-1. Executing Verilog-2005 frontend: /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/36ae0819ebc44e8cb7d2ee78597bd711.bb.v
-Parsing SystemVerilog input from `/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/36ae0819ebc44e8cb7d2ee78597bd711.bb.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/0ef2ff93c1e34fbfb2d9e0b38b91ecdd.bb.v
+Parsing SystemVerilog input from `/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/0ef2ff93c1e34fbfb2d9e0b38b91ecdd.bb.v' to AST representation.
 Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addf_1'.
 Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addf_2'.
 Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addf_4'.
@@ -308,8 +308,8 @@ Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor3_4'.
 Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor3_func'.
 Successfully finished Verilog frontend.
 
-2. Executing Verilog-2005 frontend: /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/44ab62921451405bb3e0656224d5ffe1.bb.v
-Parsing SystemVerilog input from `/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/44ab62921451405bb3e0656224d5ffe1.bb.v' to AST representation.
+2. Executing Verilog-2005 frontend: /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/f77b253ed710487bb39edcb1024af3b3.bb.v
+Parsing SystemVerilog input from `/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/harden/runs/run/tmp/f77b253ed710487bb39edcb1024af3b3.bb.v' to AST representation.
 Generating RTLIL representation for module `\gf180mcu_ef_io__bi_t'.
 Generating RTLIL representation for module `\gf180mcu_fd_io__asig_5p0'.
 Generating RTLIL representation for module `\gf180mcu_fd_io__bi_24t'.

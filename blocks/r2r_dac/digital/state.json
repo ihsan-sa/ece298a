@@ -4,7 +4,7 @@
  "block": "r2r_dac",
  "workspace": "blocks/r2r_dac/digital",
  "created": "2026-09-25T08:51:49",
- "updated": "2026-10-13T04:02:13",
+ "updated": "2026-10-13T04:02:35",
  "phase": "P6",
  "toolchain": null,
  "gates": {
@@ -564,6 +564,14 @@
       "wall_s": 109.57
      }
     }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:02:35",
+     "edit_class": "harden_config_edit",
+     "refs": [],
+     "human_hold": 2
+    }
    ]
   },
   "timing": {
@@ -724,6 +732,14 @@
       }
      }
     }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:02:35",
+     "edit_class": "harden_config_edit",
+     "refs": [],
+     "human_hold": 2
+    }
    ]
   },
   "drc": {
@@ -768,6 +784,12 @@
      "edit_class": "harden_config_edit",
      "refs": [],
      "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:02:35",
+     "edit_class": "harden_config_edit",
+     "refs": [],
+     "human_hold": 2
     }
    ]
   },
@@ -802,6 +824,12 @@
    "stale": [
     {
      "ts": "2026-10-13T03:59:55",
+     "edit_class": "harden_config_edit",
+     "refs": [],
+     "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:02:35",
      "edit_class": "harden_config_edit",
      "refs": [],
      "human_hold": 2
@@ -841,6 +869,12 @@
    "stale": [
     {
      "ts": "2026-10-13T03:59:55",
+     "edit_class": "harden_config_edit",
+     "refs": [],
+     "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:02:35",
      "edit_class": "harden_config_edit",
      "refs": [],
      "human_hold": 2
@@ -889,6 +923,12 @@
      "edit_class": "harden_config_edit",
      "refs": [],
      "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:02:35",
+     "edit_class": "harden_config_edit",
+     "refs": [],
+     "human_hold": 2
     }
    ]
   }
@@ -923,6 +963,15 @@
    "finished": null,
    "status": "running",
    "log": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/log/jobs/job-3.log",
+   "result": null
+  },
+  "4": {
+   "gate": "harden",
+   "pid": 67352,
+   "started": "2026-10-13T04:02:35",
+   "finished": null,
+   "status": "running",
+   "log": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/digital/log/jobs/job-4.log",
    "result": null
   }
  },
@@ -1092,7 +1141,7 @@
   }
  ],
  "next_issue_id": 5,
- "next_job_id": 4,
+ "next_job_id": 5,
  "budgets": {
   "fix_loops": {
    "sim": 2,
@@ -1161,6 +1210,31 @@
    "class": "harden_config_edit",
    "refs": [],
    "note": "timing wo-3: config.override.json RUN_POST_GRT_RESIZER_TIMING=1, GRT_RESIZER_SETUP_SLACK_MARGIN=9.5",
+   "human_hold": 2,
+   "gates": [
+    "harden",
+    "timing",
+    "drc",
+    "lvs",
+    "glsim",
+    "precheck",
+    "release"
+   ],
+   "gates_marked": [
+    "harden",
+    "timing",
+    "drc",
+    "lvs",
+    "glsim",
+    "precheck"
+   ],
+   "stale_artifacts": []
+  },
+  {
+   "ts": "2026-10-13T04:02:35",
+   "class": "harden_config_edit",
+   "refs": [],
+   "note": "timing wo-4 a2: override RUN_POST_GRT_RESIZER_TIMING=1 only",
    "human_hold": 2,
    "gates": [
     "harden",
@@ -1817,6 +1891,20 @@
    "kinds": [
     "setup_violation"
    ]
+  },
+  {
+   "ts": "2026-10-13T04:02:35",
+   "event": "edit",
+   "edit_class": "harden_config_edit",
+   "refs": [],
+   "human_hold": 2
+  },
+  {
+   "ts": "2026-10-13T04:02:35",
+   "event": "job_start",
+   "job": "4",
+   "gate": "harden",
+   "pid": 67352
   }
  ]
 }
