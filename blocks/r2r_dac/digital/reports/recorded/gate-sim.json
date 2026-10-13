@@ -3,7 +3,7 @@
  "gate": "sim",
  "phase": "P4",
  "tool": "sim",
- "input_digest": "dir_text:467072fcb827af020645576f4da4ad1cf92b6669c1b856871d2389fe2be4efc3",
+ "input_digest": "dir_text:08d2e63a30253fb8dcb71be29ca5aa7209711132e317fcb0e4bc99f0e226a305",
  "status": "pass",
  "criteria": {
   "fail_severities": [
@@ -34,10 +34,10 @@
   "tests_passed": 8
  },
  "inputs_at_start": {
-  "rtl": "dir_text:467072fcb827af020645576f4da4ad1cf92b6669c1b856871d2389fe2be4efc3",
-  "tb": "dir_text:6aa2b475089f5db2f0d695236744c00ac8db1a3787df914d5d5ae69a447205de",
-  "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
+  "rtl": "dir_text:08d2e63a30253fb8dcb71be29ca5aa7209711132e317fcb0e4bc99f0e226a305",
+  "tb": "dir_text:3d7769f785322e639d37580c2e85e19fdd9b82876af0927410c75ad81d11554b",
+  "spec_yaml_sans_formal": "json_canonical_sans_formal:ed8f31d7b49d1395e51d6ee5b8f5bdd0ed70710413c640dc29961fe29e015119"
  },
- "recorded_ts": "2026-10-13T04:10:16",
- "attempts": 5
+ "recorded_ts": "2026-10-13T04:17:00",
+ "attempts": 6
 }
