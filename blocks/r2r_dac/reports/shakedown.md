@@ -165,3 +165,56 @@ band method probably under-reads. That bench wasn't revised this round.
 
 Round 2 cost about $9: the bench-writer $0.6, the digital agent $1.5,
 the layout agent $1.4, and orchestration for the rest.
+
+## Round 3 (2026-09-27 to 2026-10-13, chip-flow main)
+
+### Breakages found in round 3
+
+24. top_harden's power grid still stopped at PDN-0179 on the first run.
+    The later engine (#25 fix) got past it once the macro drew its
+    supplies on Metal3, because the tile's Metal4 grid joins a macro
+    only on Metal3. The generator only drew Metal1/2 supplies, so that
+    was a real layout finding, and the layout fixer added the straps.
+25. check_harden regenerates `harden/config.json` and `info.yaml` on
+    every run, but the engine hashes its inputs at the start, so a
+    first harden (or any run that changes them) records STALE. A rerun
+    with identical files records fresh.
+26. pex_sim exits 2 ("Too few parameters for subcircuit"):
+    `check_pex_sim.reorder_pins()` rewrites only the first line of the
+    extracted `.subckt` header and leaves magic's `+` continuation, so
+    the netlist declares 16 pins. This blocks analog pex_sim, analog
+    release, cosim and the msde release.
+27. layout_gen writes the GDS into `layout/`, a hashed input of drc,
+    after the start hash, so a first drc after deleting the GDS records
+    stale (same class as 25).
+28. `state.py restore` doesn't delete files that a fix created, so a
+    restored fix can leave its override behind.
+29. state.py has no verb to grant extra fix budget, so I recorded the
+    owner's grant as a decision and edited the budget.
+30. After a release with a waived FAIL, attest still says "blocked",
+    and set-phase refuses the waived FAIL without `--force`.
+31. `layout_gen.write_abstract()` reads only metal1/metal2 labels, so
+    the abstract drops vdd/vss once they move to Metal3.
+32. top_harden's pre-check could flag pins buried inside a macro before
+    a 21-minute run. It didn't, so the buried dac_code pins cost a run.
+33. top_harden's macro LEF (`check_top_harden.write_lef`, magic
+    `lef write` with no `-pinonly`/`-hide`) exports each pin's whole
+    connected net as PIN geometry. With the dac_code pins moved to the
+    macro edge, routing DRC is 0, but the router still dropped Via1 onto
+    dac_code's internal Metal1 about 30 µm inside the macro. That gives
+    23 magic DRC (M1.2a, M2.2a, M1.3) and 73 LVS errors (dac_code shorted
+    into the macro's vdd). `-pinonly` alone gives a 10 nm pin because
+    the layout labels are points, so the fix also needs pin-sized label
+    shapes. Reported, not worked around.
+
+### Where round 3 stands
+
+| step | result |
+|---|---|
+| digital: all gates, release | pass; timing waived by the owner (-0.87 ns, about 47 MHz met at ss/125 °C) |
+| digital H2 | asked (H2-a7bfe1), unanswered |
+| analog: spec_lint to bench_strength, drc, lvs | pass |
+| analog pex_sim | blocked on 26 |
+| top_harden | fail on 33 (routing clean; magic DRC 23, LVS 73) |
+| top_drc, top_lvs, precheck | not reached |
+| cosim, msde release, design document | not reached (needs analog release) |

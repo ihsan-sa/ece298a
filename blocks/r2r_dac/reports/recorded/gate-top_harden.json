@@ -30,17 +30,17 @@
    "line": null,
    "kind": "flow_step_failed",
    "refs": [],
-   "msg": "librelane exited 2: 8 Routing DRC errors found. - deferred\n14 Magic DRC errors found. - deferred\n67 LVS errors found. - deferred\n",
+   "msg": "librelane exited 2: 23 Magic DRC errors found. - deferred\n73 LVS errors found. - deferred\n",
    "source": "librelane",
    "items": [
     {
-     "msg": "librelane exited 2: 8 Routing DRC errors found. - deferred\n14 Magic DRC errors found. - deferred\n67 LVS errors found. - deferred\n",
+     "msg": "librelane exited 2: 23 Magic DRC errors found. - deferred\n73 LVS errors found. - deferred\n",
      "file": null,
      "line": null
     }
    ],
    "resumed": false,
-   "wall_s": 1261.53
+   "wall_s": 72.27
   }
  ],
  "violations": [
@@ -52,17 +52,17 @@
    "line": null,
    "kind": "flow_step_failed",
    "refs": [],
-   "msg": "librelane exited 2: 8 Routing DRC errors found. - deferred\n14 Magic DRC errors found. - deferred\n67 LVS errors found. - deferred\n",
+   "msg": "librelane exited 2: 23 Magic DRC errors found. - deferred\n73 LVS errors found. - deferred\n",
    "source": "librelane",
    "items": [
     {
-     "msg": "librelane exited 2: 8 Routing DRC errors found. - deferred\n14 Magic DRC errors found. - deferred\n67 LVS errors found. - deferred\n",
+     "msg": "librelane exited 2: 23 Magic DRC errors found. - deferred\n73 LVS errors found. - deferred\n",
      "file": null,
      "line": null
     }
    ],
    "resumed": false,
-   "wall_s": 1261.53
+   "wall_s": 72.27
   }
  ],
  "facts": {
@@ -71,11 +71,11 @@
     "cell": "r2r_dac_analog",
     "instance": "u_analog",
     "location": [
-     69.44,
+     68.32,
      94.08
     ],
     "size_um": [
-     207.82,
+     210.52,
      139.56
     ],
     "pins": {
@@ -89,49 +89,49 @@
   "top": "r2r_dac_digital",
   "run_tag": "run",
   "resumed": false,
-  "wall_s": 1261.53,
+  "wall_s": 72.27,
   "run_dir": "/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run",
   "metrics": {
-   "design__instance__count": 2604,
-   "design__instance__area": 99410,
+   "design__instance__count": 2553,
+   "design__instance__area": 99325.8,
    "design__instance_unmapped__count": 0,
-   "timing__hold__ws": 0.40658266793039655,
-   "timing__setup__ws": -0.6215774737518289,
+   "timing__hold__ws": 0.3994079624531444,
+   "timing__setup__ws": -0.7948895100463529,
    "timing__hold__tns": 0,
-   "timing__setup__tns": -1.2984671483332388,
+   "timing__setup__tns": -2.6007996492583323,
    "timing__hold__wns": 0,
-   "timing__setup__wns": -0.6215774737518289,
+   "timing__setup__wns": -0.7948895100463529,
    "timing__hold_vio__count": 0,
-   "timing__hold_r2r__ws": 0.406583,
+   "timing__hold_r2r__ws": 0.399408,
    "timing__hold_r2r_vio__count": 0,
-   "timing__setup_vio__count": 6,
-   "timing__setup_r2r__ws": 1.278098,
+   "timing__setup_vio__count": 12,
+   "timing__setup_r2r__ws": 5.563788,
    "timing__setup_r2r_vio__count": 0,
    "design__die__bbox": "0.0 0.0 346.64 325.36",
    "design__core__bbox": "3.36 3.92 343.28 321.44",
    "design__die__area": 112783,
    "design__core__area": 107931,
-   "design__instance__count__stdcell": 1121,
-   "design__instance__area__stdcell": 16207.2,
+   "design__instance__count__stdcell": 1125,
+   "design__instance__area__stdcell": 16222.5,
    "design__instance__count__macros": 1,
-   "design__instance__area__macros": 29003.4,
+   "design__instance__area__macros": 29380.2,
    "design__instance__count__padcells": 0,
    "design__instance__area__padcells": 0,
    "design__instance__count__cover": 0,
    "design__instance__area__cover": 0,
-   "design__instance__utilization": 0.418882,
-   "design__instance__utilization__stdcell": 0.205341,
-   "design__instance__displacement__total": 143.92,
-   "design__instance__displacement__mean": 0.128,
-   "design__instance__displacement__max": 15.68,
-   "design__instance__count__setup_buffer": 4,
+   "design__instance__utilization": 0.422516,
+   "design__instance__utilization__stdcell": 0.206522,
+   "design__instance__displacement__total": 67.76,
+   "design__instance__displacement__mean": 0.06,
+   "design__instance__displacement__max": 11.76,
+   "design__instance__count__setup_buffer": 3,
    "design__instance__count__hold_buffer": 0
   }
  },
  "inputs_at_start": {
   "digital_rtl": "dir_text:08d2e63a30253fb8dcb71be29ca5aa7209711132e317fcb0e4bc99f0e226a305",
-  "analog_layout": "dir_text:9e0c0412097973353e7b7d784d6f6f985ba2822918b154445f66466be6fdcae7"
+  "analog_layout": "dir_text:7a954c277f279e0a8b3d75e97ed6833bf445cf7e04f4ec0eefae35be290d869d"
  },
- "recorded_ts": "2026-10-13T04:46:54",
- "attempts": 3
+ "recorded_ts": "2026-10-13T04:55:01",
+ "attempts": 4
 }
