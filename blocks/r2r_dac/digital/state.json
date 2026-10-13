@@ -4,7 +4,7 @@
  "block": "r2r_dac",
  "workspace": "blocks/r2r_dac/digital",
  "created": "2026-09-25T08:51:49",
- "updated": "2026-10-13T04:05:27",
+ "updated": "2026-10-13T04:10:15",
  "phase": "P6",
  "toolchain": null,
  "gates": {
@@ -48,14 +48,14 @@
   "lint": {
    "phase": "P4",
    "status": "pass",
-   "attempts": 2,
+   "attempts": 3,
    "last": {
-    "ts": "2026-10-13T03:51:14",
+    "ts": "2026-10-13T04:10:15",
     "status": "pass",
     "failing_count": 0,
     "total": 0,
     "inputs": {
-     "rtl": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
+     "rtl": "dir_text:467072fcb827af020645576f4da4ad1cf92b6669c1b856871d2389fe2be4efc3",
      "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
     },
     "job": null
@@ -79,6 +79,17 @@
      "total": 0,
      "inputs": {
       "rtl": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
+      "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
+     },
+     "job": null
+    },
+    {
+     "ts": "2026-10-13T04:10:15",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "rtl": "dir_text:467072fcb827af020645576f4da4ad1cf92b6669c1b856871d2389fe2be4efc3",
       "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
      },
      "job": null
@@ -165,6 +176,14 @@
       "tests_passed": 8
      }
     }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:10:14",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
+    }
    ]
   },
   "holdout": {
@@ -246,6 +265,14 @@
      "facts": {
       "tests_passed": 2
      }
+    }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:10:14",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
     }
    ]
   },
@@ -358,6 +385,14 @@
       "wall_s": 15.61
      }
     }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:10:14",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
+    }
    ]
   },
   "formal": {
@@ -394,6 +429,14 @@
      "facts": {
       "depth": 12
      }
+    }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:10:14",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
     }
    ]
   },
@@ -440,6 +483,14 @@
       "toggle_total": 128
      }
     }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:10:14",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
+    }
    ]
   },
   "synth": {
@@ -474,6 +525,14 @@
      "facts": {
       "area": 7331.968
      }
+    }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:10:14",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
     }
    ]
   },
@@ -584,6 +643,14 @@
      "facts": {
       "wall_s": 95.98
      }
+    }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:10:14",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
     }
    ]
   },
@@ -796,6 +863,14 @@
       }
      }
     }
+   ],
+   "stale": [
+    {
+     "ts": "2026-10-13T04:10:14",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
+    }
    ]
   },
   "drc": {
@@ -846,6 +921,12 @@
      "edit_class": "harden_config_edit",
      "refs": [],
      "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:10:14",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
     }
    ]
   },
@@ -889,6 +970,12 @@
      "edit_class": "harden_config_edit",
      "refs": [],
      "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:10:14",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
     }
    ]
   },
@@ -934,6 +1021,12 @@
      "edit_class": "harden_config_edit",
      "refs": [],
      "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:10:14",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
     }
    ]
   },
@@ -985,6 +1078,12 @@
      "edit_class": "harden_config_edit",
      "refs": [],
      "human_hold": 2
+    },
+    {
+     "ts": "2026-10-13T04:10:14",
+     "edit_class": "rtl_edit",
+     "refs": [],
+     "human_hold": 1
     }
    ]
   }
@@ -1061,8 +1160,8 @@
   "rtl": {
    "path": "rtl",
    "kind": "rtl",
-   "sha256": "dir_text:2a2b1ae7e895ad5405f5ae367ab80ae45039df70315e07a67867027fa4bbdf15",
-   "hashed": "2026-10-13T04:04:11"
+   "sha256": "dir_text:467072fcb827af020645576f4da4ad1cf92b6669c1b856871d2389fe2be4efc3",
+   "hashed": "2026-10-13T04:10:15"
   },
   "tb": {
    "path": "tb",
@@ -1092,7 +1191,7 @@
    "path": "spec/spec.yaml",
    "kind": "spec_yaml_sans_formal",
    "sha256": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1",
-   "hashed": "2026-10-13T04:04:32"
+   "hashed": "2026-10-13T04:10:15"
   },
   "harden_config": {
    "path": "harden/config.json",
@@ -1319,6 +1418,45 @@
     "release"
    ],
    "gates_marked": [
+    "harden",
+    "timing",
+    "drc",
+    "lvs",
+    "glsim",
+    "precheck"
+   ],
+   "stale_artifacts": []
+  },
+  {
+   "ts": "2026-10-13T04:10:14",
+   "class": "rtl_edit",
+   "refs": [],
+   "note": "timing wo-5 a3: presc_tc + cnt_p1 registers take the presc==FF compare and cnt+1 off the sine-ROM path; cycle-exact (400k-cycle random cosim vs old RTL, 0 mismatches)",
+   "human_hold": 1,
+   "gates": [
+    "lint",
+    "sim",
+    "holdout",
+    "mutate",
+    "formal",
+    "cover",
+    "synth",
+    "harden",
+    "timing",
+    "drc",
+    "lvs",
+    "glsim",
+    "precheck",
+    "release"
+   ],
+   "gates_marked": [
+    "lint",
+    "sim",
+    "holdout",
+    "mutate",
+    "formal",
+    "cover",
+    "synth",
     "harden",
     "timing",
     "drc",
@@ -2033,6 +2171,21 @@
    "kinds": [
     "setup_violation"
    ]
+  },
+  {
+   "ts": "2026-10-13T04:10:14",
+   "event": "edit",
+   "edit_class": "rtl_edit",
+   "refs": [],
+   "human_hold": 1
+  },
+  {
+   "ts": "2026-10-13T04:10:15",
+   "event": "gate",
+   "gate": "lint",
+   "status": "pass",
+   "attempt": 3,
+   "failing_count": 0
   }
  ]
 }
