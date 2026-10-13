@@ -233,7 +233,9 @@ the layout agent $1.4, and orchestration for the rest.
     480 (the drivers' own transistors), and the gate exits 2 before
     netgen runs. The guard should count the same things on both sides
     (std-cell transistors included, or resistors too). Reported, not
-    worked around.
+    worked around. Fixed in chip-flow 0edfee5: the guard now counts every
+    device, wants 480 fets + 25 res and gets the same, and netgen says
+    "Circuits match uniquely".
 
 37. Nothing fills the analog macro, and the TT precheck fails on it.
     ade's analog drc gate skips the dummy-fill decks because "the chip's
@@ -255,7 +257,7 @@ the layout agent $1.4, and orchestration for the rest.
 | analog pex_sim | pass (34 fixed by a spec `sim_timeout_s: {pex_sim: 600}`; run takes 297 s) |
 | top_harden | pass on c4be2a4 (35 fixed; harden's own DRC, LVS and antenna clean, setup slack +0.29 ns) |
 | top_drc | fail on 37: magic 0, klayout 2 x DCF.1a inside the unfilled macro |
-| top_lvs | refused on 36: the blackbox guard reads the resistor + std-cell macro as empty |
+| top_lvs | PASS on 0edfee5 (fix 36): circuits match uniquely, macro 480 fets + 25 res on both sides |
 | precheck | fail on 37: the same 2 DCF.1a in TT's own klayout DRC |
 | cosim | pass (integrator bench: released RTL + ideal-driver real ladder; DNL/INL 0.006 LSB, settling 1.19 µs) |
 | msde release, design document | not reached |
