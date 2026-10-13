@@ -39,9 +39,9 @@
   "footprint": null
  },
  "inputs_at_start": {
-  "layout": "dir_text:5a2eb0db72cd8a0e403f0ed6abb8f997b1dc6a97553fc820506392cde60d064b",
+  "layout": "dir_text:4e5f62c475eb67f28922569e722fa411c4ed4a44149990be8907cfd87892af0f",
   "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d"
  },
- "recorded_ts": "2026-10-13T03:56:40",
- "attempts": 2
+ "recorded_ts": "2026-10-13T04:00:21",
+ "attempts": 3
 }

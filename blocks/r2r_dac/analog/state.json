@@ -4,7 +4,7 @@
  "block": "r2r_dac_analog",
  "workspace": "blocks/r2r_dac/analog",
  "created": "2026-09-25T05:47:00",
- "updated": "2026-10-13T03:59:47",
+ "updated": "2026-10-13T04:00:21",
  "phase": "P5",
  "toolchain": null,
  "gates": {
@@ -471,20 +471,17 @@
   "drc": {
    "phase": "P5",
    "status": "pass",
-   "attempts": 2,
+   "attempts": 3,
    "last": {
-    "ts": "2026-10-13T03:56:40",
+    "ts": "2026-10-13T04:00:21",
     "status": "pass",
     "failing_count": 0,
     "total": 0,
     "inputs": {
-     "layout": "dir_text:5a2eb0db72cd8a0e403f0ed6abb8f997b1dc6a97553fc820506392cde60d064b",
+     "layout": "dir_text:4e5f62c475eb67f28922569e722fa411c4ed4a44149990be8907cfd87892af0f",
      "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d"
     },
-    "job": null,
-    "inputs_changed_during_run": [
-     "layout"
-    ]
+    "job": null
    },
    "history": [
     {
@@ -510,6 +507,17 @@
      "inputs_changed_during_run": [
       "layout"
      ]
+    },
+    {
+     "ts": "2026-10-13T04:00:21",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "layout": "dir_text:4e5f62c475eb67f28922569e722fa411c4ed4a44149990be8907cfd87892af0f",
+      "spec_yaml": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d"
+     },
+     "job": null
     }
    ]
   },
@@ -673,7 +681,7 @@
    "path": "spec/spec.yaml",
    "kind": "spec_yaml",
    "sha256": "json_canonical:c6f6e6bcf3e6d9fffb2951380c65cc793148846035c780b010517d57c608793d",
-   "hashed": "2026-10-13T03:59:47"
+   "hashed": "2026-10-13T04:00:21"
   },
   "netlist": {
    "path": "netlist",
@@ -691,7 +699,7 @@
    "path": "layout",
    "kind": "layout",
    "sha256": "dir_text:4e5f62c475eb67f28922569e722fa411c4ed4a44149990be8907cfd87892af0f",
-   "hashed": "2026-10-13T03:57:30"
+   "hashed": "2026-10-13T04:00:21"
   },
   "sizing": {
    "path": "sizing/sizing.yaml",
@@ -1318,6 +1326,14 @@
    "gate": "sim_pvt",
    "status": "pass",
    "attempt": 5,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-13T04:00:21",
+   "event": "gate",
+   "gate": "drc",
+   "status": "pass",
+   "attempt": 3,
    "failing_count": 0
   }
  ]
