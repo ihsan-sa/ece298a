@@ -4,7 +4,7 @@
  "block": "r2r_dac",
  "workspace": "blocks/r2r_dac/digital",
  "created": "2026-09-25T08:51:49",
- "updated": "2026-10-13T03:57:52",
+ "updated": "2026-10-13T03:58:36",
  "phase": "P6",
  "toolchain": null,
  "gates": {
@@ -747,6 +747,43 @@
      "job": null
     }
    ]
+  },
+  "precheck": {
+   "phase": "P6",
+   "status": "pass",
+   "attempts": 1,
+   "last": {
+    "ts": "2026-10-13T03:58:36",
+    "status": "pass",
+    "failing_count": 0,
+    "total": 0,
+    "inputs": {
+     "harden": "dir_text:f866a5fa98728f1a85652f2f71830c3685ff9662d5e5482c48f7af1734cf022e",
+     "harden_info": "json_canonical:e722bc7d8de703255711480061816e03c2199ce2ea6dff004d19c5a958436590",
+     "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
+    },
+    "job": null,
+    "facts": {
+     "checks_run": 12
+    }
+   },
+   "history": [
+    {
+     "ts": "2026-10-13T03:58:36",
+     "status": "pass",
+     "failing_count": 0,
+     "total": 0,
+     "inputs": {
+      "harden": "dir_text:f866a5fa98728f1a85652f2f71830c3685ff9662d5e5482c48f7af1734cf022e",
+      "harden_info": "json_canonical:e722bc7d8de703255711480061816e03c2199ce2ea6dff004d19c5a958436590",
+      "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
+     },
+     "job": null,
+     "facts": {
+      "checks_run": 12
+     }
+    }
+   ]
   }
  },
  "jobs": {
@@ -834,7 +871,7 @@
    "path": "spec/spec.yaml",
    "kind": "spec_yaml_sans_formal",
    "sha256": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1",
-   "hashed": "2026-10-13T03:57:52"
+   "hashed": "2026-10-13T03:58:36"
   },
   "harden_config": {
    "path": "harden/config.json",
@@ -858,13 +895,13 @@
    "path": "harden/info.yaml",
    "kind": "harden_info",
    "sha256": "json_canonical:e722bc7d8de703255711480061816e03c2199ce2ea6dff004d19c5a958436590",
-   "hashed": "2026-10-13T03:56:33"
+   "hashed": "2026-10-13T03:58:36"
   },
   "harden": {
    "path": "harden",
    "kind": "harden",
    "sha256": "dir_text:f866a5fa98728f1a85652f2f71830c3685ff9662d5e5482c48f7af1734cf022e",
-   "hashed": "2026-10-13T03:57:52"
+   "hashed": "2026-10-13T03:58:36"
   }
  },
  "open_issues": [
@@ -902,14 +939,32 @@
    "count": 2,
    "work_order": "blocks/r2r_dac/digital/log/workorders/wo-2.json",
    "note": "mutate PASS on c489764: mutants 14/21 proven equivalent by the gate"
+  },
+  {
+   "id": 3,
+   "status": "open",
+   "agent": null,
+   "attempts": 0,
+   "opened": "2026-10-13T03:58:13",
+   "closed": null,
+   "gate": "timing",
+   "phase": "P6",
+   "fixer": "harden",
+   "kinds": [
+    "setup_violation"
+   ],
+   "severity": "error",
+   "count": 3,
+   "work_order": "blocks/r2r_dac/digital/log/workorders/wo-3.json"
   }
  ],
- "next_issue_id": 3,
+ "next_issue_id": 4,
  "next_job_id": 3,
  "budgets": {
   "fix_loops": {
    "sim": 2,
-   "mutate": 2
+   "mutate": 2,
+   "timing": 2
   }
  },
  "decisions": [
@@ -1496,6 +1551,42 @@
    "ts": "2026-10-13T03:57:52",
    "event": "gate",
    "gate": "glsim",
+   "status": "pass",
+   "attempt": 1,
+   "failing_count": 0
+  },
+  {
+   "ts": "2026-10-13T03:58:12",
+   "event": "budget_defaulted",
+   "path": "fix_loops.timing",
+   "value": 3
+  },
+  {
+   "ts": "2026-10-13T03:58:12",
+   "event": "budget",
+   "path": "fix_loops.timing",
+   "remaining": 2
+  },
+  {
+   "ts": "2026-10-13T03:58:13",
+   "event": "snapshot",
+   "label": "pre-fix-timing-a1",
+   "files": 1093
+  },
+  {
+   "ts": "2026-10-13T03:58:13",
+   "event": "issue_open",
+   "id": 3,
+   "gate": "timing",
+   "fixer": "harden",
+   "kinds": [
+    "setup_violation"
+   ]
+  },
+  {
+   "ts": "2026-10-13T03:58:36",
+   "event": "gate",
+   "gate": "precheck",
    "status": "pass",
    "attempt": 1,
    "failing_count": 0
