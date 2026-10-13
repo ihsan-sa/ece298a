@@ -226,5 +226,5 @@ the layout agent $1.4, and orchestration for the rest.
 | analog pex_sim | pass (34 fixed by a spec `sim_timeout_s: {pex_sim: 600}`; run takes 297 s) |
 | top_harden | fail on 33 (routing clean; magic DRC 23, LVS 73) |
 | top_drc, top_lvs, precheck | not reached |
-| cosim | in progress (integrator writing the bench) |
+| cosim | pass (integrator bench: released RTL + ideal-driver real ladder; DNL/INL 0.006 LSB, settling 1.19 µs) |
 | msde release, design document | not reached |
