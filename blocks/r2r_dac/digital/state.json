@@ -4,7 +4,7 @@
  "block": "r2r_dac",
  "workspace": "blocks/r2r_dac/digital",
  "created": "2026-09-25T08:51:49",
- "updated": "2026-10-13T04:18:59",
+ "updated": "2026-10-13T04:19:08",
  "phase": "P6",
  "toolchain": null,
  "gates": {
@@ -849,53 +849,53 @@
   "timing": {
    "phase": "P6",
    "status": "fail",
-   "attempts": 4,
+   "attempts": 5,
    "last": {
-    "ts": "2026-10-13T04:11:46",
+    "ts": "2026-10-13T04:19:08",
     "status": "fail",
     "failing_count": 3,
     "total": 3,
     "inputs": {
-     "harden": "dir_text:99c664a3dd27416c99713f9bea5b22e85284545e1f2823c54e2a8af215181ff3",
-     "spec_yaml_sans_formal": "json_canonical_sans_formal:76547f15e3669885e2e1234eac52e2b15e047e49687cf9cfaeac024ebd9dcff1"
+     "harden": "dir_text:5e0fc600709e3cc97c7324a97c0c78553ef21db49b5a2f1a7ca5465fd7d2b2f2",
+     "spec_yaml_sans_formal": "json_canonical_sans_formal:ed8f31d7b49d1395e51d6ee5b8f5bdd0ed70710413c640dc29961fe29e015119"
     },
     "job": null,
     "facts": {
      "corners": {
       "max_ff_n40C_3v60": {
-       "setup_ws": 10.83,
-       "hold_ws": 0.44
+       "setup_ws": 10.95,
+       "hold_ws": 0.45
       },
       "max_ss_125C_3v00": {
-       "setup_ws": -0.78,
-       "hold_ws": 2.22
+       "setup_ws": -0.87,
+       "hold_ws": 2.23
       },
       "max_tt_025C_3v30": {
-       "setup_ws": 7.34,
+       "setup_ws": 7.43,
        "hold_ws": 0.98
       },
       "min_ff_n40C_3v60": {
-       "setup_ws": 11.06,
+       "setup_ws": 11.13,
        "hold_ws": 0.44
       },
       "min_ss_125C_3v00": {
-       "setup_ws": -0.05,
-       "hold_ws": 2.2
+       "setup_ws": -0.29,
+       "hold_ws": 2.21
       },
       "min_tt_025C_3v30": {
        "setup_ws": 7.73,
        "hold_ws": 0.97
       },
       "nom_ff_n40C_3v60": {
-       "setup_ws": 10.95,
+       "setup_ws": 11.05,
        "hold_ws": 0.44
       },
       "nom_ss_125C_3v00": {
-       "setup_ws": -0.38,
-       "hold_ws": 2.21
+       "setup_ws": -0.55,
+       "hold_ws": 2.22
       },
       "nom_tt_025C_3v30": {
-       "setup_ws": 7.56,
+       "setup_ws": 7.6,
        "hold_ws": 0.97
       }
      }
@@ -1105,20 +1105,57 @@
        }
       }
      }
-    }
-   ],
-   "stale": [
-    {
-     "ts": "2026-10-13T04:16:47",
-     "edit_class": "spec_edit",
-     "refs": [],
-     "human_hold": 2
     },
     {
-     "ts": "2026-10-13T04:16:47",
-     "edit_class": "rtl_edit",
-     "refs": [],
-     "human_hold": 1
+     "ts": "2026-10-13T04:19:08",
+     "status": "fail",
+     "failing_count": 3,
+     "total": 3,
+     "inputs": {
+      "harden": "dir_text:5e0fc600709e3cc97c7324a97c0c78553ef21db49b5a2f1a7ca5465fd7d2b2f2",
+      "spec_yaml_sans_formal": "json_canonical_sans_formal:ed8f31d7b49d1395e51d6ee5b8f5bdd0ed70710413c640dc29961fe29e015119"
+     },
+     "job": null,
+     "facts": {
+      "corners": {
+       "max_ff_n40C_3v60": {
+        "setup_ws": 10.95,
+        "hold_ws": 0.45
+       },
+       "max_ss_125C_3v00": {
+        "setup_ws": -0.87,
+        "hold_ws": 2.23
+       },
+       "max_tt_025C_3v30": {
+        "setup_ws": 7.43,
+        "hold_ws": 0.98
+       },
+       "min_ff_n40C_3v60": {
+        "setup_ws": 11.13,
+        "hold_ws": 0.44
+       },
+       "min_ss_125C_3v00": {
+        "setup_ws": -0.29,
+        "hold_ws": 2.21
+       },
+       "min_tt_025C_3v30": {
+        "setup_ws": 7.73,
+        "hold_ws": 0.97
+       },
+       "nom_ff_n40C_3v60": {
+        "setup_ws": 11.05,
+        "hold_ws": 0.44
+       },
+       "nom_ss_125C_3v00": {
+        "setup_ws": -0.55,
+        "hold_ws": 2.22
+       },
+       "nom_tt_025C_3v30": {
+        "setup_ws": 7.6,
+        "hold_ws": 0.97
+       }
+      }
+     }
     }
    ]
   },
@@ -1522,7 +1559,7 @@
    "path": "spec/spec.yaml",
    "kind": "spec_yaml_sans_formal",
    "sha256": "json_canonical_sans_formal:ed8f31d7b49d1395e51d6ee5b8f5bdd0ed70710413c640dc29961fe29e015119",
-   "hashed": "2026-10-13T04:18:31"
+   "hashed": "2026-10-13T04:19:08"
   },
   "harden_config": {
    "path": "harden/config.json",
@@ -1551,8 +1588,8 @@
   "harden": {
    "path": "harden",
    "kind": "harden",
-   "sha256": "dir_text:99c664a3dd27416c99713f9bea5b22e85284545e1f2823c54e2a8af215181ff3",
-   "hashed": "2026-10-13T04:11:46"
+   "sha256": "dir_text:5e0fc600709e3cc97c7324a97c0c78553ef21db49b5a2f1a7ca5465fd7d2b2f2",
+   "hashed": "2026-10-13T04:19:08"
   }
  },
  "open_issues": [
@@ -2880,6 +2917,14 @@
    "event": "job_update",
    "job": "6",
    "status": "done"
+  },
+  {
+   "ts": "2026-10-13T04:19:08",
+   "event": "gate",
+   "gate": "timing",
+   "status": "fail",
+   "attempt": 5,
+   "failing_count": 3
   }
  ]
 }
