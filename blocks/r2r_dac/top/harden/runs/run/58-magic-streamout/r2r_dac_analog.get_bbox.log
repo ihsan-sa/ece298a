@@ -21,7 +21,7 @@ Warning: Calma reading is not undoable!  I hope that's OK.
 Library written using GDS-II Release 6.0
 Library name: LIB
 Reading "r2r_dac_analog".
-%OL_METRIC_I llx 33104
-%OL_METRIC_I lly 0
-%OL_METRIC_I urx 40496
-%OL_METRIC_I ury 6272
+%OL_METRIC_I llx 33512
+%OL_METRIC_I lly 640
+%OL_METRIC_I urx 40904
+%OL_METRIC_I ury 6912

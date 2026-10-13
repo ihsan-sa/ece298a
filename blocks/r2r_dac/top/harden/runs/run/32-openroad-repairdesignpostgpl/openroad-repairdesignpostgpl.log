@@ -61,50 +61,50 @@ Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
 ---------------------------------------------------------------------
         0 |     +0.0% |       0 |       0 |             0 |       398
        10 |     +0.0% |       0 |       0 |             0 |       388
-       20 |     +0.4% |       3 |       0 |             3 |       378
-       30 |     +0.9% |       7 |       1 |             4 |       368
-       40 |     +1.1% |       9 |       1 |             4 |       358
-       50 |     +1.6% |      14 |       1 |             7 |       348
-       60 |     +2.0% |      17 |       1 |             8 |       338
-       70 |     +2.4% |      20 |       1 |             8 |       328
-       80 |     +2.6% |      24 |       1 |             9 |       318
-       90 |     +3.2% |      30 |       1 |            11 |       308
-      100 |     +3.6% |      35 |       2 |            12 |       298
-      110 |     +3.8% |      38 |       2 |            13 |       288
-      120 |     +3.9% |      40 |       2 |            13 |       278
-      130 |     +4.2% |      45 |       2 |            14 |       268
-      140 |     +4.7% |      51 |       2 |            16 |       258
-      150 |     +5.2% |      59 |       2 |            16 |       248
-      160 |     +5.3% |      62 |       3 |            17 |       238
-      170 |     +5.8% |      66 |       6 |            20 |       228
-      180 |     +6.9% |      74 |      13 |            25 |       218
-      190 |     +7.5% |      76 |      18 |            28 |       208
-      200 |     +7.5% |      76 |      18 |            28 |       198
-      210 |     +8.5% |      77 |      27 |            32 |       188
-      220 |     +8.8% |      81 |      29 |            35 |       178
-      230 |     +8.8% |      81 |      29 |            35 |       168
-      240 |     +8.8% |      81 |      29 |            35 |       158
-      250 |     +9.0% |      84 |      30 |            36 |       148
-      260 |     +9.0% |      85 |      30 |            36 |       138
-      270 |     +9.0% |      85 |      30 |            36 |       128
-      280 |     +9.2% |      88 |      31 |            37 |       118
-      290 |     +9.5% |      89 |      34 |            38 |       108
-      300 |     +9.5% |      90 |      34 |            38 |        98
-      310 |     +9.5% |      90 |      34 |            38 |        88
-      320 |     +9.5% |      90 |      34 |            38 |        78
-      330 |     +9.6% |      98 |      34 |            38 |        68
-      340 |     +9.8% |     100 |      36 |            39 |        58
-      350 |     +9.9% |     100 |      38 |            40 |        48
-      360 |    +10.0% |     101 |      38 |            40 |        38
-      370 |    +10.0% |     101 |      38 |            40 |        28
-      380 |    +10.0% |     101 |      38 |            40 |        18
-      390 |    +10.0% |     101 |      38 |            40 |         8
-    final |    +10.0% |     101 |      38 |            40 |         0
+       20 |     +0.5% |       3 |       1 |             3 |       378
+       30 |     +1.0% |       7 |       2 |             4 |       368
+       40 |     +1.1% |       9 |       2 |             4 |       358
+       50 |     +1.7% |      14 |       2 |             6 |       348
+       60 |     +2.1% |      17 |       2 |             7 |       338
+       70 |     +2.4% |      20 |       2 |             7 |       328
+       80 |     +2.7% |      24 |       2 |             8 |       318
+       90 |     +3.3% |      30 |       2 |            10 |       308
+      100 |     +3.7% |      35 |       3 |            11 |       298
+      110 |     +3.9% |      38 |       3 |            12 |       288
+      120 |     +3.9% |      39 |       3 |            12 |       278
+      130 |     +4.4% |      45 |       3 |            12 |       268
+      140 |     +4.9% |      51 |       3 |            14 |       258
+      150 |     +5.4% |      59 |       3 |            14 |       248
+      160 |     +5.5% |      62 |       4 |            15 |       238
+      170 |     +6.0% |      66 |       7 |            18 |       228
+      180 |     +7.2% |      73 |      15 |            23 |       218
+      190 |     +7.8% |      75 |      20 |            26 |       208
+      200 |     +7.8% |      75 |      20 |            26 |       198
+      210 |     +9.2% |      76 |      39 |            30 |       188
+      220 |     +9.6% |      80 |      41 |            33 |       178
+      230 |     +9.6% |      80 |      41 |            33 |       168
+      240 |     +9.6% |      80 |      41 |            33 |       158
+      250 |     +9.7% |      83 |      42 |            34 |       148
+      260 |     +9.8% |      84 |      42 |            34 |       138
+      270 |     +9.8% |      84 |      42 |            34 |       128
+      280 |     +9.9% |      87 |      43 |            35 |       118
+      290 |    +10.2% |      88 |      46 |            36 |       108
+      300 |    +10.2% |      89 |      46 |            36 |        98
+      310 |    +10.2% |      89 |      46 |            36 |        88
+      320 |    +10.2% |      89 |      46 |            36 |        78
+      330 |    +10.3% |      97 |      46 |            36 |        68
+      340 |    +10.5% |      99 |      48 |            37 |        58
+      350 |    +10.7% |      99 |      50 |            38 |        48
+      360 |    +10.7% |     100 |      50 |            38 |        38
+      370 |    +10.7% |     100 |      50 |            38 |        28
+      380 |    +10.7% |     100 |      50 |            38 |        18
+      390 |    +10.7% |     100 |      50 |            38 |         8
+    final |    +10.7% |     100 |      50 |            38 |         0
 ---------------------------------------------------------------------
 [INFO RSZ-0034] Found 110 slew violations.
 [INFO RSZ-0035] Found 11 fanout violations.
-[INFO RSZ-0039] Resized 101 instances.
-[INFO RSZ-0038] Inserted 38 buffers in 40 nets.
+[INFO RSZ-0039] Resized 100 instances.
+[INFO RSZ-0038] Inserted 50 buffers in 38 nets.
 [INFO RSZ-0042] Inserted 16 tie gf180mcu_fd_sc_mcu7t5v0__tiel instances.
 [WARNING RSZ-0020] found 2 floating nets.
  VGND
@@ -112,32 +112,32 @@ Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
 + detailed_placement -max_displacement  500 100 
 Placement Analysis
 ---------------------------------
-total displacement       2404.7 u
-average displacement        2.2 u
-max displacement           21.1 u
-original HPWL           14019.3 u
-legalized HPWL          16272.8 u
-delta HPWL                   16 %
+total displacement       2679.0 u
+average displacement        2.4 u
+max displacement           27.4 u
+original HPWL           14276.9 u
+legalized HPWL          17023.2 u
+delta HPWL                   19 %
 
-[INFO DPL-0020] Mirrored 195 instances
-[INFO DPL-0021] HPWL before           16272.8 u
-[INFO DPL-0022] HPWL after            15721.6 u
-[INFO DPL-0023] HPWL delta               -3.4 %
+[INFO DPL-0020] Mirrored 193 instances
+[INFO DPL-0021] HPWL before           17023.2 u
+[INFO DPL-0022] HPWL after            16409.6 u
+[INFO DPL-0023] HPWL delta               -3.6 %
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
 u_analog matched with u_analog
-[INFO ODB-0403] 264 connections made, 0 conflicts skipped.
+[INFO ODB-0403] 312 connections made, 0 conflicts skipped.
 Updating metrics…
 Cell type report:                       Count       Area
   Macro                                     1   29380.17
   Endcap cell                             246    1080.04
   Tap cell                                449    1971.29
   Tie cell                                 16     140.49
-  Timing Repair Buffer                     50    1238.09
-  Inverter                                 20     215.13
+  Timing Repair Buffer                     62    1492.74
+  Inverter                                 20     210.74
   Sequential cell                          50    3222.55
-  Multi-Input combinational cell          272    7411.00
-  Total                                  1104   44658.76
+  Multi-Input combinational cell          272    7446.12
+  Total                                  1116   44944.14
 Writing OpenROAD database to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/32-openroad-repairdesignpostgpl/tt_um_r2r_dac_digital.odb'…
 Writing netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/32-openroad-repairdesignpostgpl/tt_um_r2r_dac_digital.nl.v'…
 Writing powered netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/32-openroad-repairdesignpostgpl/tt_um_r2r_dac_digital.pnl.v'…

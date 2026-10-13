@@ -2,11 +2,7 @@
 Passed ✅
 
 * LVS
-Failed 𐄂
-Total Errors: 12
-Unmatched Pins: 3
-Unmatched Nets: 1
-Check the report directory of Netgen.LVS.
+Passed ✅
 
 * DRC
 Passed ✅

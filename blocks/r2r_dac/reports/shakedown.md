@@ -224,6 +224,25 @@ the layout agent $1.4, and orchestration for the rest.
     that should reach them, so the 12 LVS errors are dac_code[7:0], vout
     and vdd left open. Fix 33 worked: magic DRC, routing DRC and antenna
     are all 0, and LVS fell from 73 to 12. Reported, not worked around.
+    Fixed in chip-flow c4be2a4: top_harden now passes (82 s).
+
+36. top_lvs refuses a real macro as a blackbox. Its guard counts the
+    transistors in the macro's .subckt but skips standard cells, and the
+    R-2R .subckt holds only eight gf180mcu buf_20 drivers and 16 ppolyf_u
+    resistors. So the schematic side counts 0 while the extraction finds
+    480 (the drivers' own transistors), and the gate exits 2 before
+    netgen runs. The guard should count the same things on both sides
+    (std-cell transistors included, or resistors too). Reported, not
+    worked around.
+
+37. Nothing fills the analog macro, and the TT precheck fails on it.
+    ade's analog drc gate skips the dummy-fill decks because "the chip's
+    fill step adds it", but top_harden's fill stops at the macro. So
+    top_drc and the real TT precheck both report 2 x DCF.1a (the space
+    between COMP must hold dummy COMP), and both regions are inside the
+    macro. The fix is a fill step for the macro area (in top_harden or
+    the analog layout path), or the gate has to check the fill rules
+    early. Reported, not worked around.
 
 ### Where round 3 stands
 
@@ -234,7 +253,9 @@ the layout agent $1.4, and orchestration for the rest.
 | analog: spec_lint to bench_strength, drc, lvs, release | pass (re-run fresh on 84ea5df) |
 | analog H2 | asked (H2-4da295), unanswered |
 | analog pex_sim | pass (34 fixed by a spec `sim_timeout_s: {pex_sim: 600}`; run takes 297 s) |
-| top_harden | fail on 35 (fix 33 works: DRC 0; LVS 12, every macro pin open because the GDS sits 2.04/3.2 µm off the LEF) |
-| top_drc, top_lvs, precheck | not reached |
+| top_harden | pass on c4be2a4 (35 fixed; harden's own DRC, LVS and antenna clean, setup slack +0.29 ns) |
+| top_drc | fail on 37: magic 0, klayout 2 x DCF.1a inside the unfilled macro |
+| top_lvs | refused on 36: the blackbox guard reads the resistor + std-cell macro as empty |
+| precheck | fail on 37: the same 2 DCF.1a in TT's own klayout DRC |
 | cosim | pass (integrator bench: released RTL + ideal-driver real ladder; DNL/INL 0.006 LSB, settling 1.19 µs) |
 | msde release, design document | not reached |

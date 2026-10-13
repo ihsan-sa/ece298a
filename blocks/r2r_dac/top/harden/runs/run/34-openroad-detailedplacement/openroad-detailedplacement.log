@@ -17,14 +17,14 @@ Placement Analysis
 total displacement          0.0 u
 average displacement        0.0 u
 max displacement            0.0 u
-original HPWL           15721.6 u
-legalized HPWL          16272.8 u
+original HPWL           16409.6 u
+legalized HPWL          17023.2 u
 delta HPWL                    4 %
 
-[INFO DPL-0020] Mirrored 195 instances
-[INFO DPL-0021] HPWL before           16272.8 u
-[INFO DPL-0022] HPWL after            15721.6 u
-[INFO DPL-0023] HPWL delta               -3.4 %
+[INFO DPL-0020] Mirrored 193 instances
+[INFO DPL-0021] HPWL before           17023.2 u
+[INFO DPL-0022] HPWL after            16409.6 u
+[INFO DPL-0023] HPWL delta               -3.6 %
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
 u_analog matched with u_analog
@@ -35,11 +35,11 @@ Cell type report:                       Count       Area
   Endcap cell                             246    1080.04
   Tap cell                                449    1971.29
   Tie cell                                 16     140.49
-  Timing Repair Buffer                     50    1238.09
-  Inverter                                 20     215.13
+  Timing Repair Buffer                     62    1492.74
+  Inverter                                 20     210.74
   Sequential cell                          50    3222.55
-  Multi-Input combinational cell          272    7411.00
-  Total                                  1104   44658.76
+  Multi-Input combinational cell          272    7446.12
+  Total                                  1116   44944.14
 Writing OpenROAD database to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/34-openroad-detailedplacement/tt_um_r2r_dac_digital.odb'…
 Writing netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/34-openroad-detailedplacement/tt_um_r2r_dac_digital.nl.v'…
 Writing powered netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/34-openroad-detailedplacement/tt_um_r2r_dac_digital.pnl.v'…

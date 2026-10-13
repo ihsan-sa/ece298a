@@ -42,24 +42,24 @@ Metal4     Vertical        20868         13949          33.16%
 [INFO GRT-0102] Start extra iteration 1/50
 [INFO GRT-0102] Start extra iteration 2/50
 [INFO GRT-0102] Start extra iteration 3/50
-[INFO GRT-0197] Via related to pin nodes: 2598
-[INFO GRT-0198] Via related Steiner nodes: 57
+[INFO GRT-0197] Via related to pin nodes: 2663
+[INFO GRT-0198] Via related Steiner nodes: 53
 [INFO GRT-0199] Via filling finished.
-[INFO GRT-0111] Final number of vias: 3309
-[INFO GRT-0112] Final usage 3D: 12204
+[INFO GRT-0111] Final number of vias: 3381
+[INFO GRT-0112] Final usage 3D: 12464
 
 [INFO GRT-0096] Final congestion report:
 Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
 ---------------------------------------------------------------------------------------
 Metal1               0             0            0.00%             0 /  0 /  0
-Metal2           11554          1084            9.38%             0 /  0 /  0
-Metal3           15106          1152            7.63%             0 /  0 /  0
-Metal4           13949            41            0.29%             0 /  0 /  0
+Metal2           11554          1052            9.11%             0 /  0 /  0
+Metal3           15106          1158            7.67%             0 /  0 /  0
+Metal4           13949           111            0.80%             0 /  0 /  0
 ---------------------------------------------------------------------------------------
-Total            40609          2277            5.61%             0 /  0 /  0
+Total            40609          2321            5.72%             0 /  0 /  0
 
-[INFO GRT-0018] Total wirelength: 29374 um
-[INFO GRT-0014] Routed nets: 431
+[INFO GRT-0018] Total wirelength: 30063 um
+[INFO GRT-0014] Routed nets: 440
 [INFO GRT-0303] Global routing runtime = 00:00:00
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
@@ -72,10 +72,10 @@ Cell type report:                       Count       Area
   Tap cell                                449    1971.29
   Tie cell                                 16     140.49
   Clock buffer                             15     619.05
-  Timing Repair Buffer                     50    1167.85
-  Inverter                                 20     228.30
-  Sequential cell                          50    3222.55
-  Multi-Input combinational cell          272    7461.48
-  Total                                  1119   45271.22
+  Timing Repair Buffer                     59    1519.08
+  Inverter                                 20     245.86
+  Sequential cell                          50    3237.92
+  Multi-Input combinational cell          272    7654.66
+  Total                                  1128   45848.56
 Writing OpenROAD database to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/39-openroad-globalrouting/tt_um_r2r_dac_digital.odb'…
 Writing layout to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/39-openroad-globalrouting/tt_um_r2r_dac_digital.def'…

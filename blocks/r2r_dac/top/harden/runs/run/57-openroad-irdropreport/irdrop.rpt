@@ -3,12 +3,12 @@
 ########## IR report #################
 Net              : VPWR
 Corner           : nom_tt_025C_3v30
-Total power      : 1.67e-03 W
+Total power      : 1.69e-03 W
 Supply voltage   : 3.30e+00 V
 Worstcase voltage: 3.30e+00 V
 Average voltage  : 3.30e+00 V
-Average IR drop  : 3.11e-05 V
-Worstcase IR drop: 2.19e-04 V
+Average IR drop  : 3.17e-05 V
+Worstcase IR drop: 2.28e-04 V
 Percentage drop  : 0.01 %
 ######################################
 + analyze_power_grid -net VGND -voltage_file /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/57-openroad-irdropreport/net-VGND.csv
@@ -16,11 +16,11 @@ Percentage drop  : 0.01 %
 ########## IR report #################
 Net              : VGND
 Corner           : nom_tt_025C_3v30
-Total power      : 1.67e-03 W
+Total power      : 1.69e-03 W
 Supply voltage   : 0.00e+00 V
-Worstcase voltage: 2.32e-04 V
-Average voltage  : 3.13e-05 V
-Average IR drop  : 3.13e-05 V
-Worstcase IR drop: 2.32e-04 V
+Worstcase voltage: 2.05e-04 V
+Average voltage  : 3.19e-05 V
+Average IR drop  : 3.19e-05 V
+Worstcase IR drop: 2.05e-04 V
 Percentage drop  : 0.01 %
 ######################################

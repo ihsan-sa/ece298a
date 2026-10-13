@@ -2,14 +2,14 @@
 ===========================================================================
 Violator List
 ============================================================================
-[setup in-reg] uio_in[2] -> _588_/D : -0.935929
-[setup in-reg] uio_in[2] -> _586_/D : -0.910339
-[setup in-reg] uio_in[2] -> _585_/D : -0.644715
-[setup in-reg] uio_in[2] -> _587_/D : -0.305311
-[setup in-reg] uio_in[2] -> _589_/D : -0.099460
+[setup in-reg] uio_in[2] -> _586_/D : -2.454945
+[setup in-reg] uio_in[2] -> _588_/D : -0.994556
+[setup in-reg] uio_in[2] -> _585_/D : -0.685734
+[setup in-reg] uio_in[2] -> _587_/D : -0.605420
+[setup in-reg] uio_in[2] -> _589_/D : -0.207487
 Writing metric timing__hold_vio__count__corner:nom_tt_025C_3v30: 0
-Writing metric timing__hold_r2r__ws__corner:nom_tt_025C_3v30: 0.947216
+Writing metric timing__hold_r2r__ws__corner:nom_tt_025C_3v30: 0.929258
 Writing metric timing__hold_r2r_vio__count__corner:nom_tt_025C_3v30: 0
 Writing metric timing__setup_vio__count__corner:nom_tt_025C_3v30: 5
-Writing metric timing__setup_r2r__ws__corner:nom_tt_025C_3v30: 1.747072
+Writing metric timing__setup_r2r__ws__corner:nom_tt_025C_3v30: 1.623196
 Writing metric timing__setup_r2r_vio__count__corner:nom_tt_025C_3v30: 0

@@ -88,8 +88,8 @@ The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/too
 The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/61-magic-writelef/tt_um_r2r_dac_digital.lef at line 2.
 
 [INFO ODB-0227] LEF file: /home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/61-magic-writelef/tt_um_r2r_dac_digital.lef, created 1 library cells
-[INFO ODB-0127] Reading DEF file: /home/ihsan/.cc/tmp/tmpu_jokx81
+[INFO ODB-0127] Reading DEF file: /home/ihsan/.cc/tmp/tmpzc5012b4
 [INFO ODB-0128] Design: empty
-[INFO ODB-0134] Finished DEF file: /home/ihsan/.cc/tmp/tmpu_jokx81
+[INFO ODB-0134] Finished DEF file: /home/ihsan/.cc/tmp/tmpzc5012b4
 [WARNING] Cell 'tt_um_r2r_dac_digital' has (8) inout pin(s) without antenna gate information not antenna diffusion information. They might be disconnected.
 [WARNING] Cell 'tt_um_r2r_dac_digital' has (6) input pin(s) without antenna gate information. They might not be connected to a gate.

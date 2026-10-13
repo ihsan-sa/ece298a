@@ -9,13 +9,13 @@
 │ gf180mcu_fd_sc_mcu7t5v0__aoi211                                                                                                   │ 5                        │
 │ gf180mcu_fd_sc_mcu7t5v0__aoi22                                                                                                    │ 20                       │
 │ gf180mcu_fd_sc_mcu7t5v0__aoi221                                                                                                   │ 7                        │
-│ gf180mcu_fd_sc_mcu7t5v0__buf                                                                                                      │ 47                       │
-│ gf180mcu_fd_sc_mcu7t5v0__clkbuf                                                                                                   │ 17                       │
+│ gf180mcu_fd_sc_mcu7t5v0__buf                                                                                                      │ 53                       │
+│ gf180mcu_fd_sc_mcu7t5v0__clkbuf                                                                                                   │ 20                       │
 │ gf180mcu_fd_sc_mcu7t5v0__clkinv                                                                                                   │ 11                       │
 │ gf180mcu_fd_sc_mcu7t5v0__dffq                                                                                                     │ 50                       │
 │ gf180mcu_fd_sc_mcu7t5v0__dlyb                                                                                                     │ 2                        │
-│ gf180mcu_fd_sc_mcu7t5v0__fill                                                                                                     │ 480                      │
-│ gf180mcu_fd_sc_mcu7t5v0__fillcap                                                                                                  │ 1002                     │
+│ gf180mcu_fd_sc_mcu7t5v0__fill                                                                                                     │ 444                      │
+│ gf180mcu_fd_sc_mcu7t5v0__fillcap                                                                                                  │ 984                      │
 │ gf180mcu_fd_sc_mcu7t5v0__inv                                                                                                      │ 9                        │
 │ gf180mcu_fd_sc_mcu7t5v0__mux2                                                                                                     │ 6                        │
 │ gf180mcu_fd_sc_mcu7t5v0__nand2                                                                                                    │ 40                       │

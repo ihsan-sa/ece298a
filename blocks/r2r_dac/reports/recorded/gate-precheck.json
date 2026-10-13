@@ -1,0 +1,74 @@
+{
+ "script": "gate",
+ "gate": "precheck",
+ "phase": "P3",
+ "tool": "precheck",
+ "input_digest": "dir_text:08ecca8a736efe4672d50b8b756b5dc6a6843dcbdab79b605294d5e8f117ab39",
+ "status": "fail",
+ "criteria": {
+  "fail_severities": [
+   "error"
+  ],
+  "max_count": 0
+ },
+ "counts": {
+  "total": 1,
+  "by_severity": {
+   "error": 1
+  },
+  "by_source": {
+   "tt-precheck": 1
+  }
+ },
+ "failing_count": 1,
+ "failing": [
+  {
+   "check": "precheck",
+   "severity": "error",
+   "file": null,
+   "module": "KLayout GF180MCU DRC",
+   "line": null,
+   "kind": "precheck_failed",
+   "refs": [],
+   "msg": "KLayout GF180MCU DRC: Klayout gf180mcuD failed with 2 DRC violations",
+   "source": "tt-precheck",
+   "items": [
+    {
+     "msg": "KLayout GF180MCU DRC: Klayout gf180mcuD failed with 2 DRC violations",
+     "file": null,
+     "line": null
+    }
+   ]
+  }
+ ],
+ "violations": [
+  {
+   "check": "precheck",
+   "severity": "error",
+   "file": null,
+   "module": "KLayout GF180MCU DRC",
+   "line": null,
+   "kind": "precheck_failed",
+   "refs": [],
+   "msg": "KLayout GF180MCU DRC: Klayout gf180mcuD failed with 2 DRC violations",
+   "source": "tt-precheck",
+   "items": [
+    {
+     "msg": "KLayout GF180MCU DRC: Klayout gf180mcuD failed with 2 DRC violations",
+     "file": null,
+     "line": null
+    }
+   ]
+  }
+ ],
+ "facts": {
+  "top": "tt_um_r2r_dac_digital",
+  "checks_run": 12
+ },
+ "inputs_at_start": {
+  "top_gds": "dir_text:08ecca8a736efe4672d50b8b756b5dc6a6843dcbdab79b605294d5e8f117ab39",
+  "interface": "json_canonical:88bbbf805a8b01cc0e2a81dbfb1a07ce5e57ff99655e04f0ba248d9241d24440"
+ },
+ "recorded_ts": "2026-10-13T07:13:27",
+ "attempts": 1
+}

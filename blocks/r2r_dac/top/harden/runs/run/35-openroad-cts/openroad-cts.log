@@ -100,7 +100,7 @@ Reading design constraints file at '/home/ihsan/.cc/toolchains/iic-osic-tools-20
 [INFO CTS-0098] Clock net "clk"
 [INFO CTS-0099]  Sinks 56
 [INFO CTS-0100]  Leaf buffers 0
-[INFO CTS-0101]  Average sink wire length 187.30 um
+[INFO CTS-0101]  Average sink wire length 188.38 um
 [INFO CTS-0102]  Path depth 2 - 2
 [INFO CTS-0207]  Dummy loads inserted 6
 [INFO] Repairing long wires on clock nets…
@@ -116,11 +116,11 @@ Cell type report:                       Count       Area
   Tap cell                                449    1971.29
   Tie cell                                 16     140.49
   Clock buffer                             15     619.05
-  Timing Repair Buffer                     50    1238.09
-  Inverter                                 20     215.13
+  Timing Repair Buffer                     62    1492.74
+  Inverter                                 20     210.74
   Sequential cell                          50    3222.55
-  Multi-Input combinational cell          272    7411.00
-  Total                                  1119   45277.81
+  Multi-Input combinational cell          272    7446.12
+  Total                                  1131   45563.19
 Writing OpenROAD database to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/35-openroad-cts/tt_um_r2r_dac_digital.odb'…
 Writing netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/35-openroad-cts/tt_um_r2r_dac_digital.nl.v'…
 Writing powered netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/35-openroad-cts/tt_um_r2r_dac_digital.pnl.v'…
@@ -130,16 +130,16 @@ Writing timing constraints to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/
 + detailed_placement -max_displacement  500 100 
 Placement Analysis
 ---------------------------------
-total displacement        334.3 u
+total displacement        339.5 u
 average displacement        0.3 u
-max displacement           15.1 u
-original HPWL           16271.2 u
-legalized HPWL          17017.8 u
+max displacement           17.4 u
+original HPWL           16930.3 u
+legalized HPWL          17759.0 u
 delta HPWL                    5 %
 
 [INFO DPL-0020] Mirrored 199 instances
-[INFO DPL-0021] HPWL before           17017.8 u
-[INFO DPL-0022] HPWL after            16372.4 u
+[INFO DPL-0021] HPWL before           17759.0 u
+[INFO DPL-0022] HPWL after            17080.8 u
 [INFO DPL-0023] HPWL delta               -3.8 %
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
@@ -152,11 +152,11 @@ Cell type report:                       Count       Area
   Tap cell                                449    1971.29
   Tie cell                                 16     140.49
   Clock buffer                             15     619.05
-  Timing Repair Buffer                     50    1238.09
-  Inverter                                 20     215.13
+  Timing Repair Buffer                     62    1492.74
+  Inverter                                 20     210.74
   Sequential cell                          50    3222.55
-  Multi-Input combinational cell          272    7411.00
-  Total                                  1119   45277.81
+  Multi-Input combinational cell          272    7446.12
+  Total                                  1131   45563.19
 Writing OpenROAD database to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/35-openroad-cts/tt_um_r2r_dac_digital.odb'…
 Writing netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/35-openroad-cts/tt_um_r2r_dac_digital.nl.v'…
 Writing powered netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/35-openroad-cts/tt_um_r2r_dac_digital.pnl.v'…

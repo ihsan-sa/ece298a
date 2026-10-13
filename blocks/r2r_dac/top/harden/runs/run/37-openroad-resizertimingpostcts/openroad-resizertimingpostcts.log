@@ -57,61 +57,72 @@ Reading design constraints file at '/home/ihsan/.cc/toolchains/iic-osic-tools-20
 [INFO] Net 'ua[7]' matched don't touch regular expression, setting as don't touch…
 + repair_timing -verbose -setup -setup_margin 0.05000000000000000277555756156289135105907917022705078125 -max_buffer_percent 50.0
 [INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
-[INFO RSZ-0094] Found 14 endpoints with setup violations.
-[INFO RSZ-0099] Repairing 14 out of 14 (100.00%) violating endpoints...
+[INFO RSZ-0094] Found 21 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 21 out of 21 (100.00%) violating endpoints...
    Iter   | Removed | Resized | Inserted | Cloned |  Pin  |   Area   |    WNS   |   TNS      |  Viol  | Worst
           | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |          |            | Endpts | Endpt
 --------------------------------------------------------------------------------------------------------------
-        0 |       0 |       0 |        0 |      0 |     0 |    +0.0% |  -19.514 |     -161.1 |     14 | _588_/D
-       10 |       0 |       9 |        0 |      0 |     0 |    -0.3% |  -15.501 |     -118.8 |     14 | _588_/D
-       20 |       1 |      18 |        0 |      0 |     0 |    -0.5% |   -9.044 |      -58.7 |     14 | _588_/D
-       30 |       1 |      28 |        0 |      0 |     0 |    -0.6% |   -6.273 |      -39.2 |     14 | _585_/D
-       40 |       2 |      37 |        0 |      0 |     0 |    -0.7% |   -3.360 |      -14.6 |     14 | _585_/D
-       50 |       2 |      47 |        0 |      0 |     0 |    -0.6% |   -1.795 |       -5.5 |     14 | _588_/D
-       60 |       2 |      55 |        1 |      0 |     1 |    -0.4% |   -1.091 |       -2.6 |     14 | _588_/D
-       70 |       2 |      64 |        2 |      0 |     1 |    -0.2% |   -0.413 |       -0.6 |     14 | _588_/D
-       75 |       2 |      69 |        2 |      0 |     1 |    -0.0% |    0.047 |        0.0 |     12 | _585_/D
-       76 |       2 |      69 |        2 |      0 |     1 |    -0.0% |    0.047 |        0.0 |     11 | _585_/D
-       79 |       2 |      71 |        2 |      0 |     1 |    -0.0% |    0.183 |        0.0 |      9 | _588_/D
-       80 |       2 |      71 |        2 |      0 |     1 |    -0.0% |    0.183 |        0.0 |      9 | _588_/D
-       80 |       2 |      71 |        2 |      0 |     1 |    -0.0% |    0.183 |        0.0 |      8 | _588_/D
-       81 |       2 |      71 |        2 |      0 |     1 |    -0.0% |    0.183 |        0.0 |      7 | _588_/D
-       82 |       2 |      71 |        2 |      0 |     1 |    -0.0% |    0.183 |        0.0 |      6 | _588_/D
-       83 |       2 |      71 |        2 |      0 |     1 |    -0.0% |    0.183 |        0.0 |      5 | _588_/D
-       84 |       2 |      71 |        2 |      0 |     1 |    -0.0% |    0.183 |        0.0 |      4 | _588_/D
-       85 |       2 |      71 |        2 |      0 |     1 |    -0.0% |    0.183 |        0.0 |      3 | _588_/D
-       86 |       2 |      71 |        2 |      0 |     1 |    -0.0% |    0.183 |        0.0 |      2 | _588_/D
-       87 |       2 |      71 |        2 |      0 |     1 |    -0.0% |    0.183 |        0.0 |      1 | _588_/D
-       88 |       2 |      71 |        2 |      0 |     1 |    -0.0% |    0.183 |        0.0 |      0 | _588_/D
-       89 |       2 |      71 |        2 |      0 |     1 |    -0.0% |    0.183 |        0.0 |      0 | _588_/D
-       90 |       2 |      71 |        2 |      0 |     1 |    -0.0% |    0.183 |        0.0 |      0 | _588_/D
-       90 |       2 |      71 |        2 |      0 |     1 |    -0.0% |    0.183 |        0.0 |      0 | _588_/D
-    final |       2 |      71 |        2 |      0 |     1 |    -0.0% |    0.183 |        0.0 |      0 | _588_/D
+        0 |       0 |       0 |        0 |      0 |     0 |    +0.0% |  -22.597 |     -167.6 |     21 | _586_/D
+       10 |       0 |       9 |        0 |      0 |     0 |    -0.3% |  -15.855 |     -116.7 |     21 | _586_/D
+       20 |       0 |      19 |        0 |      0 |     0 |    -0.5% |  -13.140 |      -92.9 |     21 | _586_/D
+       30 |       2 |      27 |        0 |      0 |     0 |    -0.8% |   -8.592 |      -41.2 |     21 | _586_/D
+       40 |       3 |      36 |        0 |      0 |     0 |    -0.8% |   -6.143 |      -20.4 |     21 | _586_/D
+       50 |       3 |      46 |        0 |      0 |     0 |    -0.6% |   -3.592 |       -7.9 |     21 | _586_/D
+       60 |       3 |      55 |        1 |      0 |     0 |    -0.3% |   -3.220 |       -6.3 |     21 | _586_/D
+       70 |       3 |      65 |        1 |      0 |     0 |    -0.2% |   -2.289 |       -4.0 |     21 | _586_/D
+       80 |       3 |      75 |        1 |      0 |     0 |    +0.0% |   -1.790 |       -2.7 |     21 | _586_/D
+       90 |       3 |      82 |        2 |      0 |     2 |    +0.3% |   -1.136 |       -2.2 |     21 | _586_/D
+      100 |       3 |      92 |        2 |      0 |     2 |    +0.6% |   -0.779 |       -1.5 |     21 | _586_/D
+      110 |       3 |     100 |        3 |      0 |     3 |    +0.9% |   -0.367 |       -0.6 |     21 | _586_/D
+      111 |       4 |     100 |        3 |      0 |     3 |    +0.8% |   -0.230 |       -0.2 |     19 | _588_/D
+      114 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |     17 | _588_/D
+      115 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |     16 | _588_/D
+      116 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |     15 | _588_/D
+      117 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |     14 | _588_/D
+      118 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |     13 | _588_/D
+      119 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |     12 | _588_/D
+      120 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |     12 | _588_/D
+      120 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |     11 | _588_/D
+      121 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |     10 | _588_/D
+      122 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |      9 | _588_/D
+      123 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |      8 | _588_/D
+      124 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |      7 | _588_/D
+      125 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |      6 | _588_/D
+      126 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |      5 | _588_/D
+      127 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |      4 | _588_/D
+      128 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |      3 | _588_/D
+      129 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |      2 | _588_/D
+      130 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |      2 | _588_/D
+      130 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |      1 | _588_/D
+      131 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |      0 | _588_/D
+      132 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |      0 | _588_/D
+      133 |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |      0 | _588_/D
+    final |       6 |     100 |        3 |      0 |     3 |    +0.7% |    0.861 |        0.0 |      0 | _588_/D
 --------------------------------------------------------------------------------------------------------------
-[INFO RSZ-0059] Removed 2 buffers.
-[INFO RSZ-0040] Inserted 2 buffers.
-[INFO RSZ-0051] Resized 71 instances: 71 up, 0 up match, 0 down, 0 VT
-[INFO RSZ-0043] Swapped pins on 1 instances.
+[INFO RSZ-0059] Removed 6 buffers.
+[INFO RSZ-0040] Inserted 3 buffers.
+[INFO RSZ-0051] Resized 100 instances: 100 up, 0 up match, 0 down, 0 VT
+[INFO RSZ-0043] Swapped pins on 3 instances.
 + repair_timing -verbose -hold -setup_margin 0.05000000000000000277555756156289135105907917022705078125 -hold_margin 0.1 -max_buffer_percent 50.0
 [INFO RSZ-0033] No hold violations found.
 + detailed_placement -max_displacement  500 100 
 Placement Analysis
 ---------------------------------
-total displacement        390.0 u
-average displacement        0.3 u
-max displacement           24.6 u
-original HPWL           16446.3 u
-legalized HPWL          17369.3 u
-delta HPWL                    6 %
+total displacement        895.9 u
+average displacement        0.8 u
+max displacement           20.7 u
+original HPWL           17018.3 u
+legalized HPWL          18305.7 u
+delta HPWL                    8 %
 
-[INFO DPL-0020] Mirrored 193 instances
-[INFO DPL-0021] HPWL before           17369.3 u
-[INFO DPL-0022] HPWL after            16766.3 u
-[INFO DPL-0023] HPWL delta               -3.5 %
+[INFO DPL-0020] Mirrored 206 instances
+[INFO DPL-0021] HPWL before           18305.7 u
+[INFO DPL-0022] HPWL after            17605.6 u
+[INFO DPL-0023] HPWL delta               -3.8 %
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
 u_analog matched with u_analog
-[INFO ODB-0403] 8 connections made, 0 conflicts skipped.
+[INFO ODB-0403] 12 connections made, 0 conflicts skipped.
 Updating metrics…
 Cell type report:                       Count       Area
   Macro                                     1   29380.17
@@ -119,11 +130,11 @@ Cell type report:                       Count       Area
   Tap cell                                449    1971.29
   Tie cell                                 16     140.49
   Clock buffer                             15     619.05
-  Timing Repair Buffer                     50    1167.85
-  Inverter                                 20     228.30
-  Sequential cell                          50    3222.55
-  Multi-Input combinational cell          272    7461.48
-  Total                                  1119   45271.22
+  Timing Repair Buffer                     59    1519.08
+  Inverter                                 20     245.86
+  Sequential cell                          50    3237.92
+  Multi-Input combinational cell          272    7654.66
+  Total                                  1128   45848.56
 Writing OpenROAD database to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/37-openroad-resizertimingpostcts/tt_um_r2r_dac_digital.odb'…
 Writing netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/37-openroad-resizertimingpostcts/tt_um_r2r_dac_digital.nl.v'…
 Writing powered netlist to '/home/ihsan/.cc/worktrees/ece298a/r2r-dac/blocks/r2r_dac/top/harden/runs/run/37-openroad-resizertimingpostcts/tt_um_r2r_dac_digital.pnl.v'…
